@@ -5,6 +5,14 @@ import * as fs from 'fs'
 import { execSync } from 'child_process'
 import * as os from 'os'
 
+// Prevent unhandled errors from crashing the process — plugins can throw async
+process.on('uncaughtException', (err) => {
+  console.error(`[runner] Uncaught exception (suppressed): ${err.message}`)
+})
+process.on('unhandledRejection', (reason) => {
+  console.error(`[runner] Unhandled rejection (suppressed): ${reason}`)
+})
+
 interface RunResult {
   detection: DetectionResult
   installs: boolean
