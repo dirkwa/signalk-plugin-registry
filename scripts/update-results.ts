@@ -49,6 +49,7 @@ function main() {
     installs: resultData.installs,
     install_error: resultData.installError,
     loads: resultData.detection && (resultData.detection as Record<string, unknown>).loads,
+    load_error: resultData.detection && (resultData.detection as Record<string, unknown>).loadError,
     activation_error: resultData.detection && (resultData.detection as Record<string, unknown>).activationError,
     activates: resultData.detection && (resultData.detection as Record<string, unknown>).activates,
     detected_providers: resultData.detection && (resultData.detection as Record<string, unknown>).providers,
