@@ -1,0 +1,187 @@
+name: Nightly Plugin Registry Scan
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Test scope'
+        type: choice
+        options:
+          - changed_only
+          - all_plugins
+          - single_plugin
+        default: changed_only
+      plugin:
+        description: 'Plugin npm name (single_plugin mode only)'
+        required: false
+      include_master:
+        description: 'Also test against server master branch'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      runs: ${{ steps.plan.outputs.runs }}
+      has_runs: ${{ steps.plan.outputs.has_runs }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - run: npm ci
+
+      - name: Resolve server versions
+        id: resolve
+        run: npx ts-node scripts/resolve-server.ts >> $GITHUB_OUTPUT
+
+      - name: Discover plugins
+        id: discover
+        run: npx ts-node scripts/discover-plugins.ts >> $GITHUB_OUTPUT
+
+      - name: Plan runs
+        id: plan
+        run: |
+          npx ts-node scripts/plan-runs.ts \
+            --plugins '${{ steps.discover.outputs.plugins }}' \
+            --stable-version '${{ steps.resolve.outputs.stable_version }}' \
+            --master-sha '${{ steps.resolve.outputs.master_sha }}' \
+            --mode '${{ github.event.inputs.mode || 'changed_only' }}' \
+            --plugin-filter '${{ github.event.inputs.plugin }}' \
+            --include-master '${{ github.event.inputs.include_master || 'false' }}' \
+            --is-scheduled '${{ github.event_name == 'schedule' }}' \
+            >> $GITHUB_OUTPUT
+
+  test:
+    needs: plan
+    if: needs.plan.outputs.has_runs == 'true'
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        run: ${{ fromJson(needs.plan.outputs.runs) }}
+    runs-on: ubuntu-latest
+    name: ${{ matrix.run.plugin }}@${{ matrix.run.pluginVersion }} x ${{ matrix.run.server }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup server
+        id: server
+        uses: ./.github/actions/setup-server
+        with:
+          server-slot: ${{ matrix.run.server }}
+          node-version: '24'
+
+      - run: npm ci
+
+      - name: Run plugin tests
+        id: tests
+        uses: ./.github/actions/run-plugin-tests
+        with:
+          plugin-name: ${{ matrix.run.plugin }}
+          plugin-version: ${{ matrix.run.pluginVersion }}
+          server-slot: ${{ matrix.run.server }}
+
+      - name: Update results.json
+        run: |
+          npx ts-node scripts/update-results.ts \
+            --plugin '${{ matrix.run.plugin }}' \
+            --plugin-version '${{ matrix.run.pluginVersion }}' \
+            --server-slot '${{ matrix.run.server }}' \
+            --server-version '${{ steps.server.outputs.server-version }}' \
+            --result '${{ steps.tests.outputs.result-json }}' \
+            --reason '${{ matrix.run.reason }}'
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: result-${{ matrix.run.plugin }}-${{ matrix.run.server }}
+          path: results.json
+          retention-days: 1
+
+  merge-results:
+    needs: test
+    if: always() && needs.test.result != 'skipped'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - run: npm ci
+
+      - name: Download all result artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: /tmp/results
+          pattern: result-*
+
+      - name: Merge results
+        run: |
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const base = JSON.parse(fs.readFileSync('results.json', 'utf-8'));
+            const dir = '/tmp/results';
+            if (fs.existsSync(dir)) {
+              for (const sub of fs.readdirSync(dir)) {
+                const f = path.join(dir, sub, 'results.json');
+                if (fs.existsSync(f)) {
+                  const partial = JSON.parse(fs.readFileSync(f, 'utf-8'));
+                  for (const [plugin, versions] of Object.entries(partial)) {
+                    if (!base[plugin]) base[plugin] = {};
+                    for (const [ver, data] of Object.entries(versions)) {
+                      if (!base[plugin][ver]) base[plugin][ver] = {};
+                      Object.assign(base[plugin][ver], data);
+                    }
+                  }
+                }
+              }
+            }
+            fs.writeFileSync('results.json', JSON.stringify(base, null, 2) + '\n');
+          "
+
+      - name: Commit results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add results.json
+          git diff --cached --quiet || git commit -m "results: update from $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
+
+  publish:
+    needs: merge-results
+    if: always() && needs.merge-results.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - run: npm ci
+
+      - name: Build API
+        run: npx ts-node scripts/build-api.ts
+
+      - name: Deploy GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./api

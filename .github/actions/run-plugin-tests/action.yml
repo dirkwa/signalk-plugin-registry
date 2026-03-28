@@ -1,0 +1,75 @@
+name: Run Plugin Tests
+description: Installs and tests a SignalK plugin through all tiers
+
+inputs:
+  plugin-name:
+    required: true
+  plugin-version:
+    required: true
+  server-slot:
+    required: true
+    default: stable
+
+outputs:
+  result-json:
+    description: Full test result as JSON
+    value: ${{ steps.run.outputs.result }}
+  composite:
+    description: Composite score 0-100
+    value: ${{ steps.run.outputs.composite }}
+  badges:
+    description: Comma-separated badge list
+    value: ${{ steps.run.outputs.badges }}
+  installs:
+    description: Whether the plugin installed successfully
+    value: ${{ steps.run.outputs.installs }}
+  loads:
+    description: Whether the plugin constructor succeeded
+    value: ${{ steps.run.outputs.loads }}
+  activates:
+    description: Whether start() completed without error
+    value: ${{ steps.run.outputs.activates }}
+
+runs:
+  using: composite
+  steps:
+    - name: Build harness
+      shell: bash
+      run: npx tsc
+      working-directory: ${{ github.workspace }}
+
+    - name: Run test harness
+      id: run
+      shell: bash
+      run: |
+        RESULT=$(node ${{ github.workspace }}/dist/test-harness/runner.js \
+          '${{ inputs.plugin-name }}' \
+          '${{ inputs.plugin-version }}' 2>&1 | tail -1)
+
+        # The runner outputs JSON as the last line after "=== Results ==="
+        # But we need to capture the structured output, so run again with json flag
+        cd ${{ github.workspace }}
+        RESULT_JSON=$(node -e "
+          const { runPluginTest } = require('./dist/test-harness/runner');
+          runPluginTest('${{ inputs.plugin-name }}', '${{ inputs.plugin-version }}')
+            .then(r => {
+              console.log(JSON.stringify(r));
+            })
+            .catch(e => {
+              console.log(JSON.stringify({ installs: false, composite: 0, badges: ['broken'], error: e.message }));
+            });
+        ")
+
+        echo "result=${RESULT_JSON}" >> $GITHUB_OUTPUT
+
+        COMPOSITE=$(echo "$RESULT_JSON" | node -e "const d=JSON.parse(require('fs').readFileSync('/dev/stdin','utf8'));console.log(d.composite)")
+        BADGES=$(echo "$RESULT_JSON" | node -e "const d=JSON.parse(require('fs').readFileSync('/dev/stdin','utf8'));console.log((d.badges||[]).join(','))")
+        INSTALLS=$(echo "$RESULT_JSON" | node -e "const d=JSON.parse(require('fs').readFileSync('/dev/stdin','utf8'));console.log(d.installs)")
+        LOADS=$(echo "$RESULT_JSON" | node -e "const d=JSON.parse(require('fs').readFileSync('/dev/stdin','utf8'));console.log(d.detection?.loads??false)")
+        ACTIVATES=$(echo "$RESULT_JSON" | node -e "const d=JSON.parse(require('fs').readFileSync('/dev/stdin','utf8'));console.log(d.detection?.activates??false)")
+
+        echo "composite=$COMPOSITE" >> $GITHUB_OUTPUT
+        echo "badges=$BADGES" >> $GITHUB_OUTPUT
+        echo "installs=$INSTALLS" >> $GITHUB_OUTPUT
+        echo "loads=$LOADS" >> $GITHUB_OUTPUT
+        echo "activates=$ACTIVATES" >> $GITHUB_OUTPUT

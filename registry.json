@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    { "npm": "signalk-venus-plugin", "category": "integration" },
+    { "npm": "signalk-n2k-switching", "category": "automation" },
+    { "npm": "signalk-simple-notifications", "category": "notifications" },
+    { "npm": "signalk-derived-data", "category": "processing" },
+    { "npm": "@signalk/tracks-plugin", "category": "navigation" },
+    { "npm": "signalk-alarm-silencer", "category": "notifications" },
+    { "npm": "signalk-anchoralarm-plugin", "category": "safety" },
+    { "npm": "signalk-mqtt-gw", "category": "integration" },
+    { "npm": "signalk-raspberry-pi-monitoring", "category": "monitoring" },
+    { "npm": "@meri-imperiumi/signalk-autostate", "category": "automation" }
+  ]
+}

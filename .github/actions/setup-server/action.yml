@@ -1,0 +1,44 @@
+name: Setup SignalK Server
+description: Installs SignalK server (stable from npm or master from git)
+
+inputs:
+  server-slot:
+    required: true
+    default: stable
+  node-version:
+    required: false
+    default: '24'
+
+outputs:
+  server-version:
+    description: Resolved version (stable) or SHA (master)
+    value: ${{ steps.resolve.outputs.version }}
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ inputs.node-version }}
+
+    - name: Install stable server
+      if: inputs.server-slot == 'stable'
+      shell: bash
+      id: resolve
+      run: |
+        VERSION=$(npm show signalk-server version)
+        echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+    - name: Build master server
+      if: inputs.server-slot == 'master'
+      shell: bash
+      id: resolve-master
+      run: |
+        git clone --depth 1 https://github.com/SignalK/signalk-server.git /tmp/sk-master
+        cd /tmp/sk-master
+        npm ci
+        npm run build
+        npm link
+        SHA=$(git rev-parse --short HEAD)
+        echo "version=$SHA" >> $GITHUB_OUTPUT

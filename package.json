@@ -1,0 +1,21 @@
+{
+  "name": "signalk-plugin-registry",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Automated testing and quality scoring for Signal K plugins",
+  "scripts": {
+    "build": "tsc",
+    "discover": "ts-node scripts/discover-plugins.ts",
+    "resolve": "ts-node scripts/resolve-server.ts",
+    "plan": "ts-node scripts/plan-runs.ts",
+    "test-plugin": "ts-node test-harness/runner.ts",
+    "update-results": "ts-node scripts/update-results.ts",
+    "build-api": "ts-node scripts/build-api.ts"
+  },
+  "devDependencies": {
+    "@signalk/server-api": "^2.4.0",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0"
+  }
+}
