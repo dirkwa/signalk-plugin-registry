@@ -108,7 +108,7 @@ jobs:
       - name: Upload results artifact
         uses: actions/upload-artifact@v4
         with:
-          name: result-${{ matrix.run.plugin }}-${{ matrix.run.server }}
+          name: result-${{ strategy.job-index }}
           path: results.json
           retention-days: 1
 
