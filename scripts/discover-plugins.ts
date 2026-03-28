@@ -115,10 +115,11 @@ async function main() {
   }
 
   const plugins = Array.from(merged.values())
-  const output = JSON.stringify(plugins)
 
-  if (process.env.GITHUB_OUTPUT) {
-    fs.appendFileSync(process.env.GITHUB_OUTPUT, `plugins=${output}\n`)
+  const outIdx = process.argv.indexOf('--out')
+  if (outIdx !== -1 && process.argv[outIdx + 1]) {
+    fs.writeFileSync(process.argv[outIdx + 1], JSON.stringify(plugins, null, 2) + '\n')
+    console.error(`[discover] Wrote ${plugins.length} plugins to ${process.argv[outIdx + 1]}`)
   } else {
     console.log(JSON.stringify(plugins, null, 2))
   }

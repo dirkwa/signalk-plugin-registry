@@ -48,14 +48,13 @@ jobs:
         run: npx ts-node scripts/resolve-server.ts >> $GITHUB_OUTPUT
 
       - name: Discover plugins
-        id: discover
-        run: npx ts-node scripts/discover-plugins.ts >> $GITHUB_OUTPUT
+        run: npx ts-node scripts/discover-plugins.ts --out /tmp/plugins.json
 
       - name: Plan runs
         id: plan
         run: |
           npx ts-node scripts/plan-runs.ts \
-            --plugins '${{ steps.discover.outputs.plugins }}' \
+            --plugins-file /tmp/plugins.json \
             --stable-version '${{ steps.resolve.outputs.stable_version }}' \
             --master-sha '${{ steps.resolve.outputs.master_sha }}' \
             --mode '${{ github.event.inputs.mode || 'changed_only' }}' \

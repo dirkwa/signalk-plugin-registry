@@ -94,8 +94,17 @@ function parseArgs(): {
     return idx !== -1 ? args[idx + 1] : ''
   }
 
+  const pluginsFile = get('--plugins-file')
+  const pluginsJson = get('--plugins')
+  let plugins: PluginInfo[]
+  if (pluginsFile) {
+    plugins = JSON.parse(fs.readFileSync(pluginsFile, 'utf-8'))
+  } else {
+    plugins = JSON.parse(pluginsJson || '[]')
+  }
+
   return {
-    plugins: JSON.parse(get('--plugins') || '[]'),
+    plugins,
     stableVersion: get('--stable-version'),
     masterSha: get('--master-sha'),
     mode: get('--mode') || 'changed_only',
