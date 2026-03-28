@@ -38,7 +38,7 @@ function installPlugin(
   let hasInstallScripts = false
   try {
     execSync(
-      `npm install ${pluginName}@${pluginVersion} --ignore-scripts 2>&1`,
+      `npm install ${pluginName}@${pluginVersion} @signalk/server-api --ignore-scripts 2>&1`,
       { cwd: workDir, timeout: 120_000, stdio: 'pipe' }
     )
 
