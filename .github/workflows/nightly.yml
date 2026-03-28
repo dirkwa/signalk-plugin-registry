@@ -26,9 +26,6 @@ permissions:
   pages: write
   id-token: write
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   plan:
     runs-on: ubuntu-latest
@@ -36,9 +33,9 @@ jobs:
       runs: ${{ steps.plan.outputs.runs }}
       has_runs: ${{ steps.plan.outputs.has_runs }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '24'
 
@@ -76,7 +73,7 @@ jobs:
     name: ${{ matrix.run.plugin }}@${{ matrix.run.pluginVersion }} x ${{ matrix.run.server }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup server
         id: server
@@ -106,7 +103,7 @@ jobs:
             --reason '${{ matrix.run.reason }}'
 
       - name: Upload results artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: result-${{ strategy.job-index }}
           path: results.json
@@ -117,16 +114,16 @@ jobs:
     if: always() && needs.test.result != 'skipped'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '24'
 
       - run: npm ci
 
       - name: Download all result artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: /tmp/results
           pattern: result-*
@@ -169,11 +166,11 @@ jobs:
     if: always() && needs.merge-results.result == 'success'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: master
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '24'
 
