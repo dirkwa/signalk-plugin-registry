@@ -25,6 +25,7 @@ interface RunResult {
   hasInstallScripts: boolean
   composite: number
   badges: string[]
+  testStatus: string
 }
 
 function installPlugin(
@@ -162,7 +163,7 @@ export async function runPluginTest(
     hasInstallScripts: install.hasInstallScripts
   }
 
-  const { composite, badges } = computeScore(testResults)
+  const { composite, badges, testStatus } = computeScore(testResults)
 
   fs.rmSync(workDir, { recursive: true, force: true })
 
@@ -176,7 +177,8 @@ export async function runPluginTest(
     ownTestsPass: ownTests.pass,
     hasInstallScripts: install.hasInstallScripts,
     composite,
-    badges
+    badges,
+    testStatus
   }
 }
 

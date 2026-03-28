@@ -18,14 +18,22 @@ export type Badge =
   | 'activates'
   | 'has-providers'
   | 'tested'
+  | 'tests-failing'
   | 'secure'
   | 'broken'
+
+export type TestStatus = 'passing' | 'none' | 'failing'
 
 export function computeScore(r: TestResults): {
   composite: number
   badges: Badge[]
+  testStatus: TestStatus
 } {
-  if (!r.installs) return { composite: 0, badges: ['broken'] }
+  const testStatus: TestStatus = r.hasOwnTests
+    ? (r.ownTestsPass ? 'passing' : 'failing')
+    : 'none'
+
+  if (!r.installs) return { composite: 0, badges: ['broken'], testStatus }
 
   let score = 0
   const badges: Badge[] = []
@@ -57,12 +65,13 @@ export function computeScore(r: TestResults): {
     score += 5
   }
 
-  // Own tests: 20 points
+  // Own tests: 20 points for passing, -5 penalty for failing
   if (r.hasOwnTests && r.ownTestsPass) {
     score += 20
     badges.push('tested')
   } else if (r.hasOwnTests) {
-    score += 5
+    score -= 5
+    badges.push('tests-failing')
   }
 
   // Security: 20 points
@@ -75,7 +84,8 @@ export function computeScore(r: TestResults): {
 
   return {
     composite: Math.max(0, Math.min(100, score)),
-    badges
+    badges,
+    testStatus
   }
 }
 

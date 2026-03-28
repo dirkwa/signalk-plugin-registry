@@ -41,6 +41,7 @@ interface PluginSummary {
   version: string
   composite_stable: number
   badges_stable: string[]
+  test_status: string
   composite_master?: number
   badges_master?: string[]
   last_tested: string
@@ -80,6 +81,7 @@ function main() {
       version: latestVersion,
       composite_stable: stableResult.composite || 0,
       badges_stable: stableResult.badges || [],
+      test_status: (stableResult.test_status as string) || 'none',
       last_tested: stableResult.tested || '',
       installs: stableResult.installs || false,
       loads: !!stableResult.loads,

@@ -61,7 +61,8 @@ function main() {
     audit_high: resultData.auditHigh,
     audit_moderate: resultData.auditModerate,
     composite: resultData.composite,
-    badges: resultData.badges
+    badges: resultData.badges,
+    test_status: resultData.testStatus
   }
 
   // Remove undefined values
