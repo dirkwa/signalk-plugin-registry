@@ -92,11 +92,11 @@ export async function runPluginTest(
 ): Promise<RunResult> {
   const workDir = fs.mkdtempSync(path.join(os.tmpdir(), 'sk-registry-'))
 
-  console.log(`[runner] Installing ${pluginName}@${pluginVersion}...`)
+  console.error(`[runner] Installing ${pluginName}@${pluginVersion}...`)
   const install = installPlugin(pluginName, pluginVersion, workDir)
 
   if (!install.success) {
-    console.log(`[runner] Install failed: ${install.error}`)
+    console.error(`[runner] Install failed: ${install.error}`)
     const score = computeScore({
       installs: false, loads: false, activates: false,
       detectedProviders: [], hasSchema: false,
@@ -124,14 +124,14 @@ export async function runPluginTest(
     }
   }
 
-  console.log(`[runner] Running audit...`)
+  console.error(`[runner] Running audit...`)
   const audit = runAudit(workDir)
 
   const pluginDir = path.join(workDir, 'node_modules', pluginName)
-  console.log(`[runner] Detecting providers...`)
+  console.error(`[runner] Detecting providers...`)
   const detection = await detectProviders(pluginDir)
 
-  console.log(`[runner] Checking own tests...`)
+  console.error(`[runner] Checking own tests...`)
   const ownTests = checkOwnTests(pluginDir)
 
   const testResults: TestResults = {
