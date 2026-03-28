@@ -1,1 +1,34 @@
-{}
+{
+  "signalk-anchoralarm-plugin": {
+    "1.17.4": {
+      "server@stable": {
+        "tested": "2026-03-28T07:25:20.941Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "registerActionHandler"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 90,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "secure"
+        ]
+      }
+    }
+  }
+}
