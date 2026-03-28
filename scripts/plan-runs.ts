@@ -174,6 +174,15 @@ function main() {
     fs.writeFileSync(resultsPath, JSON.stringify(results, null, 2) + '\n')
   }
 
+  // GitHub Actions matrix limit is 256, cap at 50 per run to stay safe
+  const MAX_MATRIX_JOBS = 50
+  if (runs.length > MAX_MATRIX_JOBS) {
+    console.error(
+      `[plan] Capping ${runs.length} runs to ${MAX_MATRIX_JOBS} (remaining will be picked up in next run)`
+    )
+    runs.length = MAX_MATRIX_JOBS
+  }
+
   const output = [
     `runs=${JSON.stringify(runs)}`,
     `has_runs=${runs.length > 0}`

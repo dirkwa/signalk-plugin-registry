@@ -1,8 +1,6 @@
 name: Nightly Plugin Registry Scan
 
 on:
-  push:
-    branches: [master]
   schedule:
     - cron: '0 2 * * *'
   workflow_dispatch:
