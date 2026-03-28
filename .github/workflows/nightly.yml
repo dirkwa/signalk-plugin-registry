@@ -1,6 +1,8 @@
 name: Nightly Plugin Registry Scan
 
 on:
+  push:
+    branches: [master]
   schedule:
     - cron: '0 2 * * *'
   workflow_dispatch:
@@ -169,7 +171,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: master
 
       - uses: actions/setup-node@v4
         with:
