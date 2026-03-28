@@ -1480,7 +1480,7 @@
   "sk-ais-status-plugin": {
     "1.0.0": {
       "server@stable": {
-        "tested": "2026-03-28T17:26:34.451Z",
+        "tested": "2026-03-28T17:37:17.054Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
