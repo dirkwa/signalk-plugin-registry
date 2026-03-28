@@ -84,7 +84,13 @@ function checkOwnTests(pluginDir: string): { hasTests: boolean; pass: boolean } 
     }
 
     try {
-      execSync('npm test 2>&1', { cwd: pluginDir, timeout: 60_000, stdio: 'pipe' })
+      // Use `timeout` command to kill entire process group (not just parent)
+      execSync('timeout --kill-after=10s 60s npm test 2>&1', {
+        cwd: pluginDir,
+        timeout: 75_000,
+        stdio: 'pipe',
+        killSignal: 'SIGKILL'
+      })
       return { hasTests: true, pass: true }
     } catch {
       return { hasTests: true, pass: false }
