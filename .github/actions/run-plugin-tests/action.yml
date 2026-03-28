@@ -46,8 +46,8 @@ runs:
             hasOwnTests: false, ownTestsPass: false, hasInstallScripts: false
           });
           runPluginTest(process.argv[1], process.argv[2])
-            .then(r => write(r))
-            .catch(e => fallback(e));
+            .then(r => { write(r); process.exit(0); })
+            .catch(e => { fallback(e); process.exit(0); });
         " '${{ inputs.plugin-name }}' '${{ inputs.plugin-version }}' || true
 
         if [ ! -f /tmp/result.json ]; then

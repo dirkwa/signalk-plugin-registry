@@ -194,6 +194,7 @@ if (require.main === module) {
     .then((result) => {
       console.log('\n=== Results ===')
       console.log(JSON.stringify(result, null, 2))
+      process.exit(0)
     })
     .catch((err) => {
       console.error(err)
