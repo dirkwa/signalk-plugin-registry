@@ -193,6 +193,9 @@ jobs:
     needs: merge-results
     if: always() && needs.merge-results.result == 'success'
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -207,8 +210,11 @@ jobs:
       - name: Build API
         run: npx ts-node scripts/build-api.ts
 
-      - name: Deploy GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./api
+          path: ./api
+
+      - name: Deploy GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v5
