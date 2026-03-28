@@ -23,8 +23,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   plan:
@@ -193,13 +191,11 @@ jobs:
     needs: merge-results
     if: always() && needs.merge-results.result == 'success'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
         with:
           ref: master
+          fetch-depth: 0
 
       - uses: actions/setup-node@v6
         with:
@@ -210,11 +206,13 @@ jobs:
       - name: Build API
         run: npx ts-node scripts/build-api.ts
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./api
-
-      - name: Deploy GitHub Pages
-        id: deploy
-        uses: actions/deploy-pages@v5
+      - name: Deploy to gh-pages branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout --orphan gh-pages-tmp
+          git rm -rf . 2>/dev/null || true
+          cp -r api/* .
+          git add -A
+          git commit -m "api: update from $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push origin gh-pages-tmp:gh-pages --force
