@@ -155,10 +155,13 @@ jobs:
             }
             fs.writeFileSync('results.json', JSON.stringify(base, null, 2) + '\n');
           "
-          echo "=== Debug: artifacts ==="
+          echo "=== Debug ==="
+          echo "base plugins after merge: $(node -e "console.log(Object.keys(JSON.parse(require('fs').readFileSync('results.json','utf8'))).length)")"
+          echo "has hoekens: $(node -e "console.log('hoekens-anchor-alarm' in JSON.parse(require('fs').readFileSync('results.json','utf8')))")"
           find /tmp/results -name 'results.json' | while read f; do
             KEYS=$(node -e "const d=JSON.parse(require('fs').readFileSync('$f','utf8'));console.log(Object.keys(d).length)")
-            echo "  $f: $KEYS plugins"
+            ART_HOEKENS=$(node -e "console.log('hoekens-anchor-alarm' in JSON.parse(require('fs').readFileSync('$f','utf8')))")
+            echo "  $f: $KEYS plugins, has hoekens: $ART_HOEKENS"
           done
           MERGED=$(node -e "const d=JSON.parse(require('fs').readFileSync('results.json','utf8'));console.log(Object.keys(d).length)")
           echo "results.json after merge: $MERGED plugins"
