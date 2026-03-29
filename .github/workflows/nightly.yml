@@ -98,7 +98,7 @@ jobs:
             --plugin-version '${{ matrix.run.pluginVersion }}' \
             --server-slot '${{ matrix.run.server }}' \
             --server-version '${{ steps.server.outputs.server-version }}' \
-            --result '${{ steps.tests.outputs.result-json }}' \
+            --result-file /tmp/result.json \
             --reason '${{ matrix.run.reason }}'
 
       - name: Upload results artifact

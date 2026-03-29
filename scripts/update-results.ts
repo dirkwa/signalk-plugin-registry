@@ -14,6 +14,7 @@ function parseArgs() {
     serverSlot: get('--server-slot') as 'stable' | 'master',
     serverVersion: get('--server-version'),
     result: get('--result'),
+    resultFile: get('--result-file'),
     reason: get('--reason')
   }
 }
@@ -32,9 +33,12 @@ function main() {
 
   let resultData: Record<string, unknown>
   try {
-    resultData = JSON.parse(args.result)
+    const raw = args.resultFile
+      ? fs.readFileSync(args.resultFile, 'utf-8')
+      : args.result
+    resultData = JSON.parse(raw)
   } catch {
-    console.error('Failed to parse --result JSON')
+    console.error('Failed to parse result JSON')
     process.exit(1)
   }
 
