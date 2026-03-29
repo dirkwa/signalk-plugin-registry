@@ -57,6 +57,7 @@ function main() {
     has_schema: resultData.detection && (resultData.detection as Record<string, unknown>).hasSchema,
     has_own_tests: resultData.hasOwnTests,
     own_tests_pass: resultData.ownTestsPass,
+    tests_runnable: resultData.testsRunnable,
     has_install_scripts: resultData.hasInstallScripts,
     audit_critical: resultData.auditCritical,
     audit_high: resultData.auditHigh,

@@ -188,6 +188,7 @@ function main() {
   function testStatusCell(status: string): string {
     if (status === 'passing') return '<span style="color:#28a745">passing</span>'
     if (status === 'failing') return '<span style="color:#dc3545">failing</span>'
+    if (status === 'not-runnable') return '<span style="color:#999" title="Tests exist in source but test runner (jest/mocha/etc) is a devDependency not included in the published package">has tests</span>'
     return '<span style="color:#999">none</span>'
   }
 

@@ -22,6 +22,7 @@ interface RunResult {
   auditModerate: number
   hasOwnTests: boolean
   ownTestsPass: boolean
+  testsRunnable: boolean
   hasInstallScripts: boolean
   composite: number
   badges: string[]
@@ -76,28 +77,40 @@ function runAudit(workDir: string): { critical: number; high: number; moderate: 
   }
 }
 
-function checkOwnTests(pluginDir: string): { hasTests: boolean; pass: boolean } {
+function checkOwnTests(pluginDir: string): { hasTests: boolean; pass: boolean; runnable: boolean } {
   try {
     const pkg = JSON.parse(fs.readFileSync(path.join(pluginDir, 'package.json'), 'utf-8'))
     const testScript = pkg.scripts?.test
-    if (!testScript || testScript.includes('echo') || testScript === 'exit 0') {
-      return { hasTests: false, pass: false }
+    if (!testScript || testScript.includes('echo "Error') || testScript === 'exit 0') {
+      return { hasTests: false, pass: false, runnable: false }
+    }
+
+    // Check if the test runner is available as a local dependency.
+    // Published packages don't include devDependencies, so jest/mocha/vitest
+    // won't be in node_modules/.bin/ of the plugin itself.
+    const runner = testScript.split(/\s+/)[0]
+    const knownRunners = ['jest', 'mocha', 'vitest', 'ava', 'tap', 'c8', 'nyc', 'tsx', 'ts-mocha']
+    const needsBinary = knownRunners.some((r) => runner === r || testScript.startsWith(r + ' '))
+    if (needsBinary) {
+      const localBin = path.join(pluginDir, 'node_modules', '.bin', runner)
+      if (!fs.existsSync(localBin)) {
+        return { hasTests: true, pass: false, runnable: false }
+      }
     }
 
     try {
-      // Use `timeout` command to kill entire process group (not just parent)
       execSync('timeout --kill-after=10s 60s npm test 2>&1', {
         cwd: pluginDir,
         timeout: 75_000,
         stdio: 'pipe',
         killSignal: 'SIGKILL'
       })
-      return { hasTests: true, pass: true }
+      return { hasTests: true, pass: true, runnable: true }
     } catch {
-      return { hasTests: true, pass: false }
+      return { hasTests: true, pass: false, runnable: true }
     }
   } catch {
-    return { hasTests: false, pass: false }
+    return { hasTests: false, pass: false, runnable: false }
   }
 }
 
@@ -133,7 +146,7 @@ export async function runPluginTest(
       installs: false,
       installError: install.error,
       auditCritical: 0, auditHigh: 0, auditModerate: 0,
-      hasOwnTests: false, ownTestsPass: false,
+      hasOwnTests: false, ownTestsPass: false, testsRunnable: false,
       hasInstallScripts: false,
       ...score
     }
@@ -157,6 +170,7 @@ export async function runPluginTest(
     hasSchema: detection.hasSchema,
     hasOwnTests: ownTests.hasTests,
     ownTestsPass: ownTests.pass,
+    testsRunnable: ownTests.runnable,
     auditCritical: audit.critical,
     auditHigh: audit.high,
     auditModerate: audit.moderate,
@@ -175,6 +189,7 @@ export async function runPluginTest(
     auditModerate: audit.moderate,
     hasOwnTests: ownTests.hasTests,
     ownTestsPass: ownTests.pass,
+    testsRunnable: ownTests.runnable,
     hasInstallScripts: install.hasInstallScripts,
     composite,
     badges,

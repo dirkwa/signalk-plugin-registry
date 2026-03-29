@@ -6,6 +6,7 @@ export interface TestResults {
   hasSchema: boolean
   hasOwnTests: boolean
   ownTestsPass: boolean
+  testsRunnable?: boolean
   auditCritical: number
   auditHigh: number
   auditModerate: number
@@ -22,16 +23,23 @@ export type Badge =
   | 'secure'
   | 'broken'
 
-export type TestStatus = 'passing' | 'none' | 'failing'
+export type TestStatus = 'passing' | 'none' | 'not-runnable' | 'failing'
 
 export function computeScore(r: TestResults): {
   composite: number
   badges: Badge[]
   testStatus: TestStatus
 } {
-  const testStatus: TestStatus = r.hasOwnTests
-    ? (r.ownTestsPass ? 'passing' : 'failing')
-    : 'none'
+  let testStatus: TestStatus
+  if (!r.hasOwnTests) {
+    testStatus = 'none'
+  } else if (r.testsRunnable === false) {
+    testStatus = 'not-runnable'
+  } else if (r.ownTestsPass) {
+    testStatus = 'passing'
+  } else {
+    testStatus = 'failing'
+  }
 
   if (!r.installs) return { composite: 0, badges: ['broken'], testStatus }
 
@@ -65,11 +73,12 @@ export function computeScore(r: TestResults): {
     score += 5
   }
 
-  // Own tests: 20 points for passing, -5 penalty for failing
-  if (r.hasOwnTests && r.ownTestsPass) {
+  // Own tests: 20 points for passing, -5 penalty for actually failing
+  // Tests that exist but can't run (missing devDeps) are neutral
+  if (testStatus === 'passing') {
     score += 20
     badges.push('tested')
-  } else if (r.hasOwnTests) {
+  } else if (testStatus === 'failing') {
     score -= 5
     badges.push('tests-failing')
   }
