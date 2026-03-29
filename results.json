@@ -2177,6 +2177,35 @@
         "test_status": "not-runnable",
         "tests_runnable": false
       }
+    },
+    "0.1.3": {
+      "server@stable": {
+        "tested": "2026-03-29T20:59:20.997Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "secure"
+        ],
+        "test_status": "not-runnable"
+      }
     }
   },
   "@meri-imperiumi/signalk-teltonika-rutx11": {
@@ -7053,7 +7082,7 @@
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Could not locate the bindings file. Tried:\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/build/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/build/Debug/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/build/Release/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/out/Debug/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/Debug/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/out/Release/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/Release/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/build/default/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/compiled/24.14.0/linux/x64/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node\n \u2192 /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/lib/binding/node-v137-linux-x64/better_sqlite3.node",
+        "activation_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/build/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/build/Debug/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/build/Release/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/out/Debug/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/Debug/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/out/Release/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/Release/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/build/default/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/compiled/24.14.0/linux/x64/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node\n → /tmp/sk-registry-Kg0Vso/node_modules/better-sqlite3/lib/binding/node-v137-linux-x64/better_sqlite3.node",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
@@ -7488,7 +7517,7 @@
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Could not locate the bindings file. Tried:\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/build/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/build/Debug/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/build/Release/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/out/Debug/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/Debug/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/out/Release/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/Release/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/build/default/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/compiled/24.14.0/linux/x64/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/addon-build/release/install-root/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/addon-build/debug/install-root/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/addon-build/default/install-root/i2c.node\n \u2192 /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/lib/binding/node-v137-linux-x64/i2c.node",
+        "activation_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/build/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/build/Debug/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/build/Release/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/out/Debug/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/Debug/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/out/Release/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/Release/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/build/default/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/compiled/24.14.0/linux/x64/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/addon-build/release/install-root/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/addon-build/debug/install-root/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/addon-build/default/install-root/i2c.node\n → /tmp/sk-registry-mBZnAg/node_modules/i2c-bus/lib/binding/node-v137-linux-x64/i2c.node",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
@@ -9406,7 +9435,7 @@
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Could not locate the bindings file. Tried:\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/build/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/build/Debug/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/build/Release/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/out/Debug/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/Debug/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/out/Release/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/Release/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/build/default/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/compiled/24.14.0/linux/x64/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/addon-build/release/install-root/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/addon-build/debug/install-root/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/addon-build/default/install-root/i2c.node\n \u2192 /tmp/sk-registry-REzKmd/node_modules/i2c-bus/lib/binding/node-v137-linux-x64/i2c.node",
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/build/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/build/Debug/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/build/Release/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/out/Debug/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/Debug/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/out/Release/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/Release/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/build/default/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/compiled/24.14.0/linux/x64/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/addon-build/release/install-root/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/addon-build/debug/install-root/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/addon-build/default/install-root/i2c.node\n → /tmp/sk-registry-REzKmd/node_modules/i2c-bus/lib/binding/node-v137-linux-x64/i2c.node",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
@@ -10121,7 +10150,7 @@
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Could not locate the bindings file. Tried:\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/build/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/build/Debug/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/build/Release/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/out/Debug/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/Debug/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/out/Release/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/Release/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/build/default/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/compiled/24.14.0/linux/x64/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/addon-build/release/install-root/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/addon-build/debug/install-root/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/addon-build/default/install-root/epoll.node\n \u2192 /tmp/sk-registry-kNo2Qz/node_modules/epoll/lib/binding/node-v137-linux-x64/epoll.node",
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/build/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/build/Debug/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/build/Release/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/out/Debug/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/Debug/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/out/Release/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/Release/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/build/default/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/compiled/24.14.0/linux/x64/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/addon-build/release/install-root/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/addon-build/debug/install-root/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/addon-build/default/install-root/epoll.node\n → /tmp/sk-registry-kNo2Qz/node_modules/epoll/lib/binding/node-v137-linux-x64/epoll.node",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
@@ -10635,7 +10664,7 @@
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Could not locate the bindings file. Tried:\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/build/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/build/Debug/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/build/Release/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/out/Debug/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/Debug/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/out/Release/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/Release/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/build/default/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/compiled/24.14.0/linux/x64/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/addon-build/release/install-root/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/addon-build/debug/install-root/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/addon-build/default/install-root/i2c.node\n \u2192 /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/lib/binding/node-v137-linux-x64/i2c.node",
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/build/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/build/Debug/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/build/Release/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/out/Debug/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/Debug/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/out/Release/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/Release/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/build/default/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/compiled/24.14.0/linux/x64/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/addon-build/release/install-root/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/addon-build/debug/install-root/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/addon-build/default/install-root/i2c.node\n → /tmp/sk-registry-2jDVnp/node_modules/i2c-bus/lib/binding/node-v137-linux-x64/i2c.node",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
@@ -10694,7 +10723,7 @@
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Could not locate the bindings file. Tried:\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/build/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/build/Debug/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/build/Release/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/out/Debug/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/Debug/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/out/Release/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/Release/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/build/default/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/compiled/24.14.0/linux/x64/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/addon-build/release/install-root/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/addon-build/debug/install-root/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/addon-build/default/install-root/bindings.node\n \u2192 /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/lib/binding/node-v137-linux-x64/bindings.node",
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/build/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/build/Debug/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/build/Release/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/out/Debug/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/Debug/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/out/Release/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/Release/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/build/default/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/compiled/24.14.0/linux/x64/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/addon-build/release/install-root/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/addon-build/debug/install-root/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/addon-build/default/install-root/bindings.node\n → /tmp/sk-registry-KrEl24/node_modules/@serialport/bindings/lib/binding/node-v137-linux-x64/bindings.node",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
@@ -12224,6 +12253,256 @@
           "secure"
         ],
         "test_status": "none"
+      }
+    }
+  },
+  "sailracer-signalk-plugin": {
+    "1.0.2": {
+      "server@stable": {
+        "tested": "2026-03-29T20:59:24.523Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "secure"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "signalk-magonis-wave-cangateway": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-03-29T20:59:25.177Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "emitPropertyValue"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "secure"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "signalk-myyachtlive-log": {
+    "0.6.10": {
+      "server@stable": {
+        "tested": "2026-03-29T21:01:24.011Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": false,
+        "install_error": "spawnSync /bin/sh ETIMEDOUT",
+        "loads": false,
+        "load_error": "spawnSync /bin/sh ETIMEDOUT",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 0,
+        "badges": [
+          "broken"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "signalk-pwsweather": {
+    "0.2.0": {
+      "server@stable": {
+        "tested": "2026-03-29T20:59:24.127Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "secure"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "signalk-marinwiki": {
+    "0.0.2": {
+      "server@stable": {
+        "tested": "2026-03-29T20:59:28.519Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 65,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tests-failing",
+          "secure"
+        ],
+        "test_status": "failing"
+      }
+    }
+  },
+  "signalk-charlotte": {
+    "0.0.1": {
+      "server@stable": {
+        "tested": "2026-03-29T20:59:21.790Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "secure"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "signalk-pisugar": {
+    "0.6.0": {
+      "server@stable": {
+        "tested": "2026-03-29T20:59:36.498Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "secure"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "signalk-iotopen-lynx-gw": {
+    "0.0.8": {
+      "server@stable": {
+        "tested": "2026-03-29T20:59:39.425Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module mqtt\nRequire stack:\n- /tmp/sk-registry-61j1Ww/node_modules/signalk-iotopen-lynx-gw/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 30,
+        "badges": [
+          "compatible",
+          "tests-failing",
+          "secure"
+        ],
+        "test_status": "failing"
       }
     }
   }
