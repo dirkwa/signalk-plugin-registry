@@ -109,7 +109,7 @@
   "signalk-to-sealink-reporter": {
     "1.2.8": {
       "server@stable": {
-        "tested": "2026-03-28T17:26:31.949Z",
+        "tested": "2026-03-29T21:41:13.392Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
@@ -121,6 +121,7 @@
         "has_schema": true,
         "has_own_tests": false,
         "own_tests_pass": false,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
