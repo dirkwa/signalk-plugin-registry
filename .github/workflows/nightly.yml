@@ -155,7 +155,15 @@ jobs:
             }
             fs.writeFileSync('results.json', JSON.stringify(base, null, 2) + '\n');
           "
+          echo "=== Debug: artifacts ==="
+          find /tmp/results -name 'results.json' | while read f; do
+            KEYS=$(node -e "const d=JSON.parse(require('fs').readFileSync('$f','utf8'));console.log(Object.keys(d).length)")
+            echo "  $f: $KEYS plugins"
+          done
+          MERGED=$(node -e "const d=JSON.parse(require('fs').readFileSync('results.json','utf8'));console.log(Object.keys(d).length)")
+          echo "results.json after merge: $MERGED plugins"
           git add results.json
+          git diff --cached --stat
           git diff --cached --quiet && echo 'No changes to commit' || {
             git commit -m "results: update from $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             git push origin HEAD:master
