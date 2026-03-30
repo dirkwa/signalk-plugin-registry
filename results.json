@@ -3645,13 +3645,13 @@
   "signalk-calypso-ultrasonic": {
     "1.0.18": {
       "server@stable": {
-        "tested": "2026-03-30T05:04:29.597Z",
+        "tested": "2026-03-30T20:11:54.232Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Cannot find module '../build/Release/bluetooth_hci_socket.node'\nRequire stack:\n- /tmp/sk-registry-GjfRIA/node_modules/@abandonware/bluetooth-hci-socket/lib/native.js\n- /tmp/sk-registry-GjfRIA/node_modules/@abandonware/bluetooth-hci-socket/index.js\n- /tmp/sk-registry-GjfRIA/node_modules/@abandonware/noble/lib/hci-socket/hci.js\n- /tmp/sk-registry-GjfRIA/node_modules/@abandonware/noble/lib/hci-socket/bindings.js\n- /tmp/sk-registry-GjfRIA/node_modules/@abandonware/noble/lib/resolve-bindings.js\n- /tmp/sk-registry-GjfRIA/node_modules/@abandonware/noble/with-custom-binding.js\n- /tmp/sk-registry-GjfRIA/node_modules/@abandonware/noble/index.js\n- /tmp/sk-registry-GjfRIA/node_modules/signalk-calypso-ultrasonic/lib/calypso-ultrasonic.js\n- /tmp/sk-registry-GjfRIA/node_modules/signalk-calypso-ultrasonic/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "load_error": "Cannot find module '../build/Release/bluetooth_hci_socket.node'\nRequire stack:\n- /tmp/sk-registry-HK7fRk/node_modules/@abandonware/bluetooth-hci-socket/lib/native.js\n- /tmp/sk-registry-HK7fRk/node_modules/@abandonware/bluetooth-hci-socket/index.js\n- /tmp/sk-registry-HK7fRk/node_modules/@abandonware/noble/lib/hci-socket/hci.js\n- /tmp/sk-registry-HK7fRk/node_modules/@abandonware/noble/lib/hci-socket/bindings.js\n- /tmp/sk-registry-HK7fRk/node_modules/@abandonware/noble/lib/resolve-bindings.js\n- /tmp/sk-registry-HK7fRk/node_modules/@abandonware/noble/with-custom-binding.js\n- /tmp/sk-registry-HK7fRk/node_modules/@abandonware/noble/index.js\n- /tmp/sk-registry-HK7fRk/node_modules/signalk-calypso-ultrasonic/lib/calypso-ultrasonic.js\n- /tmp/sk-registry-HK7fRk/node_modules/signalk-calypso-ultrasonic/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
