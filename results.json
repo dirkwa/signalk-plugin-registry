@@ -5648,31 +5648,30 @@
   "signalk-sbd": {
     "1.0.4": {
       "server@stable": {
-        "tested": "2026-03-30T05:07:11.038Z",
+        "tested": "2026-03-30T20:12:22.687Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-7Mv8Ea/node_modules/serialport/build/serialport.node\n → /tmp/sk-registry-7Mv8Ea/node_modules/serialport/build/Debug/serialport.node\n → /tmp/sk-registry-7Mv8Ea/node_modules/serialport/build/Release/serialport.node\n → /tmp/sk-registry-7Mv8Ea/node_modules/serialport/out/Debug/serialport.node\n → /tmp/sk-registry-7Mv8Ea/node_modules/serialport/Debug/serialport.node\n → /tmp/sk-registry-7Mv8Ea/node_modules/serialport/out/Release/serialport.node\n → /tmp/sk-registry-7Mv8Ea/node_modules/serialport/Release/serialport.node\n → /tmp/sk-registry-7Mv8Ea/node_modules/serialport/build/default/serialport.node\n → /tmp/sk-registry-7Mv8Ea/node_modules/serialport/compiled/24.14.0/linux/x64/serialport.node",
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-8UhVQj/node_modules/serialport/build/serialport.node\n → /tmp/sk-registry-8UhVQj/node_modules/serialport/build/Debug/serialport.node\n → /tmp/sk-registry-8UhVQj/node_modules/serialport/build/Release/serialport.node\n → /tmp/sk-registry-8UhVQj/node_modules/serialport/out/Debug/serialport.node\n → /tmp/sk-registry-8UhVQj/node_modules/serialport/Debug/serialport.node\n → /tmp/sk-registry-8UhVQj/node_modules/serialport/out/Release/serialport.node\n → /tmp/sk-registry-8UhVQj/node_modules/serialport/Release/serialport.node\n → /tmp/sk-registry-8UhVQj/node_modules/serialport/build/default/serialport.node\n → /tmp/sk-registry-8UhVQj/node_modules/serialport/compiled/24.14.0/linux/x64/serialport.node",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": false,
-        "has_own_tests": true,
+        "has_own_tests": false,
         "own_tests_pass": false,
-        "tests_runnable": true,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 35,
+        "composite": 40,
         "badges": [
           "compatible",
-          "tests-failing",
           "secure"
         ],
-        "test_status": "failing"
+        "test_status": "none"
       }
     }
   },
