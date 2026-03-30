@@ -184,6 +184,23 @@ function getGitHubRepoUrl(pluginDir: string): string | null {
   }
 }
 
+function hasTestFiles(dir: string): boolean {
+  try {
+    const output = execSync(
+      'find . -not -path "*/node_modules/*" -not -path "*/.git/*" \\( ' +
+        '-name "*.test.*" -o -name "*.spec.*" -o -name "*_test.*" -o ' +
+        '-name "test.js" -o -name "test.ts" -o -path "*/test/*" -o ' +
+        '-path "*/tests/*" -o -path "*/__tests__/*" \\) -print -quit',
+      { cwd: dir, timeout: 5_000, stdio: "pipe" },
+    )
+      .toString()
+      .trim();
+    return output.length > 0;
+  } catch {
+    return false;
+  }
+}
+
 function checkSourceTests(pluginDir: string): {
   hasTests: boolean;
   pass: boolean;
@@ -202,6 +219,13 @@ function checkSourceTests(pluginDir: string): {
       timeout: 60_000,
       stdio: "pipe",
     });
+
+    if (!hasTestFiles(sourceDir)) {
+      console.error(
+        "[runner] No test files found in source repo, treating as no tests",
+      );
+      return { hasTests: false, pass: false, runnable: false };
+    }
 
     console.error("[runner] Installing devDependencies...");
     execSync("npm ci 2>&1", {
