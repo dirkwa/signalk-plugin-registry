@@ -657,7 +657,7 @@
   "signalk-venus-plugin": {
     "2.3.0": {
       "server@stable": {
-        "tested": "2026-03-30T04:58:05.319Z",
+        "tested": "2026-03-30T20:16:22.969Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
