@@ -76,11 +76,20 @@ function runAudit(workDir: string): {
   moderate: number;
 } {
   try {
-    const output = execSync("npm audit --json 2>/dev/null", {
-      cwd: workDir,
-      timeout: 30_000,
-      stdio: "pipe",
-    }).toString();
+    let output: string;
+    try {
+      output = execSync("npm audit --json 2>/dev/null", {
+        cwd: workDir,
+        timeout: 30_000,
+        stdio: "pipe",
+      }).toString();
+    } catch (err: unknown) {
+      // npm audit exits non-zero when vulnerabilities are found,
+      // but stdout still contains valid JSON
+      const e = err as { stdout?: Buffer };
+      output = e.stdout?.toString() || "";
+    }
+    if (!output) return { critical: 0, high: 0, moderate: 0 };
     const data = JSON.parse(output);
     const v = data.metadata?.vulnerabilities || {};
     return {
@@ -113,6 +122,11 @@ function checkOwnTests(pluginDir: string): {
       testScript === "tsc"
     ) {
       return { hasTests: false, pass: false, runnable: false };
+    }
+
+    // Tests requiring Docker cannot run in our harness
+    if (testScript.includes("docker")) {
+      return { hasTests: true, pass: false, runnable: false };
     }
 
     // Check if the test runner is available as a local dependency.
