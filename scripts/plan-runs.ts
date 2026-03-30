@@ -125,7 +125,7 @@ function main() {
     plugins = plugins.filter((p) => p.name === args.pluginFilter)
   }
 
-  const force = args.mode === 'all_plugins'
+  const force = args.mode === 'all_plugins' || args.mode === 'single_plugin'
   const runs: PlannedRun[] = []
 
   for (const plugin of plugins) {
