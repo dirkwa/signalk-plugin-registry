@@ -209,4 +209,8 @@ jobs:
           cp -r api/* .
           git add -A
           git commit -m "api: update from $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push origin gh-pages-tmp:gh-pages --force
+          for i in 1 2 3; do
+            git push origin gh-pages-tmp:gh-pages --force && break
+            echo "Push attempt $i failed (concurrent update), retrying in ${i}s..."
+            sleep "$i"
+          done
