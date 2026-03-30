@@ -2078,13 +2078,13 @@
   "crowd-depth": {
     "1.0.1": {
       "server@stable": {
-        "tested": "2026-03-30T05:02:10.808Z",
+        "tested": "2026-03-30T20:11:51.212Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Cannot find module '/tmp/sk-registry-HU6ooh/node_modules/crowd-depth'\nRequire stack:\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "load_error": "Cannot find module '/tmp/sk-registry-GOVznT/node_modules/crowd-depth'\nRequire stack:\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
