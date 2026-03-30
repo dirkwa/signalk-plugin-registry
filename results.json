@@ -7955,7 +7955,7 @@
   "signalk-shelly2": {
     "2.1.0": {
       "server@stable": {
-        "tested": "2026-03-30T05:01:40.360Z",
+        "tested": "2026-03-30T20:13:08.030Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
