@@ -12652,8 +12652,8 @@
   "signalk-marinwiki": {
     "0.0.2": {
       "server@stable": {
-        "tested": "2026-03-29T20:59:28.519Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-03-30T20:12:56.127Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
@@ -12662,22 +12662,21 @@
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
-        "has_own_tests": true,
+        "has_own_tests": false,
         "own_tests_pass": false,
-        "tests_runnable": true,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 65,
+        "composite": 75,
         "badges": [
           "compatible",
           "loads",
           "activates",
-          "tests-failing",
           "secure"
         ],
-        "test_status": "failing"
+        "test_status": "none"
       }
     }
   },
