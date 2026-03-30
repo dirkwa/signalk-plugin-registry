@@ -1022,31 +1022,31 @@
   "@signalk/charts-plugin": {
     "3.3.0": {
       "server@stable": {
-        "tested": "2026-03-30T04:58:31.939Z",
+        "tested": "2026-03-30T20:10:59.268Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/build/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/build/Debug/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/build/Release/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/out/Debug/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/Debug/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/out/Release/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/Release/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/build/default/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/compiled/24.14.0/linux/x64/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/addon-build/release/install-root/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/addon-build/debug/install-root/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/addon-build/default/install-root/node_sqlite3.node\n → /tmp/sk-registry-qcw1bs/node_modules/sqlite3/lib/binding/node-v137-linux-x64/node_sqlite3.node",
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/build/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/build/Debug/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/build/Release/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/out/Debug/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/Debug/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/out/Release/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/Release/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/build/default/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/compiled/24.14.0/linux/x64/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/addon-build/release/install-root/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/addon-build/debug/install-root/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/addon-build/default/install-root/node_sqlite3.node\n → /tmp/sk-registry-3fNz47/node_modules/sqlite3/lib/binding/node-v137-linux-x64/node_sqlite3.node",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": false,
         "has_own_tests": true,
-        "own_tests_pass": false,
+        "own_tests_pass": true,
         "tests_runnable": true,
         "has_install_scripts": true,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 35,
+        "composite": 65,
         "badges": [
           "compatible",
-          "tests-failing",
+          "tested",
           "secure"
         ],
-        "test_status": "failing"
+        "test_status": "passing"
       }
     }
   },
