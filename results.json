@@ -7317,13 +7317,13 @@
   "signalk-daily-gpx-plugin": {
     "0.3.2": {
       "server@stable": {
-        "tested": "2026-03-30T05:01:36.259Z",
+        "tested": "2026-03-30T20:14:01.080Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/build/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/build/Debug/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/build/Release/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/out/Debug/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/Debug/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/out/Release/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/Release/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/build/default/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/compiled/24.14.0/linux/x64/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node\n → /tmp/sk-registry-k4QipV/node_modules/better-sqlite3/lib/binding/node-v137-linux-x64/better_sqlite3.node",
+        "activation_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/build/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/build/Debug/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/build/Release/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/out/Debug/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/Debug/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/out/Release/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/Release/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/build/default/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/compiled/24.14.0/linux/x64/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node\n → /tmp/sk-registry-0ORbYu/node_modules/better-sqlite3/lib/binding/node-v137-linux-x64/better_sqlite3.node",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
