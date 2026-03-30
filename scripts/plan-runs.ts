@@ -175,7 +175,7 @@ function main() {
   }
 
   // Cap per run — untested plugins are picked up on subsequent runs
-  const MAX_MATRIX_JOBS = 50
+  const MAX_MATRIX_JOBS = parseInt(process.env.MAX_MATRIX_JOBS || '50', 10)
   if (runs.length > MAX_MATRIX_JOBS) {
     console.error(
       `[plan] Capping ${runs.length} runs to ${MAX_MATRIX_JOBS} (remaining will be picked up in next run)`

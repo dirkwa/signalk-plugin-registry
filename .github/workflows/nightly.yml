@@ -20,6 +20,10 @@ on:
         description: 'Also test against server master branch'
         type: boolean
         default: false
+      max_jobs:
+        description: 'Max parallel test jobs (default 50, max 256)'
+        type: number
+        default: 50
 
 permissions:
   contents: write
@@ -48,6 +52,8 @@ jobs:
 
       - name: Plan runs
         id: plan
+        env:
+          MAX_MATRIX_JOBS: ${{ github.event.inputs.max_jobs || '50' }}
         run: |
           npx ts-node scripts/plan-runs.ts \
             --plugins-file /tmp/plugins.json \
