@@ -6312,7 +6312,7 @@
   "sms-alarm": {
     "1.1.4": {
       "server@stable": {
-        "tested": "2026-03-30T05:07:54.542Z",
+        "tested": "2026-03-30T20:12:29.675Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
@@ -6324,20 +6324,19 @@
         "has_schema": true,
         "has_own_tests": true,
         "own_tests_pass": false,
-        "tests_runnable": true,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 70,
+        "composite": 75,
         "badges": [
           "compatible",
           "loads",
           "activates",
-          "tests-failing",
           "secure"
         ],
-        "test_status": "failing"
+        "test_status": "not-runnable"
       }
     }
   },
