@@ -261,6 +261,33 @@ function checkSourceTests(pluginDir: string): {
       }
     }
 
+    const sourcePkg = JSON.parse(
+      fs.readFileSync(path.join(sourceDir, "package.json"), "utf-8"),
+    );
+    const buildScript = sourcePkg.scripts?.["build:all"]
+      ? "build:all"
+      : sourcePkg.scripts?.["build"]
+        ? "build"
+        : sourcePkg.scripts?.["compile"]
+          ? "compile"
+          : null;
+    if (buildScript) {
+      console.error(`[runner] Building with npm run ${buildScript}...`);
+      try {
+        execSync(`npm run ${buildScript} 2>&1`, {
+          cwd: sourceDir,
+          timeout: 120_000,
+          stdio: "pipe",
+        });
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.error(
+          `[runner] Build failed, tests not runnable: ${msg.slice(0, 200)}`,
+        );
+        return { hasTests: true, pass: false, runnable: false };
+      }
+    }
+
     console.error("[runner] Running tests from source...");
     execSync("timeout --kill-after=10s 60s npm test 2>&1", {
       cwd: sourceDir,
