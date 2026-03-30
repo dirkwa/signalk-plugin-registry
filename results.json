@@ -1245,7 +1245,7 @@
   "signalk-to-venus": {
     "1.0.19": {
       "server@stable": {
-        "tested": "2026-03-30T04:58:43.968Z",
+        "tested": "2026-03-30T20:10:56.504Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
