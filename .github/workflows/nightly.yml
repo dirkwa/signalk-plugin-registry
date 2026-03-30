@@ -144,18 +144,26 @@ jobs:
             const path = require('path');
             const base = JSON.parse(fs.readFileSync('results.json', 'utf-8'));
             const dir = '/tmp/results';
+            let updated = 0;
             function mergeFile(f) {
               const partial = JSON.parse(fs.readFileSync(f, 'utf-8'));
               for (const [plugin, versions] of Object.entries(partial)) {
                 if (!base[plugin]) base[plugin] = {};
-                for (const [ver, data] of Object.entries(versions)) {
+                for (const [ver, slots] of Object.entries(versions)) {
                   if (!base[plugin][ver]) base[plugin][ver] = {};
-                  Object.assign(base[plugin][ver], data);
+                  for (const [slot, data] of Object.entries(slots)) {
+                    const existing = base[plugin][ver][slot];
+                    const newTs = data?.tested || '';
+                    const oldTs = existing?.tested || '';
+                    if (newTs > oldTs) {
+                      base[plugin][ver][slot] = data;
+                      updated++;
+                    }
+                  }
                 }
               }
             }
             if (fs.existsSync(dir)) {
-              // Handle both flat and nested artifact layouts
               const topLevel = path.join(dir, 'results.json');
               if (fs.existsSync(topLevel)) mergeFile(topLevel);
               for (const sub of fs.readdirSync(dir)) {
@@ -163,6 +171,7 @@ jobs:
                 if (fs.existsSync(nested)) mergeFile(nested);
               }
             }
+            console.log('Updated ' + updated + ' plugin slots');
             fs.writeFileSync('results.json', JSON.stringify(base, null, 2) + '\n');
           "
           git add results.json
