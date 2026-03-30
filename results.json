@@ -1567,7 +1567,7 @@
   "@signalk/resources-provider": {
     "1.5.1": {
       "server@stable": {
-        "tested": "2026-03-30T04:57:06.806Z",
+        "tested": "2026-03-30T20:13:14.837Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
