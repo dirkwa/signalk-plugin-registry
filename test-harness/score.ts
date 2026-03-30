@@ -83,9 +83,11 @@ export function computeScore(r: TestResults): {
   }
 
   // Security: 20 points
-  if (r.auditCritical === 0 && r.auditHigh === 0) {
+  if (r.auditCritical === 0 && r.auditHigh === 0 && r.auditModerate === 0) {
     score += 20;
     badges.push("secure");
+  } else if (r.auditCritical === 0 && r.auditHigh === 0) {
+    score += 15;
   } else if (r.auditCritical === 0) {
     score += 10;
   }

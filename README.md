@@ -23,7 +23,9 @@ Each plugin is scored out of **100 points**:
 | Activate | `start({})` completes without error | 15 |
 | Schema | Plugin exposes a JSON configuration schema | 5 |
 | Tests | Plugin's own test suite passes | 25 |
-| Security | No critical or high npm audit vulnerabilities | 20 |
+| Security | No npm audit vulnerabilities | 20 |
+
+Security scoring breakdown: 20 points for a clean audit, 15 if only moderate vulnerabilities, 10 if high (no critical), 0 if any critical vulnerabilities.
 
 Provider detection (resources, weather, history, autopilot, radar) is tracked as an informational badge but does not affect the score — most plugins are not expected to register providers.
 
