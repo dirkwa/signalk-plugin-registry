@@ -2,6 +2,8 @@
 
 Automated testing and quality scoring for Signal K server plugins.
 
+**Results:** https://dirkwa.github.io/signalk-plugin-registry/
+
 ## What It Does
 
 - Discovers Signal K plugins from npm (keyword: `signalk-node-server-plugin`)
@@ -10,19 +12,20 @@ Automated testing and quality scoring for Signal K server plugins.
 - Publishes a static JSON API via GitHub Pages
 - Runs nightly or on manual trigger
 
-## Test Tiers
+## Scoring
+
+Each plugin is scored out of **100 points**:
 
 | Tier | What | Points |
 |------|------|--------|
-| 0 | Install (`npm install --ignore-scripts`) | 15 |
-| 1a | Load (constructor returns plugin object) | 15 |
-| 1b | Activate (`start({})` completes without error) | 15 |
-| 2 | Provider detection (resources, weather, history, autopilot, radar) | 10 |
-| 3 | JSON Schema present | 5 |
-| 4 | Plugin's own tests pass | 20 |
-| 5 | Security audit (no critical/high vulnerabilities) | 20 |
+| Install | `npm install --ignore-scripts` succeeds | 20 |
+| Load | Constructor returns a valid plugin object | 15 |
+| Activate | `start({})` completes without error | 15 |
+| Schema | Plugin exposes a JSON configuration schema | 5 |
+| Tests | Plugin's own test suite passes | 25 |
+| Security | No critical or high npm audit vulnerabilities | 20 |
 
-Maximum score: **100**
+Provider detection (resources, weather, history, autopilot, radar) is tracked as an informational badge but does not affect the score — most plugins are not expected to register providers.
 
 ## Badges
 
@@ -31,14 +34,15 @@ Maximum score: **100**
 | `compatible` | Installs successfully |
 | `loads` | Plugin constructor succeeds |
 | `activates` | `start()` completes without error (with empty config) |
-| `has-providers` | Registers at least one provider (ResourceProvider, WeatherProvider, etc.) |
+| `has-providers` | Registers at least one provider (informational) |
 | `tested` | Plugin has its own test suite and it passes |
+| `tests-failing` | Plugin has tests but they fail (-5 penalty) |
 | `secure` | No critical or high npm audit vulnerabilities |
 | `broken` | Failed to install |
 
 ## API
 
-After the nightly run, results are published to GitHub Pages:
+Results are published to GitHub Pages:
 
 - `index.json` — summary of all plugins, sorted by score
 - `plugins/<name>.json` — full detail for one plugin
@@ -72,8 +76,3 @@ Go to Actions > "Nightly Plugin Registry Scan" > Run workflow:
 - Plugins that require credentials or external services in config will not activate
 - `start({})` with empty config fails for most plugins — this is expected and scored accordingly
 - The app shim logs unstubbed method accesses — check `unstubbed_accesses` in results to identify shim gaps
-
-## Adding a Plugin
-
-Edit `registry.json` and add the npm package name. The nightly scan will pick it up.
-Eventually, full npm keyword search replaces the manual seed list.

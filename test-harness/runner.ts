@@ -136,6 +136,10 @@ function checkOwnTests(pluginDir: string): {
       }
     }
 
+    if (!hasTestFiles(pluginDir)) {
+      return { hasTests: true, pass: false, runnable: false };
+    }
+
     try {
       execSync("timeout --kill-after=10s 60s npm test 2>&1", {
         cwd: pluginDir,
@@ -215,10 +219,16 @@ function checkSourceTests(pluginDir: string): {
   const sourceDir = fs.mkdtempSync(path.join(os.tmpdir(), "sk-source-"));
   try {
     console.error(`[runner] Cloning source from ${repoUrl}...`);
-    execSync(`git clone --depth 1 ${repoUrl} ${sourceDir} 2>&1`, {
-      timeout: 60_000,
-      stdio: "pipe",
-    });
+    try {
+      execSync(`git clone --depth 1 ${repoUrl} ${sourceDir} 2>&1`, {
+        timeout: 60_000,
+        stdio: "pipe",
+      });
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`[runner] Failed to clone repo: ${msg.slice(0, 200)}`);
+      return { hasTests: true, pass: false, runnable: false };
+    }
 
     if (!hasTestFiles(sourceDir)) {
       console.error(
@@ -228,11 +238,28 @@ function checkSourceTests(pluginDir: string): {
     }
 
     console.error("[runner] Installing devDependencies...");
-    execSync("npm ci 2>&1", {
-      cwd: sourceDir,
-      timeout: 120_000,
-      stdio: "pipe",
-    });
+    try {
+      execSync("npm ci 2>&1", {
+        cwd: sourceDir,
+        timeout: 120_000,
+        stdio: "pipe",
+      });
+    } catch {
+      console.error("[runner] npm ci failed, trying npm install...");
+      try {
+        execSync("npm install 2>&1", {
+          cwd: sourceDir,
+          timeout: 120_000,
+          stdio: "pipe",
+        });
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.error(
+          `[runner] npm install failed, tests not runnable: ${msg.slice(0, 200)}`,
+        );
+        return { hasTests: true, pass: false, runnable: false };
+      }
+    }
 
     console.error("[runner] Running tests from source...");
     execSync("timeout --kill-after=10s 60s npm test 2>&1", {
@@ -244,13 +271,6 @@ function checkSourceTests(pluginDir: string): {
     return { hasTests: true, pass: true, runnable: true };
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : String(err);
-    if (
-      msg.includes("Could not resolve host") ||
-      msg.includes("fatal: repository")
-    ) {
-      console.error("[runner] Failed to clone repo, tests not runnable");
-      return { hasTests: true, pass: false, runnable: false };
-    }
     console.error(`[runner] Source tests failed: ${msg.slice(0, 200)}`);
     return { hasTests: true, pass: false, runnable: true };
   } finally {
