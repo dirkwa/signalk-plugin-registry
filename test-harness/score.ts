@@ -21,6 +21,9 @@ export type Badge =
   | "tested"
   | "tests-failing"
   | "secure"
+  | "audit-moderate"
+  | "audit-high"
+  | "audit-critical"
   | "broken";
 
 export type TestStatus = "passing" | "none" | "not-runnable" | "failing";
@@ -88,8 +91,12 @@ export function computeScore(r: TestResults): {
     badges.push("secure");
   } else if (r.auditCritical === 0 && r.auditHigh === 0) {
     score += 15;
+    badges.push("audit-moderate");
   } else if (r.auditCritical === 0) {
     score += 10;
+    badges.push("audit-high");
+  } else {
+    badges.push("audit-critical");
   }
 
   return {

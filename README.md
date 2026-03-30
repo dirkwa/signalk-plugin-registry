@@ -39,7 +39,10 @@ Provider detection (resources, weather, history, autopilot, radar) is tracked as
 | `has-providers` | Registers at least one provider (informational) |
 | `tested` | Plugin has its own test suite and it passes |
 | `tests-failing` | Plugin has tests but they fail (-5 penalty) |
-| `secure` | No critical or high npm audit vulnerabilities |
+| `secure` | No npm audit vulnerabilities (20 pts) |
+| `audit-moderate` | Has moderate vulnerabilities (15 pts) |
+| `audit-high` | Has high vulnerabilities (10 pts) |
+| `audit-critical` | Has critical vulnerabilities (0 pts) |
 | `broken` | Failed to install |
 
 ## API
