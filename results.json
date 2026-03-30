@@ -12745,31 +12745,30 @@
   "signalk-iotopen-lynx-gw": {
     "0.0.8": {
       "server@stable": {
-        "tested": "2026-03-29T20:59:39.425Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-03-30T20:12:59.922Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Cannot find module mqtt\nRequire stack:\n- /tmp/sk-registry-61j1Ww/node_modules/signalk-iotopen-lynx-gw/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "load_error": "Cannot find module 'mqtt'\nRequire stack:\n- /tmp/sk-registry-IAyLzv/node_modules/signalk-iotopen-lynx-gw/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": false,
-        "has_own_tests": true,
+        "has_own_tests": false,
         "own_tests_pass": false,
-        "tests_runnable": true,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 30,
+        "composite": 40,
         "badges": [
           "compatible",
-          "tests-failing",
           "secure"
         ],
-        "test_status": "failing"
+        "test_status": "none"
       }
     }
   },
