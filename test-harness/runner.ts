@@ -106,7 +106,11 @@ function checkOwnTests(pluginDir: string): {
     if (
       !testScript ||
       testScript.includes('echo "Error') ||
-      testScript === "exit 0"
+      testScript === "exit 0" ||
+      testScript === "npm run build" ||
+      testScript === "npm run build:all" ||
+      testScript === "npm run compile" ||
+      testScript === "tsc"
     ) {
       return { hasTests: false, pass: false, runnable: false };
     }
