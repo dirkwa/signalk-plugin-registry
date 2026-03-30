@@ -7702,7 +7702,7 @@
   "signalk-dashboard": {
     "0.4.6": {
       "server@stable": {
-        "tested": "2026-03-30T05:00:48.534Z",
+        "tested": "2026-03-30T20:16:03.011Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
@@ -7713,21 +7713,20 @@
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
-        "has_own_tests": true,
+        "has_own_tests": false,
         "own_tests_pass": false,
-        "tests_runnable": true,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 55,
+        "composite": 60,
         "badges": [
           "compatible",
           "loads",
-          "tests-failing",
           "secure"
         ],
-        "test_status": "failing"
+        "test_status": "none"
       }
     }
   },
