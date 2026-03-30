@@ -8049,7 +8049,7 @@
   "signalk-vessels-to-ais": {
     "2.0.0": {
       "server@stable": {
-        "tested": "2026-03-30T05:01:22.937Z",
+        "tested": "2026-03-30T20:13:05.015Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
@@ -8060,21 +8060,21 @@
         "unstubbed_accesses": [],
         "has_schema": true,
         "has_own_tests": true,
-        "own_tests_pass": false,
+        "own_tests_pass": true,
         "tests_runnable": true,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 70,
+        "composite": 100,
         "badges": [
           "compatible",
           "loads",
           "activates",
-          "tests-failing",
+          "tested",
           "secure"
         ],
-        "test_status": "failing"
+        "test_status": "passing"
       }
     }
   },
