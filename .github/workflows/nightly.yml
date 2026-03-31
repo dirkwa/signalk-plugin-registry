@@ -162,6 +162,20 @@ jobs:
             const base = JSON.parse(fs.readFileSync('results.json', 'utf-8'));
             const dir = '/tmp/results';
             let updated = 0;
+            let rejected = 0;
+            const VALID_BADGES = new Set([
+              'compatible','loads','activates','has-providers','tested',
+              'tests-failing','npm-audit-ok','audit-moderate','audit-high',
+              'audit-critical','broken'
+            ]);
+            function validSlot(data) {
+              if (!data || typeof data !== 'object') return false;
+              if (typeof data.composite !== 'number' || data.composite < 0 || data.composite > 100) return false;
+              if (!Array.isArray(data.badges) || !data.badges.every(b => VALID_BADGES.has(b))) return false;
+              if (typeof data.tested !== 'string' || isNaN(Date.parse(data.tested))) return false;
+              if (typeof data.installs !== 'boolean') return false;
+              return true;
+            }
             function mergeFile(f) {
               const partial = JSON.parse(fs.readFileSync(f, 'utf-8'));
               for (const [plugin, versions] of Object.entries(partial)) {
@@ -169,6 +183,12 @@ jobs:
                 for (const [ver, slots] of Object.entries(versions)) {
                   if (!base[plugin][ver]) base[plugin][ver] = {};
                   for (const [slot, data] of Object.entries(slots)) {
+                    if (!slot.startsWith('server@')) continue;
+                    if (!validSlot(data)) {
+                      console.log('Rejected invalid slot: ' + plugin + '/' + ver + '/' + slot);
+                      rejected++;
+                      continue;
+                    }
                     const existing = base[plugin][ver][slot];
                     const newTs = data?.tested || '';
                     const oldTs = existing?.tested || '';
@@ -188,7 +208,7 @@ jobs:
                 if (fs.existsSync(nested)) mergeFile(nested);
               }
             }
-            console.log('Updated ' + updated + ' plugin slots');
+            console.log('Updated ' + updated + ' plugin slots' + (rejected ? ', rejected ' + rejected + ' invalid' : ''));
             fs.writeFileSync('results.json', JSON.stringify(base, null, 2) + '\n');
           "
           git add results.json

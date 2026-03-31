@@ -217,7 +217,7 @@ function hasFirejail(): boolean {
 
 function sandboxCmd(cmd: string): string {
   return hasFirejail()
-    ? `firejail --quiet --net=none -- ${cmd}`
+    ? `firejail --quiet --net=none --read-only=/ --read-write=/tmp -- ${cmd}`
     : cmd;
 }
 
