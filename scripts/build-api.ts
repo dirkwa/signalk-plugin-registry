@@ -153,6 +153,9 @@ function main() {
     'tested': '#28a745',
     'tests-failing': '#dc3545',
     'npm-audit-ok': '#28a745',
+    'audit-moderate': '#ffc107',
+    'audit-high': '#ffc107',
+    'audit-critical': '#dc3545',
     'broken': '#dc3545'
   }
 
