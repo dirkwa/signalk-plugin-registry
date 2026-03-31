@@ -39,7 +39,7 @@ Provider detection (resources, weather, history, autopilot, radar) is tracked as
 | `has-providers` | Registers at least one provider (informational) |
 | `tested` | Plugin has its own test suite and it passes |
 | `tests-failing` | Plugin has tests but they fail (-5 penalty) |
-| `secure` | No npm audit vulnerabilities (20 pts) |
+| `npm-audit-ok` | No npm audit vulnerabilities (20 pts) |
 | `audit-moderate` | Has moderate vulnerabilities (15 pts) |
 | `audit-high` | Has high vulnerabilities (10 pts) |
 | `audit-critical` | Has critical vulnerabilities (0 pts) |
@@ -74,6 +74,15 @@ Go to Actions > "Nightly Plugin Registry Scan" > Run workflow:
 - **changed_only** — only test plugins with new versions since last run
 - **all_plugins** — retest everything
 - **single_plugin** — test one specific plugin by npm name
+
+## CI Security Model
+
+The nightly workflow uses a two-phase job isolation model to prevent untrusted plugin code from accessing CI secrets:
+
+- **Jobs 1-2 (plan, test):** Run with `permissions: {}` and `persist-credentials: false`. No `GITHUB_TOKEN` is injected. Plugin code executes entirely in these jobs.
+- **Jobs 3-4 (merge-results, publish):** Have `contents: write` permission to commit results and deploy to GitHub Pages. These jobs never install or `require()` any plugin code — they only process the JSON artifact uploaded by the test job.
+
+Even if a malicious plugin reads `process.env`, there are no secrets to exfiltrate.
 
 ## Known Limitations
 

@@ -20,7 +20,7 @@ export type Badge =
   | "has-providers"
   | "tested"
   | "tests-failing"
-  | "secure"
+  | "npm-audit-ok"
   | "audit-moderate"
   | "audit-high"
   | "audit-critical"
@@ -88,7 +88,7 @@ export function computeScore(r: TestResults): {
   // Security: 20 points
   if (r.auditCritical === 0 && r.auditHigh === 0 && r.auditModerate === 0) {
     score += 20;
-    badges.push("secure");
+    badges.push("npm-audit-ok");
   } else if (r.auditCritical === 0 && r.auditHigh === 0) {
     score += 15;
     badges.push("audit-moderate");

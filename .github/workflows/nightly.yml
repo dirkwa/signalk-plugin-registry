@@ -25,17 +25,20 @@ on:
         type: number
         default: 50
 
-permissions:
-  contents: write
-
 jobs:
+  # ─────────────────────────────────────────────────────────────
+  # JOB 1: Plan — reads registry, no secrets needed
+  # ─────────────────────────────────────────────────────────────
   plan:
     runs-on: ubuntu-latest
+    permissions: {}
     outputs:
       runs: ${{ steps.plan.outputs.runs }}
       has_runs: ${{ steps.plan.outputs.has_runs }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-node@v6
         with:
@@ -65,9 +68,13 @@ jobs:
             --is-scheduled '${{ github.event_name == 'schedule' }}' \
             >> $GITHUB_OUTPUT
 
+  # ─────────────────────────────────────────────────────────────
+  # JOB 2: Test — runs UNTRUSTED plugin code, NO secrets, NO token
+  # ─────────────────────────────────────────────────────────────
   test:
     needs: plan
     if: needs.plan.outputs.has_runs == 'true'
+    permissions: {}
     strategy:
       fail-fast: false
       max-parallel: 8
@@ -79,6 +86,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Setup server
         id: server
@@ -114,10 +123,15 @@ jobs:
           path: results.json
           retention-days: 1
 
+  # ─────────────────────────────────────────────────────────────
+  # JOB 3: Merge — has write token, NEVER touches plugin code
+  # ─────────────────────────────────────────────────────────────
   merge-results:
     needs: test
     if: always() && needs.test.result != 'skipped'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v6
 
@@ -181,10 +195,15 @@ jobs:
             git push origin HEAD:master
           }
 
+  # ─────────────────────────────────────────────────────────────
+  # JOB 4: Publish — deploys to gh-pages, NEVER touches plugin code
+  # ─────────────────────────────────────────────────────────────
   publish:
     needs: merge-results
     if: always() && needs.merge-results.result == 'success'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v6
         with:

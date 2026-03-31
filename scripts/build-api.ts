@@ -152,7 +152,7 @@ function main() {
     'has-providers': '#6f42c1',
     'tested': '#28a745',
     'tests-failing': '#dc3545',
-    'secure': '#28a745',
+    'npm-audit-ok': '#28a745',
     'broken': '#dc3545'
   }
 
