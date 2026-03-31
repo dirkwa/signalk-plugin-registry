@@ -35,7 +35,7 @@
   "@signalk/freeboard-sk": {
     "2.20.0": {
       "server@stable": {
-        "tested": "2026-03-31T08:19:08.203Z",
+        "tested": "2026-03-31T15:38:16.748Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
