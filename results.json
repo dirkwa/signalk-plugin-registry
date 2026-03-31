@@ -495,6 +495,34 @@
         ],
         "test_status": "none"
       }
+    },
+    "0.2.6": {
+      "server@stable": {
+        "tested": "2026-03-31T04:25:21.137Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '@influxdata/influxdb-client-apis'\nRequire stack:\n- /tmp/sk-registry-5X9pfR/node_modules/signalk-usage/plugin/lib/influxClient.js\n- /tmp/sk-registry-5X9pfR/node_modules/signalk-usage/plugin/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "secure"
+        ],
+        "test_status": "none"
+      }
     }
   },
   "@canboat/visual-analyzer": {
@@ -6922,6 +6950,34 @@
         "installs": true,
         "loads": false,
         "load_error": "Cannot find module 'express'\nRequire stack:\n- /tmp/sk-registry-EM0YL2/node_modules/signalk-noon-log/plugin/lib/routes.js\n- /tmp/sk-registry-EM0YL2/node_modules/signalk-noon-log/plugin/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 1,
+        "audit_moderate": 1,
+        "composite": 30,
+        "badges": [
+          "compatible",
+          "audit-high"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.1.7": {
+      "server@stable": {
+        "tested": "2026-03-31T04:25:15.556Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module 'express'\nRequire stack:\n- /tmp/sk-registry-yQJi46/node_modules/signalk-noon-log/plugin/lib/routes.js\n- /tmp/sk-registry-yQJi46/node_modules/signalk-noon-log/plugin/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
