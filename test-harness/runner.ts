@@ -326,7 +326,7 @@ function checkSourceTests(pluginDir: string): {
 
     console.error("[runner] Installing devDependencies...");
     try {
-      execSync("npm ci 2>&1", {
+      execSync("npm ci --ignore-scripts 2>&1", {
         cwd: sourceDir,
         timeout: 120_000,
         stdio: "pipe",
@@ -334,7 +334,7 @@ function checkSourceTests(pluginDir: string): {
     } catch {
       console.error("[runner] npm ci failed, trying npm install...");
       try {
-        execSync("npm install 2>&1", {
+        execSync("npm install --ignore-scripts 2>&1", {
           cwd: sourceDir,
           timeout: 120_000,
           stdio: "pipe",
