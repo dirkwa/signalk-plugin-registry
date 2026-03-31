@@ -53,6 +53,9 @@ jobs:
       - name: Discover plugins
         run: npx ts-node scripts/discover-plugins.ts --out /tmp/plugins.json
 
+      - name: Build TypeScript
+        run: npx tsc
+
       - name: Plan runs
         id: plan
         env:
@@ -67,6 +70,13 @@ jobs:
             --include-master '${{ github.event.inputs.include_master || 'false' }}' \
             --is-scheduled '${{ github.event_name == 'schedule' }}' \
             >> $GITHUB_OUTPUT
+
+      - name: Upload compiled scripts
+        uses: actions/upload-artifact@v7
+        with:
+          name: dist
+          path: dist/
+          retention-days: 1
 
   # ─────────────────────────────────────────────────────────────
   # JOB 2: Test — runs UNTRUSTED plugin code, NO secrets, NO token
@@ -137,12 +147,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v6
-
-      - uses: actions/setup-node@v6
-        with:
-          node-version: '24'
-
-      - run: npm ci
 
       - name: Download all result artifacts
         uses: actions/download-artifact@v8
@@ -224,7 +228,7 @@ jobs:
   # JOB 4: Publish — deploys to gh-pages, NEVER touches plugin code
   # ─────────────────────────────────────────────────────────────
   publish:
-    needs: merge-results
+    needs: [plan, merge-results]
     if: always() && needs.merge-results.result == 'success'
     runs-on: ubuntu-latest
     permissions:
@@ -235,14 +239,14 @@ jobs:
           ref: master
           fetch-depth: 0
 
-      - uses: actions/setup-node@v6
+      - name: Download compiled scripts
+        uses: actions/download-artifact@v8
         with:
-          node-version: '24'
-
-      - run: npm ci
+          name: dist
+          path: dist/
 
       - name: Build API
-        run: npx ts-node scripts/build-api.ts
+        run: node dist/scripts/build-api.js
 
       - name: Deploy to gh-pages branch
         run: |
