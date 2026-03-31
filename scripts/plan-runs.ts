@@ -32,6 +32,7 @@ type TriggerReason =
   | 'server_version_change'
   | 'schema_change'
   | 'manual'
+  | 'stale'
 
 interface PlannedRun {
   plugin: string
@@ -58,6 +59,13 @@ function shouldTest(
   }
 
   const slot = existing as SlotResult
+
+  const STALE_DAYS = 7
+  const ageMs = Date.now() - new Date(slot.tested).getTime()
+  if (ageMs > STALE_DAYS * 24 * 60 * 60 * 1000) {
+    return { run: true, reason: 'stale' }
+  }
+
   if (serverSlot === 'stable' && slot.server_version === serverVersion) {
     return { run: false }
   }
