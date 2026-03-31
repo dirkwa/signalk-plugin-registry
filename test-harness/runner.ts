@@ -2,7 +2,7 @@ import { detectProviders, DetectionResult } from "./detect-providers";
 import { computeScore, TestResults } from "./score";
 import * as path from "path";
 import * as fs from "fs";
-import { execSync } from "child_process";
+import { execSync, execFileSync } from "child_process";
 import * as os from "os";
 
 // Prevent unhandled errors from crashing the process — plugins can throw async
@@ -206,6 +206,66 @@ function getGitHubRepoUrl(pluginDir: string): string | null {
   }
 }
 
+function hasFirejail(): boolean {
+  try {
+    execSync("which firejail", { stdio: "pipe" });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function detectProviderssandboxed(pluginDir: string): DetectionResult {
+  const outputFile = path.join(os.tmpdir(), `sk-detect-${Date.now()}.json`);
+  const sandboxedScript = path.join(
+    __dirname,
+    "detect-sandboxed.js",
+  );
+
+  const useFirejail = hasFirejail();
+  const cmd = useFirejail
+    ? `firejail --quiet --net=none -- node ${sandboxedScript} ${pluginDir} ${outputFile}`
+    : `node ${sandboxedScript} ${pluginDir} ${outputFile}`;
+
+  if (useFirejail) {
+    console.error("[runner] Running detection under firejail --net=none");
+  } else {
+    console.error("[runner] firejail not available, running detection without network isolation");
+  }
+
+  try {
+    execSync(cmd, { timeout: 30_000, stdio: "pipe" });
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[runner] Sandboxed detection failed: ${msg.slice(0, 200)}`);
+  }
+
+  if (fs.existsSync(outputFile)) {
+    try {
+      const result = JSON.parse(fs.readFileSync(outputFile, "utf-8"));
+      fs.unlinkSync(outputFile);
+      return result;
+    } catch {
+      fs.unlinkSync(outputFile);
+    }
+  }
+
+  return {
+    pluginId: path.basename(pluginDir),
+    pluginName: path.basename(pluginDir),
+    providers: [],
+    putHandlers: [],
+    httpRoutes: [],
+    unstubbedAccesses: [],
+    loads: false,
+    loadError: "sandboxed detection failed",
+    activates: false,
+    statusMessages: [],
+    errorMessages: [],
+    hasSchema: false,
+  };
+}
+
 function hasTestFiles(dir: string): boolean {
   try {
     const output = execSync(
@@ -383,7 +443,7 @@ export async function runPluginTest(
 
   const pluginDir = path.join(workDir, "node_modules", pluginName);
   console.error(`[runner] Detecting providers...`);
-  const detection = await detectProviders(pluginDir);
+  const detection = detectProviderssandboxed(pluginDir);
 
   console.error(`[runner] Checking own tests...`);
   let ownTests = checkOwnTests(pluginDir);
