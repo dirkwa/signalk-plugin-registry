@@ -53,10 +53,11 @@ interface PluginSummary {
 }
 
 function main() {
-  const resultsPath = path.resolve(__dirname, '..', 'results.json')
+  const rootDir = process.cwd()
+  const resultsPath = path.join(rootDir, 'results.json')
   const results: PluginResults = JSON.parse(fs.readFileSync(resultsPath, 'utf-8'))
 
-  const apiDir = path.resolve(__dirname, '..', 'api')
+  const apiDir = path.join(rootDir, 'api')
   const pluginsDir = path.join(apiDir, 'plugins')
   fs.mkdirSync(pluginsDir, { recursive: true })
 
