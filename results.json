@@ -369,6 +369,35 @@
         ],
         "test_status": "none"
       }
+    },
+    "1.0.10": {
+      "server@stable": {
+        "tested": "2026-03-31T17:16:25.604Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 75,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
     }
   },
   "speedandcurrent": {
@@ -2130,19 +2159,30 @@
   "signalk-mosquitto": {
     "0.5.0-beta.3": {
       "server@stable": {
-        "tested": "2026-03-30T22:07:58.022Z",
+        "tested": "2026-03-31T17:23:45.003Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
-        "installs": false,
+        "installs": true,
         "loads": false,
+        "load_error": "sandboxed detection failed",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
-        "composite": 0,
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": true,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
         "badges": [
-          "broken"
-        ]
+          "compatible",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
       }
     }
   },
@@ -7953,7 +7993,7 @@
   "signalk-push-notifications": {
     "2.3.3": {
       "server@stable": {
-        "tested": "2026-03-30T22:07:09.457Z",
+        "tested": "2026-03-31T17:22:30.322Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
@@ -8286,24 +8326,25 @@
   "fuel-usage-calculator": {
     "0.1.0": {
       "server@stable": {
-        "tested": "2026-03-28T21:12:00.941Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-03-31T17:31:33.749Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading forEach)",
+        "activation_error": "Cannot read properties of undefined (reading 'forEach')",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
         "has_own_tests": false,
         "own_tests_pass": false,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 55,
+        "composite": 60,
         "badges": [
           "compatible",
           "loads",
@@ -8467,8 +8508,8 @@
   "@bluenav/signalk-definitions": {
     "0.1.2": {
       "server@stable": {
-        "tested": "2026-03-28T21:12:19.897Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-03-31T17:27:43.569Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
@@ -8479,11 +8520,12 @@
         "has_schema": true,
         "has_own_tests": false,
         "own_tests_pass": false,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 70,
+        "composite": 75,
         "badges": [
           "compatible",
           "loads",
@@ -10387,24 +10429,25 @@
   "signalk-scheduler": {
     "1.4.6": {
       "server@stable": {
-        "tested": "2026-03-28T21:24:42.599Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-03-31T17:29:36.040Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading filter)",
+        "activation_error": "Cannot read properties of undefined (reading 'filter')",
         "activates": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
         "has_own_tests": false,
         "own_tests_pass": false,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 55,
+        "composite": 60,
         "badges": [
           "compatible",
           "loads",
