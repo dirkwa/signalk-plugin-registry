@@ -2,7 +2,7 @@
   "signalk-anchoralarm-plugin": {
     "1.17.4": {
       "server@stable": {
-        "tested": "2026-03-31T19:59:07.522Z",
+        "tested": "2026-03-31T20:02:19.320Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
