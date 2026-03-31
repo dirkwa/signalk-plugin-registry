@@ -159,7 +159,7 @@ function checkOwnTests(pluginDir: string): {
     }
 
     try {
-      execSync("timeout --kill-after=10s 60s npm test 2>&1", {
+      execSync(sandboxCmd("timeout --kill-after=10s 60s npm test 2>&1"), {
         cwd: pluginDir,
         timeout: 75_000,
         stdio: "pipe",
@@ -215,6 +215,12 @@ function hasFirejail(): boolean {
   }
 }
 
+function sandboxCmd(cmd: string): string {
+  return hasFirejail()
+    ? `firejail --quiet --net=none -- ${cmd}`
+    : cmd;
+}
+
 function detectProviderssandboxed(pluginDir: string): DetectionResult {
   const outputFile = path.join(os.tmpdir(), `sk-detect-${Date.now()}.json`);
   const sandboxedScript = path.join(
@@ -222,12 +228,9 @@ function detectProviderssandboxed(pluginDir: string): DetectionResult {
     "detect-sandboxed.js",
   );
 
-  const useFirejail = hasFirejail();
-  const cmd = useFirejail
-    ? `firejail --quiet --net=none -- node ${sandboxedScript} ${pluginDir} ${outputFile}`
-    : `node ${sandboxedScript} ${pluginDir} ${outputFile}`;
+  const cmd = sandboxCmd(`node ${sandboxedScript} ${pluginDir} ${outputFile}`);
 
-  if (useFirejail) {
+  if (hasFirejail()) {
     console.error("[runner] Running detection under firejail --net=none");
   } else {
     console.error("[runner] firejail not available, running detection without network isolation");
@@ -367,7 +370,7 @@ function checkSourceTests(pluginDir: string): {
     }
 
     console.error("[runner] Running tests from source...");
-    execSync("timeout --kill-after=10s 60s npm test 2>&1", {
+    execSync(sandboxCmd("timeout --kill-after=10s 60s npm test 2>&1"), {
       cwd: sourceDir,
       timeout: 75_000,
       stdio: "pipe",
