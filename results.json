@@ -519,7 +519,7 @@
         "composite": 40,
         "badges": [
           "compatible",
-          "secure"
+          "npm-audit-ok"
         ],
         "test_status": "none"
       }
