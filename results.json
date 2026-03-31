@@ -7993,7 +7993,7 @@
   "signalk-push-notifications": {
     "2.3.3": {
       "server@stable": {
-        "tested": "2026-03-31T17:22:30.322Z",
+        "tested": "2026-03-31T17:43:12.596Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
