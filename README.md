@@ -77,12 +77,49 @@ Go to Actions > "Nightly Plugin Registry Scan" > Run workflow:
 
 ## CI Security Model
 
-The nightly workflow uses a two-phase job isolation model to prevent untrusted plugin code from accessing CI secrets:
+Plugins are untrusted code. The CI pipeline is designed so that even a deliberately malicious plugin cannot steal secrets, exfiltrate data, tamper with results, or attack third parties.
 
-- **Jobs 1-2 (plan, test):** Run with `permissions: {}` and `persist-credentials: false`. No `GITHUB_TOKEN` is injected. Plugin code executes entirely in these jobs.
-- **Jobs 3-4 (merge-results, publish):** Have `contents: write` permission to commit results and deploy to GitHub Pages. These jobs never install or `require()` any plugin code — they only process the JSON artifact uploaded by the test job.
+### Job isolation
 
-Even if a malicious plugin reads `process.env`, there are no secrets to exfiltrate.
+The workflow has four jobs. Only the last two have any permissions:
+
+| Job | Permissions | Runs plugin code? |
+|-----|------------|-------------------|
+| plan | `{}` (none) | No |
+| test | `{}` (none) | Yes |
+| merge-results | `contents: write` | No |
+| publish | `contents: write` | No |
+
+The test job uses `persist-credentials: false` so no token exists in git config either.
+
+### Network isolation (firejail)
+
+All plugin code execution is wrapped in `firejail --net=none`:
+
+- `require()` + `start()` (provider detection) — runs as a sandboxed subprocess
+- `npm test` from published packages and from cloned source repos
+
+This prevents plugin code from making any outbound network requests — no data exfiltration, no phoning home for second-stage payloads, no participation in attacks on third parties.
+
+### Filesystem isolation
+
+Firejail runs with `--read-only=/home --read-only=/etc --read-only=/var`. Plugin code cannot modify the workspace, git history, results.json, or npm cache. Only `/tmp` (where plugin workdirs live) is writable.
+
+### Supply chain protection
+
+All plugin dependency installs use `--ignore-scripts` to block `postinstall`/`preinstall` lifecycle scripts from transitive dependencies. The Signal K server itself is installed normally since it is trusted first-party code.
+
+### Artifact validation
+
+The merge job validates every result entry before committing. Each slot must have a valid composite score (0-100), known badge names, ISO timestamp, and boolean installs field. Malformed entries are rejected.
+
+### Best-score-wins
+
+When a plugin is retested, the new result only replaces the old one if its score is equal or higher. A transient CI failure (GitHub 500, npm registry blip) cannot downgrade a plugin that was previously passing.
+
+### Stale result retest
+
+Plugins whose results are older than 7 days are automatically retested on the nightly run. This recovers from transient failures and catches new npm audit vulnerabilities.
 
 ## Known Limitations
 

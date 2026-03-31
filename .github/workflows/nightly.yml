@@ -190,11 +190,13 @@ jobs:
                       continue;
                     }
                     const existing = base[plugin][ver][slot];
-                    const newTs = data?.tested || '';
-                    const oldTs = existing?.tested || '';
-                    if (newTs > oldTs) {
+                    const oldScore = existing?.composite ?? -1;
+                    const newScore = data.composite ?? 0;
+                    if (!existing || newScore >= oldScore) {
                       base[plugin][ver][slot] = data;
                       updated++;
+                    } else {
+                      console.log('Kept ' + plugin + '/' + ver + '/' + slot + ' score=' + oldScore + ' (new=' + newScore + ')');
                     }
                   }
                 }
