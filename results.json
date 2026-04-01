@@ -2106,7 +2106,7 @@
   "nmea0183-to-nmea0183": {
     "1.0.0": {
       "server@stable": {
-        "tested": "2026-04-01T19:54:15.570Z",
+        "tested": "2026-04-01T20:15:40.963Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
