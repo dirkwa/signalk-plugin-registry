@@ -6761,16 +6761,19 @@
   "galadrielmap_sk": {
     "0.13.0": {
       "server@stable": {
-        "tested": "2026-03-30T22:04:50.448Z",
+        "tested": "2026-04-01T19:22:09.359Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading 'speedProp')",
-        "activates": false,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'speedProp')",
         "detected_providers": [],
-        "unstubbed_accesses": [],
+        "unstubbed_accesses": [
+          "get"
+        ],
         "has_schema": true,
         "has_own_tests": false,
         "own_tests_pass": false,
@@ -6779,10 +6782,11 @@
         "audit_critical": 0,
         "audit_high": 5,
         "audit_moderate": 3,
-        "composite": 50,
+        "composite": 65,
         "badges": [
           "compatible",
           "loads",
+          "activates",
           "audit-high"
         ],
         "test_status": "none"
