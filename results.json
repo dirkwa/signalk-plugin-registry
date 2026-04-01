@@ -708,6 +708,37 @@
         ],
         "test_status": "none"
       }
+    },
+    "0.7.2": {
+      "server@stable": {
+        "tested": "2026-04-01T19:48:49.997Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
     }
   },
   "signalk-dps310": {
@@ -909,14 +940,15 @@
   "signalk-derived-data": {
     "1.41.0": {
       "server@stable": {
-        "tested": "2026-03-31T16:44:57.177Z",
+        "tested": "2026-04-01T19:49:01.880Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading 'notificationZones')",
-        "activates": false,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'notificationZones')",
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
@@ -927,10 +959,11 @@
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 85,
+        "composite": 100,
         "badges": [
           "compatible",
           "loads",
+          "activates",
           "tested",
           "npm-audit-ok"
         ],
@@ -1294,6 +1327,37 @@
         ],
         "test_status": "none"
       }
+    },
+    "1.1.5": {
+      "server@stable": {
+        "tested": "2026-04-01T19:50:00.905Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Unsupported connection type: undefined",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 75,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
     }
   },
   "signalk-postgsail": {
@@ -1456,15 +1520,18 @@
   "@signalk/signalk-autopilot": {
     "2.5.0-beta.1": {
       "server@stable": {
-        "tested": "2026-03-31T16:47:13.177Z",
+        "tested": "2026-04-01T19:51:38.353Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading 'start')",
-        "activates": false,
-        "detected_providers": [],
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'start')",
+        "detected_providers": [
+          "autopilot"
+        ],
         "unstubbed_accesses": [],
         "has_schema": true,
         "has_own_tests": true,
@@ -1474,10 +1541,12 @@
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 85,
+        "composite": 100,
         "badges": [
           "compatible",
           "loads",
+          "activates",
+          "has-providers",
           "tested",
           "npm-audit-ok"
         ],
@@ -2037,13 +2106,14 @@
   "nmea0183-to-nmea0183": {
     "1.0.0": {
       "server@stable": {
-        "tested": "2026-03-30T22:07:00.372Z",
+        "tested": "2026-04-01T19:54:15.570Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
         "activates": true,
+        "activates_without_config": true,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
@@ -2721,14 +2791,15 @@
   "e-inkdashboardextended": {
     "0.5.6": {
       "server@stable": {
-        "tested": "2026-03-30T22:08:52.932Z",
+        "tested": "2026-04-01T19:57:02.761Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading 'feature')",
-        "activates": false,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'feature')",
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
@@ -2739,10 +2810,11 @@
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 60,
+        "composite": 75,
         "badges": [
           "compatible",
           "loads",
+          "activates",
           "npm-audit-ok"
         ],
         "test_status": "none"
@@ -3700,7 +3772,7 @@
   "signalk-activecaptain-resources": {
     "1.1.6": {
       "server@stable": {
-        "tested": "2026-03-30T22:10:10.781Z",
+        "tested": "2026-04-01T20:00:39.221Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
@@ -3708,6 +3780,7 @@
         "loads": false,
         "load_error": "ENOENT: no such file or directory, open './node_modules/signalk-activecaptain-resources/plugin/partials//header.hbsp'",
         "activates": false,
+        "activates_without_config": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": false,
@@ -3716,12 +3789,12 @@
         "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
-        "audit_high": 2,
+        "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 30,
+        "composite": 40,
         "badges": [
           "compatible",
-          "audit-high"
+          "npm-audit-ok"
         ],
         "test_status": "none"
       }
@@ -4073,14 +4146,15 @@
     },
     "1.4.4": {
       "server@stable": {
-        "tested": "2026-04-01T04:37:53.109Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-04-01T19:59:27.360Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
-        "load_error": "Cannot find module '@signalk/signalk-schema'\nRequire stack:\n- /tmp/sk-registry-k73Fno/node_modules/@signalk/n2k-signalk/dist/aisShipTypeMapping.js\n- /tmp/sk-registry-k73Fno/node_modules/@signalk/n2k-signalk/dist/pgns/129040.js\n- /tmp/sk-registry-k73Fno/node_modules/@signalk/n2k-signalk/dist/pgns/index.js\n- /tmp/sk-registry-k73Fno/node_modules/@signalk/n2k-signalk/dist/n2kMapper.js\n- /tmp/sk-registry-k73Fno/node_modules/signalk-vcan-logplayer/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "load_error": "Cannot find module '@signalk/signalk-schema'\nRequire stack:\n- /tmp/sk-registry-iPKiPL/node_modules/@signalk/n2k-signalk/dist/aisShipTypeMapping.js\n- /tmp/sk-registry-iPKiPL/node_modules/@signalk/n2k-signalk/dist/pgns/129040.js\n- /tmp/sk-registry-iPKiPL/node_modules/@signalk/n2k-signalk/dist/pgns/index.js\n- /tmp/sk-registry-iPKiPL/node_modules/@signalk/n2k-signalk/dist/n2kMapper.js\n- /tmp/sk-registry-iPKiPL/node_modules/signalk-vcan-logplayer/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
         "activates": false,
+        "activates_without_config": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": false,
@@ -4090,11 +4164,11 @@
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
-        "audit_moderate": 1,
-        "composite": 35,
+        "audit_moderate": 0,
+        "composite": 40,
         "badges": [
           "compatible",
-          "audit-moderate"
+          "npm-audit-ok"
         ],
         "test_status": "none"
       }
@@ -4133,14 +4207,15 @@
   "@yachteye/signalk-timezone-plugin": {
     "1.1.3": {
       "server@stable": {
-        "tested": "2026-03-30T22:10:27.985Z",
+        "tested": "2026-04-01T20:01:04.615Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading 'toUpperCase')",
-        "activates": false,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'toUpperCase')",
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
@@ -4151,10 +4226,11 @@
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 60,
+        "composite": 75,
         "badges": [
           "compatible",
           "loads",
+          "activates",
           "npm-audit-ok"
         ],
         "test_status": "none"
@@ -6543,14 +6619,15 @@
   "signalk-overboard-notifications": {
     "0.0.3": {
       "server@stable": {
-        "tested": "2026-03-30T05:08:07.955Z",
+        "tested": "2026-04-01T20:01:54.961Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading 'forEach')",
-        "activates": false,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'forEach')",
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
@@ -6559,13 +6636,14 @@
         "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
-        "audit_high": 0,
-        "audit_moderate": 0,
-        "composite": 60,
+        "audit_high": 2,
+        "audit_moderate": 3,
+        "composite": 65,
         "badges": [
           "compatible",
           "loads",
-          "npm-audit-ok"
+          "activates",
+          "audit-high"
         ],
         "test_status": "none"
       }
@@ -6955,14 +7033,15 @@
   "e-inkdashboard": {
     "0.4.3": {
       "server@stable": {
-        "tested": "2026-03-30T22:05:04.491Z",
+        "tested": "2026-04-01T19:52:32.044Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading 'feature')",
-        "activates": false,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'feature')",
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
@@ -6973,10 +7052,11 @@
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 60,
+        "composite": 75,
         "badges": [
           "compatible",
           "loads",
+          "activates",
           "npm-audit-ok"
         ],
         "test_status": "none"
@@ -8086,14 +8166,15 @@
   "netais": {
     "1.0.0": {
       "server@stable": {
-        "tested": "2026-03-30T22:06:56.794Z",
+        "tested": "2026-04-01T19:53:51.530Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading 'toggle')",
-        "activates": false,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'toggle')",
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
@@ -8104,10 +8185,11 @@
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 60,
+        "composite": 75,
         "badges": [
           "compatible",
           "loads",
+          "activates",
           "npm-audit-ok"
         ],
         "test_status": "none"
@@ -8395,23 +8477,26 @@
   "signalk-raspberry-pi-light-characteristic": {
     "0.0.35": {
       "server@stable": {
-        "tested": "2026-03-28T21:11:56.036Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-04-01T19:55:35.009Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/build/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/build/Debug/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/build/Release/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/out/Debug/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/Debug/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/out/Release/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/Release/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/build/default/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/compiled/24.14.0/linux/x64/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/addon-build/release/install-root/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/addon-build/debug/install-root/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/addon-build/default/install-root/i2c.node\n → /tmp/sk-registry-qcYshn/node_modules/i2c-bus/lib/binding/node-v137-linux-x64/i2c.node",
         "activates": false,
+        "activates_without_config": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": false,
         "has_own_tests": false,
         "own_tests_pass": false,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 35,
+        "composite": 40,
         "badges": [
           "compatible",
           "npm-audit-ok"
@@ -8423,23 +8508,26 @@
   "@gpatsiaouras/signalk-raspberry-pi-mcp9808": {
     "1.0.2": {
       "server@stable": {
-        "tested": "2026-03-28T21:12:03.098Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-04-01T20:01:50.543Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-6ISC55/node_modules/epoll/build/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/build/Debug/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/build/Release/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/out/Debug/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/Debug/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/out/Release/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/Release/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/build/default/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/compiled/24.14.0/linux/x64/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/addon-build/release/install-root/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/addon-build/debug/install-root/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/addon-build/default/install-root/epoll.node\n → /tmp/sk-registry-6ISC55/node_modules/epoll/lib/binding/node-v137-linux-x64/epoll.node",
         "activates": false,
+        "activates_without_config": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": false,
         "has_own_tests": false,
         "own_tests_pass": false,
+        "tests_runnable": false,
         "has_install_scripts": true,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 35,
+        "composite": 40,
         "badges": [
           "compatible",
           "npm-audit-ok"
@@ -9054,23 +9142,26 @@
   "signalk-stainless-lobster-fridge": {
     "1.6.4": {
       "server@stable": {
-        "tested": "2026-03-28T21:12:38.439Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-04-01T20:01:23.369Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/build/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/build/Debug/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/build/Release/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/out/Debug/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/Debug/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/out/Release/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/Release/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/build/default/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/compiled/24.14.0/linux/x64/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/addon-build/release/install-root/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/addon-build/debug/install-root/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/addon-build/default/install-root/bindings.node\n → /tmp/sk-registry-0on7yH/node_modules/@serialport/bindings/lib/binding/node-v137-linux-x64/bindings.node",
         "activates": false,
+        "activates_without_config": false,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": false,
         "has_own_tests": false,
         "own_tests_pass": false,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 35,
+        "composite": 40,
         "badges": [
           "compatible",
           "npm-audit-ok"
@@ -11733,27 +11824,30 @@
   "naivegpxlogger": {
     "0.2.2": {
       "server@stable": {
-        "tested": "2026-03-29T04:27:48.178Z",
-        "triggered_by": "plugin_version_change",
+        "tested": "2026-04-01T20:03:18.374Z",
+        "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
-        "activation_error": "Cannot read properties of undefined (reading desc)",
-        "activates": false,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'desc')",
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
         "has_own_tests": false,
         "own_tests_pass": false,
+        "tests_runnable": false,
         "has_install_scripts": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 55,
+        "composite": 75,
         "badges": [
           "compatible",
           "loads",
+          "activates",
           "npm-audit-ok"
         ],
         "test_status": "none"
