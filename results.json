@@ -617,7 +617,7 @@
   "signalk-to-influxdb2": {
     "2.0.1": {
       "server@stable": {
-        "tested": "2026-03-31T16:44:35.560Z",
+        "tested": "2026-04-01T19:25:56.825Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
@@ -625,6 +625,8 @@
         "loads": true,
         "activation_error": "Cannot read properties of undefined (reading 'map')",
         "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'map')",
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
