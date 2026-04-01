@@ -1,5 +1,6 @@
 import * as path from 'path'
 import { createAppShim, CapturedRegistrations } from './app-shim'
+import { extractSchemaDefaults } from './schema-defaults'
 
 export interface DetectionResult {
   pluginId: string
@@ -12,6 +13,8 @@ export interface DetectionResult {
   loadError?: string
   activates: boolean
   activationError?: string
+  activatesWithoutConfig: boolean
+  activationWithoutConfigError?: string
   statusMessages: string[]
   errorMessages: string[]
   hasSchema: boolean
@@ -71,43 +74,60 @@ export async function detectProviders(pluginPath: string): Promise<DetectionResu
   const { plugin, loadError } = await loadPlugin(resolvedPath, app)
 
   if (loadError) {
-    const result = buildResult(shimPluginId, plugin, captured, false, loadError)
+    const result = buildResult(shimPluginId, plugin, captured, false, loadError, undefined, undefined)
     cleanup()
     return result
   }
 
-  let activationError: string | undefined
-  try {
-    const startFn = (plugin as Record<string, unknown>).start
-    if (typeof startFn === 'function') {
-      const startResult = startFn.call(plugin, {}, () => {})
-      if (startResult && typeof (startResult as Promise<void>).then === 'function') {
-        await Promise.race([
-          startResult,
-          new Promise<void>((_, reject) =>
-            setTimeout(() => reject(new Error('start() timeout')), START_TIMEOUT_MS)
-          )
-        ])
+  const rawSchema = plugin.schema
+  const schema = typeof rawSchema === 'function' ? rawSchema() : rawSchema
+  const defaults = extractSchemaDefaults(schema)
+
+  async function tryStart(config: Record<string, unknown>): Promise<string | undefined> {
+    try {
+      const startFn = (plugin as Record<string, unknown>).start
+      if (typeof startFn === 'function') {
+        const startResult = startFn.call(plugin, config, () => {})
+        if (startResult && typeof (startResult as Promise<void>).then === 'function') {
+          await Promise.race([
+            startResult,
+            new Promise<void>((_, reject) =>
+              setTimeout(() => reject(new Error('start() timeout')), START_TIMEOUT_MS)
+            )
+          ])
+        }
       }
+      return undefined
+    } catch (err: unknown) {
+      return err instanceof Error ? err.message : String(err)
     }
-  } catch (err: unknown) {
-    activationError = err instanceof Error ? err.message : String(err)
   }
 
-  const result = buildResult(shimPluginId, plugin, captured, true, undefined, activationError)
-
-  try {
-    const stopFn = (plugin as Record<string, unknown>).stop
-    if (typeof stopFn === 'function') {
-      const stopResult = stopFn.call(plugin)
-      if (stopResult && typeof (stopResult as Promise<void>).then === 'function') {
-        await Promise.race([
-          stopResult,
-          new Promise<void>((resolve) => setTimeout(resolve, 5000))
-        ])
+  async function tryStop() {
+    try {
+      const stopFn = (plugin as Record<string, unknown>).stop
+      if (typeof stopFn === 'function') {
+        const stopResult = stopFn.call(plugin)
+        if (stopResult && typeof (stopResult as Promise<void>).then === 'function') {
+          await Promise.race([
+            stopResult,
+            new Promise<void>((resolve) => setTimeout(resolve, 5000))
+          ])
+        }
       }
-    }
-  } catch {}
+    } catch {}
+  }
+
+  const activationError = await tryStart(defaults)
+  await tryStop()
+
+  const activationWithoutConfigError = await tryStart({})
+  await tryStop()
+
+  const result = buildResult(
+    shimPluginId, plugin, captured, true, undefined,
+    activationError, activationWithoutConfigError
+  )
 
   cleanup()
   return result
@@ -119,7 +139,8 @@ function buildResult(
   captured: CapturedRegistrations,
   loads: boolean,
   loadError?: string,
-  activationError?: string
+  activationError?: string,
+  activationWithoutConfigError?: string
 ): DetectionResult {
   const providers = Object.entries(captured.providers)
     .filter(([_, v]) => v !== undefined)
@@ -138,6 +159,8 @@ function buildResult(
     loadError,
     activates,
     activationError,
+    activatesWithoutConfig: loads && !activationWithoutConfigError,
+    activationWithoutConfigError,
     statusMessages: captured.statusMessages,
     errorMessages: captured.errorMessages,
     hasSchema: typeof plugin.schema === 'object' || typeof plugin.schema === 'function'

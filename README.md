@@ -20,7 +20,7 @@ Each plugin is scored out of **100 points**:
 |------|------|--------|
 | Install | `npm install --ignore-scripts` succeeds | 20 |
 | Load | Constructor returns a valid plugin object | 15 |
-| Activate | `start({})` completes without error | 15 |
+| Activate | `start()` completes with schema defaults | 15 |
 | Schema | Plugin exposes a JSON configuration schema | 5 |
 | Tests | Plugin's own test suite passes | 25 |
 | Security | No npm audit vulnerabilities | 20 |
@@ -35,7 +35,7 @@ Provider detection (resources, weather, history, autopilot, radar) is tracked as
 |-------|---------|
 | `compatible` | Installs successfully |
 | `loads` | Plugin constructor succeeds |
-| `activates` | `start()` completes without error (with empty config) |
+| `activates` | `start()` completes without error (with schema defaults) |
 | `has-providers` | Registers at least one provider (informational) |
 | `tested` | Plugin has its own test suite and it passes |
 | `tests-failing` | Plugin has tests but they fail (-5 penalty) |
@@ -125,5 +125,6 @@ Plugins whose results are older than 7 days are automatically retested on the ni
 
 - Plugins that need real hardware (CAN bus, serial ports) will not activate
 - Plugins that require credentials or external services in config will not activate
-- `start({})` with empty config fails for most plugins — this is expected and scored accordingly
+- `start()` is tested with schema defaults extracted from the plugin's `schema` property — this matches what the admin UI sends. Plugins that need external services (databases, credentials) will still fail activation.
+- `activates_without_config` is tracked as an informational field (not scored) showing whether `start({})` with empty config succeeds
 - The app shim logs unstubbed method accesses — check `unstubbed_accesses` in results to identify shim gaps

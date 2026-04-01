@@ -56,6 +56,8 @@ function main() {
     load_error: resultData.detection && (resultData.detection as Record<string, unknown>).loadError,
     activation_error: resultData.detection && (resultData.detection as Record<string, unknown>).activationError,
     activates: resultData.detection && (resultData.detection as Record<string, unknown>).activates,
+    activates_without_config: resultData.detection && (resultData.detection as Record<string, unknown>).activatesWithoutConfig,
+    activation_without_config_error: resultData.detection && (resultData.detection as Record<string, unknown>).activationWithoutConfigError,
     detected_providers: resultData.detection && (resultData.detection as Record<string, unknown>).providers,
     unstubbed_accesses: resultData.detection && (resultData.detection as Record<string, unknown>).unstubbedAccesses,
     has_schema: resultData.detection && (resultData.detection as Record<string, unknown>).hasSchema,
