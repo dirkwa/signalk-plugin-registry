@@ -394,9 +394,9 @@ describe('plugin', () => {
   <p>Add to <code>package.json</code>:</p>
   <pre><code>"scripts": {
   "build": "tsc",
-  "test": "node --test --require tsx test/plugin.test.ts"
+  "test": "tsc &amp;&amp; node --test dist/test/plugin.test.js"
 }</code></pre>
-  <p>Or if you compile first: <code>"test": "tsc &amp;&amp; node --test dist/test/plugin.test.js"</code></p>
+  <p>The registry clones your source repo, runs <code>npm install</code> and <code>npm run build</code>, then <code>npm test</code> &mdash; so <code>typescript</code> from your devDependencies is available.</p>
 
   <h3>JavaScript</h3>
   <p>Create <code>test/plugin.test.js</code>:</p>
@@ -446,7 +446,7 @@ describe('plugin', () => {
     <li><a href="https://demo.signalk.org/documentation/develop/plugins/">Signal K Plugin Development</a></li>
     <li><a href="https://demo.signalk.org/documentation/develop/plugins/configuration.html">Plugin Configuration &amp; Schemas</a></li>
     <li><a href="https://demo.signalk.org/documentation/develop/plugins/publishing.html">Publishing to the AppStore</a></li>
-    <li><a href="https://nodejs.org/api/test.html">Node.js Test Runner documentation</a></li>
+    <li><a href="https://nodejs.org/docs/latest-v24.x/api/test.html">Node.js 24 Test Runner documentation</a></li>
     <li><a href="https://github.com/dirkwa/signalk-plugin-registry">Registry source code</a></li>
   </ul>
 
