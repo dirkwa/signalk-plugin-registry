@@ -260,7 +260,8 @@ function main() {
   </div>
 
   <div class="api-links">
-    API: <a href="index.json">index.json</a> (all plugins) &middot;
+    <a href="guide.html"><strong>Plugin Quality Guide</strong></a> &middot;
+    API: <a href="index.json">index.json</a> &middot;
     <a href="https://github.com/dirkwa/signalk-plugin-registry">GitHub repo</a>
   </div>
 
@@ -289,10 +290,140 @@ ${rows}
 
   fs.writeFileSync(path.join(apiDir, 'index.html'), html)
 
+  generateGuide(apiDir)
+
   console.log(`Built API: ${summaries.length} plugins`)
   for (const s of summaries) {
     console.log(`  ${s.composite_stable.toString().padStart(3)} ${s.name}@${s.version} [${s.badges_stable.join(', ')}]`)
   }
+}
+
+function generateGuide(apiDir: string) {
+  const guide = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plugin Quality Guide - Signal K Plugin Registry</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 20px auto; max-width: 800px; color: #333; line-height: 1.6; }
+    h1 { margin-bottom: 4px; }
+    h2 { border-bottom: 1px solid #dee2e6; padding-bottom: 6px; margin-top: 32px; }
+    a { color: #007bff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.9em; margin: 12px 0; }
+    th { background: #f8f9fa; }
+    th, td { padding: 6px 10px; border: 1px solid #dee2e6; text-align: left; }
+    code { background: #f1f3f5; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+    pre { background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 12px; overflow-x: auto; font-size: 0.85em; line-height: 1.5; }
+    pre code { background: none; padding: 0; }
+    .back { font-size: 0.9em; margin-bottom: 16px; }
+    .tip { background: #e8f5e9; border-left: 4px solid #28a745; padding: 8px 12px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+  </style>
+</head>
+<body>
+  <div class="back"><a href="index.html">&larr; Back to results</a></div>
+  <h1>Plugin Quality Guide</h1>
+  <p>Practical tips to improve your Signal K plugin's registry score. Most fixes take less than 5 minutes.</p>
+
+  <h2>Scoring Breakdown</h2>
+  <table>
+    <thead><tr><th>Tier</th><th>Points</th><th>How to pass</th></tr></thead>
+    <tbody>
+      <tr><td>Install</td><td>20</td><td><code>npm install --ignore-scripts</code> succeeds</td></tr>
+      <tr><td>Load</td><td>15</td><td>Module exports a function that returns <code>{id, name, start, stop}</code></td></tr>
+      <tr><td>Activate</td><td>15</td><td><code>start(config)</code> completes without error &mdash; config is populated from your schema defaults</td></tr>
+      <tr><td>Schema</td><td>5</td><td><code>plugin.schema</code> returns a JSON Schema object</td></tr>
+      <tr><td>Tests</td><td>25</td><td><code>npm test</code> passes (biggest single tier &mdash; see below)</td></tr>
+      <tr><td>Security</td><td>20</td><td><code>npm audit</code> finds no high or critical vulnerabilities</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Quick Wins</h2>
+
+  <h3>1. Fix npm audit issues</h3>
+  <pre><code>npm audit
+npm audit fix</code></pre>
+  <p>Most issues come from transitive dependencies. Update your direct dependencies first. If a vulnerability is in a deep transitive dep you don't control, consider whether you really need that dependency.</p>
+
+  <h3>2. Add schema defaults</h3>
+  <p>Every property in your schema should have a <code>default</code> value. The registry extracts these and passes them to <code>start()</code>. If your plugin crashes without them, it loses 15 points.</p>
+  <pre><code>schema: {
+  type: 'object',
+  properties: {
+    interval: {
+      type: 'number',
+      title: 'Update interval (seconds)',
+      default: 60
+    }
+  }
+}</code></pre>
+  <p>See <a href="https://demo.signalk.org/documentation/develop/plugins/configuration.html">Plugin Configuration &amp; Schemas</a> for full details.</p>
+
+  <h3>3. Guard start() against missing config</h3>
+  <p>Even with schema defaults, defensive coding helps:</p>
+  <pre><code>start(config) {
+  const interval = config.interval ?? 60
+  const items = config.items || []
+}</code></pre>
+
+  <h2>Adding Tests (25 points)</h2>
+  <p>The registry clones your source repo and runs <code>npm test</code>. The easiest approach uses Node's built-in test runner &mdash; zero dependencies needed.</p>
+  <p>Create <code>test/plugin.test.js</code>:</p>
+  <pre><code>const { describe, it } = require('node:test')
+const assert = require('node:assert/strict')
+const pluginFactory = require('../plugin/index.js')
+
+describe('plugin', () => {
+  const app = { debug: () => {}, error: () => {} }
+  const plugin = pluginFactory(app)
+
+  it('has required interface', () => {
+    assert.equal(typeof plugin.start, 'function')
+    assert.equal(typeof plugin.stop, 'function')
+    assert.ok(plugin.id)
+  })
+
+  it('starts and stops without error', () => {
+    plugin.start({}, () => {})
+    plugin.stop()
+  })
+})</code></pre>
+  <p>Add to <code>package.json</code>:</p>
+  <pre><code>"scripts": {
+  "test": "node --test test/plugin.test.js"
+}</code></pre>
+  <div class="tip">That's 15 lines, no devDependencies, worth 25 points. Extend with tests for your actual plugin logic from here.</div>
+  <p><strong>Why node:test?</strong> Published npm packages don't include devDependencies, so jest/mocha won't be available when the registry installs your plugin. The registry clones your source repo to run tests, but <code>node:test</code> is built into Node and always available.</p>
+
+  <h2>Common Issues</h2>
+
+  <h3>activation error: Cannot read properties of undefined</h3>
+  <p>Your <code>start()</code> assumes config has nested objects that don't exist yet. Add <code>default</code> values to nested properties in your schema, or use optional chaining (<code>config.options?.speed ?? 5</code>).</p>
+
+  <h3>tests: not-runnable</h3>
+  <p>Your test runner (jest, mocha, vitest) isn't installed because devDependencies aren't available. Switch to <code>node:test</code> (built-in) or ensure the test command works after a fresh <code>npm install</code>.</p>
+
+  <h3>audit-high or audit-critical</h3>
+  <p>Run <code>npm audit</code> locally. Usually it's a transitive dependency. Try <code>npm audit fix</code> or update the parent dependency that pulls it in.</p>
+
+  <h3>Score didn't improve after a fix?</h3>
+  <p>The registry retests when a new version is published to npm. Bump your version and publish. Alternatively, results older than 7 days are automatically retested on the nightly run.</p>
+
+  <h2>Further Reading</h2>
+  <ul>
+    <li><a href="https://demo.signalk.org/documentation/develop/plugins/">Signal K Plugin Development</a></li>
+    <li><a href="https://demo.signalk.org/documentation/develop/plugins/configuration.html">Plugin Configuration &amp; Schemas</a></li>
+    <li><a href="https://demo.signalk.org/documentation/develop/plugins/publishing.html">Publishing to the AppStore</a></li>
+    <li><a href="https://nodejs.org/api/test.html">Node.js Test Runner documentation</a></li>
+    <li><a href="https://github.com/dirkwa/signalk-plugin-registry">Registry source code</a></li>
+  </ul>
+
+  <div class="back" style="margin-top: 32px"><a href="index.html">&larr; Back to results</a></div>
+</body>
+</html>`
+
+  fs.writeFileSync(path.join(apiDir, 'guide.html'), guide)
 }
 
 main()
