@@ -369,6 +369,36 @@ npm audit fix</code></pre>
 
   <h2>Adding Tests (25 points)</h2>
   <p>The registry clones your source repo and runs <code>npm test</code>. The easiest approach uses Node's built-in test runner &mdash; zero dependencies needed.</p>
+
+  <h3>TypeScript (recommended)</h3>
+  <p>Create <code>test/plugin.test.ts</code>:</p>
+  <pre><code>import { describe, it } from 'node:test'
+import assert from 'node:assert/strict'
+import pluginFactory from '../src/index'
+
+describe('plugin', () => {
+  const app = { debug: () => {}, error: () => {} } as any
+  const plugin = pluginFactory(app)
+
+  it('has required interface', () => {
+    assert.equal(typeof plugin.start, 'function')
+    assert.equal(typeof plugin.stop, 'function')
+    assert.ok(plugin.id)
+  })
+
+  it('starts and stops without error', () => {
+    plugin.start({}, () => {})
+    plugin.stop()
+  })
+})</code></pre>
+  <p>Add to <code>package.json</code>:</p>
+  <pre><code>"scripts": {
+  "build": "tsc",
+  "test": "node --test --require tsx test/plugin.test.ts"
+}</code></pre>
+  <p>Or if you compile first: <code>"test": "tsc &amp;&amp; node --test dist/test/plugin.test.js"</code></p>
+
+  <h3>JavaScript</h3>
   <p>Create <code>test/plugin.test.js</code>:</p>
   <pre><code>const { describe, it } = require('node:test')
 const assert = require('node:assert/strict')
@@ -393,7 +423,8 @@ describe('plugin', () => {
   <pre><code>"scripts": {
   "test": "node --test test/plugin.test.js"
 }</code></pre>
-  <div class="tip">That's 15 lines, no devDependencies, worth 25 points. Extend with tests for your actual plugin logic from here.</div>
+
+  <div class="tip">~15 lines, no devDependencies, worth 25 points. Extend with tests for your actual plugin logic from here.</div>
   <p><strong>Why node:test?</strong> Published npm packages don't include devDependencies, so jest/mocha won't be available when the registry installs your plugin. The registry clones your source repo to run tests, but <code>node:test</code> is built into Node and always available.</p>
 
   <h2>Common Issues</h2>
