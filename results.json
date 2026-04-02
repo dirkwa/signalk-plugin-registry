@@ -2,13 +2,14 @@
   "signalk-anchoralarm-plugin": {
     "1.17.4": {
       "server@stable": {
-        "tested": "2026-03-31T20:02:19.320Z",
+        "tested": "2026-04-02T18:40:13.330Z",
         "triggered_by": "manual",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
         "activates": true,
+        "activates_without_config": true,
         "detected_providers": [],
         "unstubbed_accesses": [
           "registerActionHandler"
