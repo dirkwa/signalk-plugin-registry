@@ -347,13 +347,14 @@
   "signalk-charts-provider-simple": {
     "1.9.0": {
       "server@stable": {
-        "tested": "2026-03-31T17:04:06.789Z",
-        "triggered_by": "manual",
+        "tested": "2026-04-12T04:37:20.793Z",
+        "triggered_by": "stale",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
         "loads": true,
         "activates": true,
+        "activates_without_config": true,
         "detected_providers": [
           "resources"
         ],
@@ -1747,6 +1748,41 @@
       "server@stable": {
         "tested": "2026-04-01T19:51:38.353Z",
         "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'start')",
+        "detected_providers": [
+          "autopilot"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "2.5.0": {
+      "server@stable": {
+        "tested": "2026-04-12T04:39:27.371Z",
+        "triggered_by": "plugin_version_change",
         "node_version": "24",
         "server_version": "2.24.0",
         "installs": true,
@@ -14352,12 +14388,104 @@
         ],
         "test_status": "none"
       }
+    },
+    "2.0.5": {
+      "server@stable": {
+        "tested": "2026-04-12T04:36:48.935Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 75,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
     }
   },
   "signalk-sealink-cloud-dev": {
     "0.8.0": {
       "server@stable": {
         "tested": "2026-04-11T04:10:32.212Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 75,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.8.3": {
+      "server@stable": {
+        "tested": "2026-04-12T04:37:38.020Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 75,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "signalk-sealink-cloud": {
+    "0.8.3": {
+      "server@stable": {
+        "tested": "2026-04-12T04:40:18.616Z",
         "triggered_by": "plugin_version_change",
         "node_version": "24",
         "server_version": "2.24.0",
