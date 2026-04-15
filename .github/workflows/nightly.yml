@@ -100,7 +100,9 @@ jobs:
           persist-credentials: false
 
       - name: Install firejail
-        run: sudo apt-get install -y -qq firejail
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq firejail
 
       - name: Setup server
         id: server
