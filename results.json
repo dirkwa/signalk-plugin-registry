@@ -164,6 +164,42 @@
         ],
         "test_status": "passing"
       }
+    },
+    "2.21.0": {
+      "server@stable": {
+        "tested": "2026-04-20T04:48:56.389Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get",
+          "post",
+          "put",
+          "delete"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
     }
   },
   "@mxtommy/kip": {
@@ -450,6 +486,40 @@
         "triggered_by": "plugin_version_change",
         "node_version": "24",
         "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "resources"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.9.3": {
+      "server@stable": {
+        "tested": "2026-04-20T04:48:39.238Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
         "installs": true,
         "loads": true,
         "activates": true,
@@ -907,6 +977,38 @@
         ],
         "test_status": "not-runnable"
       }
+    },
+    "2.0.3": {
+      "server@stable": {
+        "tested": "2026-04-20T04:52:43.968Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'map')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'map')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "tests-failing",
+          "npm-audit-ok"
+        ],
+        "test_status": "failing"
+      }
     }
   },
   "signalk-bluetooth-scanner": {
@@ -1336,6 +1438,37 @@
         "triggered_by": "plugin_version_change",
         "node_version": "24",
         "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.43.1": {
+      "server@stable": {
+        "tested": "2026-04-20T04:48:52.489Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
         "installs": true,
         "loads": true,
         "activates": true,
@@ -2355,6 +2488,37 @@
         ],
         "test_status": "passing"
       }
+    },
+    "1.16.0": {
+      "server@stable": {
+        "tested": "2026-04-20T04:47:56.230Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
     }
   },
   "@signalk/udp-nmea-plugin": {
@@ -2391,13 +2555,14 @@
   "signalk-n2kais-to-nmea0183": {
     "2.0.3": {
       "server@stable": {
-        "tested": "2026-03-31T16:43:10.446Z",
-        "triggered_by": "manual",
+        "tested": "2026-04-20T04:48:41.746Z",
+        "triggered_by": "stale",
         "node_version": "24",
-        "server_version": "2.24.0",
+        "server_version": "2.25.0",
         "installs": true,
         "loads": true,
         "activates": true,
+        "activates_without_config": true,
         "detected_providers": [],
         "unstubbed_accesses": [],
         "has_schema": true,
@@ -3843,6 +4008,37 @@
         "triggered_by": "plugin_version_change",
         "node_version": "24",
         "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.2.4": {
+      "server@stable": {
+        "tested": "2026-04-20T04:50:57.617Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
         "installs": true,
         "loads": true,
         "activates": true,
@@ -7694,6 +7890,38 @@
         ],
         "test_status": "passing"
       }
+    },
+    "1.2.2": {
+      "server@stable": {
+        "tested": "2026-04-20T04:52:10.190Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "INVALID_API_KEY: AccuWeather API key is required",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "INVALID_API_KEY: AccuWeather API key is required",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
     }
   },
   "signalk-noaa-space-weather": {
@@ -8674,6 +8902,36 @@
         "triggered_by": "plugin_version_change",
         "node_version": "24",
         "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 75,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.3.2": {
+      "server@stable": {
+        "tested": "2026-04-20T04:52:14.606Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
         "installs": true,
         "loads": true,
         "activates": true,
@@ -15447,6 +15705,37 @@
         ],
         "test_status": "passing"
       }
+    },
+    "0.3.1": {
+      "server@stable": {
+        "tested": "2026-04-20T04:50:09.630Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
     }
   },
   "signalk-embedded-webapp-proxy": {
@@ -15579,6 +15868,111 @@
           "npm-audit-ok"
         ],
         "test_status": "none"
+      }
+    }
+  },
+  "signalk-gnx-display-preset-plugin": {
+    "2.1.1": {
+      "server@stable": {
+        "tested": "2026-04-20T04:49:39.925Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "emitPropertyValue"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "signalk-garmin-race-timer-plugin": {
+    "1.0.7": {
+      "server@stable": {
+        "tested": "2026-04-20T04:50:28.164Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "emitPropertyValue",
+          "off"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "signalk-garmin-keypad-plugin": {
+    "1.0.9": {
+      "server@stable": {
+        "tested": "2026-04-20T04:50:24.525Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "emitPropertyValue"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 75,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok"
+        ],
+        "test_status": "not-runnable"
       }
     }
   }
