@@ -248,6 +248,13 @@ jobs:
           path: dist/
 
       - name: Build API
+        env:
+          # Authenticated api.github.com lifts the limit to 5000/hr so a
+          # full nightly scan (~430 plugins × 2 GitHub calls) fits
+          # comfortably. Only used to read public metadata (stars,
+          # issues, contributor counts); the default GITHUB_TOKEN scope
+          # is sufficient.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node dist/scripts/build-api.js
 
       - name: Deploy to gh-pages branch

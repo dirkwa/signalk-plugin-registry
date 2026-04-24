@@ -60,6 +60,20 @@ Results are published to GitHub Pages:
 - `index.json` — summary of all plugins, sorted by score
 - `plugins/<name>.json` — full detail for one plugin
 
+Per-plugin records include upstream informational metrics fetched once per
+nightly run so signalk-server installs can display them without each boat
+hitting `api.github.com` (60/hr unauthenticated limit). Fields:
+
+- `stars` — GitHub repository stargazer count
+- `open_issues` — open issue count (includes PRs)
+- `contributors` — contributor count
+- `downloads_per_week` — npm weekly downloads
+- `github_url` — normalised `https://github.com/<owner>/<repo>` URL
+
+All fields are optional — any combination of GitHub API limits, missing
+repositories, or npm throttling can leave them absent. Consumers should
+render `—` or a similar empty-state when a field is not present.
+
 ## Manual Testing
 
 Test a single plugin locally:

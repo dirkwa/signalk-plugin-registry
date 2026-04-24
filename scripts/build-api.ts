@@ -1,6 +1,190 @@
 import * as fs from 'fs'
 import * as path from 'path'
 
+const FETCH_TIMEOUT_MS = 20_000
+const GITHUB_CONCURRENCY = 8
+
+const GITHUB_SLUG_RE =
+  /github\.com[/:]([^/]+)\/([^/.#?]+?)(?:\.git)?(?:[?#/].*)?$/i
+
+function parseGithubSlug(
+  url: string | undefined
+): { owner: string; repo: string } | undefined {
+  if (!url) return undefined
+  const m = GITHUB_SLUG_RE.exec(url)
+  if (!m) return undefined
+  return { owner: m[1], repo: m[2] }
+}
+
+function githubHeaders(): Record<string, string> {
+  const headers: Record<string, string> = {
+    Accept: 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+  const token = process.env.GITHUB_TOKEN
+  if (token && token.trim()) {
+    headers.Authorization = `Bearer ${token.trim()}`
+  }
+  return headers
+}
+
+async function fetchJson<T>(
+  url: string,
+  headers: Record<string, string> = {}
+): Promise<T | undefined> {
+  try {
+    const res = await fetch(url, {
+      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+      headers
+    })
+    if (!res.ok) {
+      console.error(`[build-api] GET ${url} -> ${res.status}`)
+      return undefined
+    }
+    return (await res.json()) as T
+  } catch (err) {
+    console.error(
+      `[build-api] GET ${url} failed: ${(err as Error).message}`
+    )
+    return undefined
+  }
+}
+
+interface NpmRegistryResponse {
+  repository?: { url?: string } | string
+}
+
+async function fetchRepositoryUrl(
+  pkgName: string,
+  version: string
+): Promise<string | undefined> {
+  const body = await fetchJson<NpmRegistryResponse>(
+    `https://registry.npmjs.org/${encodeURIComponent(pkgName).replace(
+      '%40',
+      '@'
+    )}/${encodeURIComponent(version)}`
+  )
+  if (!body?.repository) return undefined
+  if (typeof body.repository === 'string') return body.repository
+  return body.repository.url
+}
+
+interface GithubRepoResponse {
+  stargazers_count?: number
+  open_issues_count?: number
+}
+
+async function fetchContributorCount(
+  owner: string,
+  repo: string
+): Promise<number | undefined> {
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${encodeURIComponent(
+        owner
+      )}/${encodeURIComponent(repo)}/contributors?per_page=1&anon=true`,
+      { signal: AbortSignal.timeout(FETCH_TIMEOUT_MS), headers: githubHeaders() }
+    )
+    if (!res.ok) return undefined
+    const link = res.headers.get('link')
+    if (link) {
+      const m = /<[^>]*[?&]page=(\d+)[^>]*>;\s*rel="last"/.exec(link)
+      if (m) {
+        const n = parseInt(m[1], 10)
+        if (!Number.isNaN(n)) return n
+      }
+    }
+    const body = (await res.json()) as unknown[]
+    return Array.isArray(body) ? body.length : undefined
+  } catch {
+    return undefined
+  }
+}
+
+async function fetchNpmWeeklyDownloads(
+  pkgName: string
+): Promise<number | undefined> {
+  const body = await fetchJson<{ downloads?: number }>(
+    `https://api.npmjs.org/downloads/point/last-week/${encodeURIComponent(
+      pkgName
+    ).replace('%40', '@')}`
+  )
+  return body && typeof body.downloads === 'number'
+    ? body.downloads
+    : undefined
+}
+
+async function collectRawMetrics(
+  pkgName: string,
+  version: string
+): Promise<RawMetrics> {
+  const result: RawMetrics = {}
+  const repoUrl = await fetchRepositoryUrl(pkgName, version)
+  const slug = parseGithubSlug(repoUrl)
+  if (slug) {
+    const githubHttps = `https://github.com/${slug.owner}/${slug.repo}`
+    result.github_url = githubHttps
+    const repo = await fetchJson<GithubRepoResponse>(
+      `https://api.github.com/repos/${slug.owner}/${slug.repo}`,
+      githubHeaders()
+    )
+    if (repo) {
+      if (typeof repo.stargazers_count === 'number') {
+        result.stars = repo.stargazers_count
+      }
+      if (typeof repo.open_issues_count === 'number') {
+        result.open_issues = repo.open_issues_count
+      }
+    }
+    const contributors = await fetchContributorCount(slug.owner, slug.repo)
+    if (typeof contributors === 'number') {
+      result.contributors = contributors
+    }
+  }
+  const dl = await fetchNpmWeeklyDownloads(pkgName)
+  if (typeof dl === 'number') result.downloads_per_week = dl
+  return result
+}
+
+async function enrichSummariesWithMetrics(
+  summaries: PluginSummary[]
+): Promise<void> {
+  if (process.env.SKIP_RAW_METRICS === 'true') {
+    console.log('[build-api] SKIP_RAW_METRICS=true — skipping upstream fetches')
+    return
+  }
+  if (!process.env.GITHUB_TOKEN) {
+    console.log(
+      '[build-api] GITHUB_TOKEN not set — fetching GitHub metrics unauthenticated, limit 60/hr'
+    )
+  }
+  let i = 0
+  async function worker() {
+    while (true) {
+      const idx = i++
+      if (idx >= summaries.length) return
+      const s = summaries[idx]
+      try {
+        const m = await collectRawMetrics(s.name, s.version)
+        if (m.stars !== undefined) s.stars = m.stars
+        if (m.open_issues !== undefined) s.open_issues = m.open_issues
+        if (m.contributors !== undefined) s.contributors = m.contributors
+        if (m.downloads_per_week !== undefined) {
+          s.downloads_per_week = m.downloads_per_week
+        }
+        if (m.github_url) s.github_url = m.github_url
+      } catch (err) {
+        console.error(
+          `[build-api] metrics for ${s.name} failed: ${(err as Error).message}`
+        )
+      }
+    }
+  }
+  await Promise.all(
+    Array.from({ length: GITHUB_CONCURRENCY }, () => worker())
+  )
+}
+
 interface SlotResult {
   tested: string
   server_version?: string
@@ -51,10 +235,28 @@ interface PluginSummary {
   loads: boolean
   activates: boolean
   providers: string[]
+  // Upstream metrics fetched once per nightly build using the CI
+  // GITHUB_TOKEN so individual signalk-server installs don't each hammer
+  // api.github.com (unauth limit is 60/hr per IP, which breaks on CGNAT).
+  // See /home/dirk/dev/yyy-signalk-server/src/appstore/raw-metrics.ts for
+  // the consumer.
+  stars?: number
+  open_issues?: number
+  contributors?: number
+  downloads_per_week?: number
+  github_url?: string
   error?: string
 }
 
-function main() {
+interface RawMetrics {
+  stars?: number
+  open_issues?: number
+  contributors?: number
+  downloads_per_week?: number
+  github_url?: string
+}
+
+async function main() {
   const rootDir = process.cwd()
   const resultsPath = path.join(rootDir, 'results.json')
   const results: PluginResults = JSON.parse(fs.readFileSync(resultsPath, 'utf-8'))
@@ -64,6 +266,7 @@ function main() {
   fs.mkdirSync(pluginsDir, { recursive: true })
 
   const summaries: PluginSummary[] = []
+  const allVersionsByPlugin: Record<string, PluginResults[string]> = {}
 
   for (const [pluginName, versions] of Object.entries(results)) {
     // Find latest non-outdated version
@@ -100,19 +303,34 @@ function main() {
     }
 
     summaries.push(summary)
+    allVersionsByPlugin[pluginName] = versions
+  }
 
-    // Write per-plugin detail file
-    const pluginDetail = {
-      name: pluginName,
+  // Fetch upstream metrics (GitHub + npm) once per plugin here, using the
+  // CI GITHUB_TOKEN. See collectRawMetrics above for the methodology.
+  console.log(`[build-api] fetching raw metrics for ${summaries.length} plugins...`)
+  await enrichSummariesWithMetrics(summaries)
+
+  // Now write per-plugin detail JSONs with the metrics merged into the
+  // top-level document, so signalk-server's raw-metrics client can pull
+  // them from either the index or the per-plugin file.
+  for (const summary of summaries) {
+    const versions = allVersionsByPlugin[summary.name]
+    const pluginDetail: Record<string, unknown> = {
+      name: summary.name,
       versions: Object.fromEntries(
-        Object.entries(versions).map(([ver, data]) => {
-          const clean = { ...data }
-          return [ver, clean]
-        })
+        Object.entries(versions).map(([ver, data]) => [ver, { ...data }])
       )
     }
+    if (summary.stars !== undefined) pluginDetail.stars = summary.stars
+    if (summary.open_issues !== undefined) pluginDetail.open_issues = summary.open_issues
+    if (summary.contributors !== undefined) pluginDetail.contributors = summary.contributors
+    if (summary.downloads_per_week !== undefined) {
+      pluginDetail.downloads_per_week = summary.downloads_per_week
+    }
+    if (summary.github_url) pluginDetail.github_url = summary.github_url
 
-    const safeFilename = pluginName.replace(/^@/, '').replace(/\//g, '__')
+    const safeFilename = summary.name.replace(/^@/, '').replace(/\//g, '__')
     fs.writeFileSync(
       path.join(pluginsDir, `${safeFilename}.json`),
       JSON.stringify(pluginDetail, null, 2) + '\n'
@@ -478,4 +696,7 @@ describe('plugin', () => {
   fs.writeFileSync(path.join(apiDir, 'guide.html'), guide)
 }
 
-main()
+main().catch((err) => {
+  console.error('[build-api] fatal:', err)
+  process.exit(1)
+})
