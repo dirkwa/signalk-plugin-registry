@@ -2005,6 +2005,46 @@
         ],
         "test_status": "passing"
       }
+    },
+    "3.6.2": {
+      "server@stable": {
+        "tested": "2026-04-24T04:46:57.778Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "resources"
+        ],
+        "unstubbed_accesses": [
+          "get",
+          "post"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
     }
   },
   "@yachteye/signalk-engineroom-plugin": {
@@ -9302,6 +9342,39 @@
         ],
         "test_status": "none"
       }
+    },
+    "1.0.10": {
+      "server@stable": {
+        "tested": "2026-04-24T04:48:24.030Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "none"
+      }
     }
   },
   "signalk-weatherflow": {
@@ -10159,6 +10232,40 @@
           "activates",
           "tested",
           "audit-high"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "2.2.0": {
+      "server@stable": {
+        "tested": "2026-04-24T04:49:36.579Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.25.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 3,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "audit-high",
+          "has-changelog"
         ],
         "test_status": "passing"
       }
