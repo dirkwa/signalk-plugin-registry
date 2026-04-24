@@ -172,7 +172,7 @@ jobs:
             const VALID_BADGES = new Set([
               'compatible','loads','activates','has-providers','tested',
               'tests-failing','npm-audit-ok','audit-moderate','audit-high',
-              'audit-critical','broken'
+              'audit-critical','has-changelog','has-screenshots','broken'
             ]);
             function validSlot(data) {
               if (!data || typeof data !== 'object') return false;

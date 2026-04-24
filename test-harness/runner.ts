@@ -24,6 +24,8 @@ interface RunResult {
   ownTestsPass: boolean;
   testsRunnable: boolean;
   hasInstallScripts: boolean;
+  hasChangelog: boolean;
+  hasScreenshots: boolean;
   composite: number;
   badges: string[];
   testStatus: string;
@@ -276,6 +278,119 @@ function detectProviderssandboxed(pluginDir: string): DetectionResult {
   };
 }
 
+// Any of these common changelog filenames at the package root counts.
+// Matches the convention from signalk-server PR #2615 — a CHANGELOG.md in
+// the tarball is one of the two acceptable sources of per-version notes
+// (the other is a GitHub Release for the tag, not checked here because the
+// test job runs without a GITHUB_TOKEN; that check is a future enhancement).
+const CHANGELOG_FILENAMES = new Set([
+  "CHANGELOG.md",
+  "CHANGELOG",
+  "CHANGELOG.txt",
+  "CHANGES.md",
+  "CHANGES",
+  "HISTORY.md",
+  "HISTORY",
+]);
+
+function hasChangelogFile(pluginDir: string): boolean {
+  try {
+    const entries = fs.readdirSync(pluginDir);
+    const upper = entries.map((e) => e.toUpperCase());
+    for (const candidate of CHANGELOG_FILENAMES) {
+      if (upper.includes(candidate.toUpperCase())) return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+function githubSlugFromPackage(
+  pluginDir: string,
+): { owner: string; repo: string } | undefined {
+  try {
+    const pkg = JSON.parse(
+      fs.readFileSync(path.join(pluginDir, "package.json"), "utf-8"),
+    );
+    const repoField = pkg?.repository;
+    const url: string | undefined =
+      typeof repoField === "string"
+        ? repoField
+        : typeof repoField?.url === "string"
+          ? repoField.url
+          : undefined;
+    if (!url) return undefined;
+    // Normalise common forms: git+https://github.com/o/r.git, git@github.com:o/r.git, https://github.com/o/r
+    const m = url.match(/github\.com[/:]([^/]+)\/([^/.#]+?)(?:\.git)?(?:#.*)?$/i);
+    if (!m) return undefined;
+    return { owner: m[1], repo: m[2] };
+  } catch {
+    return undefined;
+  }
+}
+
+// The GitHub Releases atom feed is public and not rate-limited by the
+// /user-level 60/h that api.github.com imposes. Fetching
+// https://github.com/<owner>/<repo>/releases.atom from the untrusted test
+// job is safe — no token needed — and tells us whether the plugin author
+// publishes per-version release notes (the canonical source per PR #2615).
+async function hasReleaseForVersion(
+  pluginDir: string,
+  version: string,
+): Promise<boolean> {
+  const slug = githubSlugFromPackage(pluginDir);
+  if (!slug) return false;
+  const url = `https://github.com/${slug.owner}/${slug.repo}/releases.atom`;
+  try {
+    const res = await fetch(url, {
+      signal: AbortSignal.timeout(15_000),
+      headers: { Accept: "application/atom+xml" },
+    });
+    if (!res.ok) return false;
+    const body = await res.text();
+    // Minimal atom parse: each <entry> has an <id> like
+    // tag:github.com,2008:Repository/…/<tag>  and a <title>.
+    // Accept the version string appearing in any of those.
+    const v = version.trim();
+    if (!v) return false;
+    const patterns = [
+      `>${v}<`,
+      `>v${v}<`,
+      `/${v}<`,
+      `/v${v}<`,
+      `:${v}<`,
+      `:v${v}<`,
+    ];
+    return patterns.some((p) => body.includes(p));
+  } catch {
+    return false;
+  }
+}
+
+async function hasChangelog(
+  pluginDir: string,
+  version: string,
+): Promise<boolean> {
+  if (hasChangelogFile(pluginDir)) return true;
+  return await hasReleaseForVersion(pluginDir, version);
+}
+
+function hasScreenshots(pluginDir: string): boolean {
+  try {
+    const pkg = JSON.parse(
+      fs.readFileSync(path.join(pluginDir, "package.json"), "utf-8"),
+    );
+    const shots = pkg?.signalk?.screenshots;
+    return (
+      Array.isArray(shots) &&
+      shots.some((s: unknown) => typeof s === "string" && s.trim().length > 0)
+    );
+  } catch {
+    return false;
+  }
+}
+
 function hasTestFiles(dir: string): boolean {
   try {
     const output = execSync(
@@ -416,6 +531,8 @@ export async function runPluginTest(
       auditHigh: 0,
       auditModerate: 0,
       hasInstallScripts: false,
+      hasChangelog: false,
+      hasScreenshots: false,
     });
 
     fs.rmSync(workDir, { recursive: true, force: true });
@@ -445,6 +562,8 @@ export async function runPluginTest(
       ownTestsPass: false,
       testsRunnable: false,
       hasInstallScripts: false,
+      hasChangelog: false,
+      hasScreenshots: false,
       ...score,
     };
   }
@@ -468,6 +587,10 @@ export async function runPluginTest(
     ownTests = checkSourceTests(pluginDir);
   }
 
+  console.error(`[runner] Checking changelog + screenshots...`);
+  const shots = hasScreenshots(pluginDir);
+  const changelog = await hasChangelog(pluginDir, pluginVersion);
+
   const testResults: TestResults = {
     installs: true,
     loads: detection.loads,
@@ -481,6 +604,8 @@ export async function runPluginTest(
     auditHigh: audit.high,
     auditModerate: audit.moderate,
     hasInstallScripts: install.hasInstallScripts,
+    hasChangelog: changelog,
+    hasScreenshots: shots,
   };
 
   const { composite, badges, testStatus } = computeScore(testResults);
@@ -497,6 +622,8 @@ export async function runPluginTest(
     ownTestsPass: ownTests.pass,
     testsRunnable: ownTests.runnable,
     hasInstallScripts: install.hasInstallScripts,
+    hasChangelog: changelog,
+    hasScreenshots: shots,
     composite,
     badges,
     testStatus,

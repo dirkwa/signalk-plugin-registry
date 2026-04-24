@@ -65,6 +65,8 @@ function main() {
     own_tests_pass: resultData.ownTestsPass,
     tests_runnable: resultData.testsRunnable,
     has_install_scripts: resultData.hasInstallScripts,
+    has_changelog: resultData.hasChangelog,
+    has_screenshots: resultData.hasScreenshots,
     audit_critical: resultData.auditCritical,
     audit_high: resultData.auditHigh,
     audit_moderate: resultData.auditModerate,

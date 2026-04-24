@@ -16,6 +16,8 @@ interface SlotResult {
   has_own_tests?: boolean
   own_tests_pass?: boolean
   has_install_scripts?: boolean
+  has_changelog?: boolean
+  has_screenshots?: boolean
   audit_critical?: number
   audit_high?: number
   audit_moderate?: number
@@ -157,6 +159,8 @@ function main() {
     'audit-moderate': '#ffc107',
     'audit-high': '#ffc107',
     'audit-critical': '#dc3545',
+    'has-changelog': '#17a2b8',
+    'has-screenshots': '#17a2b8',
     'broken': '#dc3545'
   }
 
@@ -336,17 +340,34 @@ function generateGuide(apiDir: string) {
       <tr><td>Schema</td><td>5</td><td><code>plugin.schema</code> returns a JSON Schema object</td></tr>
       <tr><td>Tests</td><td>25</td><td><code>npm test</code> passes (biggest single tier &mdash; see below)</td></tr>
       <tr><td>Security</td><td>20</td><td><code>npm audit</code> finds no high or critical vulnerabilities</td></tr>
+      <tr><td>Changelog</td><td>&minus;5 if missing</td><td>Ship a <code>CHANGELOG.md</code> or publish a <a href="https://github.com/SignalK/signalk-server/pull/2615" target="_blank">GitHub Release</a> matching the version tag</td></tr>
+      <tr><td>Screenshots</td><td>&minus;5 if missing</td><td>Declare <code>signalk.screenshots</code> (array of package-relative paths) in <code>package.json</code></td></tr>
     </tbody>
   </table>
 
   <h2>Quick Wins</h2>
 
-  <h3>1. Fix npm audit issues</h3>
+  <h3>1. Ship release notes (avoid &minus;5)</h3>
+  <p>The registry looks for a <code>CHANGELOG.md</code> in the published package first, and falls back to the public GitHub Releases feed for the repo &mdash; so either path works. The <a href="https://github.com/SignalK/signalk-server/pull/2615" target="_blank">recommended</a> approach is GitHub Releases driven by a tag push, with <code>softprops/action-gh-release@v2</code> and <code>generate_release_notes: true</code>. A plain <code>CHANGELOG.md</code> at the repo root (Keep a Changelog style) is equally accepted.</p>
+
+  <h3>2. Add screenshots (avoid &minus;5)</h3>
+  <p>Declare them in <code>package.json</code>:</p>
+  <pre><code>"signalk": {
+  "displayName": "My Plugin",
+  "appIcon": "./assets/icon-128.png",
+  "screenshots": [
+    "./docs/screenshots/main.png",
+    "./docs/screenshots/config.png"
+  ]
+}</code></pre>
+  <p>Paths must be package-relative and the files must be included in the published tarball (check your <code>files</code> field or <code>.npmignore</code>). The AppStore shows the first screenshot as the hero image.</p>
+
+  <h3>3. Fix npm audit issues</h3>
   <pre><code>npm audit
 npm audit fix</code></pre>
   <p>Most issues come from transitive dependencies. Update your direct dependencies first. If a vulnerability is in a deep transitive dep you don't control, consider whether you really need that dependency.</p>
 
-  <h3>2. Add schema defaults</h3>
+  <h3>4. Add schema defaults</h3>
   <p>Every property in your schema should have a <code>default</code> value. The registry extracts these and passes them to <code>start()</code>. If your plugin crashes without them, it loses 15 points.</p>
   <pre><code>schema: {
   type: 'object',
@@ -360,7 +381,7 @@ npm audit fix</code></pre>
 }</code></pre>
   <p>See <a href="https://demo.signalk.org/documentation/develop/plugins/configuration.html">Plugin Configuration &amp; Schemas</a> for full details.</p>
 
-  <h3>3. Guard start() against missing config</h3>
+  <h3>5. Guard start() against missing config</h3>
   <p>Even with schema defaults, defensive coding helps:</p>
   <pre><code>start(config) {
   const interval = config.interval ?? 60

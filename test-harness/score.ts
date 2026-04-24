@@ -11,6 +11,8 @@ export interface TestResults {
   auditHigh: number;
   auditModerate: number;
   hasInstallScripts: boolean;
+  hasChangelog: boolean;
+  hasScreenshots: boolean;
 }
 
 export type Badge =
@@ -24,6 +26,8 @@ export type Badge =
   | "audit-moderate"
   | "audit-high"
   | "audit-critical"
+  | "has-changelog"
+  | "has-screenshots"
   | "broken";
 
 export type TestStatus = "passing" | "none" | "not-runnable" | "failing";
@@ -99,6 +103,23 @@ export function computeScore(r: TestResults): {
     badges.push("audit-critical");
   }
 
+  // Changelog: -5 penalty if absent, informational badge when present.
+  // "Present" means either a CHANGELOG.md-style file in the published tarball
+  // or a matching GitHub Release tag (see runner.hasChangelog).
+  if (r.hasChangelog) {
+    badges.push("has-changelog");
+  } else {
+    score -= 5;
+  }
+
+  // Screenshots: -5 penalty if absent, informational badge when present.
+  // "Present" means signalk.screenshots in package.json has at least one entry.
+  if (r.hasScreenshots) {
+    badges.push("has-screenshots");
+  } else {
+    score -= 5;
+  }
+
   return {
     composite: Math.max(0, Math.min(100, score)),
     badges,
@@ -125,6 +146,8 @@ if (require.main === module) {
     auditHigh: parseInt(get("--audit-high") || "0", 10),
     auditModerate: parseInt(get("--audit-moderate") || "0", 10),
     hasInstallScripts: get("--has-install-scripts") === "true",
+    hasChangelog: get("--has-changelog") === "true",
+    hasScreenshots: get("--has-screenshots") === "true",
   };
 
   const { composite, badges } = computeScore(results);
