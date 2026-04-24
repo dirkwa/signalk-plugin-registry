@@ -231,7 +231,12 @@ jobs:
   # ─────────────────────────────────────────────────────────────
   publish:
     needs: [plan, merge-results]
-    if: always() && needs.merge-results.result == 'success'
+    # Run whenever plan succeeded, even if merge-results was skipped —
+    # that's the "no plugin updates tonight" case. We still want to
+    # refresh GitHub + npm metrics (stars, downloads, issues, contributors)
+    # which change independently of plugin versions. Only skip publish if
+    # merge-results actually failed (bad result data would corrupt the API).
+    if: always() && needs.plan.result == 'success' && needs.merge-results.result != 'failure'
     runs-on: ubuntu-latest
     permissions:
       contents: write
