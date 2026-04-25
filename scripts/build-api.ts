@@ -52,21 +52,43 @@ async function fetchJson<T>(
 
 interface NpmRegistryResponse {
   repository?: { url?: string } | string
+  gitHead?: string
 }
 
-async function fetchRepositoryUrl(
+interface NpmVersionMeta {
+  repository_url?: string
+  git_head?: string
+}
+
+async function fetchNpmVersionMeta(
   pkgName: string,
   version: string
-): Promise<string | undefined> {
+): Promise<NpmVersionMeta | undefined> {
   const body = await fetchJson<NpmRegistryResponse>(
     `https://registry.npmjs.org/${encodeURIComponent(pkgName).replace(
       '%40',
       '@'
     )}/${encodeURIComponent(version)}`
   )
-  if (!body?.repository) return undefined
-  if (typeof body.repository === 'string') return body.repository
-  return body.repository.url
+  if (!body) return undefined
+  const repository_url =
+    typeof body.repository === 'string'
+      ? body.repository
+      : body.repository?.url
+  const git_head =
+    typeof body.gitHead === 'string' && body.gitHead.length > 0
+      ? body.gitHead
+      : undefined
+  if (!repository_url && !git_head) return undefined
+  return { repository_url, git_head }
+}
+
+async function fetchRepositoryUrl(
+  pkgName: string,
+  version: string
+): Promise<string | undefined> {
+  const meta = await fetchNpmVersionMeta(pkgName, version)
+  return meta?.repository_url
 }
 
 interface GithubRepoResponse {
@@ -114,12 +136,395 @@ async function fetchNpmWeeklyDownloads(
     : undefined
 }
 
+// ─────────────────────────────────────────────────────────────────────
+// plugin-ci matrix: for each plugin's published version, find the
+// GitHub Actions run that exercised SignalK's reusable plugin-ci.yml
+// against that exact commit (npm gitHead) and surface the per-platform
+// pass/fail to the App Store. Centralising the GitHub fetch here means
+// individual signalk-server installs don't each hammer api.github.com
+// (60/hr unauth limit, broken on CGNAT). See yyy-signalk-server's
+// IndicatorsTab → PluginCiMatrix consumer.
+// ─────────────────────────────────────────────────────────────────────
+
+type PluginCiPlatform =
+  | 'linux-x64'
+  | 'linux-arm64'
+  | 'macos'
+  | 'windows'
+  | 'armv7-cerbo'
+  | 'integration'
+
+type PluginCiConclusion =
+  | 'success'
+  | 'failure'
+  | 'skipped'
+  | 'cancelled'
+  | 'in_progress'
+  | null
+
+interface PluginCiJob {
+  platform: PluginCiPlatform
+  node: number
+  conclusion: PluginCiConclusion
+  server_version?: string
+  job_url?: string
+}
+
+type PluginCi =
+  | { status: 'no-githead' }
+  | { status: 'no-run'; head_sha: string; commit_url: string }
+  | { status: 'no-plugin-ci'; head_sha: string; workflow_run_url: string }
+  | {
+      status: 'in-progress'
+      head_sha: string
+      workflow_run_url: string
+      tested_at?: string
+    }
+  | {
+      status: 'ok'
+      head_sha: string
+      commit_url: string
+      workflow_run_url: string
+      tested_at: string
+      workflow_ref: string
+      jobs: PluginCiJob[]
+    }
+
+interface GithubWorkflowRunsResponse {
+  total_count?: number
+  workflow_runs?: GithubWorkflowRun[]
+}
+
+interface GithubWorkflowRun {
+  id: number
+  status?: string // queued, in_progress, completed, etc.
+  conclusion?: string | null
+  path?: string
+  referenced_workflows?: { path?: string; ref?: string; sha?: string }[]
+  html_url?: string
+  updated_at?: string
+  head_branch?: string | null
+  head_sha?: string
+  name?: string
+}
+
+interface GithubJobsResponse {
+  jobs?: GithubJob[]
+}
+
+interface GithubJob {
+  name?: string
+  conclusion?: string | null
+  status?: string
+  html_url?: string
+}
+
+const PLUGIN_CI_PATH = '.github/workflows/plugin-ci.yml'
+const PLUGIN_CI_REUSABLE = 'SignalK/signalk-server/.github/workflows/plugin-ci.yml'
+
+// Reusable workflows exposed as "<callerJobKey> / <reusableJobName>"
+// (e.g. plugins call this with job key `test`, so all jobs come through
+// as "test / <name>"). Strip an optional leading "<word> / " prefix
+// before matching the canonical job name.
+const CALLER_PREFIX_RE = /^[A-Za-z0-9_-]+ \/ /
+const DESKTOP_JOB_RE = /^(Linux|Linux arm64|macOS|Windows) \/ Node (\d+)$/
+const ARMV7_JOB_RE = /^armv7 \(Cerbo GX\) \/ Node (\d+)$/
+const INTEGRATION_JOB_RE =
+  /^Integration \/ signalk-server ([\w.-]+) \/ Node (\d+)$/
+
+function osLabelToPlatform(label: string): PluginCiPlatform | undefined {
+  switch (label) {
+    case 'Linux':
+      return 'linux-x64'
+    case 'Linux arm64':
+      return 'linux-arm64'
+    case 'macOS':
+      return 'macos'
+    case 'Windows':
+      return 'windows'
+    default:
+      return undefined
+  }
+}
+
+function parseJobName(name: string):
+  | {
+      platform: PluginCiPlatform
+      node: number
+      server_version?: string
+    }
+  | undefined {
+  // Strip leading "<callerJobKey> / " prefix added by GitHub when a
+  // workflow calls the reusable plugin-ci.yml.
+  const stripped = name.replace(CALLER_PREFIX_RE, '')
+  const desk = DESKTOP_JOB_RE.exec(stripped)
+  if (desk) {
+    const platform = osLabelToPlatform(desk[1])
+    if (!platform) return undefined
+    const node = parseInt(desk[2], 10)
+    if (Number.isNaN(node)) return undefined
+    return { platform, node }
+  }
+  const armv7 = ARMV7_JOB_RE.exec(stripped)
+  if (armv7) {
+    const node = parseInt(armv7[1], 10)
+    if (Number.isNaN(node)) return undefined
+    return { platform: 'armv7-cerbo', node }
+  }
+  const integ = INTEGRATION_JOB_RE.exec(stripped)
+  if (integ) {
+    const node = parseInt(integ[2], 10)
+    if (Number.isNaN(node)) return undefined
+    return { platform: 'integration', node, server_version: integ[1] }
+  }
+  return undefined
+}
+
+function jobConclusionFromGithub(
+  conclusion: string | null | undefined,
+  status: string | undefined
+): PluginCiConclusion {
+  if (status && (status === 'queued' || status === 'in_progress')) {
+    return 'in_progress'
+  }
+  switch (conclusion) {
+    case 'success':
+    case 'failure':
+    case 'skipped':
+    case 'cancelled':
+      return conclusion
+    default:
+      return null
+  }
+}
+
+function commitUrl(owner: string, repo: string, sha: string): string {
+  return `https://github.com/${owner}/${repo}/commit/${sha}`
+}
+
+async function fetchWorkflowRunsForSha(
+  owner: string,
+  repo: string,
+  sha: string
+): Promise<GithubWorkflowRun[] | undefined> {
+  const body = await fetchJson<GithubWorkflowRunsResponse>(
+    `https://api.github.com/repos/${encodeURIComponent(
+      owner
+    )}/${encodeURIComponent(repo)}/actions/runs?head_sha=${encodeURIComponent(
+      sha
+    )}&per_page=20`,
+    githubHeaders()
+  )
+  if (!body) return undefined
+  return body.workflow_runs ?? []
+}
+
+async function fetchRunJobs(
+  owner: string,
+  repo: string,
+  runId: number
+): Promise<GithubJob[] | undefined> {
+  const body = await fetchJson<GithubJobsResponse>(
+    `https://api.github.com/repos/${encodeURIComponent(
+      owner
+    )}/${encodeURIComponent(repo)}/actions/runs/${runId}/jobs?per_page=100`,
+    githubHeaders()
+  )
+  return body?.jobs
+}
+
+// Matches "owner/repo/.github/workflows/<file>" optionally followed by
+// "@<ref>" (e.g. "@master"). The reusable plugin-ci is referenced by
+// callers via `uses: SignalK/signalk-server/.github/workflows/plugin-ci.yml@<ref>`,
+// which surfaces in the GitHub API as referenced_workflows[].path with
+// the @ref suffix included.
+function strippedReusablePath(path: string | undefined): string {
+  if (!path) return ''
+  const at = path.indexOf('@')
+  return (at >= 0 ? path.substring(0, at) : path).toLowerCase()
+}
+
+function pickPluginCiRun(
+  runs: GithubWorkflowRun[]
+): GithubWorkflowRun | undefined {
+  const target = PLUGIN_CI_REUSABLE.toLowerCase()
+  const matching = runs.filter((r) =>
+    (r.referenced_workflows ?? []).some(
+      (rw) => strippedReusablePath(rw.path) === target
+    )
+  )
+  if (matching.length === 0) return undefined
+  return matching.sort((a, b) =>
+    (b.updated_at ?? '').localeCompare(a.updated_at ?? '')
+  )[0]
+}
+
+async function fetchPluginCi(
+  owner: string,
+  repo: string,
+  gitHead: string | undefined
+): Promise<PluginCi> {
+  if (!gitHead) return { status: 'no-githead' }
+  const runs = await fetchWorkflowRunsForSha(owner, repo, gitHead)
+  if (runs === undefined || runs.length === 0) {
+    return {
+      status: 'no-run',
+      head_sha: gitHead,
+      commit_url: commitUrl(owner, repo, gitHead)
+    }
+  }
+  const run = pickPluginCiRun(runs)
+  if (!run) {
+    // Some run exists for this SHA but none of them exercise the
+    // SignalK plugin-ci workflow. Most likely the plugin author hasn't
+    // adopted the upstream workflow.
+    const anyRun = runs[0]
+    return {
+      status: 'no-plugin-ci',
+      head_sha: gitHead,
+      workflow_run_url:
+        anyRun.html_url ?? commitUrl(owner, repo, gitHead)
+    }
+  }
+  const workflow_run_url = run.html_url ?? commitUrl(owner, repo, gitHead)
+  if (run.status === 'queued' || run.status === 'in_progress') {
+    return {
+      status: 'in-progress',
+      head_sha: gitHead,
+      workflow_run_url,
+      tested_at: run.updated_at
+    }
+  }
+  const ghJobs = await fetchRunJobs(owner, repo, run.id)
+  const jobs: PluginCiJob[] = []
+  for (const j of ghJobs ?? []) {
+    if (typeof j.name !== 'string') continue
+    const parsed = parseJobName(j.name)
+    if (!parsed) continue
+    const conclusion = jobConclusionFromGithub(j.conclusion, j.status)
+    const out: PluginCiJob = {
+      platform: parsed.platform,
+      node: parsed.node,
+      conclusion
+    }
+    if (parsed.server_version) out.server_version = parsed.server_version
+    if (j.html_url) out.job_url = j.html_url
+    jobs.push(out)
+  }
+  return {
+    status: 'ok',
+    head_sha: gitHead,
+    commit_url: commitUrl(owner, repo, gitHead),
+    workflow_run_url,
+    tested_at: run.updated_at ?? '',
+    workflow_ref:
+      typeof run.head_branch === 'string'
+        ? `refs/heads/${run.head_branch}`
+        : 'refs/heads/master',
+    jobs
+  }
+}
+
+interface PluginCiCacheEntry {
+  head_sha: string
+  fetched_at: string
+  payload: PluginCi
+}
+
+interface PluginCiCache {
+  [pkgName: string]: PluginCiCacheEntry
+}
+
+const PLUGIN_CI_CACHE_TTL_HOURS = 24
+
+function loadPluginCiCache(rootDir: string): PluginCiCache {
+  const cachePath = path.join(rootDir, 'data', 'plugin-ci-cache.json')
+  try {
+    if (!fs.existsSync(cachePath)) return {}
+    return JSON.parse(fs.readFileSync(cachePath, 'utf-8')) as PluginCiCache
+  } catch (err) {
+    console.error(
+      `[build-api] failed to load plugin-ci cache: ${(err as Error).message}`
+    )
+    return {}
+  }
+}
+
+function savePluginCiCache(rootDir: string, cache: PluginCiCache): void {
+  const cachePath = path.join(rootDir, 'data', 'plugin-ci-cache.json')
+  try {
+    fs.mkdirSync(path.dirname(cachePath), { recursive: true })
+    fs.writeFileSync(
+      cachePath,
+      JSON.stringify(cache, null, 2) + '\n',
+      'utf-8'
+    )
+  } catch (err) {
+    console.error(
+      `[build-api] failed to save plugin-ci cache: ${(err as Error).message}`
+    )
+  }
+}
+
+function pluginCiCacheValid(
+  entry: PluginCiCacheEntry | undefined,
+  expectedSha: string | undefined
+): boolean {
+  if (!entry || !expectedSha) return false
+  if (entry.head_sha !== expectedSha) return false
+  const fetched = Date.parse(entry.fetched_at)
+  if (Number.isNaN(fetched)) return false
+  const ageHours = (Date.now() - fetched) / (1000 * 60 * 60)
+  return ageHours < PLUGIN_CI_CACHE_TTL_HOURS
+}
+
+interface RateLimitState {
+  remaining: number
+  budget_low: boolean
+}
+
+const rateLimitState: RateLimitState = {
+  remaining: 5000,
+  budget_low: false
+}
+
+// Watch X-RateLimit-Remaining when GitHub responses pass through fetchJson
+// elsewhere. We probe the headers via a one-off fetch right before each
+// plugin-ci attempt so we can stop cleanly without exhausting the quota.
+async function checkGithubRateLimit(): Promise<void> {
+  try {
+    const res = await fetch('https://api.github.com/rate_limit', {
+      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+      headers: githubHeaders()
+    })
+    if (!res.ok) return
+    const body = (await res.json()) as {
+      resources?: { core?: { remaining?: number } }
+    }
+    const rem = body.resources?.core?.remaining
+    if (typeof rem === 'number') {
+      rateLimitState.remaining = rem
+      if (rem < 100 && !rateLimitState.budget_low) {
+        rateLimitState.budget_low = true
+        console.warn(
+          `[build-api] GitHub rate-limit remaining ${rem} < 100 — stopping plugin-ci fetches; existing cache preserved`
+        )
+      }
+    }
+  } catch {
+    // network blip — don't change state
+  }
+}
+
 async function collectRawMetrics(
   pkgName: string,
   version: string
-): Promise<RawMetrics> {
-  const result: RawMetrics = {}
-  const repoUrl = await fetchRepositoryUrl(pkgName, version)
+): Promise<RawMetrics & { git_head?: string }> {
+  const result: RawMetrics & { git_head?: string } = {}
+  const meta = await fetchNpmVersionMeta(pkgName, version)
+  const repoUrl = meta?.repository_url
+  const gitHead = meta?.git_head
+  if (gitHead) result.git_head = gitHead
   const slug = parseGithubSlug(repoUrl)
   if (slug) {
     const githubHttps = `https://github.com/${slug.owner}/${slug.repo}`
@@ -147,7 +552,8 @@ async function collectRawMetrics(
 }
 
 async function enrichSummariesWithMetrics(
-  summaries: PluginSummary[]
+  summaries: PluginSummary[],
+  pluginCiCache: PluginCiCache
 ): Promise<void> {
   if (process.env.SKIP_RAW_METRICS === 'true') {
     console.log('[build-api] SKIP_RAW_METRICS=true — skipping upstream fetches')
@@ -173,6 +579,33 @@ async function enrichSummariesWithMetrics(
           s.downloads_per_week = m.downloads_per_week
         }
         if (m.github_url) s.github_url = m.github_url
+
+        // plugin-ci matrix. Cache by gitHead so a full-run that re-tests
+        // every plugin still only touches GitHub for plugins whose SHA
+        // moved since yesterday.
+        const slug = parseGithubSlug(m.github_url)
+        if (slug && m.git_head) {
+          const cached = pluginCiCache[s.name]
+          if (pluginCiCacheValid(cached, m.git_head)) {
+            s.plugin_ci = cached.payload
+          } else if (rateLimitState.budget_low) {
+            // honour previously-cached value when rate-limited
+            if (cached) s.plugin_ci = cached.payload
+          } else {
+            const ci = await fetchPluginCi(slug.owner, slug.repo, m.git_head)
+            s.plugin_ci = ci
+            pluginCiCache[s.name] = {
+              head_sha: m.git_head,
+              fetched_at: new Date().toISOString(),
+              payload: ci
+            }
+          }
+        } else if (m.git_head) {
+          // gitHead known but no GitHub repo (rare). Mark explicitly.
+          s.plugin_ci = { status: 'no-githead' }
+        } else {
+          s.plugin_ci = { status: 'no-githead' }
+        }
       } catch (err) {
         console.error(
           `[build-api] metrics for ${s.name} failed: ${(err as Error).message}`
@@ -180,6 +613,8 @@ async function enrichSummariesWithMetrics(
       }
     }
   }
+  // Probe rate limit once at the start so workers know whether to skip.
+  await checkGithubRateLimit()
   await Promise.all(
     Array.from({ length: GITHUB_CONCURRENCY }, () => worker())
   )
@@ -245,6 +680,12 @@ interface PluginSummary {
   contributors?: number
   downloads_per_week?: number
   github_url?: string
+  // plugin-ci matrix: per-platform pass/fail of the upstream
+  // SignalK/signalk-server/.github/workflows/plugin-ci.yml against the
+  // npm gitHead for this version. Discriminated union, see PluginCi.
+  // Surfaced on the App Store detail page's Indicators tab as the
+  // matrix that replaces "Reported working on".
+  plugin_ci?: PluginCi
   error?: string
 }
 
@@ -309,7 +750,12 @@ async function main() {
   // Fetch upstream metrics (GitHub + npm) once per plugin here, using the
   // CI GITHUB_TOKEN. See collectRawMetrics above for the methodology.
   console.log(`[build-api] fetching raw metrics for ${summaries.length} plugins...`)
-  await enrichSummariesWithMetrics(summaries)
+  const pluginCiCache = loadPluginCiCache(rootDir)
+  await enrichSummariesWithMetrics(summaries, pluginCiCache)
+  // Persist any newly-fetched plugin-ci entries so subsequent runs skip
+  // the GitHub fetch when gitHead hasn't changed (typical full-run is
+  // 5-10 plugins with new SHAs out of ~340 with GitHub repos).
+  savePluginCiCache(rootDir, pluginCiCache)
 
   // Now write per-plugin detail JSONs with the metrics merged into the
   // top-level document, so signalk-server's raw-metrics client can pull
@@ -329,6 +775,7 @@ async function main() {
       pluginDetail.downloads_per_week = summary.downloads_per_week
     }
     if (summary.github_url) pluginDetail.github_url = summary.github_url
+    if (summary.plugin_ci) pluginDetail.plugin_ci = summary.plugin_ci
 
     const safeFilename = summary.name.replace(/^@/, '').replace(/\//g, '__')
     fs.writeFileSync(
