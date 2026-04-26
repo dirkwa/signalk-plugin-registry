@@ -86,17 +86,11 @@ function main() {
   const oldScore = (existing?.composite as number) ?? -1
   const newScore = (slotResult.composite as number) ?? 0
 
-  if (newScore >= oldScore) {
-    results[args.plugin][args.pluginVersion][slotKey] = slotResult
-    console.log(
-      `Updated ${args.plugin}@${args.pluginVersion} [${slotKey}] score=${newScore}` +
-        (oldScore >= 0 ? ` (was ${oldScore})` : '')
-    )
-  } else {
-    console.log(
-      `Kept ${args.plugin}@${args.pluginVersion} [${slotKey}] score=${oldScore} (new run scored ${newScore}, keeping best)`
-    )
-  }
+  results[args.plugin][args.pluginVersion][slotKey] = slotResult
+  console.log(
+    `Updated ${args.plugin}@${args.pluginVersion} [${slotKey}] score=${newScore}` +
+      (oldScore >= 0 ? ` (was ${oldScore})` : '')
+  )
 
   fs.writeFileSync(resultsPath, JSON.stringify(results, null, 2) + '\n')
 }
