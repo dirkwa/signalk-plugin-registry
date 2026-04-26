@@ -195,15 +195,8 @@ jobs:
                       rejected++;
                       continue;
                     }
-                    const existing = base[plugin][ver][slot];
-                    const oldScore = existing?.composite ?? -1;
-                    const newScore = data.composite ?? 0;
-                    if (!existing || newScore >= oldScore) {
-                      base[plugin][ver][slot] = data;
-                      updated++;
-                    } else {
-                      console.log('Kept ' + plugin + '/' + ver + '/' + slot + ' score=' + oldScore + ' (new=' + newScore + ')');
-                    }
+                    base[plugin][ver][slot] = data;
+                    updated++;
                   }
                 }
               }
