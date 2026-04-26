@@ -3442,13 +3442,14 @@
   "signalk-openweather-provider": {
     "1.0.3": {
       "server@stable": {
-        "tested": "2026-03-30T22:07:37.895Z",
-        "triggered_by": "manual",
+        "tested": "2026-04-26T02:36:00.008Z",
+        "triggered_by": "schema_change",
         "node_version": "24",
-        "server_version": "2.24.0",
+        "server_version": "2.26.0",
         "installs": true,
         "loads": true,
         "activates": true,
+        "activates_without_config": true,
         "detected_providers": [
           "weather"
         ],
@@ -3458,16 +3459,19 @@
         "own_tests_pass": false,
         "tests_runnable": false,
         "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
         "audit_critical": 0,
         "audit_high": 0,
         "audit_moderate": 0,
-        "composite": 75,
+        "composite": 70,
         "badges": [
           "compatible",
           "loads",
           "activates",
           "has-providers",
-          "npm-audit-ok"
+          "npm-audit-ok",
+          "has-changelog"
         ],
         "test_status": "none"
       }
