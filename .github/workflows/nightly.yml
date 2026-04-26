@@ -131,11 +131,11 @@ jobs:
             --result-file /tmp/result.json \
             --reason '${{ matrix.run.reason }}'
 
-      - name: Upload results artifact
+      - name: Upload slot update artifact
         uses: actions/upload-artifact@v7
         with:
           name: result-${{ strategy.job-index }}
-          path: results.json
+          path: slot-update.json
           retention-days: 1
 
   # ─────────────────────────────────────────────────────────────
@@ -182,31 +182,31 @@ jobs:
               if (typeof data.installs !== 'boolean') return false;
               return true;
             }
-            function mergeFile(f) {
-              const partial = JSON.parse(fs.readFileSync(f, 'utf-8'));
-              for (const [plugin, versions] of Object.entries(partial)) {
-                if (!base[plugin]) base[plugin] = {};
-                for (const [ver, slots] of Object.entries(versions)) {
-                  if (!base[plugin][ver]) base[plugin][ver] = {};
-                  for (const [slot, data] of Object.entries(slots)) {
-                    if (!slot.startsWith('server@')) continue;
-                    if (!validSlot(data)) {
-                      console.log('Rejected invalid slot: ' + plugin + '/' + ver + '/' + slot);
-                      rejected++;
-                      continue;
-                    }
-                    base[plugin][ver][slot] = data;
-                    updated++;
-                  }
-                }
+            function applyEnvelope(f) {
+              const env = JSON.parse(fs.readFileSync(f, 'utf-8'));
+              const { plugin, pluginVersion, slotKey, slotResult } = env;
+              if (!plugin || !pluginVersion || !slotKey || !slotResult) {
+                console.log('Skipped malformed envelope: ' + f);
+                return;
               }
+              if (!slotKey.startsWith('server@')) {
+                console.log('Skipped non-server slot ' + slotKey + ' in ' + f);
+                return;
+              }
+              if (!validSlot(slotResult)) {
+                console.log('Rejected invalid slot: ' + plugin + '/' + pluginVersion + '/' + slotKey);
+                rejected++;
+                return;
+              }
+              if (!base[plugin]) base[plugin] = {};
+              if (!base[plugin][pluginVersion]) base[plugin][pluginVersion] = {};
+              base[plugin][pluginVersion][slotKey] = slotResult;
+              updated++;
             }
             if (fs.existsSync(dir)) {
-              const topLevel = path.join(dir, 'results.json');
-              if (fs.existsSync(topLevel)) mergeFile(topLevel);
               for (const sub of fs.readdirSync(dir)) {
-                const nested = path.join(dir, sub, 'results.json');
-                if (fs.existsSync(nested)) mergeFile(nested);
+                const envelopePath = path.join(dir, sub, 'slot-update.json');
+                if (fs.existsSync(envelopePath)) applyEnvelope(envelopePath);
               }
             }
             console.log('Updated ' + updated + ' plugin slots' + (rejected ? ', rejected ' + rejected + ' invalid' : ''));

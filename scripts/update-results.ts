@@ -93,6 +93,19 @@ function main() {
   )
 
   fs.writeFileSync(resultsPath, JSON.stringify(results, null, 2) + '\n')
+
+  // Also write a single-slot envelope so the parallel merge step can
+  // apply only this run's slot instead of merging the entire base
+  // results.json from every artifact (which causes one job to clobber
+  // another's update).
+  const envelope = {
+    plugin: args.plugin,
+    pluginVersion: args.pluginVersion,
+    slotKey,
+    slotResult
+  }
+  const envelopePath = path.resolve(__dirname, '..', 'slot-update.json')
+  fs.writeFileSync(envelopePath, JSON.stringify(envelope, null, 2) + '\n')
 }
 
 main()
