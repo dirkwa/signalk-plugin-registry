@@ -60,6 +60,18 @@ function shouldTest(
 
   const slot = existing as SlotResult
 
+  // Slots written by older runner versions may be missing fields the
+  // current scoring depends on (e.g. has_changelog/has_screenshots
+  // were added with the 0.2.0 scoring tier). Re-test instead of leaving
+  // the stored composite stale. Extend this list when new fields are
+  // added to the runner output.
+  const REQUIRED_FIELDS = ['has_changelog', 'has_screenshots']
+  for (const field of REQUIRED_FIELDS) {
+    if (slot[field] === undefined) {
+      return { run: true, reason: 'schema_change' }
+    }
+  }
+
   const STALE_DAYS = 7
   const ageMs = Date.now() - new Date(slot.tested).getTime()
   if (ageMs > STALE_DAYS * 24 * 60 * 60 * 1000) {
