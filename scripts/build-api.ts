@@ -620,6 +620,28 @@ async function enrichSummariesWithMetrics(
   )
 }
 
+// Plugins that don't run the SignalK plugin-ci workflow give us no
+// per-platform compatibility data, so the App Store can't show whether
+// they actually work on Linux/macOS/Windows/Cerbo. Apply a flat -10
+// penalty to nudge authors to opt in. Applied at publish time so that
+// score changes propagate without re-running tests.
+const PLUGIN_CI_PENALTY = 10
+
+function applyPluginCiPenalty(
+  composite: number,
+  badges: string[],
+  pluginCi: PluginCi | undefined
+): { composite: number; badges: string[] } {
+  if (!pluginCi || pluginCi.status === 'ok' || pluginCi.status === 'in-progress') {
+    return { composite, badges }
+  }
+  const adjusted = Math.max(0, composite - PLUGIN_CI_PENALTY)
+  const newBadges = badges.includes('no-plugin-ci')
+    ? badges
+    : [...badges, 'no-plugin-ci']
+  return { composite: adjusted, badges: newBadges }
+}
+
 interface SlotResult {
   tested: string
   server_version?: string
@@ -757,16 +779,64 @@ async function main() {
   // 5-10 plugins with new SHAs out of ~340 with GitHub repos).
   savePluginCiCache(rootDir, pluginCiCache)
 
+  // Apply the plugin-ci penalty on the summary scores. Per-version slot
+  // scores in the detail JSON are adjusted in the per-plugin write loop
+  // below so both the index and detail views stay consistent.
+  for (const summary of summaries) {
+    const stableAdjusted = applyPluginCiPenalty(
+      summary.composite_stable,
+      summary.badges_stable,
+      summary.plugin_ci
+    )
+    summary.composite_stable = stableAdjusted.composite
+    summary.badges_stable = stableAdjusted.badges
+    if (summary.composite_master !== undefined) {
+      const masterAdjusted = applyPluginCiPenalty(
+        summary.composite_master,
+        summary.badges_master ?? [],
+        summary.plugin_ci
+      )
+      summary.composite_master = masterAdjusted.composite
+      summary.badges_master = masterAdjusted.badges
+    }
+  }
+
   // Now write per-plugin detail JSONs with the metrics merged into the
   // top-level document, so signalk-server's raw-metrics client can pull
   // them from either the index or the per-plugin file.
   for (const summary of summaries) {
     const versions = allVersionsByPlugin[summary.name]
+    // Deep-copy each slot before mutating so we don't pollute results.json
+    // (which is the raw test-result store, kept intact).
+    const versionsCopy = Object.fromEntries(
+      Object.entries(versions).map(([ver, data]) => {
+        const copy: Record<string, unknown> = {}
+        for (const [k, v] of Object.entries(data)) {
+          copy[k] = v && typeof v === 'object' ? { ...v } : v
+        }
+        for (const [slotKey, slot] of Object.entries(copy)) {
+          if (
+            slot &&
+            typeof slot === 'object' &&
+            'composite' in (slot as Record<string, unknown>)
+          ) {
+            const s = slot as SlotResult
+            const adjusted = applyPluginCiPenalty(
+              s.composite,
+              s.badges ?? [],
+              summary.plugin_ci
+            )
+            s.composite = adjusted.composite
+            s.badges = adjusted.badges
+            copy[slotKey] = s
+          }
+        }
+        return [ver, copy]
+      })
+    )
     const pluginDetail: Record<string, unknown> = {
       name: summary.name,
-      versions: Object.fromEntries(
-        Object.entries(versions).map(([ver, data]) => [ver, { ...data }])
-      )
+      versions: versionsCopy
     }
     if (summary.stars !== undefined) pluginDetail.stars = summary.stars
     if (summary.open_issues !== undefined) pluginDetail.open_issues = summary.open_issues
