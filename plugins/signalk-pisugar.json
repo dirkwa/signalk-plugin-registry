@@ -1,0 +1,47 @@
+{
+  "name": "signalk-pisugar",
+  "versions": {
+    "0.6.0": {
+      "server@stable": {
+        "tested": "2026-04-29T05:17:01.713Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/kreucher/signalk-pisugar",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "1fa96b0d008c6859eb8332299167d2ca55d9bd47",
+    "commit_url": "https://github.com/kreucher/signalk-pisugar/commit/1fa96b0d008c6859eb8332299167d2ca55d9bd47"
+  }
+}

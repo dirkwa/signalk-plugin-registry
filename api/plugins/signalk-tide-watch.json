@@ -1,0 +1,46 @@
+{
+  "name": "signalk-tide-watch",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-05-06T05:20:25.240Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "sandboxed detection failed",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 5,
+  "contributors": 1,
+  "github_url": "https://github.com/joelkoz/signalk-tide-watch",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "8f669c2a09d4adb84828a4aed7356051f7a5cecc",
+    "commit_url": "https://github.com/joelkoz/signalk-tide-watch/commit/8f669c2a09d4adb84828a4aed7356051f7a5cecc"
+  }
+}

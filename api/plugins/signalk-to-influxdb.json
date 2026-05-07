@@ -1,0 +1,52 @@
+{
+  "name": "signalk-to-influxdb",
+  "versions": {
+    "1.9.2": {
+      "server@stable": {
+        "tested": "2026-05-04T05:25:24.206Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "app.signalk.on is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "app.signalk.on is not a function",
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 45,
+        "badges": [
+          "compatible",
+          "loads",
+          "has-providers",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 25,
+  "open_issues": 13,
+  "contributors": 9,
+  "github_url": "https://github.com/tkurki/signalk-to-influxdb",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "26748a7167251fa1cd5039a13024c7574a6b6b54",
+    "commit_url": "https://github.com/tkurki/signalk-to-influxdb/commit/26748a7167251fa1cd5039a13024c7574a6b6b54"
+  }
+}

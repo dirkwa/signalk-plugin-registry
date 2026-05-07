@@ -1,0 +1,47 @@
+{
+  "name": "signalk-raspberry-pi-bh1750",
+  "versions": {
+    "0.0.7": {
+      "server@stable": {
+        "tested": "2026-04-27T04:58:17.059Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/build/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/build/Debug/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/build/Release/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/out/Debug/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/Debug/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/out/Release/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/Release/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/build/default/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/compiled/24.14.1/linux/x64/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/addon-build/release/install-root/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/addon-build/debug/install-root/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/addon-build/default/install-root/i2c.node\n → /tmp/sk-registry-lRbWU6/node_modules/i2c-bus/lib/binding/node-v137-linux-x64/i2c.node",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "downloads_per_week": 8,
+  "github_url": "https://github.com/jdcaprace/signalk-raspberry-pi-bh1750",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "73da56649de1b5a619eba10d5eeae80a6a54b521",
+    "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-bh1750/commit/73da56649de1b5a619eba10d5eeae80a6a54b521"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "signalk-pebble-mydata",
+  "versions": {
+    "0.6.10": {
+      "server@stable": {
+        "tested": "2026-05-05T04:53:26.330Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module 'express'\nRequire stack:\n- /tmp/sk-registry-bvr6UB/node_modules/signalk-pebble-mydata/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 3,
+        "audit_high": 1,
+        "audit_moderate": 0,
+        "composite": 0,
+        "badges": [
+          "compatible",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "not-runnable"
+      }
+    }
+  },
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

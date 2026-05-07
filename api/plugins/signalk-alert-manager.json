@@ -1,0 +1,47 @@
+{
+  "name": "signalk-alert-manager",
+  "versions": {
+    "0.1.0": {
+      "server@stable": {
+        "tested": "2026-05-04T05:26:56.308Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "not-runnable"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 2,
+  "contributors": 1,
+  "github_url": "https://github.com/hatlabs/signalk-alert-manager",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "b8c4e8bdd86e38cc9f9a73d64c10872fe88fad9d",
+    "commit_url": "https://github.com/hatlabs/signalk-alert-manager/commit/b8c4e8bdd86e38cc9f9a73d64c10872fe88fad9d"
+  }
+}

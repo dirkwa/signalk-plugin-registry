@@ -1,0 +1,47 @@
+{
+  "name": "signalk-healthcheck",
+  "versions": {
+    "1.1.1": {
+      "server@stable": {
+        "tested": "2026-04-27T04:59:34.566Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "sandboxed detection failed",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 25,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 2,
+  "contributors": 1,
+  "github_url": "https://github.com/jncarter123/signalk-healthcheck",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "cc2c36eb49ab8b8a79b4cc22389bdf5c6865ab88",
+    "commit_url": "https://github.com/jncarter123/signalk-healthcheck/commit/cc2c36eb49ab8b8a79b4cc22389bdf5c6865ab88"
+  }
+}

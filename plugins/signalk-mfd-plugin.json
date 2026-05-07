@@ -1,0 +1,46 @@
+{
+  "name": "signalk-mfd-plugin",
+  "versions": {
+    "0.0.9": {
+      "server@stable": {
+        "tested": "2026-05-07T05:22:00.660Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "__importDefault is not defined",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 6,
+  "open_issues": 4,
+  "contributors": 1,
+  "github_url": "https://github.com/htool/signalk-mfd-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "4c58816be11698179e6e680f27e7035eb0bd5ecf",
+    "commit_url": "https://github.com/htool/signalk-mfd-plugin/commit/4c58816be11698179e6e680f27e7035eb0bd5ecf"
+  }
+}

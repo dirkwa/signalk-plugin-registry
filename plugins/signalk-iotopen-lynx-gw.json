@@ -1,0 +1,46 @@
+{
+  "name": "signalk-iotopen-lynx-gw",
+  "versions": {
+    "0.0.8": {
+      "server@stable": {
+        "tested": "2026-04-27T04:59:58.058Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module 'mqtt'\nRequire stack:\n- /tmp/sk-registry-s26IXA/node_modules/signalk-iotopen-lynx-gw/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 5,
+        "audit_high": 2,
+        "audit_moderate": 3,
+        "composite": 0,
+        "badges": [
+          "compatible",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 3,
+  "github_url": "https://github.com/mrejas/signalk-iotopen-lynx-gw",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "17ddb737638d8927609f0e8f3119b3cf3e2573d3",
+    "commit_url": "https://github.com/mrejas/signalk-iotopen-lynx-gw/commit/17ddb737638d8927609f0e8f3119b3cf3e2573d3"
+  }
+}

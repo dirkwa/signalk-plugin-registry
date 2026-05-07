@@ -1,0 +1,46 @@
+{
+  "name": "signalk-sbd",
+  "versions": {
+    "1.0.4": {
+      "server@stable": {
+        "tested": "2026-04-26T03:16:50.939Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-Mg6k54/node_modules/serialport/build/serialport.node\n → /tmp/sk-registry-Mg6k54/node_modules/serialport/build/Debug/serialport.node\n → /tmp/sk-registry-Mg6k54/node_modules/serialport/build/Release/serialport.node\n → /tmp/sk-registry-Mg6k54/node_modules/serialport/out/Debug/serialport.node\n → /tmp/sk-registry-Mg6k54/node_modules/serialport/Debug/serialport.node\n → /tmp/sk-registry-Mg6k54/node_modules/serialport/out/Release/serialport.node\n → /tmp/sk-registry-Mg6k54/node_modules/serialport/Release/serialport.node\n → /tmp/sk-registry-Mg6k54/node_modules/serialport/build/default/serialport.node\n → /tmp/sk-registry-Mg6k54/node_modules/serialport/compiled/24.14.1/linux/x64/serialport.node",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/cape-io/signalk-sbd",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "9c1385046d738938d67d16ceb01ea53d510654fa",
+    "commit_url": "https://github.com/cape-io/signalk-sbd/commit/9c1385046d738938d67d16ceb01ea53d510654fa"
+  }
+}

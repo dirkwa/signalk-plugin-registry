@@ -1,0 +1,51 @@
+{
+  "name": "signalk-prometheus-exporter-macjl",
+  "versions": {
+    "0.1.4": {
+      "server@stable": {
+        "tested": "2026-05-04T05:26:35.077Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "app.signalk.on is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "app.signalk.on is not a function",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 4,
+  "downloads_per_week": 6,
+  "github_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "08922e4f6637798444fa9436ee83b17f6bedaf7b",
+    "commit_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/commit/08922e4f6637798444fa9436ee83b17f6bedaf7b"
+  }
+}

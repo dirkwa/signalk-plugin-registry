@@ -1,0 +1,48 @@
+{
+  "name": "@meri-imperiumi/signalk-triplogger",
+  "versions": {
+    "1.2.0": {
+      "server@stable": {
+        "tested": "2026-05-07T05:23:02.810Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 4,
+  "contributors": 3,
+  "github_url": "https://github.com/meri-imperiumi/signalk-triplogger",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "c8b9b14d33ab91b3ae8e208afe56531c9f976594",
+    "commit_url": "https://github.com/meri-imperiumi/signalk-triplogger/commit/c8b9b14d33ab91b3ae8e208afe56531c9f976594"
+  }
+}

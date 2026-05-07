@@ -1,0 +1,49 @@
+{
+  "name": "signalk-solar-forecast",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-04-26T03:20:10.308Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'length')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'length')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 45,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/KvotheBloodless/signalk-solar-forecast",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "b8cfdfaa4de1fcaf6c823e364c409dfc6c45a0a1",
+    "workflow_run_url": "https://github.com/KvotheBloodless/signalk-solar-forecast/actions/runs/15105310749"
+  }
+}

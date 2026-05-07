@@ -1,0 +1,46 @@
+{
+  "name": "signalk-notifications",
+  "versions": {
+    "1.1.1": {
+      "server@stable": {
+        "tested": "2026-05-07T05:21:20.239Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/build/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/build/Debug/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/build/Release/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/out/Debug/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/Debug/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/out/Release/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/Release/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/build/default/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/compiled/24.14.1/linux/x64/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/addon-build/release/install-root/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/addon-build/debug/install-root/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/addon-build/default/install-root/node_sqlite3.node\n → /tmp/sk-registry-V5SlUP/node_modules/sqlite3/lib/binding/node-v137-linux-x64/node_sqlite3.node",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 2,
+        "audit_high": 5,
+        "audit_moderate": 3,
+        "composite": 0,
+        "badges": [
+          "compatible",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 6,
+  "contributors": 2,
+  "github_url": "https://github.com/itemir/signalk-notifications",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "c344ba449ba2a3f1bcf826f7beef22cd818d504d",
+    "commit_url": "https://github.com/itemir/signalk-notifications/commit/c344ba449ba2a3f1bcf826f7beef22cd818d504d"
+  }
+}

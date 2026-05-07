@@ -1,0 +1,44 @@
+{
+  "name": "signalk-mqtt-home-asisstant",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-05-06T05:19:43.214Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 11,
+        "audit_high": 14,
+        "audit_moderate": 7,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "github_url": "https://github.com/sencersoylu/signalk-mqtt-gw",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "94f4026cd1b86b11d62ab826f0593a0ff5dac9ea",
+    "commit_url": "https://github.com/sencersoylu/signalk-mqtt-gw/commit/94f4026cd1b86b11d62ab826f0593a0ff5dac9ea"
+  }
+}

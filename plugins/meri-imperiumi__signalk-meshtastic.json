@@ -1,0 +1,48 @@
+{
+  "name": "@meri-imperiumi/signalk-meshtastic",
+  "versions": {
+    "1.2.4": {
+      "server@stable": {
+        "tested": "2026-05-06T05:19:33.407Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 28,
+  "open_issues": 6,
+  "contributors": 1,
+  "github_url": "https://github.com/meri-imperiumi/signalk-meshtastic",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "d715e196c8fff837672e4b18b2390ca7d929a25e",
+    "workflow_run_url": "https://github.com/meri-imperiumi/signalk-meshtastic/actions/runs/22046230536"
+  }
+}

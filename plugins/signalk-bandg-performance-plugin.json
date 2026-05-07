@@ -1,0 +1,47 @@
+{
+  "name": "signalk-bandg-performance-plugin",
+  "versions": {
+    "1.0.29": {
+      "server@stable": {
+        "tested": "2026-05-06T05:17:10.363Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 3,
+  "open_issues": 7,
+  "contributors": 1,
+  "github_url": "https://github.com/htool/B_and_G_Performance-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "b2af79e025f4bfd3ab65d4bdb768fac891f64798",
+    "commit_url": "https://github.com/htool/B_and_G_Performance-plugin/commit/b2af79e025f4bfd3ab65d4bdb768fac891f64798"
+  }
+}

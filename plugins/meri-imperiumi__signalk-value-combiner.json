@@ -1,0 +1,48 @@
+{
+  "name": "@meri-imperiumi/signalk-value-combiner",
+  "versions": {
+    "1.1.0": {
+      "server@stable": {
+        "tested": "2026-04-26T03:18:23.235Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/meri-imperiumi/signalk-value-combiner",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "15f26b8b5b4170d72c6416525c7fca49cc2fa03a",
+    "workflow_run_url": "https://github.com/meri-imperiumi/signalk-value-combiner/actions/runs/21139183123"
+  }
+}

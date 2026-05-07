@@ -1,0 +1,47 @@
+{
+  "name": "signalk-ifttt-notifications",
+  "versions": {
+    "1.0.3": {
+      "server@stable": {
+        "tested": "2026-05-07T05:23:51.831Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 3,
+        "audit_high": 0,
+        "audit_moderate": 3,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 2,
+  "contributors": 3,
+  "github_url": "https://github.com/sbender9/signalk-ifttt-notifications",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "b12bd74bc31f4f071c1b8c66e99a8b10bddbf058",
+    "commit_url": "https://github.com/sbender9/signalk-ifttt-notifications/commit/b12bd74bc31f4f071c1b8c66e99a8b10bddbf058"
+  }
+}

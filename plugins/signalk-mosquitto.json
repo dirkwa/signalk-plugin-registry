@@ -1,0 +1,47 @@
+{
+  "name": "signalk-mosquitto",
+  "versions": {
+    "0.5.0-beta.3": {
+      "server@stable": {
+        "tested": "2026-05-06T05:18:21.722Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "sandboxed detection failed",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 25,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/motamman/signalk-mosquitto",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "c8e8beb32733156981cf0836e5286ff7c36c2578",
+    "workflow_run_url": "https://github.com/motamman/signalk-mosquitto/actions/runs/17020682200"
+  }
+}

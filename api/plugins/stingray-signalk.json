@@ -1,0 +1,70 @@
+{
+  "name": "stingray-signalk",
+  "versions": {
+    "0.1.1": {
+      "server@stable": {
+        "tested": "2026-03-30T22:07:25.966Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '../build/Release/bluetooth_hci_socket.node'\nRequire stack:\n- /tmp/sk-registry-812p6r/node_modules/@abandonware/bluetooth-hci-socket/lib/native.js\n- /tmp/sk-registry-812p6r/node_modules/@abandonware/bluetooth-hci-socket/index.js\n- /tmp/sk-registry-812p6r/node_modules/@abandonware/bleno/lib/hci-socket/mgmt.js\n- /tmp/sk-registry-812p6r/node_modules/@abandonware/bleno/lib/hci-socket/smp.js\n- /tmp/sk-registry-812p6r/node_modules/@abandonware/bleno/lib/hci-socket/acl-stream.js\n- /tmp/sk-registry-812p6r/node_modules/@abandonware/bleno/lib/hci-socket/bindings.js\n- /tmp/sk-registry-812p6r/node_modules/@abandonware/bleno/lib/bleno.js\n- /tmp/sk-registry-812p6r/node_modules/@abandonware/bleno/index.js\n- /tmp/sk-registry-812p6r/node_modules/stingray-signalk/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 9,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "audit-high",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.2.1": {
+      "server@stable": {
+        "tested": "2026-05-03T05:23:46.069Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

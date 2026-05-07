@@ -1,0 +1,48 @@
+{
+  "name": "@meri-imperiumi/signalk-stardate",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-04-28T05:20:05.997Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 6,
+  "contributors": 3,
+  "github_url": "https://github.com/meri-imperiumi/signalk-stardate",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "6ad32b31da64a8dd6996f78e94fa8642009286cf",
+    "commit_url": "https://github.com/meri-imperiumi/signalk-stardate/commit/6ad32b31da64a8dd6996f78e94fa8642009286cf"
+  }
+}

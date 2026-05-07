@@ -1,0 +1,3296 @@
+{
+  "signalk-edge-link": {
+    "head_sha": "0517fa437bc5e7bf2d366617743b1acf676cbadf",
+    "fetched_at": "2026-05-07T05:24:36.522Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "0517fa437bc5e7bf2d366617743b1acf676cbadf",
+      "commit_url": "https://github.com/KEGustafsson/signalk-edge-link/commit/0517fa437bc5e7bf2d366617743b1acf676cbadf"
+    }
+  },
+  "signalk-anchoralarm-plugin": {
+    "head_sha": "fe8e9888cfa46b627c3ab58055ac2171d2f58893",
+    "fetched_at": "2026-05-07T05:24:36.709Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "fe8e9888cfa46b627c3ab58055ac2171d2f58893",
+      "workflow_run_url": "https://github.com/sbender9/signalk-anchoralarm-plugin/actions/runs/24573159715"
+    }
+  },
+  "@signalk/signalk-node-red": {
+    "head_sha": "4f54db31b35b230e61c805cfa804bf5228261c66",
+    "fetched_at": "2026-05-07T05:24:36.736Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "4f54db31b35b230e61c805cfa804bf5228261c66",
+      "commit_url": "https://github.com/SignalK/signalk-node-red/commit/4f54db31b35b230e61c805cfa804bf5228261c66"
+    }
+  },
+  "signalk-parquet": {
+    "head_sha": "5830b924e4361b69e8781a36746b0c53247a60fb",
+    "fetched_at": "2026-05-07T05:24:36.762Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "5830b924e4361b69e8781a36746b0c53247a60fb",
+      "workflow_run_url": "https://github.com/motamman/signalk-parquet/actions/runs/24795054292"
+    }
+  },
+  "@mxtommy/kip": {
+    "head_sha": "eef85d73b676ed5abbe02e35769cfce959ac09c4",
+    "fetched_at": "2026-05-07T05:24:36.778Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "eef85d73b676ed5abbe02e35769cfce959ac09c4",
+      "workflow_run_url": "https://github.com/mxtommy/Kip/actions/runs/24008758323"
+    }
+  },
+  "bt-sensors-plugin-sk": {
+    "head_sha": "503c41cae69101101639c0032e2a72aed03cc3f7",
+    "fetched_at": "2026-05-07T05:24:36.795Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "503c41cae69101101639c0032e2a72aed03cc3f7",
+      "commit_url": "https://github.com/naugehyde/bt-sensors-plugin-sk/commit/503c41cae69101101639c0032e2a72aed03cc3f7"
+    }
+  },
+  "signalk-charts-provider-simple": {
+    "head_sha": "b14f2a6c6028ae2038421405c3e393cfbc35dde9",
+    "fetched_at": "2026-05-07T05:24:37.506Z",
+    "payload": {
+      "status": "ok",
+      "head_sha": "b14f2a6c6028ae2038421405c3e393cfbc35dde9",
+      "commit_url": "https://github.com/dirkwa/signalk-charts-provider-simple/commit/b14f2a6c6028ae2038421405c3e393cfbc35dde9",
+      "workflow_run_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334",
+      "tested_at": "2026-05-06T23:30:05Z",
+      "workflow_ref": "refs/heads/main",
+      "jobs": [
+        {
+          "platform": "integration",
+          "node": 22,
+          "conclusion": "success",
+          "server_version": "latest",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729293"
+        },
+        {
+          "platform": "integration",
+          "node": 24,
+          "conclusion": "success",
+          "server_version": "latest",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729295"
+        },
+        {
+          "platform": "macos",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729343"
+        },
+        {
+          "platform": "macos",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729344"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729348"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729358"
+        },
+        {
+          "platform": "windows",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729359"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729360"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729368"
+        },
+        {
+          "platform": "windows",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729376"
+        },
+        {
+          "platform": "armv7-cerbo",
+          "node": 20,
+          "conclusion": "skipped",
+          "job_url": "https://github.com/dirkwa/signalk-charts-provider-simple/actions/runs/25466776334/job/74721729686"
+        }
+      ]
+    }
+  },
+  "signalk-usage": {
+    "head_sha": "82c14c4bf5f7ff5c3758b4020d54686b87f2e755",
+    "fetched_at": "2026-05-07T05:24:37.742Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "82c14c4bf5f7ff5c3758b4020d54686b87f2e755",
+      "commit_url": "https://github.com/ofernander/signalk-usage/commit/82c14c4bf5f7ff5c3758b4020d54686b87f2e755"
+    }
+  },
+  "advancedwind": {
+    "head_sha": "cb8b8f53cf5d06bcf0c84a4b4d947e49edd90217",
+    "fetched_at": "2026-05-07T05:24:37.772Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "cb8b8f53cf5d06bcf0c84a4b4d947e49edd90217",
+      "workflow_run_url": "https://github.com/Asw1n/advancedwind/actions/runs/25290616757"
+    }
+  },
+  "speedandcurrent": {
+    "head_sha": "acf403c0d7e6e3e271e6526f4260d19c16eb49cb",
+    "fetched_at": "2026-05-07T05:24:37.871Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "acf403c0d7e6e3e271e6526f4260d19c16eb49cb",
+      "workflow_run_url": "https://github.com/Asw1n/speedandcurrent/actions/runs/25291065973"
+    }
+  },
+  "signalk-vaarweginformatie-blocked": {
+    "head_sha": "28c7d77119b7a44d7f729e5afbae4add75bfa32d",
+    "fetched_at": "2026-05-07T05:24:37.881Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "28c7d77119b7a44d7f729e5afbae4add75bfa32d",
+      "workflow_run_url": "https://github.com/formifan2002/signalk-vaarweginformatie-blocked/actions/runs/23912082280"
+    }
+  },
+  "kahu-signalk": {
+    "head_sha": "f5dd0bd096d33a36c0ec7e80ca5b418bf4422d23",
+    "fetched_at": "2026-05-07T05:24:37.957Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "f5dd0bd096d33a36c0ec7e80ca5b418bf4422d23",
+      "workflow_run_url": "https://github.com/KAHU-radar/radarhub-signalk/actions/runs/25446366097"
+    }
+  },
+  "@canboat/visual-analyzer": {
+    "head_sha": "04f8b5479a338c4b3c64e101a92add973cf2b3b6",
+    "fetched_at": "2026-05-07T05:24:38.106Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "04f8b5479a338c4b3c64e101a92add973cf2b3b6",
+      "workflow_run_url": "https://github.com/canboat/visual-analyzer/actions/runs/24415772590"
+    }
+  },
+  "signalk-to-nmea2000": {
+    "head_sha": "d9bf7e0241e4772c425597ab2fe37a7ae90763a3",
+    "fetched_at": "2026-05-07T05:24:38.226Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "d9bf7e0241e4772c425597ab2fe37a7ae90763a3",
+      "workflow_run_url": "https://github.com/SignalK/signalk-to-nmea2000/actions/runs/25343033838"
+    }
+  },
+  "signalk-bluetooth-scanner": {
+    "head_sha": "09c02d6cb6ed2463fc5ceda06733e5024dbea6b0",
+    "fetched_at": "2026-05-07T05:24:38.780Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "09c02d6cb6ed2463fc5ceda06733e5024dbea6b0",
+      "workflow_run_url": "https://github.com/dleone13-terp/bluetooth-mob-signalk/actions/runs/23369841715"
+    }
+  },
+  "signalk-to-influxdb2": {
+    "head_sha": "9f96b422c10c19b2b211b7f390a254dc7c5e44db",
+    "fetched_at": "2026-05-07T05:24:38.838Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "9f96b422c10c19b2b211b7f390a254dc7c5e44db",
+      "workflow_run_url": "https://github.com/tkurki/signalk-to-influxdb2/actions/runs/24637124789"
+    }
+  },
+  "signalk-aisstream": {
+    "head_sha": "7cd357d9498714602406f889a3b0198f1c335456",
+    "fetched_at": "2026-05-07T05:24:39.042Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7cd357d9498714602406f889a3b0198f1c335456",
+      "commit_url": "https://github.com/KEGustafsson/signalk-aisstream/commit/7cd357d9498714602406f889a3b0198f1c335456"
+    }
+  },
+  "signalk-autopilot_route": {
+    "head_sha": "571a0bf1accd5d3a2f432682376f738a10006ecc",
+    "fetched_at": "2026-05-07T05:24:39.078Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "571a0bf1accd5d3a2f432682376f738a10006ecc",
+      "commit_url": "https://github.com/marcobergman/signalk-autopilot_route/commit/571a0bf1accd5d3a2f432682376f738a10006ecc"
+    }
+  },
+  "signalk-venus-plugin": {
+    "head_sha": "646ec9a09feffcbf0e42106b55db8e9e71bcc7b7",
+    "fetched_at": "2026-05-07T05:24:39.124Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "646ec9a09feffcbf0e42106b55db8e9e71bcc7b7",
+      "workflow_run_url": "https://github.com/sbender9/signalk-venus-plugin/actions/runs/23248574749"
+    }
+  },
+  "signalk-open-wind-plugin": {
+    "head_sha": "9c7d278715ef21431747b290f23fd1337d02122a",
+    "fetched_at": "2026-05-07T05:24:39.162Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "9c7d278715ef21431747b290f23fd1337d02122a",
+      "commit_url": "https://github.com/vepkenez/signalk-open-wind-plugin/commit/9c7d278715ef21431747b290f23fd1337d02122a"
+    }
+  },
+  "@signalk/tracks-plugin": {
+    "head_sha": "ccfdd8ebf699e8d6df5dcaffd0f4bef12107e420",
+    "fetched_at": "2026-05-07T05:24:39.543Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "ccfdd8ebf699e8d6df5dcaffd0f4bef12107e420",
+      "commit_url": "https://github.com/SignalK/tracks/commit/ccfdd8ebf699e8d6df5dcaffd0f4bef12107e420"
+    }
+  },
+  "signalk-attitude-converter": {
+    "head_sha": "318bba8e2161c9eaa5b218f030f6d5a95fd2fd58",
+    "fetched_at": "2026-05-07T05:24:40.174Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "318bba8e2161c9eaa5b218f030f6d5a95fd2fd58",
+      "commit_url": "https://github.com/macjl/signalk-attitude-converter/commit/318bba8e2161c9eaa5b218f030f6d5a95fd2fd58"
+    }
+  },
+  "signalk-derived-data": {
+    "head_sha": "27306df895b2e2cc08a379861009bc780309c0ce",
+    "fetched_at": "2026-05-07T05:24:40.213Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "27306df895b2e2cc08a379861009bc780309c0ce",
+      "workflow_run_url": "https://github.com/SignalK/signalk-derived-data/actions/runs/25476555895"
+    }
+  },
+  "signalk-windy-apiv2": {
+    "head_sha": "4286236a7dd48ab7455b5fe583482b48a428c973",
+    "fetched_at": "2026-05-07T05:24:40.240Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "4286236a7dd48ab7455b5fe583482b48a428c973",
+      "workflow_run_url": "https://github.com/Peter-Petrik/signalk-windy-apiv2/actions/runs/24005886050"
+    }
+  },
+  "signalk-onvif-camera": {
+    "head_sha": "cfb191b47112131edfb93c7a0a5e2aab0249f50c",
+    "fetched_at": "2026-05-07T05:24:40.371Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "cfb191b47112131edfb93c7a0a5e2aab0249f50c",
+      "workflow_run_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/25348641270"
+    }
+  },
+  "@yachteye/signalk-engineroom-plugin": {
+    "head_sha": "7df872ba5564080f481d7d8be703c4c06a5fc074",
+    "fetched_at": "2026-05-07T05:24:40.457Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7df872ba5564080f481d7d8be703c4c06a5fc074",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-ye-engineroom-plugin/commit/7df872ba5564080f481d7d8be703c4c06a5fc074"
+    }
+  },
+  "signalk-pmtiles-plugin": {
+    "head_sha": "2fcbb70c85ac76852067d6343b76244a1ccdc5b9",
+    "fetched_at": "2026-05-07T05:24:40.713Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "2fcbb70c85ac76852067d6343b76244a1ccdc5b9",
+      "commit_url": "https://github.com/panaaj/signalk-pmtiles-plugin/commit/2fcbb70c85ac76852067d6343b76244a1ccdc5b9"
+    }
+  },
+  "@signalk/charts-plugin": {
+    "head_sha": "631ffbc91361812b0c445d97b319894008232c99",
+    "fetched_at": "2026-05-07T05:24:40.855Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "631ffbc91361812b0c445d97b319894008232c99",
+      "workflow_run_url": "https://github.com/SignalK/charts-plugin/actions/runs/24922455901"
+    }
+  },
+  "signalk-to-venus": {
+    "head_sha": "f75a9f1cfce96990acdf67477b9b10118fd040e6",
+    "fetched_at": "2026-05-07T05:24:41.182Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "f75a9f1cfce96990acdf67477b9b10118fd040e6",
+      "commit_url": "https://github.com/Krillle/signalk-to-venus/commit/f75a9f1cfce96990acdf67477b9b10118fd040e6"
+    }
+  },
+  "signalk-rec-bms": {
+    "head_sha": "9d524c05db667ad541c26984079d10aa6b9bfa5f",
+    "fetched_at": "2026-05-07T05:24:41.286Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "9d524c05db667ad541c26984079d10aa6b9bfa5f",
+      "commit_url": "https://github.com/ofernander/signalk-rec-bms/commit/9d524c05db667ad541c26984079d10aa6b9bfa5f"
+    }
+  },
+  "signalk-forward-watch": {
+    "head_sha": "74e57bef112b9a7d3f5193ee145f7d3728cf408f",
+    "fetched_at": "2026-05-07T05:24:41.423Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "74e57bef112b9a7d3f5193ee145f7d3728cf408f",
+      "commit_url": "https://github.com/SkipperDon/signalk-forward-watch/commit/74e57bef112b9a7d3f5193ee145f7d3728cf408f"
+    }
+  },
+  "@noforeignland/signalk-to-noforeignland": {
+    "head_sha": "92c292fb222000a3bf6fa1205a1bb455dfd5bef9",
+    "fetched_at": "2026-05-07T05:24:41.456Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "92c292fb222000a3bf6fa1205a1bb455dfd5bef9",
+      "workflow_run_url": "https://github.com/noforeignland/nfl-signalk/actions/runs/22417907798"
+    }
+  },
+  "signalk-mob-course": {
+    "head_sha": "2f1200201598eacd68348f4a1c1914b0281d6ffa",
+    "fetched_at": "2026-05-07T05:24:41.606Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "2f1200201598eacd68348f4a1c1914b0281d6ffa",
+      "commit_url": "https://github.com/daniel-freiermuth/signalk-mob-course-plugin/commit/2f1200201598eacd68348f4a1c1914b0281d6ffa"
+    }
+  },
+  "signalk-postgsail": {
+    "head_sha": "78d310e8c263fa1d8cfdc7f4e0f76f324e745459",
+    "fetched_at": "2026-05-07T05:24:41.675Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "78d310e8c263fa1d8cfdc7f4e0f76f324e745459",
+      "workflow_run_url": "https://github.com/xbgmsharp/signalk-postgsail/actions/runs/24565612092"
+    }
+  },
+  "signalk-attitude-calibrator": {
+    "head_sha": "be9f98a209c5390e0b5e1879f16d18415bdc1772",
+    "fetched_at": "2026-05-07T05:24:41.815Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "be9f98a209c5390e0b5e1879f16d18415bdc1772",
+      "workflow_run_url": "https://github.com/macjl/signalk-attitude-calibrator/actions/runs/25428264497"
+    }
+  },
+  "@signalk/signalk-autopilot": {
+    "head_sha": "3fdbed2eaf10cacee79f5b932ed1ff632125b635",
+    "fetched_at": "2026-05-07T05:24:41.873Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "3fdbed2eaf10cacee79f5b932ed1ff632125b635",
+      "workflow_run_url": "https://github.com/SignalK/signalk-autopilot/actions/runs/23571280737"
+    }
+  },
+  "@signalk/udp-nmea-plugin": {
+    "head_sha": "ee4abc47734493f64f5aa1f80fc4fa0fb258ee86",
+    "fetched_at": "2026-05-07T05:24:42.366Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "ee4abc47734493f64f5aa1f80fc4fa0fb258ee86",
+      "commit_url": "https://github.com/SignalK/udp-nmea-plugin/commit/ee4abc47734493f64f5aa1f80fc4fa0fb258ee86"
+    }
+  },
+  "signalk-units-preference": {
+    "head_sha": "ee6d6946e588a30b79b866811989c0f19914f22a",
+    "fetched_at": "2026-05-07T05:24:42.388Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "ee6d6946e588a30b79b866811989c0f19914f22a",
+      "workflow_run_url": "https://github.com/motamman/signalk-units-preference/actions/runs/18972285426"
+    }
+  },
+  "@signalk/signalk-to-nmea0183": {
+    "head_sha": "89f43441443f4c9872cd80b5144265ee583aecdf",
+    "fetched_at": "2026-05-07T05:24:42.455Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "89f43441443f4c9872cd80b5144265ee583aecdf",
+      "workflow_run_url": "https://github.com/SignalK/signalk-to-nmea0183/actions/runs/25476555758"
+    }
+  },
+  "signalk-n2kais-to-nmea0183": {
+    "head_sha": "95376aee1715986468099381e41ec782c5213298",
+    "fetched_at": "2026-05-07T05:24:42.536Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "95376aee1715986468099381e41ec782c5213298",
+      "workflow_run_url": "https://github.com/sbender9/signalk-n2kais-to-nmea0183/actions/runs/16835752663"
+    }
+  },
+  "signalk-empirbusnxt-plugin": {
+    "head_sha": "51880c5e7223e54247e6271d56f37b3becaf2f29",
+    "fetched_at": "2026-05-07T05:24:42.759Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "51880c5e7223e54247e6271d56f37b3becaf2f29",
+      "commit_url": "https://github.com/sbender9/signalk-empirbus-plugin/commit/51880c5e7223e54247e6271d56f37b3becaf2f29"
+    }
+  },
+  "sk-ais-status-plugin": {
+    "head_sha": "225fc8c6a9b026375038fb56caedd8a5c67438b9",
+    "fetched_at": "2026-05-07T05:24:42.760Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "225fc8c6a9b026375038fb56caedd8a5c67438b9",
+      "commit_url": "https://github.com/panaaj/sk-ais-status-plugin/commit/225fc8c6a9b026375038fb56caedd8a5c67438b9"
+    }
+  },
+  "@signalk/resources-provider": {
+    "head_sha": "abfdd9e7dd799c114cbe6554d0472d700e77fbd9",
+    "fetched_at": "2026-05-07T05:24:42.799Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "abfdd9e7dd799c114cbe6554d0472d700e77fbd9",
+      "workflow_run_url": "https://github.com/SignalK/signalk-server/actions/runs/20543609468"
+    }
+  },
+  "signalk-whatif-helper": {
+    "head_sha": "40e4233efe5d1198ec22da3d080035aa1c671004",
+    "fetched_at": "2026-05-07T05:24:43.065Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "40e4233efe5d1198ec22da3d080035aa1c671004",
+      "workflow_run_url": "https://github.com/motamman/signalk-whatif-helper/actions/runs/20230432339"
+    }
+  },
+  "signalk-net-ais-plugin": {
+    "head_sha": "98535c3f1b760652aed755c2e948bf68f393f231",
+    "fetched_at": "2026-05-07T05:24:43.475Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "98535c3f1b760652aed755c2e948bf68f393f231",
+      "commit_url": "https://github.com/KEGustafsson/signalk-net-ais-plugin/commit/98535c3f1b760652aed755c2e948bf68f393f231"
+    }
+  },
+  "signalk-wilhelmsk-plugin": {
+    "head_sha": "b85a16ea33d938f9047efdd90a9b8d3c0433e6c7",
+    "fetched_at": "2026-05-07T05:24:43.580Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "b85a16ea33d938f9047efdd90a9b8d3c0433e6c7",
+      "commit_url": "https://github.com/sbender9/signalk-wilhelmsk-plugin/commit/b85a16ea33d938f9047efdd90a9b8d3c0433e6c7"
+    }
+  },
+  "signalk-mqtt-sensors": {
+    "head_sha": "a77f9e91120ec2419e422222e2ef063f116b6912",
+    "fetched_at": "2026-05-07T05:24:43.690Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "a77f9e91120ec2419e422222e2ef063f116b6912",
+      "workflow_run_url": "https://github.com/rgregg/signalk-mqtt-sensors/actions/runs/16185957474"
+    }
+  },
+  "@codekilo/signalk-modbus-client": {
+    "head_sha": "01ad158490c4587194ea56479926d0579caab760",
+    "fetched_at": "2026-05-07T05:24:43.741Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "01ad158490c4587194ea56479926d0579caab760",
+      "commit_url": "https://github.com/codekilo/signalk-modbus-plugin/commit/01ad158490c4587194ea56479926d0579caab760"
+    }
+  },
+  "nmea0183-to-nmea0183": {
+    "head_sha": "b2f2ece1098e2411efefdd16f8d6cea12f6df041",
+    "fetched_at": "2026-05-07T05:24:43.829Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "b2f2ece1098e2411efefdd16f8d6cea12f6df041",
+      "commit_url": "https://github.com/vokkim/nmea0183-to-nmea0183/commit/b2f2ece1098e2411efefdd16f8d6cea12f6df041"
+    }
+  },
+  "signalk-to-stalk": {
+    "head_sha": "1ed829315647c6d76d85726e86f47c0ab5f30bf8",
+    "fetched_at": "2026-05-07T05:24:43.922Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "1ed829315647c6d76d85726e86f47c0ab5f30bf8",
+      "commit_url": "https://github.com/OpenFairWind/signalk-to-stalk/commit/1ed829315647c6d76d85726e86f47c0ab5f30bf8"
+    }
+  },
+  "signalk-meteoblue": {
+    "head_sha": "fad3713cf273dd9c5bc5781c73518568e7df05d6",
+    "fetched_at": "2026-05-07T05:24:44.072Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "fad3713cf273dd9c5bc5781c73518568e7df05d6",
+      "workflow_run_url": "https://github.com/motamman/signalk-meteoblue/actions/runs/20468616972"
+    }
+  },
+  "signalk-rpi-monitor": {
+    "head_sha": "4015db194af896a08d330bcacd4c5481ed4393ed",
+    "fetched_at": "2026-05-07T05:24:44.432Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "4015db194af896a08d330bcacd4c5481ed4393ed",
+      "commit_url": "https://github.com/sberl/signalk-rpi-monitor/commit/4015db194af896a08d330bcacd4c5481ed4393ed"
+    }
+  },
+  "signalk-n2k-switching-emulator": {
+    "head_sha": "c9fafc9a69e9c1a3c293a81ee3442ea88c4ec9cc",
+    "fetched_at": "2026-05-07T05:24:44.490Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c9fafc9a69e9c1a3c293a81ee3442ea88c4ec9cc",
+      "commit_url": "https://github.com/sbender9/signalk-n2k-switching-emulator/commit/c9fafc9a69e9c1a3c293a81ee3442ea88c4ec9cc"
+    }
+  },
+  "signalk-mqtt-home-asisstant": {
+    "head_sha": "94f4026cd1b86b11d62ab826f0593a0ff5dac9ea",
+    "fetched_at": "2026-05-07T05:24:44.518Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "94f4026cd1b86b11d62ab826f0593a0ff5dac9ea",
+      "commit_url": "https://github.com/sencersoylu/signalk-mqtt-gw/commit/94f4026cd1b86b11d62ab826f0593a0ff5dac9ea"
+    }
+  },
+  "signalk-mosquitto": {
+    "head_sha": "c8e8beb32733156981cf0836e5286ff7c36c2578",
+    "fetched_at": "2026-05-07T05:24:44.694Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "c8e8beb32733156981cf0836e5286ff7c36c2578",
+      "workflow_run_url": "https://github.com/motamman/signalk-mosquitto/actions/runs/17020682200"
+    }
+  },
+  "crowd-depth": {
+    "head_sha": "f28b38eb1deb1f3c9b9fc0b8ca95b32bc0c99435",
+    "fetched_at": "2026-05-07T05:24:44.714Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "f28b38eb1deb1f3c9b9fc0b8ca95b32bc0c99435",
+      "workflow_run_url": "https://github.com/openwatersio/crowd-depth/actions/runs/21371219680"
+    }
+  },
+  "signalk-halpi": {
+    "head_sha": "7ab513fca2138483eade84ae391c56f60547b19f",
+    "fetched_at": "2026-05-07T05:24:45.093Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "7ab513fca2138483eade84ae391c56f60547b19f",
+      "workflow_run_url": "https://github.com/hatlabs/signalk-halpi/actions/runs/23710699193"
+    }
+  },
+  "signalk-bandg-performance-plugin": {
+    "head_sha": "b2af79e025f4bfd3ab65d4bdb768fac891f64798",
+    "fetched_at": "2026-05-07T05:24:45.364Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "b2af79e025f4bfd3ab65d4bdb768fac891f64798",
+      "commit_url": "https://github.com/htool/B_and_G_Performance-plugin/commit/b2af79e025f4bfd3ab65d4bdb768fac891f64798"
+    }
+  },
+  "signalk-barograph": {
+    "head_sha": "83c75f28bee53498b37888aa94aeb93c45db265b",
+    "fetched_at": "2026-05-07T05:24:45.465Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "83c75f28bee53498b37888aa94aeb93c45db265b",
+      "commit_url": "https://github.com/tkrofta/signalk-barograph-plugin/commit/83c75f28bee53498b37888aa94aeb93c45db265b"
+    }
+  },
+  "signalk-cruisereport": {
+    "head_sha": "e1ab342c69d06106f6577d473de77b84add9a6ff",
+    "fetched_at": "2026-05-07T05:24:45.554Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "e1ab342c69d06106f6577d473de77b84add9a6ff",
+      "commit_url": "https://github.com/dgplace/signalk-logbook-tm/commit/e1ab342c69d06106f6577d473de77b84add9a6ff"
+    }
+  },
+  "@meri-imperiumi/signalk-infodisplay": {
+    "head_sha": "ba8d67bbe98c33d4d0847f82fc396c5f83f9a4e9",
+    "fetched_at": "2026-05-07T05:24:45.568Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "ba8d67bbe98c33d4d0847f82fc396c5f83f9a4e9",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-infodisplay/actions/runs/21372083186"
+    }
+  },
+  "@meri-imperiumi/signalk-teltonika-rutx11": {
+    "head_sha": "0a139cc39feb2d6469141a810633482dc92b843e",
+    "fetched_at": "2026-05-07T05:24:45.649Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "0a139cc39feb2d6469141a810633482dc92b843e",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-teltonika-rutx11/actions/runs/25473927506"
+    }
+  },
+  "@meri-imperiumi/signalk-mob-notifier": {
+    "head_sha": "d36843869a3ca8da3aa3613ac41a33d054eb84f6",
+    "fetched_at": "2026-05-07T05:24:45.881Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "d36843869a3ca8da3aa3613ac41a33d054eb84f6",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-mob-notifier/actions/runs/21190381561"
+    }
+  },
+  "@meri-imperiumi/signalk-triplogger": {
+    "head_sha": "c8b9b14d33ab91b3ae8e208afe56531c9f976594",
+    "fetched_at": "2026-05-07T05:24:45.884Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c8b9b14d33ab91b3ae8e208afe56531c9f976594",
+      "commit_url": "https://github.com/meri-imperiumi/signalk-triplogger/commit/c8b9b14d33ab91b3ae8e208afe56531c9f976594"
+    }
+  },
+  "signalk-windy-plugin": {
+    "head_sha": "43a7d9a7d161abd74a2afc0bd28c3f853d495ea1",
+    "fetched_at": "2026-05-07T05:24:46.234Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "43a7d9a7d161abd74a2afc0bd28c3f853d495ea1",
+      "commit_url": "https://github.com/jaffadog/signalk-windy-plugin/commit/43a7d9a7d161abd74a2afc0bd28c3f853d495ea1"
+    }
+  },
+  "signalk-raspberry-mcs": {
+    "head_sha": "7f9647e024579587f4c286586853d0ddc869cd98",
+    "fetched_at": "2026-05-07T05:24:46.461Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7f9647e024579587f4c286586853d0ddc869cd98",
+      "commit_url": "https://github.com/Thomas-GeDaD/SignalK_raspberry_MCS/commit/7f9647e024579587f4c286586853d0ddc869cd98"
+    }
+  },
+  "@mplattu/signalk-modbus-serial-client": {
+    "head_sha": "26d73b79bb3c4f8a5cd07defb5cac1442e347c4e",
+    "fetched_at": "2026-05-07T05:24:46.496Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "26d73b79bb3c4f8a5cd07defb5cac1442e347c4e",
+      "commit_url": "https://github.com/mplattu/signalk-modbus-serial-client/commit/26d73b79bb3c4f8a5cd07defb5cac1442e347c4e"
+    }
+  },
+  "e-inkdashboardextended": {
+    "head_sha": "d2d817ff7d4b8984f1db5cd646e49bf84cafcfa3",
+    "fetched_at": "2026-05-07T05:24:46.601Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "d2d817ff7d4b8984f1db5cd646e49bf84cafcfa3",
+      "commit_url": "https://github.com/Yskaa91/e-inkDashboardExtended/commit/d2d817ff7d4b8984f1db5cd646e49bf84cafcfa3"
+    }
+  },
+  "signalk-engine-hours": {
+    "head_sha": "0a972b63795754cfa12f24b14cc7cad877c66bcf",
+    "fetched_at": "2026-05-07T05:24:46.751Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "0a972b63795754cfa12f24b14cc7cad877c66bcf",
+      "commit_url": "https://github.com/KEGustafsson/signalk-engine-hours/commit/0a972b63795754cfa12f24b14cc7cad877c66bcf"
+    }
+  },
+  "signalk-generic-pgn-parser": {
+    "head_sha": "cf1897430e24f9cf9e11e8d108a847e1e7434797",
+    "fetched_at": "2026-05-07T05:24:46.918Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "cf1897430e24f9cf9e11e8d108a847e1e7434797",
+      "commit_url": "https://github.com/jncarter123/signalk-generic-pgn-parser/commit/cf1897430e24f9cf9e11e8d108a847e1e7434797"
+    }
+  },
+  "signalk-raspberry-pi-sx1262-rx": {
+    "head_sha": "fe0eed990c2996e2125790dd2d416d9422530558",
+    "fetched_at": "2026-05-07T05:24:46.922Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "fe0eed990c2996e2125790dd2d416d9422530558",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-read-sx1262-rx/commit/fe0eed990c2996e2125790dd2d416d9422530558"
+    }
+  },
+  "signalk-racer": {
+    "head_sha": "2538afd3c058a7f04444dff4cc4163eb65b84bca",
+    "fetched_at": "2026-05-07T05:24:46.953Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "2538afd3c058a7f04444dff4cc4163eb65b84bca",
+      "commit_url": "https://github.com/gregw/signalk-racer/commit/2538afd3c058a7f04444dff4cc4163eb65b84bca"
+    }
+  },
+  "signalk-raspberry-pi-temperature": {
+    "head_sha": "c6894e5e906fadb006ee52f7f132b8881ba77f99",
+    "fetched_at": "2026-05-07T05:24:47.236Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c6894e5e906fadb006ee52f7f132b8881ba77f99",
+      "commit_url": "https://github.com/sbender9/signalk-raspberry-pi-temperature/commit/c6894e5e906fadb006ee52f7f132b8881ba77f99"
+    }
+  },
+  "signalk-nmea2000-emitter-cannon": {
+    "head_sha": "114fb47488fd7b11bafe363e9cc381bf0968bee2",
+    "fetched_at": "2026-05-07T05:24:47.503Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "114fb47488fd7b11bafe363e9cc381bf0968bee2",
+      "workflow_run_url": "https://github.com/NearlCrews/signalk-nmea2000-emitter-cannon/actions/runs/25413416378"
+    }
+  },
+  "signalk-victron-battery-monitor": {
+    "head_sha": "d0f6683906e024c6cc4f4ea76ee36b5c6b3a242b",
+    "fetched_at": "2026-05-07T05:24:47.560Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "d0f6683906e024c6cc4f4ea76ee36b5c6b3a242b",
+      "commit_url": "https://github.com/sbender9/signalk-victron-battery-monitor/commit/d0f6683906e024c6cc4f4ea76ee36b5c6b3a242b"
+    }
+  },
+  "signalk-raspberry-pi-ssd1306": {
+    "head_sha": "be7e8730f41c5dae6f5729e331826bd03a4c7c4a",
+    "fetched_at": "2026-05-07T05:24:47.588Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "be7e8730f41c5dae6f5729e331826bd03a4c7c4a",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-ssd1306/commit/be7e8730f41c5dae6f5729e331826bd03a4c7c4a"
+    }
+  },
+  "signalk-ruuvitag-plugin": {
+    "head_sha": "ccd61c088830ecbecc4f939951ddb7b482c9ab2a",
+    "fetched_at": "2026-05-07T05:24:47.853Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "ccd61c088830ecbecc4f939951ddb7b482c9ab2a",
+      "commit_url": "https://github.com/vokkim/signalk-ruuvitag-plugin/commit/ccd61c088830ecbecc4f939951ddb7b482c9ab2a"
+    }
+  },
+  "signalk-buddylist-plugin": {
+    "head_sha": "dffdec01b2eda57fcc1d7035d9bffa154be33af3",
+    "fetched_at": "2026-05-07T05:24:47.898Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "dffdec01b2eda57fcc1d7035d9bffa154be33af3",
+      "commit_url": "https://github.com/sbender9/signalk-buddylist-plugin/commit/dffdec01b2eda57fcc1d7035d9bffa154be33af3"
+    }
+  },
+  "signalk-tide-watch": {
+    "head_sha": "8f669c2a09d4adb84828a4aed7356051f7a5cecc",
+    "fetched_at": "2026-05-07T05:24:48.052Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "8f669c2a09d4adb84828a4aed7356051f7a5cecc",
+      "commit_url": "https://github.com/joelkoz/signalk-tide-watch/commit/8f669c2a09d4adb84828a4aed7356051f7a5cecc"
+    }
+  },
+  "signalk-logviewer": {
+    "head_sha": "ef1620bfd9c6a71993cea90c1e017e6fd04607f8",
+    "fetched_at": "2026-05-07T05:24:48.414Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "ef1620bfd9c6a71993cea90c1e017e6fd04607f8",
+      "workflow_run_url": "https://github.com/dirkwa/signalk-logviewer/actions/runs/23830416098"
+    }
+  },
+  "signalk-bandg-displaydaynight": {
+    "head_sha": "f47376c8033df8cb788000766fca55e86629f791",
+    "fetched_at": "2026-05-07T05:24:48.435Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "f47376c8033df8cb788000766fca55e86629f791",
+      "commit_url": "https://github.com/htool/signalk-bandg-displaydaynight/commit/f47376c8033df8cb788000766fca55e86629f791"
+    }
+  },
+  "aisfleet": {
+    "head_sha": "aed4c44f3c8a860615ab4564be11339f763fb940",
+    "fetched_at": "2026-05-07T05:24:48.575Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "aed4c44f3c8a860615ab4564be11339f763fb940",
+      "commit_url": "https://github.com/AISFLeet/signalk-aisfleet/commit/aed4c44f3c8a860615ab4564be11339f763fb940"
+    }
+  },
+  "@codekilo/nmea0183-iec61121-450-server": {
+    "head_sha": "a58179296111e42e8f6d315ba140fb101d2b5626",
+    "fetched_at": "2026-05-07T05:24:48.591Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a58179296111e42e8f6d315ba140fb101d2b5626",
+      "commit_url": "https://github.com/codekilo/NMEA0183-IEC61162-450-server-plugin/commit/a58179296111e42e8f6d315ba140fb101d2b5626"
+    }
+  },
+  "signalk-hwt901b-imu-plus": {
+    "head_sha": "d53d8e8ec5144d0c77510578cdc75d132969fb96",
+    "fetched_at": "2026-05-07T05:24:48.606Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "d53d8e8ec5144d0c77510578cdc75d132969fb96",
+      "commit_url": "https://github.com/techgardeners/signalk-hwt901b-imu-plus/commit/d53d8e8ec5144d0c77510578cdc75d132969fb96"
+    }
+  },
+  "nmea-streamer": {
+    "head_sha": "c5efeb12cd33d59690aed938957867d9e4a98d1c",
+    "fetched_at": "2026-05-07T05:24:48.799Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c5efeb12cd33d59690aed938957867d9e4a98d1c",
+      "commit_url": "https://github.com/Asw1n/NMEA0183-log-streamer/commit/c5efeb12cd33d59690aed938957867d9e4a98d1c"
+    }
+  },
+  "signalk-brineomatic-plugin": {
+    "head_sha": "dec406f989324dd6dbcf62454a8636be852fcdf1",
+    "fetched_at": "2026-05-07T05:24:48.892Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "dec406f989324dd6dbcf62454a8636be852fcdf1",
+      "commit_url": "https://github.com/hoeken/signalk-brineomatic-plugin/commit/dec406f989324dd6dbcf62454a8636be852fcdf1"
+    }
+  },
+  "signalk-notification-player": {
+    "head_sha": "d7f771ab6a2fdc8e1ac0e7cff9a6aab1deacb3cf",
+    "fetched_at": "2026-05-07T05:24:49.367Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "d7f771ab6a2fdc8e1ac0e7cff9a6aab1deacb3cf",
+      "commit_url": "https://github.com/davidsanner/signalk-notification-player/commit/d7f771ab6a2fdc8e1ac0e7cff9a6aab1deacb3cf"
+    }
+  },
+  "e-inkdashboardmodern": {
+    "head_sha": "8071fe24ab287b39f117ac7c2ab15662ea13c9c0",
+    "fetched_at": "2026-05-07T05:24:49.459Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "8071fe24ab287b39f117ac7c2ab15662ea13c9c0",
+      "commit_url": "https://github.com/VladimirKalachikhin/e-inkDashboardModernSK/commit/8071fe24ab287b39f117ac7c2ab15662ea13c9c0"
+    }
+  },
+  "smart-grid-controller": {
+    "head_sha": "9ebcf177cecf3d82fcc1194435363bba651865a8",
+    "fetched_at": "2026-05-07T05:24:49.534Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "9ebcf177cecf3d82fcc1194435363bba651865a8",
+      "commit_url": "https://github.com/MoonBoi9001/signal-k-plugins/commit/9ebcf177cecf3d82fcc1194435363bba651865a8"
+    }
+  },
+  "signalk-pushover-plugin": {
+    "head_sha": "3def865a3f8822dcaa0779517110f4b48cb3b9b5",
+    "fetched_at": "2026-05-07T05:24:49.679Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "3def865a3f8822dcaa0779517110f4b48cb3b9b5",
+      "commit_url": "https://github.com/jonaswitt/signalk-pushover-plugin/commit/3def865a3f8822dcaa0779517110f4b48cb3b9b5"
+    }
+  },
+  "signalk-windjs-plugin": {
+    "head_sha": "b4a2a537f0de17149ffdd3dc69b745c24a510794",
+    "fetched_at": "2026-05-07T05:24:49.746Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "b4a2a537f0de17149ffdd3dc69b745c24a510794",
+      "commit_url": "https://github.com/fabdrol/signalk-windjs-plugin/commit/b4a2a537f0de17149ffdd3dc69b745c24a510794"
+    }
+  },
+  "signalk-windjs": {
+    "head_sha": "76dbc09ac5c3571a28adc7d444ac75dc40b774cd",
+    "fetched_at": "2026-05-07T05:24:49.749Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "76dbc09ac5c3571a28adc7d444ac75dc40b774cd",
+      "commit_url": "https://github.com/fabdrol/signalk-windjs-plugin/commit/76dbc09ac5c3571a28adc7d444ac75dc40b774cd"
+    }
+  },
+  "signalk-starlink": {
+    "head_sha": "4144752a8d49e773a7c116ed5046978f56121702",
+    "fetched_at": "2026-05-07T05:24:49.809Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "4144752a8d49e773a7c116ed5046978f56121702",
+      "commit_url": "https://github.com/itemir/signalk-starlink/commit/4144752a8d49e773a7c116ed5046978f56121702"
+    }
+  },
+  "@marineyachtradar/signalk-plugin": {
+    "head_sha": "8b4fb5318653bd243637c3e8741447d224f7c486",
+    "fetched_at": "2026-05-07T05:24:50.198Z",
+    "payload": {
+      "status": "ok",
+      "head_sha": "8b4fb5318653bd243637c3e8741447d224f7c486",
+      "commit_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/commit/8b4fb5318653bd243637c3e8741447d224f7c486",
+      "workflow_run_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293",
+      "tested_at": "2026-05-07T05:10:20Z",
+      "workflow_ref": "refs/heads/main",
+      "jobs": [
+        {
+          "platform": "integration",
+          "node": 24,
+          "conclusion": "success",
+          "server_version": "latest",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025263"
+        },
+        {
+          "platform": "integration",
+          "node": 22,
+          "conclusion": "success",
+          "server_version": "latest",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025277"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025319"
+        },
+        {
+          "platform": "macos",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025321"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025324"
+        },
+        {
+          "platform": "macos",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025328"
+        },
+        {
+          "platform": "windows",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025329"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025330"
+        },
+        {
+          "platform": "windows",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025344"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025348"
+        },
+        {
+          "platform": "armv7-cerbo",
+          "node": 20,
+          "conclusion": "skipped",
+          "job_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-plugin/actions/runs/25477170293/job/74753025413"
+        }
+      ]
+    }
+  },
+  "@oehoe83/signalk-raspberry-pi-bme680": {
+    "head_sha": "7d41cf8248ec5015d07da9926f69b2ecbe2ce166",
+    "fetched_at": "2026-05-07T05:24:50.323Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7d41cf8248ec5015d07da9926f69b2ecbe2ce166",
+      "commit_url": "https://github.com/oehoe/signalk-raspberry-pi-bme680/commit/7d41cf8248ec5015d07da9926f69b2ecbe2ce166"
+    }
+  },
+  "signalk-activecaptain-resources": {
+    "head_sha": "1600520d134dafbb589fb5d527d0e336ec217793",
+    "fetched_at": "2026-05-07T05:24:50.607Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "1600520d134dafbb589fb5d527d0e336ec217793",
+      "workflow_run_url": "https://github.com/KvotheBloodless/signalk-activecaptain-resources/actions/runs/21903102298"
+    }
+  },
+  "sk-py-bno08x": {
+    "head_sha": "558801f2800898c4f2a972c0f862706725f7b002",
+    "fetched_at": "2026-05-07T05:24:50.728Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "558801f2800898c4f2a972c0f862706725f7b002",
+      "commit_url": "https://github.com/dpazz/sk-plugin-python-bno08x/commit/558801f2800898c4f2a972c0f862706725f7b002"
+    }
+  },
+  "@marineyachtradar/signalk-playback-plugin": {
+    "head_sha": "c948f23ee8556c78ef9f0a9c077b10a3e8ad62f4",
+    "fetched_at": "2026-05-07T05:24:50.796Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "c948f23ee8556c78ef9f0a9c077b10a3e8ad62f4",
+      "workflow_run_url": "https://github.com/MarineYachtRadar/mayara-server-signalk-playbackrecordings-plugin/actions/runs/23931428850"
+    }
+  },
+  "signalk-raspberry-pi-1wire": {
+    "head_sha": "85adea6830397b28dab2a56bdc88148d80cfbffc",
+    "fetched_at": "2026-05-07T05:24:50.802Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "85adea6830397b28dab2a56bdc88148d80cfbffc",
+      "commit_url": "https://github.com/ewaldvangemert/signalk-raspberry-pi-1wire/commit/85adea6830397b28dab2a56bdc88148d80cfbffc"
+    }
+  },
+  "signalk-fixedstation": {
+    "head_sha": "ecf737ab7b2aa584ac584384e4399c3d8841a5e8",
+    "fetched_at": "2026-05-07T05:24:50.816Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "ecf737ab7b2aa584ac584384e4399c3d8841a5e8",
+      "commit_url": "https://github.com/inspired-technologies/signalk-fixedstation-plugin/commit/ecf737ab7b2aa584ac584384e4399c3d8841a5e8"
+    }
+  },
+  "signalk-n2k-displays": {
+    "head_sha": "98486c317de0f17af9cd4d8d27a0be7e0285e65e",
+    "fetched_at": "2026-05-07T05:24:50.841Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "98486c317de0f17af9cd4d8d27a0be7e0285e65e",
+      "commit_url": "https://github.com/sbender9/signalk-n2k-displays/commit/98486c317de0f17af9cd4d8d27a0be7e0285e65e"
+    }
+  },
+  "signalk-raspberry-pi-monitoring": {
+    "head_sha": "79985cc1a670f86d45a149d98d596cb4c3532d4a",
+    "fetched_at": "2026-05-07T05:24:51.290Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "79985cc1a670f86d45a149d98d596cb4c3532d4a",
+      "commit_url": "https://github.com/nmostovoy/signalk-raspberry-pi-monitoring/commit/79985cc1a670f86d45a149d98d596cb4c3532d4a"
+    }
+  },
+  "@codekilo/signalk-trigger-event": {
+    "head_sha": "20841ac85e890934a65f16f28b2c34df5b9a956c",
+    "fetched_at": "2026-05-07T05:24:51.400Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "20841ac85e890934a65f16f28b2c34df5b9a956c",
+      "commit_url": "https://github.com/codekilo/signalk-trigger/commit/20841ac85e890934a65f16f28b2c34df5b9a956c"
+    }
+  },
+  "signalk-mqtt-bridge": {
+    "head_sha": "87eae6bb4a1789c38089eb9122f010f13abd96fb",
+    "fetched_at": "2026-05-07T05:24:51.515Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "87eae6bb4a1789c38089eb9122f010f13abd96fb",
+      "commit_url": "https://github.com/iuriaranda/signalk-mqtt-bridge/commit/87eae6bb4a1789c38089eb9122f010f13abd96fb"
+    }
+  },
+  "@yachteye/signalk-timezone-plugin": {
+    "head_sha": "885a4d8708fafac8e03790f8a7634c040dee02fe",
+    "fetched_at": "2026-05-07T05:24:51.643Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "885a4d8708fafac8e03790f8a7634c040dee02fe",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-timezone-plugin/commit/885a4d8708fafac8e03790f8a7634c040dee02fe"
+    }
+  },
+  "signalk-mydata-plugin": {
+    "head_sha": "9318e39bfee4caba328870d678143a1d1554729c",
+    "fetched_at": "2026-05-07T05:24:51.772Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "9318e39bfee4caba328870d678143a1d1554729c",
+      "commit_url": "https://github.com/OpenFairWind/signalk-mydata-plugin/commit/9318e39bfee4caba328870d678143a1d1554729c"
+    }
+  },
+  "signalk-vcan-logplayer": {
+    "head_sha": "c51cf1527a9b6a1aee3edbde0c48badd642ec117",
+    "fetched_at": "2026-05-07T05:24:51.799Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "c51cf1527a9b6a1aee3edbde0c48badd642ec117",
+      "workflow_run_url": "https://github.com/formifan2002/signalk-vcan-logplayer/actions/runs/23818559465"
+    }
+  },
+  "signalk-switch-automation": {
+    "head_sha": "6c912e20b6cdb549517ef4bb70ee912cd276fc3b",
+    "fetched_at": "2026-05-07T05:24:51.945Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "6c912e20b6cdb549517ef4bb70ee912cd276fc3b",
+      "commit_url": "https://github.com/sbender9/signalk-switch-automation/commit/6c912e20b6cdb549517ef4bb70ee912cd276fc3b"
+    }
+  },
+  "signalk-notifications": {
+    "head_sha": "c344ba449ba2a3f1bcf826f7beef22cd818d504d",
+    "fetched_at": "2026-05-07T05:24:52.044Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c344ba449ba2a3f1bcf826f7beef22cd818d504d",
+      "commit_url": "https://github.com/itemir/signalk-notifications/commit/c344ba449ba2a3f1bcf826f7beef22cd818d504d"
+    }
+  },
+  "signalk-cortex-plugin": {
+    "head_sha": "01385c04fd97ddd4d223363883d05ebb3fc5c0d7",
+    "fetched_at": "2026-05-07T05:24:52.445Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "01385c04fd97ddd4d223363883d05ebb3fc5c0d7",
+      "commit_url": "https://github.com/jonaswitt/signalk-cortex-plugin/commit/01385c04fd97ddd4d223363883d05ebb3fc5c0d7"
+    }
+  },
+  "signalk-icom-m510e-plugin": {
+    "head_sha": "a7f62f580c29cd14dab08a82044f674fcc3723a4",
+    "fetched_at": "2026-05-07T05:24:52.445Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a7f62f580c29cd14dab08a82044f674fcc3723a4",
+      "commit_url": "https://github.com/htool/signalk-icom-m510e-plugin/commit/a7f62f580c29cd14dab08a82044f674fcc3723a4"
+    }
+  },
+  "signalk-instrument-display-plugin": {
+    "head_sha": "a57a30ee1193c01089fa506d336fa24d7b4b93b3",
+    "fetched_at": "2026-05-07T05:24:52.554Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a57a30ee1193c01089fa506d336fa24d7b4b93b3",
+      "commit_url": "https://github.com/htool/signalk-instrument-display-plugin/commit/a57a30ee1193c01089fa506d336fa24d7b4b93b3"
+    }
+  },
+  "signalk-net-weather-finland": {
+    "head_sha": "3d5fc2ab0e4abb4d6080c3115403dcdfaa043ca4",
+    "fetched_at": "2026-05-07T05:24:52.617Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "3d5fc2ab0e4abb4d6080c3115403dcdfaa043ca4",
+      "workflow_run_url": "https://github.com/KEGustafsson/signalk-net-weather-finland/actions/runs/25296620624"
+    }
+  },
+  "@meri-imperiumi/signalk-audio-notifications": {
+    "head_sha": "0b3646b55b8373719a62be65e4f6cd637682bafd",
+    "fetched_at": "2026-05-07T05:24:52.716Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "0b3646b55b8373719a62be65e4f6cd637682bafd",
+      "commit_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/commit/0b3646b55b8373719a62be65e4f6cd637682bafd"
+    }
+  },
+  "@marineyachtradar/signalk-wasm": {
+    "head_sha": "098c3ef10dc98b00d622734698398d3e5e90400e",
+    "fetched_at": "2026-05-07T05:24:52.852Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "098c3ef10dc98b00d622734698398d3e5e90400e",
+      "workflow_run_url": "https://github.com/MarineYachtRadar/mayara-signalk-wasm/actions/runs/20293540850"
+    }
+  },
+  "signalk-multiplex-viewer": {
+    "head_sha": "116025905be4ca105b09881798f4fd720b2b68a4",
+    "fetched_at": "2026-05-07T05:24:52.947Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "116025905be4ca105b09881798f4fd720b2b68a4",
+      "commit_url": "https://github.com/tonybentley/signalk-multiplex-viewer/commit/116025905be4ca105b09881798f4fd720b2b68a4"
+    }
+  },
+  "signalk-fixed-position": {
+    "head_sha": "20310413baf0a425d95efb12bcbefea702daa29b",
+    "fetched_at": "2026-05-07T05:24:52.989Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "20310413baf0a425d95efb12bcbefea702daa29b",
+      "commit_url": "https://github.com/saillogger/signalk-fixed-position/commit/20310413baf0a425d95efb12bcbefea702daa29b"
+    }
+  },
+  "signalk-n2k-virtual-switch": {
+    "head_sha": "89acc68d8ec4da76fd666b65f27be1c0936d808f",
+    "fetched_at": "2026-05-07T05:24:53.432Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "89acc68d8ec4da76fd666b65f27be1c0936d808f",
+      "commit_url": "https://github.com/jncarter123/signalk-n2k-virtual-switch/commit/89acc68d8ec4da76fd666b65f27be1c0936d808f"
+    }
+  },
+  "signalk-nmea0183-to-serial": {
+    "head_sha": "7ecba110afd5e1367c205c4abfae547fa71a1af1",
+    "fetched_at": "2026-05-07T05:24:53.438Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7ecba110afd5e1367c205c4abfae547fa71a1af1",
+      "commit_url": "https://github.com/fabdrol/signalk-nmea0183-to-serial-plugin/commit/7ecba110afd5e1367c205c4abfae547fa71a1af1"
+    }
+  },
+  "signalk-navtex-plugin": {
+    "head_sha": "bbc73e825b50d03699cd747a8b07292e7f1c9775",
+    "fetched_at": "2026-05-07T05:24:53.525Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "bbc73e825b50d03699cd747a8b07292e7f1c9775",
+      "commit_url": "https://github.com/htool/signalk-navtex-plugin/commit/bbc73e825b50d03699cd747a8b07292e7f1c9775"
+    }
+  },
+  "signalk-sailsconfig": {
+    "head_sha": "bfa008e687018869a6ffdcadf32fac98d1480ead",
+    "fetched_at": "2026-05-07T05:24:53.862Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "bfa008e687018869a6ffdcadf32fac98d1480ead",
+      "commit_url": "https://github.com/inspired-technologies/signalk-sailsconfig/commit/bfa008e687018869a6ffdcadf32fac98d1480ead"
+    }
+  },
+  "@meri-imperiumi/signalk-aprs": {
+    "head_sha": "aa2f66bcddd271b5f8e0df8b61ab2761b53cfc30",
+    "fetched_at": "2026-05-07T05:24:53.970Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "aa2f66bcddd271b5f8e0df8b61ab2761b53cfc30",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-aprs/actions/runs/21190427289"
+    }
+  },
+  "signalk-mqtt-client": {
+    "head_sha": "91034a42f47a18deed68f7a64b6dac41c4a76950",
+    "fetched_at": "2026-05-07T05:24:53.993Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "91034a42f47a18deed68f7a64b6dac41c4a76950",
+      "commit_url": "https://github.com/htool/signalk-mqtt-client/commit/91034a42f47a18deed68f7a64b6dac41c4a76950"
+    }
+  },
+  "signalk-raspberry-pi-ina219": {
+    "head_sha": "5e8e8226ee62eed2900ad55d3c538fbde5347cfb",
+    "fetched_at": "2026-05-07T05:24:54.118Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "5e8e8226ee62eed2900ad55d3c538fbde5347cfb",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-ina219/commit/5e8e8226ee62eed2900ad55d3c538fbde5347cfb"
+    }
+  },
+  "@meri-imperiumi/signalk-adsb": {
+    "head_sha": "bf5f314ba4f7d9504a58a3beb7beb8aaad289310",
+    "fetched_at": "2026-05-07T05:24:54.166Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "bf5f314ba4f7d9504a58a3beb7beb8aaad289310",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-adsb/actions/runs/19110188458"
+    }
+  },
+  "signalk-noaa-weather": {
+    "head_sha": "0070bd7e97f9abcfda84590f33c7e6a6b9995657",
+    "fetched_at": "2026-05-07T05:24:54.465Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "0070bd7e97f9abcfda84590f33c7e6a6b9995657",
+      "workflow_run_url": "https://github.com/sbender9/signalk-noaa-weather/actions/runs/24575289643"
+    }
+  },
+  "signalk-raspberry-pi-4ch-ina219": {
+    "head_sha": "47a060927745e9da4d6b298b1659be37da68273c",
+    "fetched_at": "2026-05-07T05:24:54.932Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "47a060927745e9da4d6b298b1659be37da68273c",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-4ch-ina219/commit/47a060927745e9da4d6b298b1659be37da68273c"
+    }
+  },
+  "@codekilo/regexp-jexl-reader": {
+    "head_sha": "50d36efcec75ffe7932f1a72f1bbda9fc2b0cea8",
+    "fetched_at": "2026-05-07T05:24:54.940Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "50d36efcec75ffe7932f1a72f1bbda9fc2b0cea8",
+      "commit_url": "https://github.com/codekilo/regexp-jexl-reader/commit/50d36efcec75ffe7932f1a72f1bbda9fc2b0cea8"
+    }
+  },
+  "signalk-path-filter": {
+    "head_sha": "a73e463c13c969ea9e301264e679e840893ab527",
+    "fetched_at": "2026-05-07T05:24:54.955Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a73e463c13c969ea9e301264e679e840893ab527",
+      "commit_url": "https://github.com/sbender9/signalk-path-filter/commit/a73e463c13c969ea9e301264e679e840893ab527"
+    }
+  },
+  "signalk-datetime": {
+    "head_sha": "c9a38fb4f357284159ed2ddf5be38a524d41bcd2",
+    "fetched_at": "2026-05-07T05:24:55.106Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c9a38fb4f357284159ed2ddf5be38a524d41bcd2",
+      "commit_url": "https://github.com/tmcolby/signalk-datetime/commit/c9a38fb4f357284159ed2ddf5be38a524d41bcd2"
+    }
+  },
+  "utilities-sk": {
+    "head_sha": "b536fd1e5e87c7dde3ff18e0b930118be6f84ad6",
+    "fetched_at": "2026-05-07T05:24:55.135Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "b536fd1e5e87c7dde3ff18e0b930118be6f84ad6",
+      "commit_url": "https://github.com/naugehyde/utilities-sk/commit/b536fd1e5e87c7dde3ff18e0b930118be6f84ad6"
+    }
+  },
+  "signalk-windy": {
+    "head_sha": "ee32927d19f63491c8782b936d658dc290a94946",
+    "fetched_at": "2026-05-07T05:24:55.141Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "ee32927d19f63491c8782b936d658dc290a94946",
+      "commit_url": "https://github.com/Saillogger/signalk-windy-plugin/commit/ee32927d19f63491c8782b936d658dc290a94946"
+    }
+  },
+  "signalk-junctekkg": {
+    "head_sha": "cdf379a7203639f03a15e7d8fcf29b2043517cd4",
+    "fetched_at": "2026-05-07T05:24:55.165Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "cdf379a7203639f03a15e7d8fcf29b2043517cd4",
+      "commit_url": "https://github.com/kagouraki/signalk-junctekkg/commit/cdf379a7203639f03a15e7d8fcf29b2043517cd4"
+    }
+  },
+  "@yachteye/signalk-weather-plugin": {
+    "head_sha": "a1a4237d395c9ab9da16330fc2cff9b67a890c69",
+    "fetched_at": "2026-05-07T05:24:55.308Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a1a4237d395c9ab9da16330fc2cff9b67a890c69",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-ye-weather-plugin/commit/a1a4237d395c9ab9da16330fc2cff9b67a890c69"
+    }
+  },
+  "signalk-noaa-weather-report": {
+    "head_sha": "dbf782f6036d9a60d7b694c378025e7d2f93b872",
+    "fetched_at": "2026-05-07T05:24:55.861Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "dbf782f6036d9a60d7b694c378025e7d2f93b872",
+      "commit_url": "https://github.com/kpconnell/signalk-noaa-windy-plugin/commit/dbf782f6036d9a60d7b694c378025e7d2f93b872"
+    }
+  },
+  "signalk-aishub-ws": {
+    "head_sha": "667478c42e9bc9be6015602dd10705947633d754",
+    "fetched_at": "2026-05-07T05:24:55.982Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "667478c42e9bc9be6015602dd10705947633d754",
+      "commit_url": "https://github.com/sbender9/signalk-aishub-ws/commit/667478c42e9bc9be6015602dd10705947633d754"
+    }
+  },
+  "signalk-tides-api": {
+    "head_sha": "62f1c40cff01fdb3c43ce7d809390e82e79198ef",
+    "fetched_at": "2026-05-07T05:24:56.077Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "62f1c40cff01fdb3c43ce7d809390e82e79198ef",
+      "commit_url": "https://github.com/joabakk/signalk-tides-api/commit/62f1c40cff01fdb3c43ce7d809390e82e79198ef"
+    }
+  },
+  "pico2signalk": {
+    "head_sha": "c803da70a4defb605e5ac816ee396b9658254cb0",
+    "fetched_at": "2026-05-07T05:24:56.201Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c803da70a4defb605e5ac816ee396b9658254cb0",
+      "commit_url": "https://github.com/htool/pico2signalk/commit/c803da70a4defb605e5ac816ee396b9658254cb0"
+    }
+  },
+  "signalk-solar-forecast": {
+    "head_sha": "b8cfdfaa4de1fcaf6c823e364c409dfc6c45a0a1",
+    "fetched_at": "2026-05-07T05:24:56.271Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "b8cfdfaa4de1fcaf6c823e364c409dfc6c45a0a1",
+      "workflow_run_url": "https://github.com/KvotheBloodless/signalk-solar-forecast/actions/runs/15105310749"
+    }
+  },
+  "signalk-autopilot-garmin": {
+    "head_sha": "7b2fe8d0e95505ab1c2cfbdb9368c635b4788b4c",
+    "fetched_at": "2026-05-07T05:24:56.339Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7b2fe8d0e95505ab1c2cfbdb9368c635b4788b4c",
+      "commit_url": "https://github.com/jorgen-k/signalk-autopilot-garmin/commit/7b2fe8d0e95505ab1c2cfbdb9368c635b4788b4c"
+    }
+  },
+  "signalk-naviop-plugin": {
+    "head_sha": "99108bf72ced3d13e4e4413eeaa18c8685066dbb",
+    "fetched_at": "2026-05-07T05:24:56.389Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "99108bf72ced3d13e4e4413eeaa18c8685066dbb",
+      "commit_url": "https://github.com/htool/signalk-naviop-plugin/commit/99108bf72ced3d13e4e4413eeaa18c8685066dbb"
+    }
+  },
+  "signalk-rpi-uptime": {
+    "head_sha": "5fc86c0d8ca0c59fe2eb4fc4c75377c5ae73d2d5",
+    "fetched_at": "2026-05-07T05:24:56.419Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "5fc86c0d8ca0c59fe2eb4fc4c75377c5ae73d2d5",
+      "commit_url": "https://github.com/Haimana/signalk-rpi-uptime/commit/5fc86c0d8ca0c59fe2eb4fc4c75377c5ae73d2d5"
+    }
+  },
+  "signalk-cloud": {
+    "head_sha": "5315c984c6788c0ecd9802929d2c5672ff5d8448",
+    "fetched_at": "2026-05-07T05:24:56.850Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "5315c984c6788c0ecd9802929d2c5672ff5d8448",
+      "commit_url": "https://github.com/sbender9/signalk-cloud/commit/5315c984c6788c0ecd9802929d2c5672ff5d8448"
+    }
+  },
+  "signalk-vlm": {
+    "head_sha": "c5e06f21d155b072cc61fd792403f84d853751fa",
+    "fetched_at": "2026-05-07T05:24:56.906Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c5e06f21d155b072cc61fd792403f84d853751fa",
+      "commit_url": "https://github.com/macjl/signalk-vlm/commit/c5e06f21d155b072cc61fd792403f84d853751fa"
+    }
+  },
+  "@meri-imperiumi/signalk-alternator-engine-on": {
+    "head_sha": "56eb96b84d69711155d75201ff8922181fc195e8",
+    "fetched_at": "2026-05-07T05:24:57.149Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "56eb96b84d69711155d75201ff8922181fc195e8",
+      "commit_url": "https://github.com/meri-imperiumi/signalk-alternator-engine-on/commit/56eb96b84d69711155d75201ff8922181fc195e8"
+    }
+  },
+  "signalk-ais-interceptor": {
+    "head_sha": "50342198a506dee35e1261b8127ac31a1051f9f4",
+    "fetched_at": "2026-05-07T05:24:57.260Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "50342198a506dee35e1261b8127ac31a1051f9f4",
+      "commit_url": "https://github.com/spidgrou/AIS-Interceptor/commit/50342198a506dee35e1261b8127ac31a1051f9f4"
+    }
+  },
+  "shipsio-signalk-plugin": {
+    "head_sha": "02628e9c8dfb6238df004037d71a9e40524a766f",
+    "fetched_at": "2026-05-07T05:24:57.343Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "02628e9c8dfb6238df004037d71a9e40524a766f",
+      "commit_url": "https://github.com/shipsio/shipsio-signalk-plugin/commit/02628e9c8dfb6238df004037d71a9e40524a766f"
+    }
+  },
+  "signalk-marinetraffic-api": {
+    "head_sha": "a6f25ffcf76024674696abe0a9590f1d97ddcbab",
+    "fetched_at": "2026-05-07T05:24:57.361Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a6f25ffcf76024674696abe0a9590f1d97ddcbab",
+      "commit_url": "https://github.com/joabakk/signalk-marinetraffic-api/commit/a6f25ffcf76024674696abe0a9590f1d97ddcbab"
+    }
+  },
+  "signalk-set-gps-timezone": {
+    "head_sha": "87897ac9b35f5a8969492bb7b71e912e68ad7f8e",
+    "fetched_at": "2026-05-07T05:24:57.472Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "87897ac9b35f5a8969492bb7b71e912e68ad7f8e",
+      "commit_url": "https://github.com/hoeken/signalk-set-gps-timezone/commit/87897ac9b35f5a8969492bb7b71e912e68ad7f8e"
+    }
+  },
+  "rest-provider-signalk": {
+    "head_sha": "b30b788d3d2721fd0879e5eb588900b305fcfafb",
+    "fetched_at": "2026-05-07T05:24:57.843Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "b30b788d3d2721fd0879e5eb588900b305fcfafb",
+      "commit_url": "https://github.com/inspired-technologies/signalk-rest-connector-plugin/commit/b30b788d3d2721fd0879e5eb588900b305fcfafb"
+    }
+  },
+  "signalk-sbd": {
+    "head_sha": "9c1385046d738938d67d16ceb01ea53d510654fa",
+    "fetched_at": "2026-05-07T05:24:57.865Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "9c1385046d738938d67d16ceb01ea53d510654fa",
+      "commit_url": "https://github.com/cape-io/signalk-sbd/commit/9c1385046d738938d67d16ceb01ea53d510654fa"
+    }
+  },
+  "collision-detector": {
+    "head_sha": "4ed55eb6a083b34530cff9db1bc71c3bbf62e162",
+    "fetched_at": "2026-05-07T05:24:57.979Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "4ed55eb6a083b34530cff9db1bc71c3bbf62e162",
+      "commit_url": "https://github.com/VladimirKalachikhin/collision-detector/commit/4ed55eb6a083b34530cff9db1bc71c3bbf62e162"
+    }
+  },
+  "signalk-slack-notify": {
+    "head_sha": "3ca3c798a281c5c5a37fd0896afd55ced1203d78",
+    "fetched_at": "2026-05-07T05:24:58.375Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "3ca3c798a281c5c5a37fd0896afd55ced1203d78",
+      "workflow_run_url": "https://github.com/KEGustafsson/signalk-slack-notify/actions/runs/25242801307"
+    }
+  },
+  "signalk-hour-meter": {
+    "head_sha": "d3868656ce5934f70f5b730747cc93a415711543",
+    "fetched_at": "2026-05-07T05:24:58.377Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "d3868656ce5934f70f5b730747cc93a415711543",
+      "commit_url": "https://github.com/joelkoz/signalk-hour-meter/commit/d3868656ce5934f70f5b730747cc93a415711543"
+    }
+  },
+  "signalk-raspberry-pi-read-gpio": {
+    "head_sha": "62bf6c0e66a564c80968d8b94819f48e8c42c6dd",
+    "fetched_at": "2026-05-07T05:24:58.472Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "62bf6c0e66a564c80968d8b94819f48e8c42c6dd",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-read-gpio/commit/62bf6c0e66a564c80968d8b94819f48e8c42c6dd"
+    }
+  },
+  "signalk-data-logger": {
+    "head_sha": "3c9a45af0164b44f0cd41aa2d7a6c262b2c81130",
+    "fetched_at": "2026-05-07T05:24:58.770Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "3c9a45af0164b44f0cd41aa2d7a6c262b2c81130",
+      "commit_url": "https://github.com/mairas/signalk-data-logger/commit/3c9a45af0164b44f0cd41aa2d7a6c262b2c81130"
+    }
+  },
+  "sk-tidal-dashboard": {
+    "head_sha": "14830a548c02a3925d06ea1d87d788c5a2c1bbaa",
+    "fetched_at": "2026-05-07T05:24:58.865Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "14830a548c02a3925d06ea1d87d788c5a2c1bbaa",
+      "commit_url": "https://github.com/marcobergman/sk-tidal-dashboard/commit/14830a548c02a3925d06ea1d87d788c5a2c1bbaa"
+    }
+  },
+  "signalk-n2k-server": {
+    "head_sha": "e654e812abb265a3362f9f5c5edcdeb58abde7b1",
+    "fetched_at": "2026-05-07T05:24:58.898Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "e654e812abb265a3362f9f5c5edcdeb58abde7b1",
+      "workflow_run_url": "https://github.com/sbender9/signalk-n2k-server/actions/runs/18854181914"
+    }
+  },
+  "signalk-virtual-weather-sensors": {
+    "head_sha": "56a9f30d5ff36becb445dcfdb26bbe0dbb7b90e9",
+    "fetched_at": "2026-05-07T05:24:59.057Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "56a9f30d5ff36becb445dcfdb26bbe0dbb7b90e9",
+      "workflow_run_url": "https://github.com/NearlCrews/signalk-virtual-weather-sensors/actions/runs/25413649629"
+    }
+  },
+  "signalk-nws-alerts": {
+    "head_sha": "0670b10690588458fa2ea333ed6aa555db82b11b",
+    "fetched_at": "2026-05-07T05:24:59.281Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "0670b10690588458fa2ea333ed6aa555db82b11b",
+      "workflow_run_url": "https://github.com/motamman/signalk-nws-alerts/actions/runs/20253014376"
+    }
+  },
+  "signalk-noaa-space-weather": {
+    "head_sha": "f8878472087fa0936828817081a99225fa2f7992",
+    "fetched_at": "2026-05-07T05:24:59.346Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "f8878472087fa0936828817081a99225fa2f7992",
+      "commit_url": "https://github.com/mark-brannan/signalk-noaa-space-weather/commit/f8878472087fa0936828817081a99225fa2f7992"
+    }
+  },
+  "signalk-to-influxdb-v2-buffering": {
+    "head_sha": "6081aad580c4fdc6d1a2ad7c7604dd1c627a1b14",
+    "fetched_at": "2026-05-07T05:24:59.546Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "6081aad580c4fdc6d1a2ad7c7604dd1c627a1b14",
+      "commit_url": "https://github.com/pbegg/signalk-to-influxdb-v2-buffering/commit/6081aad580c4fdc6d1a2ad7c7604dd1c627a1b14"
+    }
+  },
+  "@meri-imperiumi/signalk-value-combiner": {
+    "head_sha": "15f26b8b5b4170d72c6416525c7fca49cc2fa03a",
+    "fetched_at": "2026-05-07T05:24:59.556Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "15f26b8b5b4170d72c6416525c7fca49cc2fa03a",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-value-combiner/actions/runs/21139183123"
+    }
+  },
+  "signalk-philips-hue": {
+    "head_sha": "5b7988a8fe3af7b0394efa6015b0c2cfcb1a7bf1",
+    "fetched_at": "2026-05-07T05:24:59.695Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "5b7988a8fe3af7b0394efa6015b0c2cfcb1a7bf1",
+      "commit_url": "https://github.com/sbender9/signalk-philips-hue/commit/5b7988a8fe3af7b0394efa6015b0c2cfcb1a7bf1"
+    }
+  },
+  "signalk-airmar-plugin": {
+    "head_sha": "49051ec95ad2ef620916909ca24beaccf6fb496c",
+    "fetched_at": "2026-05-07T05:25:00.116Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "49051ec95ad2ef620916909ca24beaccf6fb496c",
+      "commit_url": "https://github.com/sbender9/signalk-airmar-plugin/commit/49051ec95ad2ef620916909ca24beaccf6fb496c"
+    }
+  },
+  "@codekilo/signalk-iso19848": {
+    "head_sha": "295e4856421e35fc7d9caa3b28c78cf337fe114e",
+    "fetched_at": "2026-05-07T05:25:00.196Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "295e4856421e35fc7d9caa3b28c78cf337fe114e",
+      "commit_url": "https://github.com/codekilo/signalk-iso19848/commit/295e4856421e35fc7d9caa3b28c78cf337fe114e"
+    }
+  },
+  "signalk-repl": {
+    "head_sha": "69b0c7bf4d5e9f36ce98bd314dfafa5875dd809a",
+    "fetched_at": "2026-05-07T05:25:00.338Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "69b0c7bf4d5e9f36ce98bd314dfafa5875dd809a",
+      "commit_url": "https://github.com/wouterdebie/signalk-repl/commit/69b0c7bf4d5e9f36ce98bd314dfafa5875dd809a"
+    }
+  },
+  "signalk-shrpi-monitor": {
+    "head_sha": "45dd162f93d9986da872204e319a5fe94f3e68e8",
+    "fetched_at": "2026-05-07T05:25:00.350Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "45dd162f93d9986da872204e319a5fe94f3e68e8",
+      "commit_url": "https://github.com/rgregg/signalk-shrpi-monitor/commit/45dd162f93d9986da872204e319a5fe94f3e68e8"
+    }
+  },
+  "galadrielmap_sk": {
+    "head_sha": "19b2c566ed3c9e5962b957f3a6f1a3020b12ed0b",
+    "fetched_at": "2026-05-07T05:25:00.647Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "19b2c566ed3c9e5962b957f3a6f1a3020b12ed0b",
+      "commit_url": "https://github.com/VladimirKalachikhin/GaladrielMapSK/commit/19b2c566ed3c9e5962b957f3a6f1a3020b12ed0b"
+    }
+  },
+  "signalk-browser": {
+    "head_sha": "9612fac8672097cc6a36a3ff178fa90013c4b3ca",
+    "fetched_at": "2026-05-07T05:25:00.672Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "9612fac8672097cc6a36a3ff178fa90013c4b3ca",
+      "commit_url": "https://github.com/marcobergman/signalk-browser/commit/9612fac8672097cc6a36a3ff178fa90013c4b3ca"
+    }
+  },
+  "@meri-imperiumi/signalk-aprsfi-ais-reporter": {
+    "head_sha": "434fab385a0df85b8474e4081ef536cfe48190e3",
+    "fetched_at": "2026-05-07T05:25:00.682Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "434fab385a0df85b8474e4081ef536cfe48190e3",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-aprsfi-ais-reporter/actions/runs/18981895706"
+    }
+  },
+  "signalk-victron-ble": {
+    "head_sha": "248826ff882ba2ff8b088ab5f49c46f103792291",
+    "fetched_at": "2026-05-07T05:25:00.837Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "248826ff882ba2ff8b088ab5f49c46f103792291",
+      "workflow_run_url": "https://github.com/stefanor/signalk-victron-ble/actions/runs/19719787025"
+    }
+  },
+  "signalk-ntfy": {
+    "head_sha": "218ad3b042cd7739e669b8445cf17bae0ecb8f27",
+    "fetched_at": "2026-05-07T05:25:01.248Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "218ad3b042cd7739e669b8445cf17bae0ecb8f27",
+      "commit_url": "https://github.com/Enand-lab/signalk-ntfy/commit/218ad3b042cd7739e669b8445cf17bae0ecb8f27"
+    }
+  },
+  "e-inkdashboard": {
+    "head_sha": "7012d321239ad2a6eea6179dba45ecfe719a5e7e",
+    "fetched_at": "2026-05-07T05:25:01.286Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7012d321239ad2a6eea6179dba45ecfe719a5e7e",
+      "commit_url": "https://github.com/VladimirKalachikhin/e-inkDashboard/commit/7012d321239ad2a6eea6179dba45ecfe719a5e7e"
+    }
+  },
+  "signalk-path-mapper": {
+    "head_sha": "cbbed6a51c3ccd4374d769ef3b4dee53bc07125c",
+    "fetched_at": "2026-05-07T05:25:01.324Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "cbbed6a51c3ccd4374d769ef3b4dee53bc07125c",
+      "commit_url": "https://github.com/sbender9/signalk-path-mapper/commit/cbbed6a51c3ccd4374d769ef3b4dee53bc07125c"
+    }
+  },
+  "signalk-polar-performance-plugin": {
+    "head_sha": "3e3bcf4618783222725c7c130529cdb1a9a63a6f",
+    "fetched_at": "2026-05-07T05:25:01.512Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "3e3bcf4618783222725c7c130529cdb1a9a63a6f",
+      "commit_url": "https://github.com/htool/signalk-polar-performance-plugin/commit/3e3bcf4618783222725c7c130529cdb1a9a63a6f"
+    }
+  },
+  "signalk-barometer-trend": {
+    "head_sha": "bebedee8f8a9172ae0f410b0dd8684f9083f27d7",
+    "fetched_at": "2026-05-07T05:25:01.537Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "bebedee8f8a9172ae0f410b0dd8684f9083f27d7",
+      "commit_url": "https://github.com/oyve/signalk-barometer-trend/commit/bebedee8f8a9172ae0f410b0dd8684f9083f27d7"
+    }
+  },
+  "signalk-openwrt": {
+    "head_sha": "ac662026d83e7ccae1a988f718bc9095ec0bd1ad",
+    "fetched_at": "2026-05-07T05:25:01.573Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "ac662026d83e7ccae1a988f718bc9095ec0bd1ad",
+      "commit_url": "https://github.com/macjl/signalk-openwrt/commit/ac662026d83e7ccae1a988f718bc9095ec0bd1ad"
+    }
+  },
+  "signalk-noon-log": {
+    "head_sha": "aa0e4e15fd91ec63d56f579c706fb0bc01bf029c",
+    "fetched_at": "2026-05-07T05:25:01.777Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "aa0e4e15fd91ec63d56f579c706fb0bc01bf029c",
+      "commit_url": "https://github.com/ofernander/signalk-noon-log/commit/aa0e4e15fd91ec63d56f579c706fb0bc01bf029c"
+    }
+  },
+  "vhfinfo": {
+    "head_sha": "ada173e6300b96b456adb346e839bb00feaea688",
+    "fetched_at": "2026-05-07T05:25:01.792Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "ada173e6300b96b456adb346e839bb00feaea688",
+      "commit_url": "https://github.com/htool/vhfinfo/commit/ada173e6300b96b456adb346e839bb00feaea688"
+    }
+  },
+  "signalk-to-influxdb": {
+    "head_sha": "26748a7167251fa1cd5039a13024c7574a6b6b54",
+    "fetched_at": "2026-05-07T05:25:02.235Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "26748a7167251fa1cd5039a13024c7574a6b6b54",
+      "commit_url": "https://github.com/tkurki/signalk-to-influxdb/commit/26748a7167251fa1cd5039a13024c7574a6b6b54"
+    }
+  },
+  "signalk-marinetraffic-public": {
+    "head_sha": "6e0d15eee178ec042c6ab45ee49871ade68b4a18",
+    "fetched_at": "2026-05-07T05:25:02.250Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "6e0d15eee178ec042c6ab45ee49871ade68b4a18",
+      "commit_url": "https://github.com/night199uk/signalk-marinetraffic-public/commit/6e0d15eee178ec042c6ab45ee49871ade68b4a18"
+    }
+  },
+  "signalk-saillogger": {
+    "head_sha": "fe946bb66b7ccc2c8b74a5d0ff74f2581370b961",
+    "fetched_at": "2026-05-07T05:25:02.846Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "fe946bb66b7ccc2c8b74a5d0ff74f2581370b961",
+      "commit_url": "https://github.com/Saillogger/signalk-saillogger/commit/fe946bb66b7ccc2c8b74a5d0ff74f2581370b961"
+    }
+  },
+  "signalk-ais-navionics-converter": {
+    "head_sha": "f2c95fda2685fc5a36cb9cf0b911a29b89ef95b9",
+    "fetched_at": "2026-05-07T05:25:02.916Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "f2c95fda2685fc5a36cb9cf0b911a29b89ef95b9",
+      "workflow_run_url": "https://github.com/formifan2002/signalk-ais-navionics-converter/actions/runs/24830206476"
+    }
+  },
+  "signalk-n2k-switching": {
+    "head_sha": "aaef9ffc4ebb1b210f1866f9e36a4350728df72a",
+    "fetched_at": "2026-05-07T05:25:02.990Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "aaef9ffc4ebb1b210f1866f9e36a4350728df72a",
+      "workflow_run_url": "https://github.com/sbender9/signalk-n2k-switching/actions/runs/24635344271"
+    }
+  },
+  "signalk-weatherflow": {
+    "head_sha": "53d53bdb2bf745d5f7eacd6b7beb65096db18a76",
+    "fetched_at": "2026-05-07T05:25:03.012Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "53d53bdb2bf745d5f7eacd6b7beb65096db18a76",
+      "workflow_run_url": "https://github.com/motamman/signalk-weatherflow/actions/runs/23467870277"
+    }
+  },
+  "signalk-ais-target-prioritizer": {
+    "head_sha": "2e584f85cc0ffc022c9fa6897d7f19d171413617",
+    "fetched_at": "2026-05-07T05:25:03.115Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "2e584f85cc0ffc022c9fa6897d7f19d171413617",
+      "workflow_run_url": "https://github.com/jaffadog/signalk-ais-target-prioritizer/actions/runs/24639744094"
+    }
+  },
+  "@signalk/calibration": {
+    "head_sha": "077c8ef3a21007e40aa74a3cb372ef422b3ca54e",
+    "fetched_at": "2026-05-07T05:25:03.219Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "077c8ef3a21007e40aa74a3cb372ef422b3ca54e",
+      "commit_url": "https://github.com/SignalK/calibration/commit/077c8ef3a21007e40aa74a3cb372ef422b3ca54e"
+    }
+  },
+  "signalk-raspberry-pi-rockblock9603": {
+    "head_sha": "87666eb737c363590f9de9aca4bc98ea64d03e21",
+    "fetched_at": "2026-05-07T05:25:03.221Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "87666eb737c363590f9de9aca4bc98ea64d03e21",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-rockblock9603/commit/87666eb737c363590f9de9aca4bc98ea64d03e21"
+    }
+  },
+  "ais-forwarder": {
+    "head_sha": "836aa9316cc4d19472c0ddbc09b49f086fbaa270",
+    "fetched_at": "2026-05-07T05:25:03.654Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "836aa9316cc4d19472c0ddbc09b49f086fbaa270",
+      "commit_url": "https://github.com/hkapanen/ais-forwarder/commit/836aa9316cc4d19472c0ddbc09b49f086fbaa270"
+    }
+  },
+  "@signalk/aisreporter": {
+    "head_sha": "6c4f38bf0ac42b2a3a88bda5ae851da87baa0838",
+    "fetched_at": "2026-05-07T05:25:03.899Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "6c4f38bf0ac42b2a3a88bda5ae851da87baa0838",
+      "workflow_run_url": "https://github.com/SignalK/aisreporter/actions/runs/25444202145"
+    }
+  },
+  "signalk-daily-gpx-plugin": {
+    "head_sha": "30274092ed17eb4ef739daccadad071e44cc1f39",
+    "fetched_at": "2026-05-07T05:25:03.923Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "30274092ed17eb4ef739daccadad071e44cc1f39",
+      "workflow_run_url": "https://github.com/jaffadog/signalk-daily-gpx-plugin/actions/runs/21408795762"
+    }
+  },
+  "signalk-mqtt-export": {
+    "head_sha": "1590a3e3e8a3271b081919f169c6a48df34d2791",
+    "fetched_at": "2026-05-07T05:25:03.970Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "1590a3e3e8a3271b081919f169c6a48df34d2791",
+      "commit_url": "https://github.com/motamman/signalk-mqtt-export/commit/1590a3e3e8a3271b081919f169c6a48df34d2791"
+    }
+  },
+  "signalk-seamap-plugin": {
+    "head_sha": "a747e75e76f85a0e43dc98ce1e12bcd8c4c420bf",
+    "fetched_at": "2026-05-07T05:25:04.213Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a747e75e76f85a0e43dc98ce1e12bcd8c4c420bf",
+      "commit_url": "https://github.com/prozessor13/signalk-seamap-plugin/commit/a747e75e76f85a0e43dc98ce1e12bcd8c4c420bf"
+    }
+  },
+  "signalk-alarm-silencer": {
+    "head_sha": "aa56929538c0923bed99ce619cce172a9a92d7d4",
+    "fetched_at": "2026-05-07T05:25:04.338Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "aa56929538c0923bed99ce619cce172a9a92d7d4",
+      "commit_url": "https://github.com/sbender9/signalk-alarm-silencer/commit/aa56929538c0923bed99ce619cce172a9a92d7d4"
+    }
+  },
+  "@meri-imperiumi/signalk-autostate": {
+    "head_sha": "05f076969edecf1debd415446e15170f0444b43f",
+    "fetched_at": "2026-05-07T05:25:04.453Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "05f076969edecf1debd415446e15170f0444b43f",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-autostate/actions/runs/25316186317"
+    }
+  },
+  "@meri-imperiumi/signalk-logbook": {
+    "head_sha": "c61695bfb8c06b44ff21dd5486a57f507b13faf9",
+    "fetched_at": "2026-05-07T05:25:04.590Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c61695bfb8c06b44ff21dd5486a57f507b13faf9",
+      "commit_url": "https://github.com/meri-imperiumi/signalk-logbook/commit/c61695bfb8c06b44ff21dd5486a57f507b13faf9"
+    }
+  },
+  "signalk-mqtt-import": {
+    "head_sha": "16d8a0321f2c3f754adbd6214dfb947365375db9",
+    "fetched_at": "2026-05-07T05:25:04.893Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "16d8a0321f2c3f754adbd6214dfb947365375db9",
+      "commit_url": "https://github.com/motamman/signalk-mqtt-import/commit/16d8a0321f2c3f754adbd6214dfb947365375db9"
+    }
+  },
+  "signalk-tides": {
+    "head_sha": "ed4f9d53d0409784fcee07675d89a06ff18fbb1c",
+    "fetched_at": "2026-05-07T05:25:05.218Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "ed4f9d53d0409784fcee07675d89a06ff18fbb1c",
+      "workflow_run_url": "https://github.com/openwatersio/signalk-tides/actions/runs/22369457679"
+    }
+  },
+  "signalk-dashboard": {
+    "head_sha": "1bb1d68e682faa75ed66d436514582ff6018244c",
+    "fetched_at": "2026-05-07T05:25:05.288Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "1bb1d68e682faa75ed66d436514582ff6018244c",
+      "workflow_run_url": "https://github.com/inspired-technologies/signalk-dashboard/actions/runs/18138273290"
+    }
+  },
+  "signalk-shelly": {
+    "head_sha": "7b5397addcaf9596fae9c071e065e1cf5fb41d10",
+    "fetched_at": "2026-05-07T05:25:05.410Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7b5397addcaf9596fae9c071e065e1cf5fb41d10",
+      "commit_url": "https://github.com/sbender9/signalk-shelly/commit/7b5397addcaf9596fae9c071e065e1cf5fb41d10"
+    }
+  },
+  "signalk-raspberry-pi-bme280": {
+    "head_sha": "37fea59d3e65d29cd66cd2385df15f2bcdb92680",
+    "fetched_at": "2026-05-07T05:25:05.431Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "37fea59d3e65d29cd66cd2385df15f2bcdb92680",
+      "commit_url": "https://github.com/jncarter123/signalk-raspberry-pi-bme280/commit/37fea59d3e65d29cd66cd2385df15f2bcdb92680"
+    }
+  },
+  "@signalk/vedirect-serial-usb": {
+    "head_sha": "7d09f13534b74c570832e0ea8c573e38d63324b0",
+    "fetched_at": "2026-05-07T05:25:05.524Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7d09f13534b74c570832e0ea8c573e38d63324b0",
+      "commit_url": "https://github.com/SignalK/vedirect-serial-usb/commit/7d09f13534b74c570832e0ea8c573e38d63324b0"
+    }
+  },
+  "netais": {
+    "head_sha": "613da41f67f9af4b40f0058a32a4c0c21efd6f28",
+    "fetched_at": "2026-05-07T05:25:05.814Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "613da41f67f9af4b40f0058a32a4c0c21efd6f28",
+      "commit_url": "https://github.com/VladimirKalachikhin/netAIS-Signal-K/commit/613da41f67f9af4b40f0058a32a4c0c21efd6f28"
+    }
+  },
+  "signalk-push-notifications": {
+    "head_sha": "59d6f651c4f73d2241ebece43854d888c21ac398",
+    "fetched_at": "2026-05-07T05:25:05.825Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "59d6f651c4f73d2241ebece43854d888c21ac398",
+      "workflow_run_url": "https://github.com/sbender9/signalk-push-notifications/actions/runs/24591943333"
+    }
+  },
+  "signalk-fusion-stereo": {
+    "head_sha": "3f00949904e46c30806bf0c890296b478c60ea7e",
+    "fetched_at": "2026-05-07T05:25:05.830Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "3f00949904e46c30806bf0c890296b478c60ea7e",
+      "workflow_run_url": "https://github.com/sbender9/signalk-fusion-stereo/actions/runs/17208372283"
+    }
+  },
+  "openweather-signalk": {
+    "head_sha": "5697dc98f9530c220e2fcd30244d92b3c176f77c",
+    "fetched_at": "2026-05-07T05:25:06.287Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "5697dc98f9530c220e2fcd30244d92b3c176f77c",
+      "workflow_run_url": "https://github.com/inspired-technologies/signalk-openweather-plugin/actions/runs/18158385083"
+    }
+  },
+  "signalk-shelly2": {
+    "head_sha": "3cd3c32a06719e177199c755cfc7e15fa3cdb607",
+    "fetched_at": "2026-05-07T05:25:06.470Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "3cd3c32a06719e177199c755cfc7e15fa3cdb607",
+      "workflow_run_url": "https://github.com/sbender9/signalk-shelly2/actions/runs/24510081552"
+    }
+  },
+  "i2c-reader": {
+    "head_sha": "0848035b2cf3d669f5913165e754f6a7fbc021fd",
+    "fetched_at": "2026-05-07T05:25:06.576Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "0848035b2cf3d669f5913165e754f6a7fbc021fd",
+      "workflow_run_url": "https://github.com/allco/signalk-i2c-reader-plugin/actions/runs/15522261075"
+    }
+  },
+  "@meri-imperiumi/signalk-meshtastic": {
+    "head_sha": "d715e196c8fff837672e4b18b2390ca7d929a25e",
+    "fetched_at": "2026-05-07T05:25:06.606Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "d715e196c8fff837672e4b18b2390ca7d929a25e",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-meshtastic/actions/runs/22046230536"
+    }
+  },
+  "@yachteye/signalk-moon-plugin": {
+    "head_sha": "8ff8c3314972a57b0a5e92e84713b40db6caa67f",
+    "fetched_at": "2026-05-07T05:25:06.704Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "8ff8c3314972a57b0a5e92e84713b40db6caa67f",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-moon-plugin/commit/8ff8c3314972a57b0a5e92e84713b40db6caa67f"
+    }
+  },
+  "signalk-sonoff-ewelink": {
+    "head_sha": "5fd958668b17aecad92d2ceb798cd886b4b7c503",
+    "fetched_at": "2026-05-07T05:25:06.785Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "5fd958668b17aecad92d2ceb798cd886b4b7c503",
+      "commit_url": "https://github.com/sbender9/signalk-sonoff-ewelink/commit/5fd958668b17aecad92d2ceb798cd886b4b7c503"
+    }
+  },
+  "signalk-vessels-to-ais": {
+    "head_sha": "62ff77fa793ad3d7a266bd8fd0725e2076e086b1",
+    "fetched_at": "2026-05-07T05:25:06.792Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "62ff77fa793ad3d7a266bd8fd0725e2076e086b1",
+      "workflow_run_url": "https://github.com/KEGustafsson/signalk-vessels-to-ais/actions/runs/21591027239"
+    }
+  },
+  "signalk-raspberry-pi-light-characteristic": {
+    "head_sha": "e7d2904ca0e7c051e1178fff5f304c60300d2d62",
+    "fetched_at": "2026-05-07T05:25:06.852Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "e7d2904ca0e7c051e1178fff5f304c60300d2d62",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-light-characteristic/commit/e7d2904ca0e7c051e1178fff5f304c60300d2d62"
+    }
+  },
+  "signalk-speed-wind-averaging": {
+    "head_sha": "268e578ccbda6ca16e70f4cd3da4ddaaf5776a4f",
+    "fetched_at": "2026-05-07T05:25:07.390Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "268e578ccbda6ca16e70f4cd3da4ddaaf5776a4f",
+      "commit_url": "https://github.com/boatly/signalk-speed-wind-averaging/commit/268e578ccbda6ca16e70f4cd3da4ddaaf5776a4f"
+    }
+  },
+  "signalk-aquamap-provider": {
+    "head_sha": "1f337018388dcf9aa4fd1e30bc2a26fc67085c2c",
+    "fetched_at": "2026-05-07T05:25:07.521Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "1f337018388dcf9aa4fd1e30bc2a26fc67085c2c",
+      "commit_url": "https://github.com/night199uk/signalk-aquamap-provider/commit/1f337018388dcf9aa4fd1e30bc2a26fc67085c2c"
+    }
+  },
+  "sk-nmea0183-vdr": {
+    "head_sha": "c71bce7af8396c55ad96f2c3b2270bde2c9708ae",
+    "fetched_at": "2026-05-07T05:25:07.528Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c71bce7af8396c55ad96f2c3b2270bde2c9708ae",
+      "commit_url": "https://github.com/marcobergman/sk-nmea0183-vdr/commit/c71bce7af8396c55ad96f2c3b2270bde2c9708ae"
+    }
+  },
+  "signalk-instrument-light-plugin": {
+    "head_sha": "02974494509f744d56629fb48754f4a805a756d8",
+    "fetched_at": "2026-05-07T05:25:07.673Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "02974494509f744d56629fb48754f4a805a756d8",
+      "commit_url": "https://github.com/joabakk/signalk-instrument-light-plugin/commit/02974494509f744d56629fb48754f4a805a756d8"
+    }
+  },
+  "@yachteye/signalk-coastline-plugin": {
+    "head_sha": "2e600c8ca74171aea66e43165b093f64f4265286",
+    "fetched_at": "2026-05-07T05:25:07.689Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "2e600c8ca74171aea66e43165b093f64f4265286",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-coastline-plugin/commit/2e600c8ca74171aea66e43165b093f64f4265286"
+    }
+  },
+  "signalk-maretron-proprietary": {
+    "head_sha": "926c5beeebb05db1a651784755ef83a3e523ec4c",
+    "fetched_at": "2026-05-07T05:25:07.798Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "926c5beeebb05db1a651784755ef83a3e523ec4c",
+      "commit_url": "https://github.com/jncarter123/signalk-maretron-proprietary/commit/926c5beeebb05db1a651784755ef83a3e523ec4c"
+    }
+  },
+  "signalk-shipcontrol": {
+    "head_sha": "dd2ca8892140504004683b5c66a6ea77164918c9",
+    "fetched_at": "2026-05-07T05:25:07.893Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "dd2ca8892140504004683b5c66a6ea77164918c9",
+      "commit_url": "https://github.com/eburi/signalk-shipcontrol/commit/dd2ca8892140504004683b5c66a6ea77164918c9"
+    }
+  },
+  "signalk-n2k-switch-alias": {
+    "head_sha": "90a558aade93be4eb9930b8adbed68d29f874290",
+    "fetched_at": "2026-05-07T05:25:08.108Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "90a558aade93be4eb9930b8adbed68d29f874290",
+      "commit_url": "https://github.com/jncarter123/signalk-switchalias/commit/90a558aade93be4eb9930b8adbed68d29f874290"
+    }
+  },
+  "signalk-peplink-monitor": {
+    "head_sha": "e006d53677c2097b59804b53228ad74529021fad",
+    "fetched_at": "2026-05-07T05:25:08.261Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "e006d53677c2097b59804b53228ad74529021fad",
+      "commit_url": "https://github.com/yourusername/signalk-peplink-monitor/commit/e006d53677c2097b59804b53228ad74529021fad"
+    }
+  },
+  "msp-webhook": {
+    "head_sha": "a167a7af0429583e9ac27f51d6583f5bc5a0d4f3",
+    "fetched_at": "2026-05-07T05:25:08.436Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a167a7af0429583e9ac27f51d6583f5bc5a0d4f3",
+      "commit_url": "https://github.com/50North4West/msp-webhook/commit/a167a7af0429583e9ac27f51d6583f5bc5a0d4f3"
+    }
+  },
+  "signalk-gps-filter": {
+    "head_sha": "437a424374be26a6add74af596cc84618755b64a",
+    "fetched_at": "2026-05-07T05:25:08.536Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "437a424374be26a6add74af596cc84618755b64a",
+      "commit_url": "https://github.com/MartinVerges/signalk-gps-filter/commit/437a424374be26a6add74af596cc84618755b64a"
+    }
+  },
+  "signalk-server-shutdown": {
+    "head_sha": "edfe19d1957871d660d59fc78be0d6d6f323f9ae",
+    "fetched_at": "2026-05-07T05:25:08.631Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "edfe19d1957871d660d59fc78be0d6d6f323f9ae",
+      "commit_url": "https://github.com/sbender9/signalk-server-shutdown/commit/edfe19d1957871d660d59fc78be0d6d6f323f9ae"
+    }
+  },
+  "signalk-gusts": {
+    "head_sha": "3e9f6bdcfc7312b396890593283772e370ed735d",
+    "fetched_at": "2026-05-07T05:25:08.758Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "3e9f6bdcfc7312b396890593283772e370ed735d",
+      "commit_url": "https://github.com/itemir/signalk-gusts/commit/3e9f6bdcfc7312b396890593283772e370ed735d"
+    }
+  },
+  "signalk-geekworm-x728": {
+    "head_sha": "a3c5ac7ce6fd54b47074530abd2f3395d7e3da70",
+    "fetched_at": "2026-05-07T05:25:08.932Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a3c5ac7ce6fd54b47074530abd2f3395d7e3da70",
+      "commit_url": "https://github.com/tmcolby/signalk-geekworm-x728/commit/a3c5ac7ce6fd54b47074530abd2f3395d7e3da70"
+    }
+  },
+  "obd2-signalk": {
+    "head_sha": "c28e94417366170cc0527089090f6c77d1259a57",
+    "fetched_at": "2026-05-07T05:25:08.936Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "c28e94417366170cc0527089090f6c77d1259a57",
+      "commit_url": "https://github.com/VincenzoMele/obd2-signalk/commit/c28e94417366170cc0527089090f6c77d1259a57"
+    }
+  },
+  "signalk-stainless-lobster-fridge": {
+    "head_sha": "72fef7583a81cbf1dcfbf8e65f3db3309480c409",
+    "fetched_at": "2026-05-07T05:25:09.022Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "72fef7583a81cbf1dcfbf8e65f3db3309480c409",
+      "commit_url": "https://github.com/sbender9/signalk-stainless-lobster-fridge/commit/72fef7583a81cbf1dcfbf8e65f3db3309480c409"
+    }
+  },
+  "signalk-triangle-tank-calculator": {
+    "head_sha": "49dd85b1feb71e9eabb4ba5b8461c8f752bf5cc6",
+    "fetched_at": "2026-05-07T05:25:09.328Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "49dd85b1feb71e9eabb4ba5b8461c8f752bf5cc6",
+      "commit_url": "https://github.com/fabdrol/signalk-triangle-tank-data/commit/49dd85b1feb71e9eabb4ba5b8461c8f752bf5cc6"
+    }
+  },
+  "signalk-rgb565-proxy": {
+    "head_sha": "fa663e37bd86d0917f52f9817d40137f868e2c02",
+    "fetched_at": "2026-05-07T05:25:09.362Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "fa663e37bd86d0917f52f9817d40137f868e2c02",
+      "commit_url": "https://github.com/batuakan/signalk-rgb565-proxy/commit/fa663e37bd86d0917f52f9817d40137f868e2c02"
+    }
+  },
+  "signalk-10axis-ros-imu": {
+    "head_sha": "0e95d29626df3c395d2a28ec92ef50711241078e",
+    "fetched_at": "2026-05-07T05:25:09.496Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "0e95d29626df3c395d2a28ec92ef50711241078e",
+      "commit_url": "https://github.com/arancino1/signalk-10axis-ros-imu/commit/0e95d29626df3c395d2a28ec92ef50711241078e"
+    }
+  },
+  "signalk-icom-ct-m500-plugin": {
+    "head_sha": "9593a05353e09879216e241e9531bcdf0da05ed9",
+    "fetched_at": "2026-05-07T05:25:09.718Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "9593a05353e09879216e241e9531bcdf0da05ed9",
+      "commit_url": "https://github.com/htool/signalk-icom-ct-m500-plugin/commit/9593a05353e09879216e241e9531bcdf0da05ed9"
+    }
+  },
+  "signalk-anchoralarm-headless-plugin": {
+    "head_sha": "8007ea50749931a84d2c6c9d769e0dcf525bdc56",
+    "fetched_at": "2026-05-07T05:25:09.722Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "8007ea50749931a84d2c6c9d769e0dcf525bdc56",
+      "commit_url": "https://github.com/jonaswitt/signalk-anchoralarm-headless-plugin/commit/8007ea50749931a84d2c6c9d769e0dcf525bdc56"
+    }
+  },
+  "signalk-nmea-action-log": {
+    "head_sha": "612218c91f2a4043d4a125953e4a9647438df2cd",
+    "fetched_at": "2026-05-07T05:25:10.064Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "612218c91f2a4043d4a125953e4a9647438df2cd",
+      "commit_url": "https://github.com/jncarter123/signalk-n2k-action-log/commit/612218c91f2a4043d4a125953e4a9647438df2cd"
+    }
+  },
+  "signalk-raspberry-pi-bmp180": {
+    "head_sha": "864895b35ab9e3f6df0b50fb88fb23df25a2f5e9",
+    "fetched_at": "2026-05-07T05:25:10.193Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "864895b35ab9e3f6df0b50fb88fb23df25a2f5e9",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-bmp180/commit/864895b35ab9e3f6df0b50fb88fb23df25a2f5e9"
+    }
+  },
+  "signalk-clicksend-notification-relay": {
+    "head_sha": "8c4e105955828b396ac5bb1135dd083cfa0becbb",
+    "fetched_at": "2026-05-07T05:25:10.287Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "8c4e105955828b396ac5bb1135dd083cfa0becbb",
+      "commit_url": "https://github.com/KvotheBloodless/signalk-clicksend-notification-relay/commit/8c4e105955828b396ac5bb1135dd083cfa0becbb"
+    }
+  },
+  "signalk-trim-plugin": {
+    "head_sha": "db47ecf36987cb2e4ce96403d6947b3c530e2e4d",
+    "fetched_at": "2026-05-07T05:25:10.533Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "db47ecf36987cb2e4ce96403d6947b3c530e2e4d",
+      "commit_url": "https://github.com/htool/signalk-trim-plugin/commit/db47ecf36987cb2e4ce96403d6947b3c530e2e4d"
+    }
+  },
+  "@ib236/signalk-prometheus-exporter": {
+    "head_sha": "394b4575045f88186ef969b3aaecbf3048cafc51",
+    "fetched_at": "2026-05-07T05:25:10.541Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "394b4575045f88186ef969b3aaecbf3048cafc51",
+      "commit_url": "https://github.com/ieb/signalk-prometheus-exporter/commit/394b4575045f88186ef969b3aaecbf3048cafc51"
+    }
+  },
+  "signalk-pushover-notification-relay": {
+    "head_sha": "d5f628e93b361bf3892049b2194f089171f289c0",
+    "fetched_at": "2026-05-07T05:25:10.555Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "d5f628e93b361bf3892049b2194f089171f289c0",
+      "commit_url": "https://github.com/KvotheBloodless/signalk-pushover-notification-relay/commit/d5f628e93b361bf3892049b2194f089171f289c0"
+    }
+  },
+  "signalk-ntp-server": {
+    "head_sha": "535486b9a8dec753dfeb4f8093f9196f4091e94f",
+    "fetched_at": "2026-05-07T05:25:10.658Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "535486b9a8dec753dfeb4f8093f9196f4091e94f",
+      "commit_url": "https://github.com/iuriaranda/signalk-ntp-server/commit/535486b9a8dec753dfeb4f8093f9196f4091e94f"
+    }
+  },
+  "signalk-datadog": {
+    "head_sha": "0e64ea154cde5558e964870a44a0630698d6e90b",
+    "fetched_at": "2026-05-07T05:25:10.683Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "0e64ea154cde5558e964870a44a0630698d6e90b",
+      "commit_url": "https://github.com/wouterdebie/signalk-datadog/commit/0e64ea154cde5558e964870a44a0630698d6e90b"
+    }
+  },
+  "@yachteye/signalk-makkah-plugin": {
+    "head_sha": "d8995fc2e31b4454cc39618d049ef90dcc32ba3d",
+    "fetched_at": "2026-05-07T05:25:11.040Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "d8995fc2e31b4454cc39618d049ef90dcc32ba3d",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-makkah-plugin/commit/d8995fc2e31b4454cc39618d049ef90dcc32ba3d"
+    }
+  },
+  "@yachteye/signalk-vessel-tracker-plugin": {
+    "head_sha": "909a3ceb2771d383720bc00cc7e55887775398d6",
+    "fetched_at": "2026-05-07T05:25:11.043Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "909a3ceb2771d383720bc00cc7e55887775398d6",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-vessel-tracker-plugin/commit/909a3ceb2771d383720bc00cc7e55887775398d6"
+    }
+  },
+  "signalk-healthcheck": {
+    "head_sha": "cc2c36eb49ab8b8a79b4cc22389bdf5c6865ab88",
+    "fetched_at": "2026-05-07T05:25:11.255Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "cc2c36eb49ab8b8a79b4cc22389bdf5c6865ab88",
+      "commit_url": "https://github.com/jncarter123/signalk-healthcheck/commit/cc2c36eb49ab8b8a79b4cc22389bdf5c6865ab88"
+    }
+  },
+  "signalk-to-mongodb": {
+    "head_sha": "487ea4a9efa6a7d84da9c026fe11425d61e5ac76",
+    "fetched_at": "2026-05-07T05:25:11.553Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "487ea4a9efa6a7d84da9c026fe11425d61e5ac76",
+      "commit_url": "https://github.com/LinnJS/signalk-to-mongodb/commit/487ea4a9efa6a7d84da9c026fe11425d61e5ac76"
+    }
+  },
+  "signalk-network": {
+    "head_sha": "44a0bc179224d384a18885af426729b042875154",
+    "fetched_at": "2026-05-07T05:25:11.607Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "44a0bc179224d384a18885af426729b042875154",
+      "commit_url": "https://github.com/itemir/signalk-netwok/commit/44a0bc179224d384a18885af426729b042875154"
+    }
+  },
+  "signalk-fusion-device": {
+    "head_sha": "545d8e58d98522a16717498c2a9235bf65e386f4",
+    "fetched_at": "2026-05-07T05:25:11.644Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "545d8e58d98522a16717498c2a9235bf65e386f4",
+      "commit_url": "https://github.com/barrymac/signalk-fusion-device/commit/545d8e58d98522a16717498c2a9235bf65e386f4"
+    }
+  },
+  "signalk-raspberry-pi-bh1750": {
+    "head_sha": "73da56649de1b5a619eba10d5eeae80a6a54b521",
+    "fetched_at": "2026-05-07T05:25:11.649Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "73da56649de1b5a619eba10d5eeae80a6a54b521",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-bh1750/commit/73da56649de1b5a619eba10d5eeae80a6a54b521"
+    }
+  },
+  "signalk-tado-integration": {
+    "head_sha": "95434355811e885d290058be47c752c8ce08e1a0",
+    "fetched_at": "2026-05-07T05:25:11.665Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "95434355811e885d290058be47c752c8ce08e1a0",
+      "commit_url": "https://github.com/KvotheBloodless/signalk-tado-integration/commit/95434355811e885d290058be47c752c8ce08e1a0"
+    }
+  },
+  "signalk-123smartbms-usb": {
+    "head_sha": "3d0b2bfd38901cedfabe1dc8418d299e5b2c237c",
+    "fetched_at": "2026-05-07T05:25:12.063Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "3d0b2bfd38901cedfabe1dc8418d299e5b2c237c",
+      "commit_url": "https://github.com/afuncke/signalk-123smartbms-usb/commit/3d0b2bfd38901cedfabe1dc8418d299e5b2c237c"
+    }
+  },
+  "signalk-barometer": {
+    "head_sha": "0baf2f500e550ee100ad6792a789b84efbc1e603",
+    "fetched_at": "2026-05-07T05:25:12.080Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "0baf2f500e550ee100ad6792a789b84efbc1e603",
+      "commit_url": "https://github.com/itemir/signalk-barometer/commit/0baf2f500e550ee100ad6792a789b84efbc1e603"
+    }
+  },
+  "signalk-noaa-observations": {
+    "head_sha": "b8634d94f68ee9f0d97dde5f1052efabc13671d8",
+    "fetched_at": "2026-05-07T05:25:12.193Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "b8634d94f68ee9f0d97dde5f1052efabc13671d8",
+      "commit_url": "https://github.com/itemir/signalk-noaa-observations/commit/b8634d94f68ee9f0d97dde5f1052efabc13671d8"
+    }
+  },
+  "signalk-to-batch-format": {
+    "head_sha": "1260125058bae0c0866364878576e2fed4e7cbac",
+    "fetched_at": "2026-05-07T05:25:12.593Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "1260125058bae0c0866364878576e2fed4e7cbac",
+      "commit_url": "https://github.com/c33howard/signalk-to-batch-format/commit/1260125058bae0c0866364878576e2fed4e7cbac"
+    }
+  },
+  "squid-sailing-signalk": {
+    "head_sha": "e15a2be50c6984bff365993bcc2ab8c543ebdc90",
+    "fetched_at": "2026-05-07T05:25:12.615Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "e15a2be50c6984bff365993bcc2ab8c543ebdc90",
+      "commit_url": "https://github.com/tkrofta/signalk-squid-sailing-plugin/commit/e15a2be50c6984bff365993bcc2ab8c543ebdc90"
+    }
+  },
+  "signalk-racing-calculator": {
+    "head_sha": "1c660267b2c60572381c8b0fc53d56069fe84432",
+    "fetched_at": "2026-05-07T05:25:12.801Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "1c660267b2c60572381c8b0fc53d56069fe84432",
+      "commit_url": "https://github.com/atomberg/signalk-racing-calculator/commit/1c660267b2c60572381c8b0fc53d56069fe84432"
+    }
+  },
+  "sk-depth-gauge": {
+    "head_sha": "2e62ed4861c0d9bd5d666355340b11ce563305c3",
+    "fetched_at": "2026-05-07T05:25:12.802Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "2e62ed4861c0d9bd5d666355340b11ce563305c3",
+      "commit_url": "https://github.com/marcobergman/sk-depth-gauge/commit/2e62ed4861c0d9bd5d666355340b11ce563305c3"
+    }
+  },
+  "signalk-data-dejitter": {
+    "head_sha": "cb1a6134d5fb024b3ebaa2a0e34b872e4d24b055",
+    "fetched_at": "2026-05-07T05:25:12.961Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "cb1a6134d5fb024b3ebaa2a0e34b872e4d24b055",
+      "commit_url": "https://github.com/amirlanesman/signalk-data-dejitter/commit/cb1a6134d5fb024b3ebaa2a0e34b872e4d24b055"
+    }
+  },
+  "signalk-notification-to-alarm-delta": {
+    "head_sha": "1c943bd4c5f0ec9c218db6c5fbba5a59bd894fc4",
+    "fetched_at": "2026-05-07T05:25:13.331Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "1c943bd4c5f0ec9c218db6c5fbba5a59bd894fc4",
+      "commit_url": "https://github.com/avanlievenoogen/signalk-yd-alarm-button/commit/1c943bd4c5f0ec9c218db6c5fbba5a59bd894fc4"
+    }
+  },
+  "sk-propulsion-state": {
+    "head_sha": "52613279ceb647ebf1af8e523622171f2b4b1d95",
+    "fetched_at": "2026-05-07T05:25:13.352Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "52613279ceb647ebf1af8e523622171f2b4b1d95",
+      "commit_url": "https://github.com/marcobergman/sk-propulsion-state/commit/52613279ceb647ebf1af8e523622171f2b4b1d95"
+    }
+  },
+  "signalk-netgear-lte-status": {
+    "head_sha": "3e015f92758f6c9f677dfcb5a794e62062ca3e9b",
+    "fetched_at": "2026-05-07T05:25:13.571Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "3e015f92758f6c9f677dfcb5a794e62062ca3e9b",
+      "commit_url": "https://github.com/sbender9/signalk-netgear-lte-status/commit/3e015f92758f6c9f677dfcb5a794e62062ca3e9b"
+    }
+  },
+  "signalk-raspberry-pi-sx1262-tx": {
+    "head_sha": "cb0b1eda7efc65adcc968ffcfe0e925f9d14bee7",
+    "fetched_at": "2026-05-07T05:25:13.717Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "cb0b1eda7efc65adcc968ffcfe0e925f9d14bee7",
+      "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-sx1262-tx/commit/cb0b1eda7efc65adcc968ffcfe0e925f9d14bee7"
+    }
+  },
+  "yachteye-ship2cloud-v2": {
+    "head_sha": "4da3ed13e4c3c09cee0b5ac9dc9fcdf22f00ad4f",
+    "fetched_at": "2026-05-07T05:25:13.751Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "4da3ed13e4c3c09cee0b5ac9dc9fcdf22f00ad4f",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-ship2cloud-plugin/commit/4da3ed13e4c3c09cee0b5ac9dc9fcdf22f00ad4f"
+    }
+  },
+  "signalk-yd-alarm-button": {
+    "head_sha": "101e83d37a937fb70aec90b55b56d6c0ab931bc5",
+    "fetched_at": "2026-05-07T05:25:13.801Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "101e83d37a937fb70aec90b55b56d6c0ab931bc5",
+      "workflow_run_url": "https://github.com/sbender9/signalk-yd-alarm-button/actions/runs/21231049677"
+    }
+  },
+  "signalk-euris-resources": {
+    "head_sha": "844b9c384bd006a9bd6138852e92eebad4bce972",
+    "fetched_at": "2026-05-07T05:25:14.187Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "844b9c384bd006a9bd6138852e92eebad4bce972",
+      "workflow_run_url": "https://github.com/KvotheBloodless/signalk-euris-resources/actions/runs/16259097676"
+    }
+  },
+  "noflo-signalk": {
+    "head_sha": "19cf706e08ff92d205271d19797a0af42ca7ea07",
+    "fetched_at": "2026-05-07T05:25:14.343Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "19cf706e08ff92d205271d19797a0af42ca7ea07",
+      "commit_url": "https://github.com/noflo/noflo-signalk/commit/19cf706e08ff92d205271d19797a0af42ca7ea07"
+    }
+  },
+  "signalk-mqtt-openhasp": {
+    "head_sha": "0407582aa641a3f37c8c63735d03dd80757c5d9d",
+    "fetched_at": "2026-05-07T05:25:14.365Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "0407582aa641a3f37c8c63735d03dd80757c5d9d",
+      "commit_url": "https://github.com/gzahl/signalk-mqtt-openhasp/commit/0407582aa641a3f37c8c63735d03dd80757c5d9d"
+    }
+  },
+  "signalk-wikipedia": {
+    "head_sha": "38b2ee63748fa864dd0f5b0f839afe9f6db0c89d",
+    "fetched_at": "2026-05-07T05:25:14.444Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "38b2ee63748fa864dd0f5b0f839afe9f6db0c89d",
+      "commit_url": "https://github.com/itemir/signalk-wikipedia/commit/38b2ee63748fa864dd0f5b0f839afe9f6db0c89d"
+    }
+  },
+  "jbd-overkill-bms-plugin": {
+    "head_sha": "18720e96565c117ae2d65be9cb67803fb2749f83",
+    "fetched_at": "2026-05-07T05:25:14.753Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "18720e96565c117ae2d65be9cb67803fb2749f83",
+      "commit_url": "https://github.com/htool/jbd-overkill-bms-plugin/commit/18720e96565c117ae2d65be9cb67803fb2749f83"
+    }
+  },
+  "@yachteye/signalk-radarcape-plugin": {
+    "head_sha": "6c7615f93509025e2ff0f2e35303efb8eaba08aa",
+    "fetched_at": "2026-05-07T05:25:14.875Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "6c7615f93509025e2ff0f2e35303efb8eaba08aa",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-radarcape-plugin/commit/6c7615f93509025e2ff0f2e35303efb8eaba08aa"
+    }
+  },
+  "signalk-nextion": {
+    "head_sha": "71890b3acfa0ceab7646872542d063c699844b13",
+    "fetched_at": "2026-05-07T05:25:14.930Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "71890b3acfa0ceab7646872542d063c699844b13",
+      "commit_url": "https://github.com/sbender9/signalk-nextion/commit/71890b3acfa0ceab7646872542d063c699844b13"
+    }
+  },
+  "signalk-rpi-ina219hat": {
+    "head_sha": "40f253cd6c41be2830ac7744054694079461d873",
+    "fetched_at": "2026-05-07T05:25:14.968Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "40f253cd6c41be2830ac7744054694079461d873",
+      "commit_url": "https://github.com/scallybmHome/signalk-rpi-ina219hat/commit/40f253cd6c41be2830ac7744054694079461d873"
+    }
+  },
+  "@yachteye/signalk-ship2cloud-plugin": {
+    "head_sha": "4459374f6a896c32835e6b38e8b5de02c7f7c986",
+    "fetched_at": "2026-05-07T05:25:15.206Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "4459374f6a896c32835e6b38e8b5de02c7f7c986",
+      "commit_url": "https://github.com/SuperYachtTimes/signalk-ship2cloud-plugin/commit/4459374f6a896c32835e6b38e8b5de02c7f7c986"
+    }
+  },
+  "signalk-mfd-plugin": {
+    "head_sha": "4c58816be11698179e6e680f27e7035eb0bd5ecf",
+    "fetched_at": "2026-05-07T05:25:15.336Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "4c58816be11698179e6e680f27e7035eb0bd5ecf",
+      "commit_url": "https://github.com/htool/signalk-mfd-plugin/commit/4c58816be11698179e6e680f27e7035eb0bd5ecf"
+    }
+  },
+  "signalk-spectra-plugin": {
+    "head_sha": "13a19345b19e6c8514ba7cada38cf65d253fd2cd",
+    "fetched_at": "2026-05-07T05:25:15.401Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "13a19345b19e6c8514ba7cada38cf65d253fd2cd",
+      "commit_url": "https://github.com/htool/signalk-spectra-plugin/commit/13a19345b19e6c8514ba7cada38cf65d253fd2cd"
+    }
+  },
+  "signalk-nmea-data-recorder": {
+    "head_sha": "496f86b5e1a03891e26928ce5c641435e1760005",
+    "fetched_at": "2026-05-07T05:25:15.720Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "496f86b5e1a03891e26928ce5c641435e1760005",
+      "commit_url": "https://github.com/rosinbum/signalk-nmea-data-recorder/commit/496f86b5e1a03891e26928ce5c641435e1760005"
+    }
+  },
+  "signalk-ifttt-notifications": {
+    "head_sha": "b12bd74bc31f4f071c1b8c66e99a8b10bddbf058",
+    "fetched_at": "2026-05-07T05:25:15.797Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "b12bd74bc31f4f071c1b8c66e99a8b10bddbf058",
+      "commit_url": "https://github.com/sbender9/signalk-ifttt-notifications/commit/b12bd74bc31f4f071c1b8c66e99a8b10bddbf058"
+    }
+  },
+  "@meri-imperiumi/signalk-stardate": {
+    "head_sha": "6ad32b31da64a8dd6996f78e94fa8642009286cf",
+    "fetched_at": "2026-05-07T05:25:16.006Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "6ad32b31da64a8dd6996f78e94fa8642009286cf",
+      "commit_url": "https://github.com/meri-imperiumi/signalk-stardate/commit/6ad32b31da64a8dd6996f78e94fa8642009286cf"
+    }
+  },
+  "signalk-activecaptain": {
+    "head_sha": "63bed42ea8e83014277b7a1d8be7ed7bbccdcf3f",
+    "fetched_at": "2026-05-07T05:25:16.080Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "63bed42ea8e83014277b7a1d8be7ed7bbccdcf3f",
+      "commit_url": "https://github.com/itemir/signalk-activecaptain/commit/63bed42ea8e83014277b7a1d8be7ed7bbccdcf3f"
+    }
+  },
+  "@marinedevices/signalk-azure-iot": {
+    "head_sha": "abbbe627539b1056335b39068a93881e3f454d94",
+    "fetched_at": "2026-05-07T05:25:16.385Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "abbbe627539b1056335b39068a93881e3f454d94",
+      "commit_url": "https://github.com/marinedevices/signalk-azure-iot/commit/abbbe627539b1056335b39068a93881e3f454d94"
+    }
+  },
+  "@meri-imperiumi/signalk-maidenhead": {
+    "head_sha": "b00146a73549a7e8ad7f8b942a5e70bb8ad8e9e0",
+    "fetched_at": "2026-05-07T05:25:16.488Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "b00146a73549a7e8ad7f8b942a5e70bb8ad8e9e0",
+      "workflow_run_url": "https://github.com/meri-imperiumi/signalk-maidenhead/actions/runs/16865183635"
+    }
+  },
+  "signalk-webapi-upload": {
+    "head_sha": "dc158f1d8c7a0ed8fc519f254737849ddd969303",
+    "fetched_at": "2026-05-07T05:25:16.583Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "dc158f1d8c7a0ed8fc519f254737849ddd969303",
+      "commit_url": "https://github.com/sbman/signalk-webapi-upload/commit/dc158f1d8c7a0ed8fc519f254737849ddd969303"
+    }
+  },
+  "naivegpxlogger": {
+    "head_sha": "5885340fa590cd3fed1ce1d325c3cf141582a8d8",
+    "fetched_at": "2026-05-07T05:25:16.668Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "5885340fa590cd3fed1ce1d325c3cf141582a8d8",
+      "commit_url": "https://github.com/VladimirKalachikhin/naiveGPXlogger/commit/5885340fa590cd3fed1ce1d325c3cf141582a8d8"
+    }
+  },
+  "signalk-cyclops-gateway": {
+    "head_sha": "3050eda2683c3950d7246748d2630ab3ec7f4214",
+    "fetched_at": "2026-05-07T05:25:16.823Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "3050eda2683c3950d7246748d2630ab3ec7f4214",
+      "commit_url": "https://github.com/hoeken/signalk-cyclops-gateway/commit/3050eda2683c3950d7246748d2630ab3ec7f4214"
+    }
+  },
+  "signalk-to-thingsboard": {
+    "head_sha": "e8a08aa5bb31e21d332856cf9aa0a6f21e9574f5",
+    "fetched_at": "2026-05-07T05:25:17.007Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "e8a08aa5bb31e21d332856cf9aa0a6f21e9574f5",
+      "commit_url": "https://github.com/xbgmsharp/signalk-to-thingsboard/commit/e8a08aa5bb31e21d332856cf9aa0a6f21e9574f5"
+    }
+  },
+  "signalk-speedtest": {
+    "head_sha": "7cffe01ae531dfd11c92a9a0981512c3d9d16e15",
+    "fetched_at": "2026-05-07T05:25:17.046Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7cffe01ae531dfd11c92a9a0981512c3d9d16e15",
+      "commit_url": "https://github.com/itemir/signalk-speedtest/commit/7cffe01ae531dfd11c92a9a0981512c3d9d16e15"
+    }
+  },
+  "signalk-from-batch-format": {
+    "head_sha": "a0aed5c9d9b49c985eac5d9145610000d6cd416d",
+    "fetched_at": "2026-05-07T05:25:17.368Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a0aed5c9d9b49c985eac5d9145610000d6cd416d",
+      "commit_url": "https://github.com/c33howard/signalk-from-batch-format/commit/a0aed5c9d9b49c985eac5d9145610000d6cd416d"
+    }
+  },
+  "signalk-avg-paths": {
+    "head_sha": "17c05a5df63ceab6ca3698e9db5407576dfe621b",
+    "fetched_at": "2026-05-07T05:25:17.572Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "17c05a5df63ceab6ca3698e9db5407576dfe621b",
+      "commit_url": "https://github.com/marcobergman/signalk-avg-paths/commit/17c05a5df63ceab6ca3698e9db5407576dfe621b"
+    }
+  },
+  "dynamo-signalk-fleeter": {
+    "head_sha": "1acfe1c6d0bb7ecb4823c2ea81abc3cb79baeadd",
+    "fetched_at": "2026-05-07T05:25:17.688Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "1acfe1c6d0bb7ecb4823c2ea81abc3cb79baeadd",
+      "commit_url": "https://github.com/luciococorullo/dynamo-signalk-fleeter/commit/1acfe1c6d0bb7ecb4823c2ea81abc3cb79baeadd"
+    }
+  },
+  "signalk-bandg-user-remote-rename": {
+    "head_sha": "304a3e1c4b9058ee31bca63f5283528b7518b10f",
+    "fetched_at": "2026-05-07T05:25:17.700Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "304a3e1c4b9058ee31bca63f5283528b7518b10f",
+      "commit_url": "https://github.com/htool/bandg-user-remote-rename/commit/304a3e1c4b9058ee31bca63f5283528b7518b10f"
+    }
+  },
+  "scheiberk": {
+    "head_sha": "e01099504c8eefa07cd8010364b93ee0661016f1",
+    "fetched_at": "2026-05-07T05:25:17.875Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "e01099504c8eefa07cd8010364b93ee0661016f1",
+      "commit_url": "https://github.com/jjhvlabs/scheiberk/commit/e01099504c8eefa07cd8010364b93ee0661016f1"
+    }
+  },
+  "signalk-kafka-gw": {
+    "head_sha": "38027d58100284631a36877ddb0d41b69a10f86c",
+    "fetched_at": "2026-05-07T05:25:17.948Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "38027d58100284631a36877ddb0d41b69a10f86c",
+      "commit_url": "https://github.com/sbender9/signalk-kafka-gw/commit/38027d58100284631a36877ddb0d41b69a10f86c"
+    }
+  },
+  "signalk-chain-plugin": {
+    "head_sha": "49f39463176e41ab4452deba7f5596fbcd5f8379",
+    "fetched_at": "2026-05-07T05:25:17.954Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "49f39463176e41ab4452deba7f5596fbcd5f8379",
+      "commit_url": "https://github.com/htool/signalk-chain-plugin/commit/49f39463176e41ab4452deba7f5596fbcd5f8379"
+    }
+  },
+  "signalk-bandg-zc-plugin": {
+    "head_sha": "d5f6c4741702b123dad28bd9d6cfc7d013894202",
+    "fetched_at": "2026-05-07T05:25:18.298Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "d5f6c4741702b123dad28bd9d6cfc7d013894202",
+      "commit_url": "https://github.com/htool/signalk-bandg-zc-plugin/commit/d5f6c4741702b123dad28bd9d6cfc7d013894202"
+    }
+  },
+  "signalk-ecowitt": {
+    "head_sha": "258dc17d9e9e92a458f152f6fc936e8f1e89457f",
+    "fetched_at": "2026-05-07T05:25:18.636Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "258dc17d9e9e92a458f152f6fc936e8f1e89457f",
+      "commit_url": "https://github.com/itemir/signalk-ecowitt/commit/258dc17d9e9e92a458f152f6fc936e8f1e89457f"
+    }
+  },
+  "sk-logs-to-aws-s3": {
+    "head_sha": "a038afe28ee85ace0cd7d88fc1262e90c08b2196",
+    "fetched_at": "2026-05-07T05:25:18.677Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a038afe28ee85ace0cd7d88fc1262e90c08b2196",
+      "commit_url": "https://github.com/sergei/sk-logs-to-aws-s3/commit/a038afe28ee85ace0cd7d88fc1262e90c08b2196"
+    }
+  },
+  "orion-bms-to-signalk": {
+    "head_sha": "7d0b0715fcb03397eeb7e92350d64a855f2fd9de",
+    "fetched_at": "2026-05-07T05:25:18.915Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7d0b0715fcb03397eeb7e92350d64a855f2fd9de",
+      "commit_url": "https://github.com/pbegg/orion-bms-to-signalk/commit/7d0b0715fcb03397eeb7e92350d64a855f2fd9de"
+    }
+  },
+  "@meri-imperiumi/signalk-aws-iot": {
+    "head_sha": "cc567da357ff920de71b13f3eae053dcdf20fbc9",
+    "fetched_at": "2026-05-07T05:25:18.978Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "cc567da357ff920de71b13f3eae053dcdf20fbc9",
+      "commit_url": "https://github.com/meri-imperiumi/signalk-aws-iot/commit/cc567da357ff920de71b13f3eae053dcdf20fbc9"
+    }
+  },
+  "posmv_input_plugin": {
+    "head_sha": "3e7f71679aab942319e4caac86a704e4882ddd67",
+    "fetched_at": "2026-05-07T05:25:18.993Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "3e7f71679aab942319e4caac86a704e4882ddd67",
+      "commit_url": "https://github.com/magnuan/signalK_posmv_input_plugin/commit/3e7f71679aab942319e4caac86a704e4882ddd67"
+    }
+  },
+  "@jwallinder/windshift": {
+    "head_sha": "88a8597535afd4b9ba24b5fec992838b843e1769",
+    "fetched_at": "2026-05-07T05:25:19.090Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "88a8597535afd4b9ba24b5fec992838b843e1769",
+      "commit_url": "https://github.com/jwallinder/signalk-windshift/commit/88a8597535afd4b9ba24b5fec992838b843e1769"
+    }
+  },
+  "signalk-to-mongodb-atlas": {
+    "head_sha": "5bbf909b310acf9a1275d836028f92c6104140cc",
+    "fetched_at": "2026-05-07T05:25:19.312Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "5bbf909b310acf9a1275d836028f92c6104140cc",
+      "commit_url": "https://github.com/plainolddave/signalk-to-mongodb-atlas/commit/5bbf909b310acf9a1275d836028f92c6104140cc"
+    }
+  },
+  "e-inkdashboardjs": {
+    "head_sha": "2f4ec71cfb3e0c9e0a6eae6301acc001b7453848",
+    "fetched_at": "2026-05-07T05:25:19.422Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "2f4ec71cfb3e0c9e0a6eae6301acc001b7453848",
+      "commit_url": "https://github.com/VladimirKalachikhin/e-inkDashboardJS/commit/2f4ec71cfb3e0c9e0a6eae6301acc001b7453848"
+    }
+  },
+  "signalk-marinwiki": {
+    "head_sha": "9be18b024458e4798b0ec443f88740c68fe759eb",
+    "fetched_at": "2026-05-07T05:25:19.849Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "9be18b024458e4798b0ec443f88740c68fe759eb",
+      "commit_url": "https://github.com/mrejas/signalk-marinwiki/commit/9be18b024458e4798b0ec443f88740c68fe759eb"
+    }
+  },
+  "signalk-iotopen-lynx-gw": {
+    "head_sha": "17ddb737638d8927609f0e8f3119b3cf3e2573d3",
+    "fetched_at": "2026-05-07T05:25:19.913Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "17ddb737638d8927609f0e8f3119b3cf3e2573d3",
+      "commit_url": "https://github.com/mrejas/signalk-iotopen-lynx-gw/commit/17ddb737638d8927609f0e8f3119b3cf3e2573d3"
+    }
+  },
+  "signalk-pwsweather": {
+    "head_sha": "961fd46610d06e5a33cd4948305daa71807e8634",
+    "fetched_at": "2026-05-07T05:25:19.954Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "961fd46610d06e5a33cd4948305daa71807e8634",
+      "commit_url": "https://github.com/itemir/signalk-pwsweather/commit/961fd46610d06e5a33cd4948305daa71807e8634"
+    }
+  },
+  "signalk-pisugar": {
+    "head_sha": "1fa96b0d008c6859eb8332299167d2ca55d9bd47",
+    "fetched_at": "2026-05-07T05:25:19.955Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "1fa96b0d008c6859eb8332299167d2ca55d9bd47",
+      "commit_url": "https://github.com/kreucher/signalk-pisugar/commit/1fa96b0d008c6859eb8332299167d2ca55d9bd47"
+    }
+  },
+  "signalk-charlotte": {
+    "head_sha": "7c169231368ab4d3c0ed6e200b4bec25f6a249c3",
+    "fetched_at": "2026-05-07T05:25:20.029Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "7c169231368ab4d3c0ed6e200b4bec25f6a249c3",
+      "commit_url": "https://github.com/mglonnro/signalk-charlotte/commit/7c169231368ab4d3c0ed6e200b4bec25f6a249c3"
+    }
+  },
+  "hoekens-anchor-alarm": {
+    "head_sha": "180951b389d122ad784f53da1cd8d867346e7bf0",
+    "fetched_at": "2026-05-07T05:25:20.068Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "180951b389d122ad784f53da1cd8d867346e7bf0",
+      "commit_url": "https://github.com/hoeken/hoekens-anchor-alarm/commit/180951b389d122ad784f53da1cd8d867346e7bf0"
+    }
+  },
+  "signalk-prometheus-exporter-macjl": {
+    "head_sha": "08922e4f6637798444fa9436ee83b17f6bedaf7b",
+    "fetched_at": "2026-05-07T05:25:20.448Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "08922e4f6637798444fa9436ee83b17f6bedaf7b",
+      "commit_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/commit/08922e4f6637798444fa9436ee83b17f6bedaf7b"
+    }
+  },
+  "signalk-sealink-cloud-dev": {
+    "head_sha": "882687855eb98d4b41a62fea5f66ff58b7e5f9c3",
+    "fetched_at": "2026-05-07T05:25:20.720Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "882687855eb98d4b41a62fea5f66ff58b7e5f9c3",
+      "commit_url": "https://github.com/sealink-cloud/signalk-sealink-cloud-dev/commit/882687855eb98d4b41a62fea5f66ff58b7e5f9c3"
+    }
+  },
+  "signalk-sealink-cloud": {
+    "head_sha": "f70a8c0af4b3138583ebfb3d9a36779fbe088958",
+    "fetched_at": "2026-05-07T05:25:20.760Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "f70a8c0af4b3138583ebfb3d9a36779fbe088958",
+      "commit_url": "https://github.com/sealink-cloud/signalk-sealink-cloud/commit/f70a8c0af4b3138583ebfb3d9a36779fbe088958"
+    }
+  },
+  "signalk-relay-windlass": {
+    "head_sha": "1fe1ba405534d1ecab7f8ad74b63926f8fbf6ab4",
+    "fetched_at": "2026-05-07T05:25:20.982Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "1fe1ba405534d1ecab7f8ad74b63926f8fbf6ab4",
+      "workflow_run_url": "https://github.com/sbender9/signalk-relay-windlass/actions/runs/24312901964"
+    }
+  },
+  "signalk-waveshare-pwm-control": {
+    "head_sha": "a78ef242973a82544888401eee1d276f1e16737f",
+    "fetched_at": "2026-05-07T05:25:21.094Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a78ef242973a82544888401eee1d276f1e16737f",
+      "commit_url": "https://github.com/Rhumb-Runner/waveshare-pwm-control/commit/a78ef242973a82544888401eee1d276f1e16737f"
+    }
+  },
+  "signalk-grafana": {
+    "head_sha": "bb2f8ef9a45b7c5caaa33daa9d7edebea3dc532d",
+    "fetched_at": "2026-05-07T05:25:21.150Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "bb2f8ef9a45b7c5caaa33daa9d7edebea3dc532d",
+      "workflow_run_url": "https://github.com/dirkwa/signalk-grafana/actions/runs/24047261763"
+    }
+  },
+  "signalk-container": {
+    "head_sha": "514c15c664ed78220794a8bdbf10236b27bb867d",
+    "fetched_at": "2026-05-07T05:25:21.440Z",
+    "payload": {
+      "status": "ok",
+      "head_sha": "514c15c664ed78220794a8bdbf10236b27bb867d",
+      "commit_url": "https://github.com/dirkwa/signalk-container/commit/514c15c664ed78220794a8bdbf10236b27bb867d",
+      "workflow_run_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874",
+      "tested_at": "2026-05-07T03:00:32Z",
+      "workflow_ref": "refs/heads/master",
+      "jobs": [
+        {
+          "platform": "integration",
+          "node": 24,
+          "conclusion": "success",
+          "server_version": "latest",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079052"
+        },
+        {
+          "platform": "integration",
+          "node": 22,
+          "conclusion": "success",
+          "server_version": "latest",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079064"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079078"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079079"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079083"
+        },
+        {
+          "platform": "windows",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079097"
+        },
+        {
+          "platform": "macos",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079098"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079102"
+        },
+        {
+          "platform": "windows",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079112"
+        },
+        {
+          "platform": "armv7-cerbo",
+          "node": 20,
+          "conclusion": "skipped",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079212"
+        },
+        {
+          "platform": "macos",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-container/actions/runs/25473545874/job/74742079228"
+        }
+      ]
+    }
+  },
+  "signalk-embedded-webapp-proxy": {
+    "head_sha": "1b3e81572701fcc145010a9a61c69e28599048a6",
+    "fetched_at": "2026-05-07T05:25:21.645Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "1b3e81572701fcc145010a9a61c69e28599048a6",
+      "commit_url": "https://github.com/KEGustafsson/signalk-embedded-webapp-proxy/commit/1b3e81572701fcc145010a9a61c69e28599048a6"
+    }
+  },
+  "signalk-questdb": {
+    "head_sha": "cd201920233635f26791e386db93771657f70fbc",
+    "fetched_at": "2026-05-07T05:25:22.069Z",
+    "payload": {
+      "status": "ok",
+      "head_sha": "cd201920233635f26791e386db93771657f70fbc",
+      "commit_url": "https://github.com/dirkwa/signalk-questdb/commit/cd201920233635f26791e386db93771657f70fbc",
+      "workflow_run_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516",
+      "tested_at": "2026-04-26T21:47:26Z",
+      "workflow_ref": "refs/heads/master",
+      "jobs": [
+        {
+          "platform": "integration",
+          "node": 24,
+          "conclusion": "success",
+          "server_version": "latest",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510379"
+        },
+        {
+          "platform": "integration",
+          "node": 22,
+          "conclusion": "success",
+          "server_version": "latest",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510386"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510424"
+        },
+        {
+          "platform": "windows",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510442"
+        },
+        {
+          "platform": "macos",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510443"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510444"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510445"
+        },
+        {
+          "platform": "windows",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510446"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510448"
+        },
+        {
+          "platform": "macos",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510449"
+        },
+        {
+          "platform": "armv7-cerbo",
+          "node": 20,
+          "conclusion": "skipped",
+          "job_url": "https://github.com/dirkwa/signalk-questdb/actions/runs/24967800516/job/73105510630"
+        }
+      ]
+    }
+  },
+  "signalk-gnx-display-preset-plugin": {
+    "head_sha": "414fb94ec109c05d95db1eff4fd8c7a2208c1f24",
+    "fetched_at": "2026-05-07T05:25:22.076Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "414fb94ec109c05d95db1eff4fd8c7a2208c1f24",
+      "workflow_run_url": "https://github.com/afds/signalk-gnx-display-preset-plugin/actions/runs/24958873494"
+    }
+  },
+  "signalk-garmin-race-timer-plugin": {
+    "head_sha": "c9414718d591556269447b1a84f8fb77f437d742",
+    "fetched_at": "2026-05-07T05:25:22.201Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "c9414718d591556269447b1a84f8fb77f437d742",
+      "workflow_run_url": "https://github.com/afds/signalk-garmin-race-timer-plugin/actions/runs/24310046456"
+    }
+  },
+  "signalk-avurnav": {
+    "head_sha": "cfd193f5ee6073f9776ebcc495d6b274f091262e",
+    "fetched_at": "2026-05-07T05:25:22.233Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "cfd193f5ee6073f9776ebcc495d6b274f091262e",
+      "workflow_run_url": "https://github.com/macjl/signalk-avurnav/actions/runs/24464122723"
+    }
+  },
+  "signalk-garmin-keypad-plugin": {
+    "head_sha": "e190438c4b6274ba1bd7a0eb2b3f03df16c22ea6",
+    "fetched_at": "2026-05-07T05:25:22.249Z",
+    "payload": {
+      "status": "no-plugin-ci",
+      "head_sha": "e190438c4b6274ba1bd7a0eb2b3f03df16c22ea6",
+      "workflow_run_url": "https://github.com/afds/signalk-garmin-keypad-plugin/actions/runs/24309449540"
+    }
+  },
+  "@signalk/app-dock": {
+    "head_sha": "4fa1fe49443d48271be7eac82d6d273ea24d9ad5",
+    "fetched_at": "2026-05-07T05:25:22.343Z",
+    "payload": {
+      "status": "ok",
+      "head_sha": "4fa1fe49443d48271be7eac82d6d273ea24d9ad5",
+      "commit_url": "https://github.com/SignalK/app-dock/commit/4fa1fe49443d48271be7eac82d6d273ea24d9ad5",
+      "workflow_run_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026",
+      "tested_at": "2026-04-30T06:35:39Z",
+      "workflow_ref": "refs/heads/main",
+      "jobs": [
+        {
+          "platform": "armv7-cerbo",
+          "node": 20,
+          "conclusion": "success",
+          "job_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026/job/73721458087"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026/job/73721458113"
+        },
+        {
+          "platform": "macos",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026/job/73721458118"
+        },
+        {
+          "platform": "linux-arm64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026/job/73721458121"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026/job/73721458122"
+        },
+        {
+          "platform": "macos",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026/job/73721458124"
+        },
+        {
+          "platform": "linux-x64",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026/job/73721458125"
+        },
+        {
+          "platform": "windows",
+          "node": 24,
+          "conclusion": "success",
+          "job_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026/job/73721458129"
+        },
+        {
+          "platform": "windows",
+          "node": 22,
+          "conclusion": "success",
+          "job_url": "https://github.com/SignalK/app-dock/actions/runs/25151030026/job/73721458133"
+        }
+      ]
+    }
+  },
+  "signalk-custom-can-parser": {
+    "head_sha": "6eb26f814687482f069271917ae040968f948197",
+    "fetched_at": "2026-05-07T05:25:22.483Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "6eb26f814687482f069271917ae040968f948197",
+      "commit_url": "https://github.com/UrsidaeDevise/signalk-custom-can-parser/commit/6eb26f814687482f069271917ae040968f948197"
+    }
+  },
+  "signalk-alert-manager": {
+    "head_sha": "b8c4e8bdd86e38cc9f9a73d64c10872fe88fad9d",
+    "fetched_at": "2026-05-07T05:25:22.747Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "b8c4e8bdd86e38cc9f9a73d64c10872fe88fad9d",
+      "commit_url": "https://github.com/hatlabs/signalk-alert-manager/commit/b8c4e8bdd86e38cc9f9a73d64c10872fe88fad9d"
+    }
+  },
+  "signalk-beluga-core": {
+    "head_sha": "6f3dd7770f2c7a1993e3bf1399e04da092b503c9",
+    "fetched_at": "2026-05-07T05:25:22.995Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "6f3dd7770f2c7a1993e3bf1399e04da092b503c9",
+      "commit_url": "https://github.com/matztam/signalk-beluga-core/commit/6f3dd7770f2c7a1993e3bf1399e04da092b503c9"
+    }
+  },
+  "signalk-walkthedock": {
+    "head_sha": "a716033ab855d6de28fcf5ed94a8240937fb2a61",
+    "fetched_at": "2026-05-07T05:25:23.012Z",
+    "payload": {
+      "status": "no-run",
+      "head_sha": "a716033ab855d6de28fcf5ed94a8240937fb2a61",
+      "commit_url": "https://github.com/WalkTheDock/signalk-walkthedock/commit/a716033ab855d6de28fcf5ed94a8240937fb2a61"
+    }
+  }
+}

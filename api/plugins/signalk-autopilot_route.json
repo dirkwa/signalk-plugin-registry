@@ -1,0 +1,48 @@
+{
+  "name": "signalk-autopilot_route",
+  "versions": {
+    "1.3.0": {
+      "server@stable": {
+        "tested": "2026-05-06T05:18:26.513Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 1,
+  "downloads_per_week": 12,
+  "github_url": "https://github.com/marcobergman/signalk-autopilot_route",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "571a0bf1accd5d3a2f432682376f738a10006ecc",
+    "commit_url": "https://github.com/marcobergman/signalk-autopilot_route/commit/571a0bf1accd5d3a2f432682376f738a10006ecc"
+  }
+}

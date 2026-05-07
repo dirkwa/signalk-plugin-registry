@@ -1,0 +1,50 @@
+{
+  "name": "@noforeignland/signalk-to-noforeignland",
+  "versions": {
+    "1.2.1": {
+      "server@stable": {
+        "tested": "2026-05-05T04:53:49.318Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 5,
+  "open_issues": 0,
+  "contributors": 7,
+  "downloads_per_week": 101,
+  "github_url": "https://github.com/noforeignland/nfl-signalk",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "92c292fb222000a3bf6fa1205a1bb455dfd5bef9",
+    "workflow_run_url": "https://github.com/noforeignland/nfl-signalk/actions/runs/22417907798"
+  }
+}

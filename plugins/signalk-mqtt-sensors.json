@@ -1,0 +1,48 @@
+{
+  "name": "signalk-mqtt-sensors",
+  "versions": {
+    "2.1.0": {
+      "server@stable": {
+        "tested": "2026-05-07T05:24:07.666Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 3,
+        "audit_moderate": 0,
+        "composite": 50,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-high",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 4,
+  "contributors": 1,
+  "github_url": "https://github.com/rgregg/signalk-mqtt-sensors",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "a77f9e91120ec2419e422222e2ef063f116b6912",
+    "workflow_run_url": "https://github.com/rgregg/signalk-mqtt-sensors/actions/runs/16185957474"
+  }
+}

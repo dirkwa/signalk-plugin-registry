@@ -1,0 +1,48 @@
+{
+  "name": "signalk-junctekkg",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-04-26T03:18:51.376Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'forEach')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'forEach')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/kagouraki/signalk-junctekkg",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "cdf379a7203639f03a15e7d8fcf29b2043517cd4",
+    "commit_url": "https://github.com/kagouraki/signalk-junctekkg/commit/cdf379a7203639f03a15e7d8fcf29b2043517cd4"
+  }
+}

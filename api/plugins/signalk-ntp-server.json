@@ -1,0 +1,49 @@
+{
+  "name": "signalk-ntp-server",
+  "versions": {
+    "1.0.2": {
+      "server@stable": {
+        "tested": "2026-04-26T04:53:19.102Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "app.streambundle.getSelfBus(...).forEach is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "app.streambundle.getSelfBus(...).forEach is not a function",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 45,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 6,
+  "contributors": 2,
+  "github_url": "https://github.com/iuriaranda/signalk-ntp-server",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "535486b9a8dec753dfeb4f8093f9196f4091e94f",
+    "commit_url": "https://github.com/iuriaranda/signalk-ntp-server/commit/535486b9a8dec753dfeb4f8093f9196f4091e94f"
+  }
+}

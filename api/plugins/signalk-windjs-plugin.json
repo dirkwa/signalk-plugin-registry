@@ -1,0 +1,47 @@
+{
+  "name": "signalk-windjs-plugin",
+  "versions": {
+    "0.2.3": {
+      "server@stable": {
+        "tested": "2026-05-06T05:21:02.001Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 2,
+        "audit_high": 0,
+        "audit_moderate": 3,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 4,
+  "open_issues": 4,
+  "contributors": 3,
+  "github_url": "https://github.com/fabdrol/signalk-windjs-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "b4a2a537f0de17149ffdd3dc69b745c24a510794",
+    "commit_url": "https://github.com/fabdrol/signalk-windjs-plugin/commit/b4a2a537f0de17149ffdd3dc69b745c24a510794"
+  }
+}

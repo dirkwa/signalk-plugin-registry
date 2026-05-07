@@ -1,0 +1,42 @@
+{
+  "name": "signalk-sealogs",
+  "versions": {
+    "0.7.5": {
+      "server@stable": {
+        "tested": "2026-05-05T04:54:44.708Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'includes')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot set properties of undefined (setting 'pathconfig')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 2,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "audit-moderate",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

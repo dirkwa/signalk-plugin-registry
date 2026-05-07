@@ -1,0 +1,47 @@
+{
+  "name": "signalk-euris-resources",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-04-28T05:21:22.577Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "ENOENT: no such file or directory, open './node_modules/signalk-euris-resources/plugin/partials//footer.hbsp'",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 25,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 3,
+  "contributors": 1,
+  "github_url": "https://github.com/KvotheBloodless/signalk-euris-resources",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "844b9c384bd006a9bd6138852e92eebad4bce972",
+    "workflow_run_url": "https://github.com/KvotheBloodless/signalk-euris-resources/actions/runs/16259097676"
+  }
+}

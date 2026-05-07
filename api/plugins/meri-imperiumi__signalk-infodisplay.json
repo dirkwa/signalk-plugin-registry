@@ -1,0 +1,50 @@
+{
+  "name": "@meri-imperiumi/signalk-infodisplay",
+  "versions": {
+    "1.2.6": {
+      "server@stable": {
+        "tested": "2026-05-07T05:21:40.488Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 5,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/meri-imperiumi/signalk-infodisplay",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "ba8d67bbe98c33d4d0847f82fc396c5f83f9a4e9",
+    "workflow_run_url": "https://github.com/meri-imperiumi/signalk-infodisplay/actions/runs/21372083186"
+  }
+}

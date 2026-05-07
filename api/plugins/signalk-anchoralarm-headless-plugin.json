@@ -1,0 +1,47 @@
+{
+  "name": "signalk-anchoralarm-headless-plugin",
+  "versions": {
+    "0.0.1": {
+      "server@stable": {
+        "tested": "2026-04-28T05:19:18.808Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/jonaswitt/signalk-anchoralarm-headless-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "8007ea50749931a84d2c6c9d769e0dcf525bdc56",
+    "commit_url": "https://github.com/jonaswitt/signalk-anchoralarm-headless-plugin/commit/8007ea50749931a84d2c6c9d769e0dcf525bdc56"
+  }
+}

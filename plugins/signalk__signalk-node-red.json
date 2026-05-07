@@ -1,0 +1,53 @@
+{
+  "name": "@signalk/signalk-node-red",
+  "versions": {
+    "4.3.0": {
+      "server@stable": {
+        "tested": "2026-05-03T05:21:33.320Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "server",
+          "get",
+          "use"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 4,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-moderate",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 13,
+  "open_issues": 11,
+  "contributors": 4,
+  "downloads_per_week": 142,
+  "github_url": "https://github.com/SignalK/signalk-node-red",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "4f54db31b35b230e61c805cfa804bf5228261c66",
+    "commit_url": "https://github.com/SignalK/signalk-node-red/commit/4f54db31b35b230e61c805cfa804bf5228261c66"
+  }
+}

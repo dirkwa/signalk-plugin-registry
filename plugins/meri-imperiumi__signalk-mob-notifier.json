@@ -1,0 +1,48 @@
+{
+  "name": "@meri-imperiumi/signalk-mob-notifier",
+  "versions": {
+    "1.1.6": {
+      "server@stable": {
+        "tested": "2026-05-07T05:23:33.093Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/meri-imperiumi/signalk-mob-notifier",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "d36843869a3ca8da3aa3613ac41a33d054eb84f6",
+    "workflow_run_url": "https://github.com/meri-imperiumi/signalk-mob-notifier/actions/runs/21190381561"
+  }
+}

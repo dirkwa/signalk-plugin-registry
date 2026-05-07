@@ -1,0 +1,50 @@
+{
+  "name": "@meri-imperiumi/signalk-aws-iot",
+  "versions": {
+    "1.1.4": {
+      "server@stable": {
+        "tested": "2026-05-07T05:23:51.482Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Invalid connect options supplied.",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Invalid connect options supplied.",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "tests-failing",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    }
+  },
+  "stars": 4,
+  "open_issues": 8,
+  "contributors": 2,
+  "github_url": "https://github.com/meri-imperiumi/signalk-aws-iot",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "cc567da357ff920de71b13f3eae053dcdf20fbc9",
+    "commit_url": "https://github.com/meri-imperiumi/signalk-aws-iot/commit/cc567da357ff920de71b13f3eae053dcdf20fbc9"
+  }
+}

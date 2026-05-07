@@ -1,0 +1,47 @@
+{
+  "name": "signalk-icom-m510e-plugin",
+  "versions": {
+    "0.0.12": {
+      "server@stable": {
+        "tested": "2026-05-06T05:18:44.315Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 2,
+        "audit_high": 2,
+        "audit_moderate": 2,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/htool/signalk-icom-m510e-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "a7f62f580c29cd14dab08a82044f674fcc3723a4",
+    "commit_url": "https://github.com/htool/signalk-icom-m510e-plugin/commit/a7f62f580c29cd14dab08a82044f674fcc3723a4"
+  }
+}

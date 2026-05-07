@@ -1,0 +1,47 @@
+{
+  "name": "signalk-nextion",
+  "versions": {
+    "1.1.7": {
+      "server@stable": {
+        "tested": "2026-04-27T05:00:43.914Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/build/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/build/Debug/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/build/Release/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/out/Debug/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/Debug/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/out/Release/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/Release/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/build/default/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/compiled/24.14.1/linux/x64/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/addon-build/release/install-root/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/addon-build/debug/install-root/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/addon-build/default/install-root/bindings.node\n → /tmp/sk-registry-I4sYy9/node_modules/@serialport/bindings/lib/binding/node-v137-linux-x64/bindings.node",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 25,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 4,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/sbender9/signalk-nextion",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "71890b3acfa0ceab7646872542d063c699844b13",
+    "commit_url": "https://github.com/sbender9/signalk-nextion/commit/71890b3acfa0ceab7646872542d063c699844b13"
+  }
+}

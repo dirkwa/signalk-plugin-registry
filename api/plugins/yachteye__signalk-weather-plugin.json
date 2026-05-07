@@ -1,0 +1,44 @@
+{
+  "name": "@yachteye/signalk-weather-plugin",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-04-26T04:49:45.936Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "github_url": "https://github.com/SuperYachtTimes/signalk-ye-weather-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "a1a4237d395c9ab9da16330fc2cff9b67a890c69",
+    "commit_url": "https://github.com/SuperYachtTimes/signalk-ye-weather-plugin/commit/a1a4237d395c9ab9da16330fc2cff9b67a890c69"
+  }
+}

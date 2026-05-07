@@ -1,0 +1,41 @@
+{
+  "name": "signalk-dps310",
+  "versions": {
+    "1.0.3": {
+      "server@stable": {
+        "tested": "2026-05-06T05:17:58.798Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/build/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/build/Debug/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/build/Release/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/out/Debug/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/Debug/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/out/Release/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/Release/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/build/default/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/compiled/24.14.1/linux/x64/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/addon-build/release/install-root/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/addon-build/debug/install-root/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/addon-build/default/install-root/i2c.node\n → /tmp/sk-registry-rODeyA/node_modules/i2c-bus/lib/binding/node-v137-linux-x64/i2c.node",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "downloads_per_week": 1,
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

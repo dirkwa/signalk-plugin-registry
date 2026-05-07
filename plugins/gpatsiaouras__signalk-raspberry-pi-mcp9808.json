@@ -1,0 +1,40 @@
+{
+  "name": "@gpatsiaouras/signalk-raspberry-pi-mcp9808",
+  "versions": {
+    "1.0.2": {
+      "server@stable": {
+        "tested": "2026-04-26T03:18:28.957Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/build/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/build/Debug/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/build/Release/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/out/Debug/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/Debug/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/out/Release/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/Release/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/build/default/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/compiled/24.14.1/linux/x64/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/addon-build/release/install-root/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/addon-build/debug/install-root/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/addon-build/default/install-root/epoll.node\n → /tmp/sk-registry-SOTQCL/node_modules/epoll/lib/binding/node-v137-linux-x64/epoll.node",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": true,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

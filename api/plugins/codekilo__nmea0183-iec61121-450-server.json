@@ -1,0 +1,49 @@
+{
+  "name": "@codekilo/nmea0183-iec61121-450-server",
+  "versions": {
+    "1.0.3": {
+      "server@stable": {
+        "tested": "2026-05-07T05:22:56.633Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "setProviderError"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 1,
+        "audit_high": 0,
+        "audit_moderate": 1,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 3,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/codekilo/NMEA0183-IEC61162-450-server-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "a58179296111e42e8f6d315ba140fb101d2b5626",
+    "commit_url": "https://github.com/codekilo/NMEA0183-IEC61162-450-server-plugin/commit/a58179296111e42e8f6d315ba140fb101d2b5626"
+  }
+}

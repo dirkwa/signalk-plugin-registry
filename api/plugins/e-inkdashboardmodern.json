@@ -1,0 +1,48 @@
+{
+  "name": "e-inkdashboardmodern",
+  "versions": {
+    "1.0.3": {
+      "server@stable": {
+        "tested": "2026-05-06T05:18:15.382Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'trackProp')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'trackProp')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 4,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/VladimirKalachikhin/e-inkDashboardModernSK",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "8071fe24ab287b39f117ac7c2ab15662ea13c9c0",
+    "commit_url": "https://github.com/VladimirKalachikhin/e-inkDashboardModernSK/commit/8071fe24ab287b39f117ac7c2ab15662ea13c9c0"
+  }
+}

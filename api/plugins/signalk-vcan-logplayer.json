@@ -1,0 +1,76 @@
+{
+  "name": "signalk-vcan-logplayer",
+  "versions": {
+    "1.4.3": {
+      "server@stable": {
+        "tested": "2026-03-30T22:10:26.408Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '@signalk/signalk-schema'\nRequire stack:\n- /tmp/sk-registry-VRCp2j/node_modules/@signalk/n2k-signalk/dist/aisShipTypeMapping.js\n- /tmp/sk-registry-VRCp2j/node_modules/@signalk/n2k-signalk/dist/pgns/129040.js\n- /tmp/sk-registry-VRCp2j/node_modules/@signalk/n2k-signalk/dist/pgns/index.js\n- /tmp/sk-registry-VRCp2j/node_modules/@signalk/n2k-signalk/dist/n2kMapper.js\n- /tmp/sk-registry-VRCp2j/node_modules/signalk-vcan-logplayer/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 30,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.4.4": {
+      "server@stable": {
+        "tested": "2026-05-04T05:25:27.274Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '@signalk/signalk-schema'\nRequire stack:\n- /tmp/sk-registry-mkYXrd/node_modules/@signalk/n2k-signalk/dist/aisShipTypeMapping.js\n- /tmp/sk-registry-mkYXrd/node_modules/@signalk/n2k-signalk/dist/pgns/129040.js\n- /tmp/sk-registry-mkYXrd/node_modules/@signalk/n2k-signalk/dist/pgns/index.js\n- /tmp/sk-registry-mkYXrd/node_modules/@signalk/n2k-signalk/dist/n2kMapper.js\n- /tmp/sk-registry-mkYXrd/node_modules/signalk-vcan-logplayer/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 25,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/formifan2002/signalk-vcan-logplayer",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "c51cf1527a9b6a1aee3edbde0c48badd642ec117",
+    "workflow_run_url": "https://github.com/formifan2002/signalk-vcan-logplayer/actions/runs/23818559465"
+  }
+}

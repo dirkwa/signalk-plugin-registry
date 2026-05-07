@@ -1,0 +1,42 @@
+{
+  "name": "@sail-cloud/sail-cloud",
+  "versions": {
+    "1.2.4": {
+      "server@stable": {
+        "tested": "2026-05-05T04:54:06.138Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "ENOENT: no such file or directory, open './node_modules/@sail-cloud/sail-cloud/src/config/settings.json'",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "ENOENT: no such file or directory, open './node_modules/@sail-cloud/sail-cloud/src/config/settings.json'",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 19,
+        "audit_high": 10,
+        "audit_moderate": 25,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "loads",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "not-runnable"
+      }
+    }
+  },
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

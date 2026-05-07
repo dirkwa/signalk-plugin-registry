@@ -1,0 +1,41 @@
+{
+  "name": "signalk-calypso-ultrasonic",
+  "versions": {
+    "1.0.18": {
+      "server@stable": {
+        "tested": "2026-05-05T04:55:29.428Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '../build/Release/bluetooth_hci_socket.node'\nRequire stack:\n- /tmp/sk-registry-pRNulo/node_modules/@abandonware/bluetooth-hci-socket/lib/native.js\n- /tmp/sk-registry-pRNulo/node_modules/@abandonware/bluetooth-hci-socket/index.js\n- /tmp/sk-registry-pRNulo/node_modules/@abandonware/noble/lib/hci-socket/hci.js\n- /tmp/sk-registry-pRNulo/node_modules/@abandonware/noble/lib/hci-socket/bindings.js\n- /tmp/sk-registry-pRNulo/node_modules/@abandonware/noble/lib/resolve-bindings.js\n- /tmp/sk-registry-pRNulo/node_modules/@abandonware/noble/with-custom-binding.js\n- /tmp/sk-registry-pRNulo/node_modules/@abandonware/noble/index.js\n- /tmp/sk-registry-pRNulo/node_modules/signalk-calypso-ultrasonic/lib/calypso-ultrasonic.js\n- /tmp/sk-registry-pRNulo/node_modules/signalk-calypso-ultrasonic/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 7,
+        "audit_moderate": 0,
+        "composite": 5,
+        "badges": [
+          "compatible",
+          "tests-failing",
+          "audit-high",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    }
+  },
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

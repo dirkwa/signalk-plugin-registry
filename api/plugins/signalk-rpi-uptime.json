@@ -1,0 +1,47 @@
+{
+  "name": "signalk-rpi-uptime",
+  "versions": {
+    "0.0.5": {
+      "server@stable": {
+        "tested": "2026-04-26T03:19:21.291Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/Haimana/signalk-rpi-uptime",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "5fc86c0d8ca0c59fe2eb4fc4c75377c5ae73d2d5",
+    "commit_url": "https://github.com/Haimana/signalk-rpi-uptime/commit/5fc86c0d8ca0c59fe2eb4fc4c75377c5ae73d2d5"
+  }
+}

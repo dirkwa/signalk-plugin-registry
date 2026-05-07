@@ -1,0 +1,47 @@
+{
+  "name": "signalk-ais-interceptor",
+  "versions": {
+    "1.1.2": {
+      "server@stable": {
+        "tested": "2026-04-26T03:20:08.672Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/spidgrou/AIS-Interceptor",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "50342198a506dee35e1261b8127ac31a1051f9f4",
+    "commit_url": "https://github.com/spidgrou/AIS-Interceptor/commit/50342198a506dee35e1261b8127ac31a1051f9f4"
+  }
+}

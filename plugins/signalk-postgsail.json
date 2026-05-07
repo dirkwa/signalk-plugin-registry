@@ -1,0 +1,49 @@
+{
+  "name": "signalk-postgsail",
+  "versions": {
+    "0.5.1": {
+      "server@stable": {
+        "tested": "2026-05-05T04:51:58.860Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 10,
+  "open_issues": 3,
+  "contributors": 3,
+  "downloads_per_week": 10,
+  "github_url": "https://github.com/xbgmsharp/signalk-postgsail",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "78d310e8c263fa1d8cfdc7f4e0f76f324e745459",
+    "workflow_run_url": "https://github.com/xbgmsharp/signalk-postgsail/actions/runs/24565612092"
+  }
+}

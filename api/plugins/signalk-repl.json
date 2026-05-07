@@ -1,0 +1,47 @@
+{
+  "name": "signalk-repl",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-04-26T03:18:09.849Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/wouterdebie/signalk-repl",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "69b0c7bf4d5e9f36ce98bd314dfafa5875dd809a",
+    "commit_url": "https://github.com/wouterdebie/signalk-repl/commit/69b0c7bf4d5e9f36ce98bd314dfafa5875dd809a"
+  }
+}

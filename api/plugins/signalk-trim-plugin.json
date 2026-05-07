@@ -1,0 +1,47 @@
+{
+  "name": "signalk-trim-plugin",
+  "versions": {
+    "0.0.9": {
+      "server@stable": {
+        "tested": "2026-04-28T05:19:57.820Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 2,
+  "contributors": 1,
+  "github_url": "https://github.com/htool/signalk-trim-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "db47ecf36987cb2e4ce96403d6947b3c530e2e4d",
+    "commit_url": "https://github.com/htool/signalk-trim-plugin/commit/db47ecf36987cb2e4ce96403d6947b3c530e2e4d"
+  }
+}

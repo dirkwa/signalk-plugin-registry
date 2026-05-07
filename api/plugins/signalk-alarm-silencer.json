@@ -1,0 +1,48 @@
+{
+  "name": "signalk-alarm-silencer",
+  "versions": {
+    "1.8.2": {
+      "server@stable": {
+        "tested": "2026-05-05T04:52:05.981Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 3,
+  "open_issues": 5,
+  "contributors": 5,
+  "github_url": "https://github.com/sbender9/signalk-alarm-silencer",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "aa56929538c0923bed99ce619cce172a9a92d7d4",
+    "commit_url": "https://github.com/sbender9/signalk-alarm-silencer/commit/aa56929538c0923bed99ce619cce172a9a92d7d4"
+  }
+}

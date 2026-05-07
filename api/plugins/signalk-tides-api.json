@@ -1,0 +1,50 @@
+{
+  "name": "signalk-tides-api",
+  "versions": {
+    "0.3.0": {
+      "server@stable": {
+        "tested": "2026-05-06T05:20:47.372Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "use"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 2,
+        "audit_high": 0,
+        "audit_moderate": 3,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 42,
+  "contributors": 6,
+  "github_url": "https://github.com/joabakk/signalk-tides-api",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "62f1c40cff01fdb3c43ce7d809390e82e79198ef",
+    "commit_url": "https://github.com/joabakk/signalk-tides-api/commit/62f1c40cff01fdb3c43ce7d809390e82e79198ef"
+  }
+}

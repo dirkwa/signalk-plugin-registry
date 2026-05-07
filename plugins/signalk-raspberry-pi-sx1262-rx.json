@@ -1,0 +1,45 @@
+{
+  "name": "signalk-raspberry-pi-sx1262-rx",
+  "versions": {
+    "0.0.14": {
+      "server@stable": {
+        "tested": "2026-04-26T03:16:05.107Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 80,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "github_url": "https://github.com/jdcaprace/signalk-raspberry-pi-read-sx1262-rx",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "fe0eed990c2996e2125790dd2d416d9422530558",
+    "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-read-sx1262-rx/commit/fe0eed990c2996e2125790dd2d416d9422530558"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "signalk-noaa-space-weather",
+  "versions": {
+    "0.1.2": {
+      "server@stable": {
+        "tested": "2026-04-26T03:18:57.285Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '/tmp/sk-registry-ewdita/node_modules/signalk-noaa-space-weather'\nRequire stack:\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/mark-brannan/signalk-noaa-space-weather",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "f8878472087fa0936828817081a99225fa2f7992",
+    "commit_url": "https://github.com/mark-brannan/signalk-noaa-space-weather/commit/f8878472087fa0936828817081a99225fa2f7992"
+  }
+}

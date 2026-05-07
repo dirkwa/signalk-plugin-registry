@@ -1,0 +1,48 @@
+{
+  "name": "signalk-to-mongodb-atlas",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-04-29T05:16:16.212Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'forEach')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/plainolddave/signalk-to-mongodb-atlas",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "5bbf909b310acf9a1275d836028f92c6104140cc",
+    "commit_url": "https://github.com/plainolddave/signalk-to-mongodb-atlas/commit/5bbf909b310acf9a1275d836028f92c6104140cc"
+  }
+}

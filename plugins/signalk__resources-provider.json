@@ -1,0 +1,51 @@
+{
+  "name": "@signalk/resources-provider",
+  "versions": {
+    "1.5.1": {
+      "server@stable": {
+        "tested": "2026-05-03T05:20:25.426Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "resources"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 405,
+  "open_issues": 260,
+  "contributors": 79,
+  "github_url": "https://github.com/SignalK/signalk-server",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "abfdd9e7dd799c114cbe6554d0472d700e77fbd9",
+    "workflow_run_url": "https://github.com/SignalK/signalk-server/actions/runs/20543609468"
+  }
+}

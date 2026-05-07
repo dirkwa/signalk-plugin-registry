@@ -1,0 +1,47 @@
+{
+  "name": "signalk-racing-calculator",
+  "versions": {
+    "0.3.1": {
+      "server@stable": {
+        "tested": "2026-04-26T03:19:26.939Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": true,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/atomberg/signalk-racing-calculator",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "1c660267b2c60572381c8b0fc53d56069fe84432",
+    "commit_url": "https://github.com/atomberg/signalk-racing-calculator/commit/1c660267b2c60572381c8b0fc53d56069fe84432"
+  }
+}

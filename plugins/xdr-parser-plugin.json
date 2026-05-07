@@ -1,0 +1,48 @@
+{
+  "name": "xdr-parser-plugin",
+  "versions": {
+    "1.0.5": {
+      "server@stable": {
+        "tested": "2026-05-06T05:19:11.465Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'length')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'length')",
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "setProviderStatus"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 5,
+  "open_issues": 7,
+  "contributors": 3,
+  "github_url": "https://github.com/GaryWSmith/xdr-parser-plugin",
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

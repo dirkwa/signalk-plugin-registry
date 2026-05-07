@@ -1,0 +1,48 @@
+{
+  "name": "rest-provider-signalk",
+  "versions": {
+    "0.7.0": {
+      "server@stable": {
+        "tested": "2026-05-05T04:55:57.628Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 4,
+  "github_url": "https://github.com/inspired-technologies/signalk-rest-connector-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "b30b788d3d2721fd0879e5eb588900b305fcfafb",
+    "commit_url": "https://github.com/inspired-technologies/signalk-rest-connector-plugin/commit/b30b788d3d2721fd0879e5eb588900b305fcfafb"
+  }
+}

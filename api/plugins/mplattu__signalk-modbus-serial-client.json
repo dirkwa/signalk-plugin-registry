@@ -1,0 +1,49 @@
+{
+  "name": "@mplattu/signalk-modbus-serial-client",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-04-26T04:50:16.812Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'forEach')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'forEach')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "tests-failing",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 2,
+  "contributors": 1,
+  "github_url": "https://github.com/mplattu/signalk-modbus-serial-client",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "26d73b79bb3c4f8a5cd07defb5cac1442e347c4e",
+    "commit_url": "https://github.com/mplattu/signalk-modbus-serial-client/commit/26d73b79bb3c4f8a5cd07defb5cac1442e347c4e"
+  }
+}

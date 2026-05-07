@@ -1,0 +1,46 @@
+{
+  "name": "crowd-depth",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-05-06T05:20:29.511Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '/tmp/sk-registry-U1ZtuW/node_modules/crowd-depth'\nRequire stack:\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "not-runnable"
+      }
+    }
+  },
+  "stars": 5,
+  "open_issues": 15,
+  "contributors": 2,
+  "github_url": "https://github.com/openwatersio/crowd-depth",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "f28b38eb1deb1f3c9b9fc0b8ca95b32bc0c99435",
+    "workflow_run_url": "https://github.com/openwatersio/crowd-depth/actions/runs/21371219680"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "msp-webhook",
+  "versions": {
+    "1.0.5": {
+      "server@stable": {
+        "tested": "2026-04-27T04:58:23.189Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 1,
+  "contributors": 1,
+  "downloads_per_week": 2,
+  "github_url": "https://github.com/50North4West/msp-webhook",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "a167a7af0429583e9ac27f51d6583f5bc5a0d4f3",
+    "commit_url": "https://github.com/50North4West/msp-webhook/commit/a167a7af0429583e9ac27f51d6583f5bc5a0d4f3"
+  }
+}

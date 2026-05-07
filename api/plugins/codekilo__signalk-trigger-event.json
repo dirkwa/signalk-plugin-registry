@@ -1,0 +1,51 @@
+{
+  "name": "@codekilo/signalk-trigger-event",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-04-26T04:49:46.908Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'forEach')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'forEach')",
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "setProviderStatus"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 65,
+        "badges": [
+          "compatible",
+          "loads",
+          "tested",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 6,
+  "contributors": 1,
+  "github_url": "https://github.com/codekilo/signalk-trigger",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "20841ac85e890934a65f16f28b2c34df5b9a956c",
+    "commit_url": "https://github.com/codekilo/signalk-trigger/commit/20841ac85e890934a65f16f28b2c34df5b9a956c"
+  }
+}

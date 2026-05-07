@@ -1,0 +1,83 @@
+{
+  "name": "signalk-to-influxdb2",
+  "versions": {
+    "2.0.1": {
+      "server@stable": {
+        "tested": "2026-04-01T19:25:56.825Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'map')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'map')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 50,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "not-runnable"
+      }
+    },
+    "2.0.3": {
+      "server@stable": {
+        "tested": "2026-05-03T05:23:08.118Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'map')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'map')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 2,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "tests-failing",
+          "audit-moderate",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    }
+  },
+  "stars": 10,
+  "open_issues": 21,
+  "contributors": 5,
+  "downloads_per_week": 100,
+  "github_url": "https://github.com/tkurki/signalk-to-influxdb2",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "9f96b422c10c19b2b211b7f390a254dc7c5e44db",
+    "workflow_run_url": "https://github.com/tkurki/signalk-to-influxdb2/actions/runs/24637124789"
+  }
+}

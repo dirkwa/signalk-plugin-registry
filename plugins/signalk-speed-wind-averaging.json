@@ -1,0 +1,47 @@
+{
+  "name": "signalk-speed-wind-averaging",
+  "versions": {
+    "1.0.7": {
+      "server@stable": {
+        "tested": "2026-05-07T05:23:44.283Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": true,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 6,
+  "contributors": 2,
+  "github_url": "https://github.com/boatly/signalk-speed-wind-averaging",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "268e578ccbda6ca16e70f4cd3da4ddaaf5776a4f",
+    "commit_url": "https://github.com/boatly/signalk-speed-wind-averaging/commit/268e578ccbda6ca16e70f4cd3da4ddaaf5776a4f"
+  }
+}

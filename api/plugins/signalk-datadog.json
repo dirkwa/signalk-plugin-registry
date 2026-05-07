@@ -1,0 +1,48 @@
+{
+  "name": "signalk-datadog",
+  "versions": {
+    "1.0.8": {
+      "server@stable": {
+        "tested": "2026-05-06T05:20:14.831Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "DATADOG_API_KEY environment variable not set",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "DATADOG_API_KEY environment variable not set",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 4,
+        "audit_moderate": 0,
+        "composite": 30,
+        "badges": [
+          "compatible",
+          "loads",
+          "audit-high",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/wouterdebie/signalk-datadog",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "0e64ea154cde5558e964870a44a0630698d6e90b",
+    "commit_url": "https://github.com/wouterdebie/signalk-datadog/commit/0e64ea154cde5558e964870a44a0630698d6e90b"
+  }
+}

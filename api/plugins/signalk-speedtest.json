@@ -1,0 +1,46 @@
+{
+  "name": "signalk-speedtest",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-04-28T05:21:09.450Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '/tmp/sk-registry-22vQHm/node_modules/lzma-native/binding-v4.0.6-node-v137-linux-x64/lzma_native.node'\nRequire stack:\n- /tmp/sk-registry-22vQHm/node_modules/lzma-native/index.js\n- /tmp/sk-registry-22vQHm/node_modules/decompress-tarxz/index.js\n- /tmp/sk-registry-22vQHm/node_modules/speedtest-net/index.js\n- /tmp/sk-registry-22vQHm/node_modules/signalk-speedtest/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 2,
+        "audit_high": 8,
+        "audit_moderate": 5,
+        "composite": 0,
+        "badges": [
+          "compatible",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/itemir/signalk-speedtest",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "7cffe01ae531dfd11c92a9a0981512c3d9d16e15",
+    "commit_url": "https://github.com/itemir/signalk-speedtest/commit/7cffe01ae531dfd11c92a9a0981512c3d9d16e15"
+  }
+}

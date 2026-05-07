@@ -1,0 +1,44 @@
+{
+  "name": "@yachteye/signalk-ship2cloud-plugin",
+  "versions": {
+    "1.0.3": {
+      "server@stable": {
+        "tested": "2026-04-29T05:17:00.686Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "github_url": "https://github.com/SuperYachtTimes/signalk-ship2cloud-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "4459374f6a896c32835e6b38e8b5de02c7f7c986",
+    "commit_url": "https://github.com/SuperYachtTimes/signalk-ship2cloud-plugin/commit/4459374f6a896c32835e6b38e8b5de02c7f7c986"
+  }
+}

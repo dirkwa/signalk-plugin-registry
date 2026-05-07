@@ -1,0 +1,48 @@
+{
+  "name": "signalk-webapi-upload",
+  "versions": {
+    "0.1.0": {
+      "server@stable": {
+        "tested": "2026-04-29T05:17:02.902Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 2,
+        "audit_high": 0,
+        "audit_moderate": 4,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "downloads_per_week": 3,
+  "github_url": "https://github.com/sbman/signalk-webapi-upload",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "dc158f1d8c7a0ed8fc519f254737849ddd969303",
+    "commit_url": "https://github.com/sbman/signalk-webapi-upload/commit/dc158f1d8c7a0ed8fc519f254737849ddd969303"
+  }
+}
