@@ -3,6 +3,7 @@
   "version": "0.4.0",
   "private": true,
   "description": "Automated testing and quality scoring for Signal K plugins",
+  "author": "Dirk Wahrheit <dirkwahrheit@gmail.com>",
   "license": "Apache-2.0",
   "scripts": {
     "build": "tsc",
