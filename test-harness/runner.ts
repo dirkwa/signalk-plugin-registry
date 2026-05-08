@@ -578,11 +578,15 @@ export async function runPluginTest(
   console.error(`[runner] Checking own tests...`);
   let ownTests = checkOwnTests(pluginDir);
 
-  // If tests exist but can't run from the published package (missing devDeps),
-  // try cloning the source repo and running tests there
-  if (ownTests.hasTests && !ownTests.runnable) {
+  // Plugins commonly exclude their compiled tests from the npm tarball
+  // (e.g. via .npmignore) so the test command in the installed package
+  // either can't find them or imports devDependencies that aren't there.
+  // In both cases the source repo is the source of truth for "do the
+  // tests pass" — fall back to it whenever the tarball run didn't pass,
+  // not only when it was unrunnable.
+  if (ownTests.hasTests && !ownTests.pass) {
     console.error(
-      "[runner] Tests not runnable from npm package, trying source repo...",
+      "[runner] Tests did not pass from npm package, trying source repo...",
     );
     ownTests = checkSourceTests(pluginDir);
   }
