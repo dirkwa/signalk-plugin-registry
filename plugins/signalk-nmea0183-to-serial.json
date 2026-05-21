@@ -1,0 +1,46 @@
+{
+  "name": "signalk-nmea0183-to-serial",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-04-26T04:49:39.781Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "/tmp/sk-registry-vuT14D/node_modules/@serialport/bindings-cpp/prebuilds/linux-x64/node.napi.glibc.node: failed to map segment from shared object",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/fabdrol/signalk-nmea0183-to-serial-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "7ecba110afd5e1367c205c4abfae547fa71a1af1",
+    "commit_url": "https://github.com/fabdrol/signalk-nmea0183-to-serial-plugin/commit/7ecba110afd5e1367c205c4abfae547fa71a1af1"
+  }
+}

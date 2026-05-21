@@ -1,0 +1,120 @@
+{
+  "name": "signalk-venus-plugin",
+  "versions": {
+    "2.3.0": {
+      "server@stable": {
+        "tested": "2026-05-11T05:51:06.239Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 3,
+        "audit_high": 0,
+        "audit_moderate": 1,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tests-failing",
+          "audit-critical",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    },
+    "2.3.2": {
+      "server@stable": {
+        "tested": "2026-05-15T05:44:44.640Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 3,
+        "audit_high": 0,
+        "audit_moderate": 1,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tests-failing",
+          "audit-critical",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    },
+    "2.4.1": {
+      "server@stable": {
+        "tested": "2026-05-21T05:59:53.034Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 3,
+        "audit_high": 0,
+        "audit_moderate": 1,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tests-failing",
+          "audit-critical",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    }
+  },
+  "stars": 12,
+  "open_issues": 31,
+  "contributors": 12,
+  "downloads_per_week": 927,
+  "github_url": "https://github.com/sbender9/signalk-venus-plugin",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "9e7671b9f8fa69a48f6e8fe7175c1957a1623e9c",
+    "workflow_run_url": "https://github.com/sbender9/signalk-venus-plugin/actions/runs/26185880857"
+  }
+}

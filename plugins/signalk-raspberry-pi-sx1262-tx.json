@@ -1,0 +1,48 @@
+{
+  "name": "signalk-raspberry-pi-sx1262-tx",
+  "versions": {
+    "0.0.6": {
+      "server@stable": {
+        "tested": "2026-04-28T05:23:07.870Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 80,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/jdcaprace/signalk-raspberry-pi-sx1262-tx",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "cb0b1eda7efc65adcc968ffcfe0e925f9d14bee7",
+    "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-sx1262-tx/commit/cb0b1eda7efc65adcc968ffcfe0e925f9d14bee7"
+  }
+}

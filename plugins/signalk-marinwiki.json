@@ -1,0 +1,48 @@
+{
+  "name": "signalk-marinwiki",
+  "versions": {
+    "0.0.2": {
+      "server@stable": {
+        "tested": "2026-04-28T05:22:25.454Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "EROFS: read-only file system, mkdir '/home/runner/.marinwiki.cache'",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "EROFS: read-only file system, mkdir '/home/runner/.marinwiki.cache'",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 2,
+  "github_url": "https://github.com/mrejas/signalk-marinwiki",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "9be18b024458e4798b0ec443f88740c68fe759eb",
+    "commit_url": "https://github.com/mrejas/signalk-marinwiki/commit/9be18b024458e4798b0ec443f88740c68fe759eb"
+  }
+}

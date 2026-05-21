@@ -1,0 +1,46 @@
+{
+  "name": "orion-bms-to-signalk",
+  "versions": {
+    "0.2.0": {
+      "server@stable": {
+        "tested": "2026-04-28T05:22:52.789Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '../build/Release/can.node'\nRequire stack:\n- /tmp/sk-registry-4AAqpF/node_modules/socketcan/dist/socketcan.js\n- /tmp/sk-registry-4AAqpF/node_modules/orion-bms-to-signalk/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/pbegg/orion-bms-to-signalk",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "7d0b0715fcb03397eeb7e92350d64a855f2fd9de",
+    "commit_url": "https://github.com/pbegg/orion-bms-to-signalk/commit/7d0b0715fcb03397eeb7e92350d64a855f2fd9de"
+  }
+}

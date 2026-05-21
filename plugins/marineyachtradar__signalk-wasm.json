@@ -1,0 +1,43 @@
+{
+  "name": "@marineyachtradar/signalk-wasm",
+  "versions": {
+    "0.5.1": {
+      "server@stable": {
+        "tested": "2026-03-30T22:10:56.905Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '/tmp/sk-registry-MzenqS/node_modules/@marineyachtradar/signalk-wasm'\nRequire stack:\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 30,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/MarineYachtRadar/mayara-signalk-wasm",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "098c3ef10dc98b00d622734698398d3e5e90400e",
+    "workflow_run_url": "https://github.com/MarineYachtRadar/mayara-signalk-wasm/actions/runs/20293540850"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "noaa-storms",
+  "versions": {
+    "1.1.0": {
+      "server@stable": {
+        "tested": "2026-05-15T05:44:15.563Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/haipule/noaa-storms",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "3e15fe6370f5fa6409fd02f00c2397c6fd3151d1",
+    "workflow_run_url": "https://github.com/haipule/noaa-storms/actions/runs/25894698388"
+  }
+}

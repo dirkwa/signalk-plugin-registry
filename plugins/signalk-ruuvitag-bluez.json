@@ -1,0 +1,48 @@
+{
+  "name": "signalk-ruuvitag-bluez",
+  "versions": {
+    "1.0.3": {
+      "server@stable": {
+        "tested": "2026-05-21T05:59:40.040Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "sandboxed detection failed",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 2,
+        "audit_high": 2,
+        "audit_moderate": 6,
+        "composite": 30,
+        "badges": [
+          "compatible",
+          "tested",
+          "audit-critical",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 2,
+  "github_url": "https://github.com/jtroyer76/signalk-ruuvitag-bluez",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "f88cc406843cdbd9ad99644ad9adeaa567bbbb52",
+    "workflow_run_url": "https://github.com/jtroyer76/signalk-ruuvitag-bluez/actions/runs/26180616266"
+  }
+}

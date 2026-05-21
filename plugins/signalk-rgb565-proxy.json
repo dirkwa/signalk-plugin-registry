@@ -1,0 +1,43 @@
+{
+  "name": "signalk-rgb565-proxy",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-04-28T05:19:31.170Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Could not load the \"sharp\" module using the linux-x64 runtime\nERR_DLOPEN_FAILED: /tmp/sk-registry-3wrqec/node_modules/@img/sharp-linux-x64/lib/sharp-linux-x64.node: failed to map segment from shared object\nPossible solutions:\n- Ensure optional dependencies can be installed:\n    npm install --include=optional sharp\n- Ensure your package manager supports multi-platform installation:\n    See https://sharp.pixelplumbing.com/install#cross-platform\n- Add platform-specific dependencies:\n    npm install --os=linux --cpu=x64 sharp\n- Consult the installation documentation:\n    See https://sharp.pixelplumbing.com/install",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": true,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "not-runnable"
+      }
+    }
+  },
+  "github_url": "https://github.com/batuakan/signalk-rgb565-proxy",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "fa663e37bd86d0917f52f9817d40137f868e2c02",
+    "commit_url": "https://github.com/batuakan/signalk-rgb565-proxy/commit/fa663e37bd86d0917f52f9817d40137f868e2c02"
+  }
+}

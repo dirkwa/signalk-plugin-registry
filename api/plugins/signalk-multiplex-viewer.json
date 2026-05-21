@@ -1,0 +1,49 @@
+{
+  "name": "signalk-multiplex-viewer",
+  "versions": {
+    "1.2.0": {
+      "server@stable": {
+        "tested": "2026-04-26T04:51:17.755Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 2,
+        "composite": 50,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tests-failing",
+          "audit-moderate",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 2,
+  "github_url": "https://github.com/tonybentley/signalk-multiplex-viewer",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "116025905be4ca105b09881798f4fd720b2b68a4",
+    "commit_url": "https://github.com/tonybentley/signalk-multiplex-viewer/commit/116025905be4ca105b09881798f4fd720b2b68a4"
+  }
+}
