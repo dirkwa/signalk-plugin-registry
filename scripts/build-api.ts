@@ -1,5 +1,29 @@
 import * as fs from 'fs'
 import * as path from 'path'
+import { isPrerelease } from './npm-name'
+
+/**
+ * The version a plugin is shown as on the published page.
+ *
+ * The newest non-outdated *stable* release, falling back to a pre-release only
+ * when a plugin has nothing else.
+ *
+ * Pre-releases are scored on request (a `[rescore] pkg@next` issue) but must
+ * not become the headline: npm serves `dist-tags.latest`, so a user installing
+ * the plugin gets the stable release, and the score on the page has to describe
+ * the artifact they actually receive. A plain string sort ranks
+ * `3.0.0-beta.0` above `2.1.0`, which is also backwards from SemVer, where a
+ * pre-release precedes its own release.
+ */
+export function pickDisplayVersion(
+  versions: Record<string, { outdated?: boolean }>
+): string | undefined {
+  const candidates = Object.entries(versions).filter(([, data]) => !data.outdated)
+  const byVersionDesc = (a: [string, unknown], b: [string, unknown]) =>
+    b[0].localeCompare(a[0], undefined, { numeric: true })
+  const stable = candidates.filter(([v]) => !isPrerelease(v)).sort(byVersionDesc)
+  return (stable.length > 0 ? stable : candidates.sort(byVersionDesc)).map(([v]) => v)[0]
+}
 
 const FETCH_TIMEOUT_MS = 20_000
 const GITHUB_CONCURRENCY = 8
@@ -743,11 +767,7 @@ async function main() {
   const allVersionsByPlugin: Record<string, PluginResults[string]> = {}
 
   for (const [pluginName, versions] of Object.entries(results)) {
-    // Find latest non-outdated version
-    const latestVersion = Object.entries(versions)
-      .filter(([_, data]) => !data.outdated)
-      .sort(([a], [b]) => b.localeCompare(a, undefined, { numeric: true }))
-      .map(([v]) => v)[0]
+    const latestVersion = pickDisplayVersion(versions)
 
     if (!latestVersion) continue
 
@@ -1233,7 +1253,12 @@ describe('plugin', () => {
   fs.writeFileSync(path.join(apiDir, 'guide.html'), guide)
 }
 
-main().catch((err) => {
-  console.error('[build-api] fatal:', err)
-  process.exit(1)
-})
+// Guarded so a test can import pickDisplayVersion without the module building
+// the whole site on import — which fetches metrics for every plugin and burns
+// the GitHub rate limit.
+if (require.main === module) {
+  main().catch((err) => {
+    console.error('[build-api] fatal:', err)
+    process.exit(1)
+  })
+}
