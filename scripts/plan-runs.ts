@@ -109,6 +109,7 @@ function parseArgs(): {
   masterSha: string
   mode: string
   pluginFilter: string
+  pluginVersion: string
   includeMaster: boolean
   isScheduled: boolean
 } {
@@ -133,6 +134,7 @@ function parseArgs(): {
     masterSha: get('--master-sha'),
     mode: get('--mode') || 'changed_only',
     pluginFilter: get('--plugin-filter') || '',
+    pluginVersion: get('--plugin-version') || '',
     includeMaster: get('--include-master') === 'true',
     isScheduled: get('--is-scheduled') === 'true'
   }
@@ -159,6 +161,13 @@ function main() {
   let plugins = args.plugins
   if (args.mode === 'single_plugin' && args.pluginFilter) {
     plugins = plugins.filter((p) => p.name === args.pluginFilter)
+    // Discovery only ever resolves dist-tags.latest, so scoring a pre-release
+    // means overriding the version it found. The requested version was resolved
+    // against the packument before it got here, so it is a version npm
+    // published rather than a string the requester chose.
+    if (args.pluginVersion) {
+      plugins = plugins.map((p) => ({ ...p, version: args.pluginVersion }))
+    }
   }
 
   const force = args.mode === 'all_plugins' || args.mode === 'single_plugin'
