@@ -25,6 +25,27 @@ const MAX_NPM_NAME_LENGTH = 214
 // metadata, and nothing else.
 const EXACT_VERSION_RE = /^\d+\.\d+\.\d+(?:-[0-9a-zA-Z.-]+)?(?:\+[0-9a-zA-Z.-]+)?$/
 
+/**
+ * Whether a version is a pre-release — anything carrying a `-suffix`.
+ *
+ * SemVer says `1.0.0-beta.1` precedes `1.0.0`, but a plain string sort puts it
+ * after: `'3.0.0-beta.0'.localeCompare('2.1.0')` is positive, so a beta
+ * outranks every earlier stable release. The published page picks one version
+ * to show per plugin, and it must be the one npm hands a user who installs the
+ * plugin — showing a pre-release's score against a release nobody gets is worse
+ * than showing nothing.
+ */
+export function isPrerelease(version: string): boolean {
+  if (typeof version !== 'string') {
+    return false
+  }
+  // SemVer puts build metadata after `+` and the pre-release tag before it, so
+  // only the part before `+` may carry one. `1.2.3+build-meta` is a stable
+  // release whose metadata happens to contain a hyphen.
+  const [beforeBuild] = version.split('+')
+  return beforeBuild.includes('-')
+}
+
 export function isExactVersion(version: string): boolean {
   return typeof version === 'string' && version.length <= 128 && EXACT_VERSION_RE.test(version)
 }
