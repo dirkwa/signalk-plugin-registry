@@ -12,6 +12,23 @@
 const NPM_NAME_RE = /^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/
 const MAX_NPM_NAME_LENGTH = 214
 
+// The same control for a version. A resolved version is interpolated unescaped
+// into `npm install <name>@<version>` in test-harness/runner.ts, so it needs the
+// same fencing the name gets. On the re-score path it originates from an issue;
+// on the dispatch path it is typed into a workflow_dispatch input.
+//
+// Exact rather than merely shell-safe, because the value also becomes the
+// version key in results.json. A dist-tag like `beta` is alphanumeric and would
+// pass a plain shell-safety check, but a run keyed on `beta` writes a slot under
+// that name beside the real versions — permanently, since slots are never
+// deleted. So: `major.minor.patch`, plus npm's optional pre-release and build
+// metadata, and nothing else.
+const EXACT_VERSION_RE = /^\d+\.\d+\.\d+(?:-[0-9a-zA-Z.-]+)?(?:\+[0-9a-zA-Z.-]+)?$/
+
+export function isExactVersion(version: string): boolean {
+  return typeof version === 'string' && version.length <= 128 && EXACT_VERSION_RE.test(version)
+}
+
 export function isValidNpmName(name: string): boolean {
   return (
     typeof name === 'string' &&

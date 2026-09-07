@@ -84,9 +84,10 @@ jobs:
         env:
           MODE: ${{ github.event.inputs.mode }}
           PLUGIN: ${{ github.event.inputs.plugin }}
+          PLUGIN_VERSION: ${{ github.event.inputs.plugin_version }}
         run: |
           if [ "$MODE" = "single_plugin" ] && [ -n "$PLUGIN" ]; then
-            npx ts-node scripts/resolve-single-plugin.ts --name "$PLUGIN" --out /tmp/plugins.json
+            npx ts-node scripts/resolve-single-plugin.ts --name "$PLUGIN" --version "$PLUGIN_VERSION" --out /tmp/plugins.json
           else
             npx ts-node scripts/discover-plugins.ts --out /tmp/plugins.json
           fi
@@ -98,16 +99,28 @@ jobs:
         id: plan
         env:
           MAX_MATRIX_JOBS: ${{ github.event.inputs.max_jobs || '50' }}
+          # Through the environment, never interpolated into the `run` script.
+          # An expression is substituted as text before the shell parses the
+          # line, so a single quote inside a workflow_dispatch input closes the
+          # quoting and the rest of the value runs as a command — before
+          # plan-runs.ts, and therefore before its own validation, ever sees it.
+          PLUGIN_VERSION: ${{ github.event.inputs.plugin_version }}
+          PLUGIN_FILTER: ${{ github.event.inputs.plugin }}
+          RUN_MODE: ${{ github.event.inputs.mode || 'changed_only' }}
+          INCLUDE_MASTER: ${{ github.event.inputs.include_master || 'false' }}
+          STABLE_VERSION: ${{ steps.resolve.outputs.stable_version }}
+          MASTER_SHA: ${{ steps.resolve.outputs.master_sha }}
+          IS_SCHEDULED: ${{ github.event_name == 'schedule' }}
         run: |
           npx ts-node scripts/plan-runs.ts \
             --plugins-file /tmp/plugins.json \
-            --stable-version '${{ steps.resolve.outputs.stable_version }}' \
-            --master-sha '${{ steps.resolve.outputs.master_sha }}' \
-            --mode '${{ github.event.inputs.mode || 'changed_only' }}' \
-            --plugin-filter '${{ github.event.inputs.plugin }}' \
-            --plugin-version '${{ github.event.inputs.plugin_version }}' \
-            --include-master '${{ github.event.inputs.include_master || 'false' }}' \
-            --is-scheduled '${{ github.event_name == 'schedule' }}' \
+            --stable-version "$STABLE_VERSION" \
+            --master-sha "$MASTER_SHA" \
+            --mode "$RUN_MODE" \
+            --plugin-filter "$PLUGIN_FILTER" \
+            --plugin-version "$PLUGIN_VERSION" \
+            --include-master "$INCLUDE_MASTER" \
+            --is-scheduled "$IS_SCHEDULED" \
             >> $GITHUB_OUTPUT
 
       - name: Upload compiled scripts

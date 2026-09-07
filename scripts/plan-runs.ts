@@ -1,5 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
+import { isExactVersion } from './npm-name'
 
 interface PluginInfo {
   name: string
@@ -161,24 +162,49 @@ function main() {
   let plugins = args.plugins
   if (args.mode === 'single_plugin' && args.pluginFilter) {
     plugins = plugins.filter((p) => p.name === args.pluginFilter)
-    // Discovery only ever resolves dist-tags.latest, so scoring a pre-release
-    // means overriding the version it found. The requested version was resolved
-    // against the packument before it got here, so it is a version npm
-    // published rather than a string the requester chose.
-    if (args.pluginVersion) {
-      plugins = plugins.map((p) => ({ ...p, version: args.pluginVersion }))
+  }
+
+  // Discovery only ever resolves dist-tags.latest, so scoring a pre-release
+  // means testing a version other than the one it found.
+  //
+  // Kept beside the discovered version rather than replacing it: `markOutdated`
+  // takes the *latest* version, not the one under test, and overwriting it
+  // would stamp `outdated: true, superseded_by: <pre-release>` on the real
+  // latest — telling the published page that the current stable release was
+  // superseded by a beta.
+  //
+  // Validated here as well as in rescore.yml, exactly as resolve-single-plugin
+  // does for the name: `plugin_version` is also a workflow_dispatch input that
+  // anyone holding actions: write can type by hand, and it reaches
+  // `npm install <name>@<version>` unescaped in test-harness/runner.ts.
+  //
+  // An *exact* version, not merely a shell-safe string: this value becomes the
+  // version key in results.json, and a dist-tag like `beta` would write a slot
+  // under that name beside the real versions — permanently, since slots are
+  // never deleted. rescore.yml resolves tags to a concrete version before
+  // dispatching, so a tag arriving here is a hand-typed dispatch, not a
+  // re-score request.
+  let requestedVersion = ''
+  if (args.mode === 'single_plugin' && args.pluginFilter && args.pluginVersion) {
+    if (!isExactVersion(args.pluginVersion)) {
+      console.error(`[plan] Not an exact npm version: ${args.pluginVersion}`)
+      process.exit(1)
     }
+    requestedVersion = args.pluginVersion
   }
 
   const force = args.mode === 'all_plugins' || args.mode === 'single_plugin'
   const runs: PlannedRun[] = []
 
   for (const plugin of plugins) {
+    // Always the discovered latest, never the requested pre-release.
     markOutdated(results, plugin.name, plugin.version)
+
+    const testVersion = requestedVersion || plugin.version
 
     const stableCheck = shouldTest(
       plugin.name,
-      plugin.version,
+      testVersion,
       'stable',
       args.stableVersion,
       results,
@@ -187,7 +213,7 @@ function main() {
     if (stableCheck.run) {
       runs.push({
         plugin: plugin.name,
-        pluginVersion: plugin.version,
+        pluginVersion: testVersion,
         server: 'stable',
         serverVersion: args.stableVersion,
         reason: stableCheck.reason!
@@ -197,7 +223,7 @@ function main() {
     if (args.includeMaster) {
       const masterCheck = shouldTest(
         plugin.name,
-        plugin.version,
+        testVersion,
         'master',
         args.masterSha,
         results,
@@ -206,7 +232,7 @@ function main() {
       if (masterCheck.run) {
         runs.push({
           plugin: plugin.name,
-          pluginVersion: plugin.version,
+          pluginVersion: testVersion,
           server: 'master',
           serverVersion: args.masterSha,
           reason: masterCheck.reason!

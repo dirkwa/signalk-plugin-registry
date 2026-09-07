@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import { fetchPackument, PLUGIN_KEYWORD } from './discover-plugins'
-import { isValidNpmName } from './npm-name'
+import { isExactVersion, isValidNpmName } from './npm-name'
 
 // The trust boundary for the on-demand re-score path. Reads the requested npm
 // package name from the issue body (Issue Form) or a `/rescore <name>` comment
@@ -68,6 +68,14 @@ export function splitSpecifier(raw: string): { name: string; specifier: string }
   return { name: raw.slice(0, at), specifier: raw.slice(at + 1) }
 }
 
+/** Own-property read, so a key like `constructor` cannot reach the prototype. */
+export function own<T>(obj: Record<string, T> | undefined, key: string): T | undefined {
+  if (!obj || !Object.prototype.hasOwnProperty.call(obj, key)) {
+    return undefined
+  }
+  return obj[key]
+}
+
 function loadRegistryNames(): Set<string> {
   const registryPath = path.resolve(__dirname, '..', 'registry.json')
   const registry: { plugins: Array<{ npm: string }> } = JSON.parse(
@@ -103,9 +111,26 @@ async function evaluate(rawRequest: string): Promise<ParseResult> {
   // An empty specifier means `latest`, which is what a request without an `@`
   // has always meant.
   const wanted = specifier || 'latest'
+  // Own properties only, and typed: `doc` is parsed from a network response, so
+  // a bare `doc.versions?.[wanted]` reaches the prototype and `@constructor`
+  // resolves to `function Object() { [native code] }`. That string would flow
+  // into `npm install ${name}@${version}` in test-harness/runner.ts, which is
+  // the injection surface npm-name.ts exists to close for the name.
+  const tag = own(doc['dist-tags'], wanted)
   // A dist-tag first, then an exact version. Tags win on a collision, matching
   // what `npm install pkg@x` resolves to.
-  const version = doc['dist-tags']?.[wanted] ?? (doc.versions?.[wanted] ? wanted : undefined)
+  const version =
+    (typeof tag === 'string' && tag) || (own(doc.versions, wanted) ? wanted : undefined)
+  // Belt and braces: whatever npm returned for a tag is not this repo's to
+  // trust either, and a version reaches a shell unescaped downstream.
+  //
+  // The exact-version rule rather than mere shell-safety, so this agrees with
+  // the check plan-runs.ts applies at the matrix boundary: a request that gets
+  // an acknowledgement here must not then be rejected there. npm enforces
+  // semver on publish, so this rejects nothing a real tag resolves to.
+  if (version && !isExactVersion(version)) {
+    return fail(`\`${rawName}\` resolved \`${wanted}\` to an unusable version string.`)
+  }
   if (!version) {
     const tags = Object.keys(doc['dist-tags'] ?? {})
     return specifier
