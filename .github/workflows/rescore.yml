@@ -124,11 +124,17 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PLUGIN: ${{ steps.parse.outputs.name }}
+          VERSION: ${{ steps.parse.outputs.version }}
           ISSUE: ${{ github.event.issue.number }}
         run: |
+          # The version is passed explicitly so a request naming a dist-tag or
+          # a pre-release scores what was asked for. Discovery resolves only
+          # dist-tags.latest, so without this the scan would silently test a
+          # different version than the acknowledgement comment claims.
           gh workflow run nightly.yml \
             -f mode=single_plugin \
             -f plugin="$PLUGIN" \
+            -f plugin_version="$VERSION" \
             -f include_master=false \
             -f rescore_issue="$ISSUE"
 

@@ -16,12 +16,19 @@ body:
         scan, comments the result here, and closes the issue. This usually takes
         a few minutes.
 
+        To score a pre-release before promoting it, add a dist-tag or an exact
+        version: `my-plugin@beta`, `my-plugin@2.0.0-rc.1`. Without one the
+        scan uses `latest`, as before.
+
         To re-run later on the same issue, comment `/rescore <npm-name>`.
   - type: input
     id: npm-name
     attributes:
       label: npm package name
-      description: Exactly as published, e.g. signalk-my-plugin or @scope/signalk-my-plugin
+      description: >-
+        Exactly as published, e.g. signalk-my-plugin or
+        @scope/signalk-my-plugin. Append @tag or @version to score a
+        pre-release, e.g. signalk-my-plugin@beta.
       placeholder: signalk-my-plugin
     validations:
       required: true

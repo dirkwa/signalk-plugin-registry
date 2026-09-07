@@ -17,6 +17,12 @@ import { isValidNpmName } from './npm-name'
 //      (carries the signalk-node-server-plugin keyword, or is in the curated
 //      registry.json). This stops the trigger being abused as an arbitrary
 //      `npm install <anything>` / free-compute primitive.
+//
+// A request may name a dist-tag or an exact version — `my-plugin@beta`,
+// `my-plugin@2.0.0-rc.1` — so an author can score a pre-release before
+// promoting it to `latest`. The specifier is resolved here against the
+// packument and only ever leaves as a concrete version already known to exist,
+// so nothing downstream installs a string the requester chose.
 
 interface ParseResult {
   valid: boolean
@@ -28,7 +34,7 @@ interface ParseResult {
 
 // The Issue Form renders the `npm-name` input under a `### npm package name`
 // heading. GitHub writes the answer as the paragraph following that heading.
-function extractFromIssueBody(body: string): string {
+export function extractFromIssueBody(body: string): string {
   const lines = body.split(/\r?\n/)
   const headingIdx = lines.findIndex((l) => /^#{1,6}\s+npm package name\s*$/i.test(l.trim()))
   if (headingIdx === -1) return ''
@@ -40,11 +46,26 @@ function extractFromIssueBody(body: string): string {
   return ''
 }
 
-function extractFromComment(body: string): string {
+export function extractFromComment(body: string): string {
   // `/rescore some-plugin` — take the first whitespace-delimited token after
   // the command. Backtick-fencing the name is tolerated.
   const m = body.trim().match(/^\/rescore\s+`?([^\s`]+)`?/i)
   return m ? m[1] : ''
+}
+
+/**
+ * Split `name`, `name@tag` or `@scope/name@version` into its two halves.
+ *
+ * The last `@` is the separator, and only when it is not the scope marker at
+ * position 0 — otherwise `@signalk/foo` would split into `@signalk/foo` and an
+ * empty specifier.
+ */
+export function splitSpecifier(raw: string): { name: string; specifier: string } {
+  const at = raw.lastIndexOf('@')
+  if (at <= 0) {
+    return { name: raw, specifier: '' }
+  }
+  return { name: raw.slice(0, at), specifier: raw.slice(at + 1) }
 }
 
 function loadRegistryNames(): Set<string> {
@@ -55,7 +76,7 @@ function loadRegistryNames(): Set<string> {
   return new Set(registry.plugins.map((p) => p.npm))
 }
 
-async function evaluate(rawName: string): Promise<ParseResult> {
+async function evaluate(rawRequest: string): Promise<ParseResult> {
   const fail = (reason: string): ParseResult => ({
     valid: false,
     name: '',
@@ -64,9 +85,12 @@ async function evaluate(rawName: string): Promise<ParseResult> {
     reason
   })
 
-  if (!rawName) {
+  if (!rawRequest) {
     return fail('no npm package name was provided.')
   }
+
+  const { name: rawName, specifier } = splitSpecifier(rawRequest)
+
   if (!isValidNpmName(rawName)) {
     return fail(`\`${rawName}\` is not a valid npm package name.`)
   }
@@ -76,17 +100,28 @@ async function evaluate(rawName: string): Promise<ParseResult> {
     return fail(`\`${rawName}\` was not found on the npm registry.`)
   }
 
-  const latest = doc['dist-tags']?.latest
-  if (!latest) {
-    return fail(`\`${rawName}\` has no published version on npm.`)
+  // An empty specifier means `latest`, which is what a request without an `@`
+  // has always meant.
+  const wanted = specifier || 'latest'
+  // A dist-tag first, then an exact version. Tags win on a collision, matching
+  // what `npm install pkg@x` resolves to.
+  const version = doc['dist-tags']?.[wanted] ?? (doc.versions?.[wanted] ? wanted : undefined)
+  if (!version) {
+    const tags = Object.keys(doc['dist-tags'] ?? {})
+    return specifier
+      ? fail(
+          `\`${rawName}\` has no version or dist-tag \`${specifier}\` on npm.` +
+            (tags.length ? ` Published tags: ${tags.map((t) => `\`${t}\``).join(', ')}.` : '')
+        )
+      : fail(`\`${rawName}\` has no published version on npm.`)
   }
 
-  const versionDoc = doc.versions?.[latest]
+  const versionDoc = doc.versions?.[version]
   const keywords = versionDoc?.keywords ?? []
   const isPlugin = keywords.includes(PLUGIN_KEYWORD) || loadRegistryNames().has(rawName)
   if (!isPlugin) {
     return fail(
-      `\`${rawName}\` does not carry the \`${PLUGIN_KEYWORD}\` keyword, so the registry does not treat it as a Signal K plugin. ` +
+      `\`${rawName}\`@${version} does not carry the \`${PLUGIN_KEYWORD}\` keyword, so the registry does not treat it as a Signal K plugin. ` +
         `Add the keyword to package.json and republish, then try again.`
     )
   }
@@ -94,7 +129,7 @@ async function evaluate(rawName: string): Promise<ParseResult> {
   return {
     valid: true,
     name: rawName,
-    version: latest,
+    version,
     category: '',
     reason: ''
   }
@@ -127,7 +162,11 @@ async function main() {
   emit(await evaluate(rawName))
 }
 
-main().catch((err) => {
-  console.error(err)
-  process.exit(1)
-})
+// Guarded so a test can import the parsing helpers without the module
+// reaching for the network and writing to $GITHUB_OUTPUT on import.
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err)
+    process.exit(1)
+  })
+}

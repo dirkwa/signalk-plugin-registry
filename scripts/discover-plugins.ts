@@ -30,7 +30,7 @@ export interface NpmPackument {
   description?: string
   homepage?: string
   repository?: { url?: string } | string
-  'dist-tags'?: { latest?: string }
+  'dist-tags'?: { latest?: string } & Record<string, string | undefined>
   versions?: Record<string, { version: string; description?: string; keywords?: string[] }>
 }
 
