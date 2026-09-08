@@ -1,0 +1,41 @@
+{
+  "name": "radarhub-signalk",
+  "versions": {
+    "0.0.2": {
+      "server@stable": {
+        "tested": "2026-08-29T08:25:10.960Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module 'uuid'\nRequire stack:\n- /tmp/sk-registry-TY1YFo/node_modules/radarhub-signalk/plugin/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 1,
+        "audit_high": 5,
+        "audit_moderate": 0,
+        "composite": 0,
+        "badges": [
+          "compatible",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

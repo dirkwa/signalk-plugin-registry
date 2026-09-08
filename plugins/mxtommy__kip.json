@@ -1,0 +1,213 @@
+{
+  "name": "@mxtommy/kip",
+  "versions": {
+    "4.7.0": {
+      "server@stable": {
+        "tested": "2026-03-31T16:44:13.277Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 90,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "4.8.0": {
+      "server@stable": {
+        "tested": "2026-07-02T05:48:48.896Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.29.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "4.8.1": {
+      "server@stable": {
+        "tested": "2026-07-04T05:34:36.653Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "4.8.2": {
+      "server@stable": {
+        "tested": "2026-07-06T06:16:11.991Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "4.8.5": {
+      "server@stable": {
+        "tested": "2026-08-27T12:10:55.524Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 90,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 126,
+  "open_issues": 47,
+  "contributors": 20,
+  "downloads_per_week": 1557,
+  "github_url": "https://github.com/mxtommy/Kip",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "6bcc24f23b260961dc4daa7ec7450b261f0c5d5a",
+    "workflow_run_url": "https://github.com/mxtommy/Kip/actions/runs/28833916607"
+  }
+}

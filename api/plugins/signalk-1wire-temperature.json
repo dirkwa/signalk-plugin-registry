@@ -1,0 +1,50 @@
+{
+  "name": "signalk-1wire-temperature",
+  "versions": {
+    "2.0.0": {
+      "server@stable": {
+        "tested": "2026-08-31T07:49:47.764Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 3,
+  "github_url": "https://github.com/johansolve/signalk-1wire-temperature",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "83ed746f295ba3ba9970a537161aaa4a377a2346",
+    "workflow_run_url": "https://github.com/johansolve/signalk-1wire-temperature/actions/runs/31956975005"
+  }
+}

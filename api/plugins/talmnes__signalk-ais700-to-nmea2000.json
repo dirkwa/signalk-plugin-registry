@@ -1,0 +1,46 @@
+{
+  "name": "@talmnes/signalk-ais700-to-nmea2000",
+  "versions": {
+    "0.1.1": {
+      "server@stable": {
+        "tested": "2026-08-26T02:57:55.817Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "not-runnable"
+      }
+    }
+  },
+  "downloads_per_week": 6,
+  "github_url": "https://github.com/thomahawk72/signalk-ais700-to-nmea2000",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "9a116eec7cf82631d0cf002b2e7c7404a9f25f4e",
+    "commit_url": "https://github.com/thomahawk72/signalk-ais700-to-nmea2000/commit/9a116eec7cf82631d0cf002b2e7c7404a9f25f4e"
+  }
+}

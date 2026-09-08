@@ -1,0 +1,90 @@
+{
+  "name": "@signalk/tracks-plugin",
+  "versions": {
+    "2.1.0": {
+      "server@stable": {
+        "tested": "2026-08-31T07:51:52.439Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "3.0.0-beta.0": {
+      "server@stable": {
+        "tested": "2026-09-07T21:41:46.797Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "registerTrackApiProvider",
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 1,
+  "contributors": 7,
+  "downloads_per_week": 48,
+  "github_url": "https://github.com/SignalK/tracks",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "ccfdd8ebf699e8d6df5dcaffd0f4bef12107e420",
+    "commit_url": "https://github.com/SignalK/tracks/commit/ccfdd8ebf699e8d6df5dcaffd0f4bef12107e420"
+  }
+}

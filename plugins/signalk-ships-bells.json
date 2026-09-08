@@ -1,0 +1,283 @@
+{
+  "name": "signalk-ships-bells",
+  "versions": {
+    "0.1.2": {
+      "server@stable": {
+        "tested": "2026-07-17T04:50:42.336Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.1.5": {
+      "server@stable": {
+        "tested": "2026-07-18T04:35:54.508Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.1.6": {
+      "server@stable": {
+        "tested": "2026-08-04T04:55:31.338Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.1.7": {
+      "server@stable": {
+        "tested": "2026-08-20T02:46:40.780Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.1.10": {
+      "server@stable": {
+        "tested": "2026-08-24T02:54:01.864Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.1.14": {
+      "server@stable": {
+        "tested": "2026-09-08T06:38:59.639Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 1,
+  "contributors": 2,
+  "github_url": "https://github.com/BoatHacks/signalk-ships-bells",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "573c0c772ab2e693fc31f1c25760eac6b24e3914",
+    "commit_url": "https://github.com/BoatHacks/signalk-ships-bells/commit/573c0c772ab2e693fc31f1c25760eac6b24e3914",
+    "workflow_run_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647",
+    "tested_at": "2026-08-24T12:17:51Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647/job/97427418166"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647/job/97427418268"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647/job/97427418359"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647/job/97427418380"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647/job/97427418426"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647/job/97427418437"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647/job/97427418454"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647/job/97427418471"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-ships-bells/actions/runs/32726038647/job/97427418508"
+      }
+    ]
+  }
+}

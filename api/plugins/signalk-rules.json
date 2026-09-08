@@ -1,0 +1,181 @@
+{
+  "name": "signalk-rules",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-08-11T03:24:26.913Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "2.0.0": {
+      "server@stable": {
+        "tested": "2026-08-17T02:54:00.137Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "2.0.1": {
+      "server@stable": {
+        "tested": "2026-09-01T06:52:47.216Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 1,
+  "contributors": 2,
+  "github_url": "https://github.com/dirkwa/signalk-rules",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "718b962cd6ee9c72742ca384fed6d586024e2a35",
+    "commit_url": "https://github.com/dirkwa/signalk-rules/commit/718b962cd6ee9c72742ca384fed6d586024e2a35",
+    "workflow_run_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174",
+    "tested_at": "2026-08-17T05:24:03Z",
+    "workflow_ref": "refs/heads/master",
+    "jobs": [
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174/job/95291365708"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174/job/95291365731"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174/job/95291365734"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174/job/95291365735"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174/job/95291365742"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174/job/95291365782"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174/job/95291365817"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174/job/95291365893"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/dirkwa/signalk-rules/actions/runs/31997386174/job/95291366513"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "@yachteye/signalk-moon-plugin",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-09-01T06:55:52.559Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "github_url": "https://github.com/SuperYachtTimes/signalk-moon-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "8ff8c3314972a57b0a5e92e84713b40db6caa67f",
+    "commit_url": "https://github.com/SuperYachtTimes/signalk-moon-plugin/commit/8ff8c3314972a57b0a5e92e84713b40db6caa67f"
+  }
+}

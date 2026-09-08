@@ -1,0 +1,120 @@
+{
+  "name": "@signalk/vedirect-serial-usb",
+  "versions": {
+    "1.5.0": {
+      "server@stable": {
+        "tested": "2026-06-03T06:43:30.654Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "/tmp/sk-registry-lZ14tP/node_modules/@serialport/bindings-cpp/prebuilds/linux-x64/node.napi.glibc.node: failed to map segment from shared object",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 50,
+        "badges": [
+          "compatible",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.6.0": {
+      "server@stable": {
+        "tested": "2026-06-09T05:58:29.885Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "/tmp/sk-registry-3p1aPi/node_modules/@serialport/bindings-cpp/prebuilds/linux-x64/@serialport+bindings-cpp.glibc.node: failed to map segment from shared object",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.7.0": {
+      "server@stable": {
+        "tested": "2026-08-30T07:40:06.919Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 90,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 17,
+  "open_issues": 0,
+  "contributors": 14,
+  "github_url": "https://github.com/SignalK/vedirect-serial-usb",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "39204b27827e2b288704c89fe46f7c3f75928ccc",
+    "workflow_run_url": "https://github.com/SignalK/vedirect-serial-usb/actions/runs/28279376161"
+  }
+}

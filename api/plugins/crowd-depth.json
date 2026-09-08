@@ -1,0 +1,351 @@
+{
+  "name": "crowd-depth",
+  "versions": {
+    "1.0.1": {
+      "server@stable": {
+        "tested": "2026-06-21T06:44:36.953Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.28.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/build/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/build/Debug/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/build/Release/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/out/Debug/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/Debug/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/out/Release/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/Release/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/build/default/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/compiled/24.16.0/linux/x64/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/lib/binding/node-v137-linux-x64/better_sqlite3.node",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/build/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/build/Debug/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/build/Release/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/out/Debug/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/Debug/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/out/Release/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/Release/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/build/default/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/compiled/24.16.0/linux/x64/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node\n → /tmp/sk-registry-kG5iy7/node_modules/better-sqlite3/lib/binding/node-v137-linux-x64/better_sqlite3.node",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "not-runnable"
+      }
+    },
+    "1.1.0": {
+      "server@stable": {
+        "tested": "2026-07-08T04:58:57.373Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.2.0": {
+      "server@stable": {
+        "tested": "2026-07-26T05:20:18.036Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.2.1": {
+      "server@stable": {
+        "tested": "2026-07-29T04:56:04.011Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.2.2": {
+      "server@stable": {
+        "tested": "2026-07-30T04:43:42.815Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.2.3": {
+      "server@stable": {
+        "tested": "2026-07-31T05:21:29.711Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.2.4": {
+      "server@stable": {
+        "tested": "2026-08-16T02:51:01.917Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.31.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.2.5": {
+      "server@stable": {
+        "tested": "2026-08-31T07:46:53.699Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.2.6": {
+      "server@stable": {
+        "tested": "2026-09-01T06:53:02.852Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "getHistoryApi"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 7,
+  "open_issues": 11,
+  "contributors": 4,
+  "github_url": "https://github.com/openwatersio/crowd-depth",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "ea3793c2e47437be06c7eea456e5004b29ccf5cc",
+    "workflow_run_url": "https://github.com/openwatersio/crowd-depth/actions/runs/33400799101"
+  }
+}

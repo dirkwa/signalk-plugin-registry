@@ -1,0 +1,229 @@
+{
+  "name": "signalk-grib-downloader",
+  "versions": {
+    "0.1.2": {
+      "server@stable": {
+        "tested": "2026-06-28T06:08:19.677Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.28.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.2.1": {
+      "server@stable": {
+        "tested": "2026-08-17T02:55:37.384Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.2.2": {
+      "server@stable": {
+        "tested": "2026-08-27T12:06:00.952Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.2.4": {
+      "server@stable": {
+        "tested": "2026-08-29T08:22:51.216Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 1,
+  "contributors": 3,
+  "github_url": "https://github.com/macjl/signalk-grib-downloader",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "61eca905212e9ae51ee4013e4e0062d4b3575cf2",
+    "commit_url": "https://github.com/macjl/signalk-grib-downloader/commit/61eca905212e9ae51ee4013e4e0062d4b3575cf2",
+    "workflow_run_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248",
+    "tested_at": "2026-08-28T21:40:49Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "integration",
+        "node": 24,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244206"
+      },
+      {
+        "platform": "integration",
+        "node": 22,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244214"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244251"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244254"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244261"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244290"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244305"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "failure",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244307"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244345"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244346"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "failure",
+        "job_url": "https://github.com/macjl/signalk-grib-downloader/actions/runs/33213290248/job/98991244352"
+      }
+    ]
+  }
+}

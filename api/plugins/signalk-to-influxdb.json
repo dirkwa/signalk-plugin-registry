@@ -1,0 +1,189 @@
+{
+  "name": "signalk-to-influxdb",
+  "versions": {
+    "1.9.2": {
+      "server@stable": {
+        "tested": "2026-08-03T05:29:42.235Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "app.signalk.on is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "app.signalk.on is not a function",
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "has-providers",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.10.0": {
+      "server@stable": {
+        "tested": "2026-08-20T02:47:55.216Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activation_error": "app.signalk.on is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "app.signalk.on is not a function",
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 80,
+        "badges": [
+          "compatible",
+          "loads",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.11.0": {
+      "server@stable": {
+        "tested": "2026-09-05T06:29:57.672Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activation_error": "app.signalk.on is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "app.signalk.on is not a function",
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 80,
+        "badges": [
+          "compatible",
+          "loads",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 25,
+  "open_issues": 14,
+  "contributors": 9,
+  "github_url": "https://github.com/tkurki/signalk-to-influxdb",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "c1a48cc07aa106ea0ccbe5ae358cb9fe67322c10",
+    "commit_url": "https://github.com/tkurki/signalk-to-influxdb/commit/c1a48cc07aa106ea0ccbe5ae358cb9fe67322c10",
+    "workflow_run_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769",
+    "tested_at": "2026-08-22T23:59:47Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769/job/97112144022"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769/job/97112144140"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769/job/97112144147"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769/job/97112144154"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769/job/97112144170"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769/job/97112144175"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769/job/97112144177"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769/job/97112144194"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/tkurki/signalk-to-influxdb/actions/runs/32606486769/job/97112144200"
+      }
+    ]
+  }
+}

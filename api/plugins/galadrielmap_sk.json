@@ -1,0 +1,47 @@
+{
+  "name": "galadrielmap_sk",
+  "versions": {
+    "0.13.0": {
+      "server@stable": {
+        "tested": "2026-09-04T06:56:08.802Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": false,
+        "install_error": "spawnSync /bin/sh ETIMEDOUT | stdout: npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may b",
+        "loads": false,
+        "load_error": "spawnSync /bin/sh ETIMEDOUT | stdout: npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may b",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 0,
+        "badges": [
+          "broken",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 3,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/VladimirKalachikhin/GaladrielMapSK",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "19b2c566ed3c9e5962b957f3a6f1a3020b12ed0b",
+    "commit_url": "https://github.com/VladimirKalachikhin/GaladrielMapSK/commit/19b2c566ed3c9e5962b957f3a6f1a3020b12ed0b"
+  }
+}

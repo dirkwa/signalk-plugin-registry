@@ -1,0 +1,84 @@
+{
+  "name": "signalk-navtex-plugin",
+  "versions": {
+    "0.0.17": {
+      "server@stable": {
+        "tested": "2026-08-05T04:53:34.130Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "\"path\" is not defined: undefined",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.0.18": {
+      "server@stable": {
+        "tested": "2026-09-03T06:37:30.014Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": false,
+        "activation_without_config_error": "\"path\" is not defined: undefined",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 3,
+        "composite": 50,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-moderate",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/htool/signalk-navtex-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "f69cecb24303b4cb519849bdf1f874ba1ccd9712",
+    "commit_url": "https://github.com/htool/signalk-navtex-plugin/commit/f69cecb24303b4cb519849bdf1f874ba1ccd9712"
+  }
+}

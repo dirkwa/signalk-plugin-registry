@@ -1,0 +1,151 @@
+{
+  "name": "signalk-saillogger",
+  "versions": {
+    "5.0.0": {
+      "server@stable": {
+        "tested": "2026-04-26T03:05:02.951Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.26.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 2,
+        "audit_high": 0,
+        "audit_moderate": 4,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-critical",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "5.1.0": {
+      "server@stable": {
+        "tested": "2026-07-01T06:18:30.537Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.29.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 2,
+        "audit_high": 0,
+        "audit_moderate": 4,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "5.2.0": {
+      "server@stable": {
+        "tested": "2026-08-23T02:58:42.441Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 2,
+        "audit_high": 0,
+        "audit_moderate": 4,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "5.3.0": {
+      "server@stable": {
+        "tested": "2026-09-05T06:23:53.798Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 2,
+        "audit_high": 0,
+        "audit_moderate": 4,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 20,
+  "open_issues": 13,
+  "contributors": 3,
+  "github_url": "https://github.com/Saillogger/signalk-saillogger",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "152a5de4554493bb70550c0b75263c4bfbc6d5da",
+    "commit_url": "https://github.com/Saillogger/signalk-saillogger/commit/152a5de4554493bb70550c0b75263c4bfbc6d5da"
+  }
+}

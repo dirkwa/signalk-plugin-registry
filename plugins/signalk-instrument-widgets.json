@@ -1,0 +1,154 @@
+{
+  "name": "signalk-instrument-widgets",
+  "versions": {
+    "0.5.2": {
+      "server@stable": {
+        "tested": "2026-07-17T04:53:06.095Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "resources"
+        ],
+        "unstubbed_accesses": [
+          "use"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": false,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-09-03T06:35:00.347Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "resources"
+        ],
+        "unstubbed_accesses": [
+          "use"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/joelkoz/signalk-instrument-widgets",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "9dbf584391a859e3693399e359f03a1abe58de3f",
+    "commit_url": "https://github.com/joelkoz/signalk-instrument-widgets/commit/9dbf584391a859e3693399e359f03a1abe58de3f",
+    "workflow_run_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118",
+    "tested_at": "2026-07-18T22:22:22Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118/job/88129415959"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118/job/88129415961"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118/job/88129415966"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118/job/88129415967"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118/job/88129415969"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118/job/88129415970"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118/job/88129415980"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118/job/88129415987"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/joelkoz/signalk-instrument-widgets/actions/runs/29663271118/job/88129427257"
+      }
+    ]
+  }
+}

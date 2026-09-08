@@ -1,0 +1,167 @@
+{
+  "name": "signalk-usage",
+  "versions": {
+    "0.2.5": {
+      "server@stable": {
+        "tested": "2026-03-30T22:03:02.683Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '@influxdata/influxdb-client-apis'\nRequire stack:\n- /tmp/sk-registry-GxZsUA/node_modules/signalk-usage/plugin/lib/influxClient.js\n- /tmp/sk-registry-GxZsUA/node_modules/signalk-usage/plugin/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/runner.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/[eval]",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.2.6": {
+      "server@stable": {
+        "tested": "2026-06-20T06:09:48.675Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.28.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '@influxdata/influxdb-client-apis'\nRequire stack:\n- /tmp/sk-registry-rcmSId/node_modules/signalk-usage/plugin/lib/influxClient.js\n- /tmp/sk-registry-rcmSId/node_modules/signalk-usage/plugin/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 30,
+        "badges": [
+          "compatible",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.2.9": {
+      "server@stable": {
+        "tested": "2026-08-27T12:10:31.134Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 90,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "downloads_per_week": 31,
+  "github_url": "https://github.com/ofernander/signalk-usage",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "f4440f97f528ab59b31eb306c81ff007c3d96292",
+    "commit_url": "https://github.com/ofernander/signalk-usage/commit/f4440f97f528ab59b31eb306c81ff007c3d96292",
+    "workflow_run_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951",
+    "tested_at": "2026-06-23T04:06:46Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951/job/82874135246"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951/job/82874135296"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951/job/82874135298"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951/job/82874135305"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951/job/82874135335"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951/job/82874135367"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951/job/82874135386"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951/job/82874135412"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ofernander/signalk-usage/actions/runs/28001331951/job/82874135427"
+      }
+    ]
+  }
+}

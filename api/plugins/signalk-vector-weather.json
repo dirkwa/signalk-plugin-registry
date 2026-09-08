@@ -1,0 +1,224 @@
+{
+  "name": "signalk-vector-weather",
+  "versions": {
+    "0.2.0": {
+      "server@stable": {
+        "tested": "2026-07-07T05:55:57.700Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.3.1": {
+      "server@stable": {
+        "tested": "2026-07-09T05:58:48.357Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.3.3": {
+      "server@stable": {
+        "tested": "2026-09-02T06:32:21.212Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/hackmare/signalk-vector-weather",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "5f84b7ea9bfb734629765d28c0f74c6a4f1a48a5",
+    "commit_url": "https://github.com/hackmare/signalk-vector-weather/commit/5f84b7ea9bfb734629765d28c0f74c6a4f1a48a5",
+    "workflow_run_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627",
+    "tested_at": "2026-07-17T18:56:16Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888687"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 18,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888688"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888701"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888704"
+      },
+      {
+        "platform": "windows",
+        "node": 18,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888706"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888714"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888720"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888730"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888733"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888741"
+      },
+      {
+        "platform": "windows",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888758"
+      },
+      {
+        "platform": "macos",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888760"
+      },
+      {
+        "platform": "macos",
+        "node": 18,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888764"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888768"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 18,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888775"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967888899"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/hackmare/signalk-vector-weather/actions/runs/29605585627/job/87967889281"
+      }
+    ]
+  }
+}

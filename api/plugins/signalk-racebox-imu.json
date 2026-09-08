@@ -1,0 +1,84 @@
+{
+  "name": "signalk-racebox-imu",
+  "versions": {
+    "1.0.27": {
+      "server@stable": {
+        "tested": "2026-07-08T04:55:04.030Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module '../build/Release/bluetooth_hci_socket.node'\nRequire stack:\n- /tmp/sk-registry-u26zrh/node_modules/@abandonware/bluetooth-hci-socket/lib/native.js\n- /tmp/sk-registry-u26zrh/node_modules/@abandonware/bluetooth-hci-socket/index.js\n- /tmp/sk-registry-u26zrh/node_modules/@abandonware/noble/lib/hci-socket/hci.js\n- /tmp/sk-registry-u26zrh/node_modules/@abandonware/noble/lib/hci-socket/bindings.js\n- /tmp/sk-registry-u26zrh/node_modules/@abandonware/noble/lib/resolve-bindings.js\n- /tmp/sk-registry-u26zrh/node_modules/@abandonware/noble/with-custom-binding.js\n- /tmp/sk-registry-u26zrh/node_modules/@abandonware/noble/index.js\n- /tmp/sk-registry-u26zrh/node_modules/signalk-racebox-imu/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 7,
+        "audit_moderate": 0,
+        "composite": 15,
+        "badges": [
+          "compatible",
+          "audit-high",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.2.2": {
+      "server@stable": {
+        "tested": "2026-09-08T06:41:55.611Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "setProviderStatus"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 3,
+        "audit_high": 1,
+        "audit_moderate": 8,
+        "composite": 30,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tests-failing",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/theseal666/signalk-racebox-imu",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "392230ca34ef18dbcdc0f82f899214017ebb21ce",
+    "commit_url": "https://github.com/theseal666/signalk-racebox-imu/commit/392230ca34ef18dbcdc0f82f899214017ebb21ce"
+  }
+}

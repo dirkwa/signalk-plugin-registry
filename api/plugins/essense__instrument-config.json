@@ -1,0 +1,45 @@
+{
+  "name": "@essense/instrument-config",
+  "versions": {
+    "1.0.6": {
+      "server@stable": {
+        "tested": "2026-08-28T13:30:51.973Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get",
+          "put"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 3,
+        "audit_high": 5,
+        "audit_moderate": 0,
+        "composite": 35,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-critical",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

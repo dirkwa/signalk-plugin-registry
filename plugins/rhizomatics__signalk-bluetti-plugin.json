@@ -1,0 +1,214 @@
+{
+  "name": "@rhizomatics/signalk-bluetti-plugin",
+  "versions": {
+    "1.1.2-alpha": {
+      "server@stable": {
+        "tested": "2026-07-17T04:50:51.307Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 65,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.4.1": {
+      "server@stable": {
+        "tested": "2026-07-29T04:55:48.147Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.5.1": {
+      "server@stable": {
+        "tested": "2026-08-11T03:27:15.062Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "2.0.1": {
+      "server@stable": {
+        "tested": "2026-08-31T07:52:58.432Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 2,
+  "contributors": 1,
+  "github_url": "https://github.com/rhizomatics/signalk-bluetti-plugin",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "af7f412249d6c68b9ff54f9698a0f2a371f994c7",
+    "commit_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/commit/af7f412249d6c68b9ff54f9698a0f2a371f994c7",
+    "workflow_run_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500",
+    "tested_at": "2026-08-17T17:59:45Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500/job/95455059671"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500/job/95455059719"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500/job/95455059727"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500/job/95455059738"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500/job/95455059818"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500/job/95455059850"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500/job/95455059909"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500/job/95455059961"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/rhizomatics/signalk-bluetti-plugin/actions/runs/32052513500/job/95455060241"
+      }
+    ]
+  }
+}

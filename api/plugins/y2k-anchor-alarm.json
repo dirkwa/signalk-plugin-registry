@@ -1,0 +1,52 @@
+{
+  "name": "y2k-anchor-alarm",
+  "versions": {
+    "2.3.4": {
+      "server@stable": {
+        "tested": "2026-08-30T07:37:20.588Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "registerActionHandler"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 3,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "audit-moderate",
+          "has-changelog",
+          "has-screenshots",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 10,
+  "github_url": "https://github.com/spidgrou/y2k-anchor-alarm",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "a446e31eb1f19e5e498ff017d27a965bb73eeb7b",
+    "commit_url": "https://github.com/spidgrou/y2k-anchor-alarm/commit/a446e31eb1f19e5e498ff017d27a965bb73eeb7b"
+  }
+}

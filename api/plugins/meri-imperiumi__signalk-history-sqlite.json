@@ -1,0 +1,243 @@
+{
+  "name": "@meri-imperiumi/signalk-history-sqlite",
+  "versions": {
+    "0.2.0": {
+      "server@stable": {
+        "tested": "2026-08-22T02:45:58.886Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.3.0": {
+      "server@stable": {
+        "tested": "2026-08-23T02:53:05.181Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.3.1": {
+      "server@stable": {
+        "tested": "2026-08-28T13:27:30.083Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.4.0": {
+      "server@stable": {
+        "tested": "2026-08-29T08:21:46.048Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/meri-imperiumi/signalk-history-sqlite",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "fc535088daf3346b2a7fe86e4a27270df7581c97",
+    "commit_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/commit/fc535088daf3346b2a7fe86e4a27270df7581c97",
+    "workflow_run_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144",
+    "tested_at": "2026-08-28T18:07:16Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "integration",
+        "node": 22,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147156"
+      },
+      {
+        "platform": "integration",
+        "node": 24,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147200"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147346"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147370"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147376"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147390"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147392"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147416"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147451"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939147515"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/meri-imperiumi/signalk-history-sqlite/actions/runs/33197745144/job/98939148716"
+      }
+    ]
+  }
+}

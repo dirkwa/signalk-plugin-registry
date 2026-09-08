@@ -1,0 +1,303 @@
+{
+  "name": "signalk-parquet",
+  "versions": {
+    "0.7.15": {
+      "server@stable": {
+        "tested": "2026-03-30T22:02:33.131Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [
+          "get",
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 75,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.7.30": {
+      "server@stable": {
+        "tested": "2026-05-25T06:16:32.837Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "/tmp/sk-registry-tjd7NJ/node_modules/@duckdb/node-bindings-linux-x64/duckdb.node: failed to map segment from shared object",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 3,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "audit-high"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.7.40": {
+      "server@stable": {
+        "tested": "2026-07-02T05:50:17.068Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.29.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "IO Error: Failed to create directory \"/home/runner/.duckdb\": Read-only file system",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "IO Error: Failed to create directory \"/home/runner/.duckdb\": Read-only file system",
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 3,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "audit-high"
+        ],
+        "test_status": "none"
+      }
+    },
+    "0.7.41": {
+      "server@stable": {
+        "tested": "2026-07-18T04:38:55.699Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "IO Error: Failed to create directory \"/home/runner/.duckdb\": Read-only file system",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "IO Error: Failed to create directory \"/home/runner/.duckdb\": Read-only file system",
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 45,
+        "badges": [
+          "compatible",
+          "loads",
+          "tests-failing",
+          "npm-audit-ok"
+        ],
+        "test_status": "failing"
+      }
+    },
+    "0.7.42": {
+      "server@stable": {
+        "tested": "2026-08-20T02:52:49.234Z",
+        "triggered_by": "server_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activation_error": "IO Error: Failed to download extension \"spatial\" at URL \"http://extensions.duckdb.org/v1.5.3/linux_amd64/spatial.duckdb_extension.gz\"\nExtension \"spatial\" is an existing extension.\n\nFor more info, visit https://duckdb.org/docs/stable/extensions/troubleshooting?version=v1.5.3&platform=linux_amd64&extension=spatial (ERROR Could not establish connection)",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "IO Error: Failed to download extension \"spatial\" at URL \"http://extensions.duckdb.org/v1.5.3/linux_amd64/spatial.duckdb_extension.gz\"\nExtension \"spatial\" is an existing extension.\n\nFor more info, visit https://duckdb.org/docs/stable/extensions/troubleshooting?version=v1.5.3&platform=linux_amd64&extension=spatial (ERROR Could not establish connection)",
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 75,
+        "badges": [
+          "compatible",
+          "loads",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.7.43": {
+      "server@stable": {
+        "tested": "2026-09-05T06:25:49.196Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "history"
+        ],
+        "unstubbed_accesses": [
+          "get",
+          "unregisterHistoryApiProvider"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 90,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 3,
+  "open_issues": 12,
+  "contributors": 6,
+  "downloads_per_week": 70,
+  "github_url": "https://github.com/motamman/signalk-parquet",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "7b8cc9813ee5434c11f7b75e59e90617acf8e562",
+    "commit_url": "https://github.com/motamman/signalk-parquet/commit/7b8cc9813ee5434c11f7b75e59e90617acf8e562",
+    "workflow_run_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747",
+    "tested_at": "2026-08-21T11:25:43Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "integration",
+        "node": 22,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140279"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140481"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140485"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140490"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140565"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140585"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140588"
+      },
+      {
+        "platform": "integration",
+        "node": 24,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140617"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140647"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755140654"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/motamman/signalk-parquet/actions/runs/32476943747/job/96755141477"
+      }
+    ]
+  }
+}

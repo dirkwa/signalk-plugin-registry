@@ -1,0 +1,133 @@
+{
+  "name": "odb2-to-signalk",
+  "versions": {
+    "2.3.0": {
+      "server@stable": {
+        "tested": "2026-09-02T06:31:14.499Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 2,
+  "github_url": "https://github.com/OpenFairWind/obd2-to-signalk",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "3aef04781c8ccb2d5432c3628833e3fbd3057fbd",
+    "commit_url": "https://github.com/OpenFairWind/obd2-to-signalk/commit/3aef04781c8ccb2d5432c3628833e3fbd3057fbd",
+    "workflow_run_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363",
+    "tested_at": "2026-09-01T16:31:53Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118536"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118664"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 20,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118666"
+      },
+      {
+        "platform": "macos",
+        "node": 20,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118716"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118725"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118728"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118752"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118760"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 20,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118801"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118805"
+      },
+      {
+        "platform": "windows",
+        "node": 20,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118834"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118903"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "failure",
+        "job_url": "https://github.com/OpenFairWind/obd2-to-signalk/actions/runs/33531975363/job/99937118945"
+      }
+    ]
+  }
+}

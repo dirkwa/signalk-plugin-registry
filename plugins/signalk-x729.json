@@ -1,0 +1,48 @@
+{
+  "name": "signalk-x729",
+  "versions": {
+    "0.2.0": {
+      "server@stable": {
+        "tested": "2026-09-02T06:33:33.747Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/ryansabin/signalk-x729",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "326b360fe815657b170e3062106d435fc83cd107",
+    "commit_url": "https://github.com/ryansabin/signalk-x729/commit/326b360fe815657b170e3062106d435fc83cd107"
+  }
+}

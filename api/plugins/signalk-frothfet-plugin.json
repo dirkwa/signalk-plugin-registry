@@ -1,0 +1,141 @@
+{
+  "name": "signalk-frothfet-plugin",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-08-10T03:45:25.435Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.1.0": {
+      "server@stable": {
+        "tested": "2026-09-04T07:03:48.913Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": false,
+        "install_error": "spawnSync /bin/sh ETIMEDOUT",
+        "loads": false,
+        "load_error": "spawnSync /bin/sh ETIMEDOUT",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 0,
+        "badges": [
+          "broken"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/hoeken/signalk-frothfet-plugin",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "8204a35feee87364b2c1c54641b312a0b616398d",
+    "commit_url": "https://github.com/hoeken/signalk-frothfet-plugin/commit/8204a35feee87364b2c1c54641b312a0b616398d",
+    "workflow_run_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470",
+    "tested_at": "2026-08-15T00:29:22Z",
+    "workflow_ref": "refs/heads/v1.1.0",
+    "jobs": [
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470/job/94933978662"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470/job/94933978679"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470/job/94933978710"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470/job/94933978720"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470/job/94933978750"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470/job/94933978766"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470/job/94933978825"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470/job/94933978906"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-frothfet-plugin/actions/runs/31853587470/job/94933978918"
+      }
+    ]
+  }
+}

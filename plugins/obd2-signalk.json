@@ -1,0 +1,49 @@
+{
+  "name": "obd2-signalk",
+  "versions": {
+    "1.0.3": {
+      "server@stable": {
+        "tested": "2026-08-28T13:33:35.582Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activation_error": "\"path\" is not defined: undefined",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "The \"options\" or \"port\" or \"path\" argument must be specified",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 3,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/VincenzoMele/obd2-signalk",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "c28e94417366170cc0527089090f6c77d1259a57",
+    "commit_url": "https://github.com/VincenzoMele/obd2-signalk/commit/c28e94417366170cc0527089090f6c77d1259a57"
+  }
+}

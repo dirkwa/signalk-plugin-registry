@@ -1,0 +1,229 @@
+{
+  "name": "signalk-prometheus-exporter-macjl",
+  "versions": {
+    "0.1.4": {
+      "server@stable": {
+        "tested": "2026-06-30T06:01:32.955Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.28.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "app.signalk.on is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "app.signalk.on is not a function",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 80,
+        "badges": [
+          "compatible",
+          "loads",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.1.5": {
+      "server@stable": {
+        "tested": "2026-07-03T05:40:23.619Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "app.signalk.on is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "app.signalk.on is not a function",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.2.2": {
+      "server@stable": {
+        "tested": "2026-07-04T05:33:18.542Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.2.3": {
+      "server@stable": {
+        "tested": "2026-09-06T06:36:49.020Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 0,
+  "contributors": 5,
+  "github_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "44cb6f99ce4115ec30207318dd7672ca94d12b0d",
+    "commit_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/commit/44cb6f99ce4115ec30207318dd7672ca94d12b0d",
+    "workflow_run_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680",
+    "tested_at": "2026-07-14T09:15:49Z",
+    "workflow_ref": "refs/heads/master",
+    "jobs": [
+      {
+        "platform": "integration",
+        "node": 22,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526383"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526401"
+      },
+      {
+        "platform": "integration",
+        "node": 24,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526445"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526470"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526477"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526481"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526485"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526503"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526540"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526588"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/macjl/signalk-prometheus-exporter-macjl/actions/runs/29320841680/job/87045526606"
+      }
+    ]
+  }
+}

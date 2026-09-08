@@ -1,0 +1,184 @@
+{
+  "name": "signalk-dead-mans-switch",
+  "versions": {
+    "0.4.0": {
+      "server@stable": {
+        "tested": "2026-07-19T04:59:08.582Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.5.1": {
+      "server@stable": {
+        "tested": "2026-07-21T04:55:49.734Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.6.0": {
+      "server@stable": {
+        "tested": "2026-08-26T03:00:36.979Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "emitPropertyValue"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 2,
+  "downloads_per_week": 53,
+  "github_url": "https://github.com/BoatHacks/signalk-dead-mans-switch",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "e46e29cb01230080e9dccb2a765cd5d340776d53",
+    "commit_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/commit/e46e29cb01230080e9dccb2a765cd5d340776d53",
+    "workflow_run_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795",
+    "tested_at": "2026-07-21T10:36:16Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795/job/88608401323"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795/job/88608401356"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795/job/88608401372"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795/job/88608401408"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795/job/88608401411"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795/job/88608401414"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795/job/88608401417"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795/job/88608401420"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/BoatHacks/signalk-dead-mans-switch/actions/runs/29822580795/job/88608401506"
+      }
+    ]
+  }
+}

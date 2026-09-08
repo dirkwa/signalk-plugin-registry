@@ -1,0 +1,108 @@
+{
+  "name": "signalk-battery-voltage-engine-state",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-08-27T12:06:35.589Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "d5e0b72df4fa857e44b48a03216f3669adeaec76",
+    "commit_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/commit/d5e0b72df4fa857e44b48a03216f3669adeaec76",
+    "workflow_run_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839",
+    "tested_at": "2026-08-26T11:55:13Z",
+    "workflow_ref": "refs/heads/master",
+    "jobs": [
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839/job/98166677553"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839/job/98166677703"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839/job/98166677743"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839/job/98166677790"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839/job/98166677857"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839/job/98166677872"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839/job/98166677883"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839/job/98166677891"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-battery-voltage-engine-state/actions/runs/32965403839/job/98166677934"
+      }
+    ]
+  }
+}

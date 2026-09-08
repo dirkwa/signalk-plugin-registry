@@ -1,0 +1,54 @@
+{
+  "name": "signalk-buddylist-plugin",
+  "versions": {
+    "1.3.1": {
+      "server@stable": {
+        "tested": "2026-08-27T12:07:02.201Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get",
+          "post",
+          "delete",
+          "put"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 5,
+  "open_issues": 2,
+  "contributors": 2,
+  "github_url": "https://github.com/sbender9/signalk-buddylist-plugin",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "dffdec01b2eda57fcc1d7035d9bffa154be33af3",
+    "commit_url": "https://github.com/sbender9/signalk-buddylist-plugin/commit/dffdec01b2eda57fcc1d7035d9bffa154be33af3"
+  }
+}

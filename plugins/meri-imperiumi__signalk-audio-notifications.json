@@ -1,0 +1,140 @@
+{
+  "name": "@meri-imperiumi/signalk-audio-notifications",
+  "versions": {
+    "1.0.2": {
+      "server@stable": {
+        "tested": "2026-06-10T06:13:06.550Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.0.3": {
+      "server@stable": {
+        "tested": "2026-08-31T07:51:56.522Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 70,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 3,
+  "open_issues": 2,
+  "contributors": 3,
+  "github_url": "https://github.com/meri-imperiumi/signalk-audio-notifications",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "6f918a8b747f3024a136282bab31be9e9b20cdf5",
+    "commit_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/commit/6f918a8b747f3024a136282bab31be9e9b20cdf5",
+    "workflow_run_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928",
+    "tested_at": "2026-06-16T21:31:11Z",
+    "workflow_ref": "refs/heads/master",
+    "jobs": [
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928/job/81769088451"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928/job/81769088463"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928/job/81769088468"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928/job/81769088472"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928/job/81769088522"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928/job/81769088578"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928/job/81769088587"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928/job/81769088749"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-audio-notifications/actions/runs/27649300928/job/81769088763"
+      }
+    ]
+  }
+}

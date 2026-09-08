@@ -1,0 +1,86 @@
+{
+  "name": "signalk-piper",
+  "versions": {
+    "0.2.0": {
+      "server@stable": {
+        "tested": "2026-09-05T06:26:21.243Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "emitPropertyValue"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/hoeken/signalk-piper",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "bc8f47d2e13c78bf52de8e6aaa002edb1ed3af71",
+    "commit_url": "https://github.com/hoeken/signalk-piper/commit/bc8f47d2e13c78bf52de8e6aaa002edb1ed3af71",
+    "workflow_run_url": "https://github.com/hoeken/signalk-piper/actions/runs/30178346692",
+    "tested_at": "2026-07-25T22:52:16Z",
+    "workflow_ref": "refs/heads/v0.2.0",
+    "jobs": [
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-piper/actions/runs/30178346692/job/89730707899"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-piper/actions/runs/30178346692/job/89730707923"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-piper/actions/runs/30178346692/job/89730707930"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-piper/actions/runs/30178346692/job/89730707941"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/hoeken/signalk-piper/actions/runs/30178346692/job/89730708192"
+      }
+    ]
+  }
+}

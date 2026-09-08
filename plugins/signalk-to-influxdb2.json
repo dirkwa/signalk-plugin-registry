@@ -1,0 +1,208 @@
+{
+  "name": "signalk-to-influxdb2",
+  "versions": {
+    "2.0.1": {
+      "server@stable": {
+        "tested": "2026-04-01T19:25:56.825Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'map')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'map')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 50,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "not-runnable"
+      }
+    },
+    "2.0.3": {
+      "server@stable": {
+        "tested": "2026-06-25T06:01:07.570Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.28.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Cannot read properties of undefined (reading 'map')",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Cannot read properties of undefined (reading 'map')",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "tests-failing",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    },
+    "2.1.0": {
+      "server@stable": {
+        "tested": "2026-06-30T06:00:17.386Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.28.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "EACCES, Permission denied: /tmp/sk-source-hisYe0 '/tmp/sk-source-hisYe0'",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 5,
+        "badges": [
+          "compatible",
+          "no-plugin-ci"
+        ]
+      }
+    },
+    "2.1.3": {
+      "server@stable": {
+        "tested": "2026-07-14T04:38:43.681Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "EACCES, Permission denied: /tmp/sk-source-a42IOv '/tmp/sk-source-a42IOv'",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 5,
+        "badges": [
+          "compatible",
+          "no-plugin-ci"
+        ]
+      }
+    },
+    "2.1.4": {
+      "server@stable": {
+        "tested": "2026-07-16T04:48:34.142Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "EACCES, Permission denied: /tmp/sk-source-M8Rba8 '/tmp/sk-source-M8Rba8'",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 5,
+        "badges": [
+          "compatible",
+          "no-plugin-ci"
+        ]
+      }
+    },
+    "2.1.5": {
+      "server@stable": {
+        "tested": "2026-08-14T03:54:13.092Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "EACCES, Permission denied: /tmp/sk-source-3yHJYk '/tmp/sk-source-3yHJYk'",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 5,
+        "badges": [
+          "compatible",
+          "no-plugin-ci"
+        ]
+      }
+    },
+    "2.2.0": {
+      "server@stable": {
+        "tested": "2026-09-08T06:38:06.857Z",
+        "triggered_by": "schema_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": false,
+        "load_error": "EACCES, Permission denied: /tmp/sk-source-OBgKHT '/tmp/sk-source-OBgKHT'",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 5,
+        "badges": [
+          "compatible",
+          "no-plugin-ci"
+        ]
+      }
+    }
+  },
+  "stars": 11,
+  "open_issues": 23,
+  "contributors": 6,
+  "downloads_per_week": 122,
+  "github_url": "https://github.com/tkurki/signalk-to-influxdb2",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "f55877dba87fc7eea7844d7add6671301435fb9b",
+    "workflow_run_url": "https://github.com/tkurki/signalk-to-influxdb2/actions/runs/31929490039"
+  }
+}

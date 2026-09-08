@@ -1,0 +1,83 @@
+{
+  "name": "signalk-n2k-displays",
+  "versions": {
+    "2.0.3": {
+      "server@stable": {
+        "tested": "2026-06-02T06:26:53.544Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.27.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "2.0.4": {
+      "server@stable": {
+        "tested": "2026-08-29T08:24:56.621Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 3,
+  "open_issues": 4,
+  "contributors": 1,
+  "github_url": "https://github.com/sbender9/signalk-n2k-displays",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "f9c4594c159f53811b1ddc4fd5e8f7b9cf69f4cb",
+    "commit_url": "https://github.com/sbender9/signalk-n2k-displays/commit/f9c4594c159f53811b1ddc4fd5e8f7b9cf69f4cb"
+  }
+}

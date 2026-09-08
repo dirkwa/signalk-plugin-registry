@@ -1,0 +1,161 @@
+{
+  "name": "signalk-autologin",
+  "versions": {
+    "0.1.0": {
+      "server@stable": {
+        "tested": "2026-08-02T05:22:20.292Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "strategy.getConfiguration is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "strategy.getConfiguration is not a function",
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "securityStrategy"
+        ],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 50,
+        "badges": [
+          "compatible",
+          "loads",
+          "npm-audit-ok"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-08-31T07:49:38.970Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activation_error": "strategy.getConfiguration is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "strategy.getConfiguration is not a function",
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "securityStrategy"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 80,
+        "badges": [
+          "compatible",
+          "loads",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 3,
+  "github_url": "https://github.com/dirkwa/signalk-autologin",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "b278158de23811875adc02bb2ba706c607468a65",
+    "commit_url": "https://github.com/dirkwa/signalk-autologin/commit/b278158de23811875adc02bb2ba706c607468a65",
+    "workflow_run_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658",
+    "tested_at": "2026-08-16T18:00:31Z",
+    "workflow_ref": "refs/heads/master",
+    "jobs": [
+      {
+        "platform": "integration",
+        "node": 24,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299534"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299547"
+      },
+      {
+        "platform": "integration",
+        "node": 22,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299551"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299575"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299576"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299581"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299593"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299607"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299630"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204299711"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/dirkwa/signalk-autologin/actions/runs/31963232658/job/95204300030"
+      }
+    ]
+  }
+}

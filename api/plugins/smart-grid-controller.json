@@ -1,0 +1,47 @@
+{
+  "name": "smart-grid-controller",
+  "versions": {
+    "1.1.2": {
+      "server@stable": {
+        "tested": "2026-09-04T07:23:20.808Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": false,
+        "install_error": "spawnSync /bin/sh ETIMEDOUT",
+        "loads": false,
+        "load_error": "spawnSync /bin/sh ETIMEDOUT",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 0,
+        "badges": [
+          "broken",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/MoonBoi9001/signal-k-plugins",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "9ebcf177cecf3d82fcc1194435363bba651865a8",
+    "commit_url": "https://github.com/MoonBoi9001/signal-k-plugins/commit/9ebcf177cecf3d82fcc1194435363bba651865a8"
+  }
+}

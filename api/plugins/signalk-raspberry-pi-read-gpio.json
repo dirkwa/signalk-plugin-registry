@@ -1,0 +1,47 @@
+{
+  "name": "signalk-raspberry-pi-read-gpio",
+  "versions": {
+    "0.0.3": {
+      "server@stable": {
+        "tested": "2026-09-01T06:55:42.081Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/build/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/build/Debug/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/build/Release/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/out/Debug/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/Debug/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/out/Release/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/Release/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/build/default/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/compiled/24.19.0/linux/x64/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/addon-build/release/install-root/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/addon-build/debug/install-root/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/addon-build/default/install-root/rpio.node\n → /tmp/sk-registry-AkNH1n/node_modules/rpio/lib/binding/node-v137-linux-x64/rpio.node",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 20,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 2,
+  "contributors": 1,
+  "github_url": "https://github.com/jdcaprace/signalk-raspberry-pi-read-gpio",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "62bf6c0e66a564c80968d8b94819f48e8c42c6dd",
+    "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-read-gpio/commit/62bf6c0e66a564c80968d8b94819f48e8c42c6dd"
+  }
+}

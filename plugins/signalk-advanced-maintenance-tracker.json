@@ -1,0 +1,121 @@
+{
+  "name": "signalk-advanced-maintenance-tracker",
+  "versions": {
+    "1.6.4": {
+      "server@stable": {
+        "tested": "2026-09-07T06:42:24.552Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.7.0": {
+      "server@stable": {
+        "tested": "2026-09-08T06:37:53.891Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 3,
+  "github_url": "https://github.com/ricard33/signalk-advanced-maintenance-tracker",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "58931dec256ce44bab677dee4cc545c2c94ec837",
+    "commit_url": "https://github.com/ricard33/signalk-advanced-maintenance-tracker/commit/58931dec256ce44bab677dee4cc545c2c94ec837",
+    "workflow_run_url": "https://github.com/ricard33/signalk-advanced-maintenance-tracker/actions/runs/34169428658",
+    "tested_at": "2026-09-07T23:16:50Z",
+    "workflow_ref": "refs/heads/v1.7.0",
+    "jobs": [
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-advanced-maintenance-tracker/actions/runs/34169428658/job/101886761758"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-advanced-maintenance-tracker/actions/runs/34169428658/job/101886761795"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-advanced-maintenance-tracker/actions/runs/34169428658/job/101886761797"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/ricard33/signalk-advanced-maintenance-tracker/actions/runs/34169428658/job/101886761832"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/ricard33/signalk-advanced-maintenance-tracker/actions/runs/34169428658/job/101886762673"
+      }
+    ]
+  }
+}

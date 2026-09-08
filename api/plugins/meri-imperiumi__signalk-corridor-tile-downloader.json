@@ -1,0 +1,191 @@
+{
+  "name": "@meri-imperiumi/signalk-corridor-tile-downloader",
+  "versions": {
+    "0.3.0": {
+      "server@stable": {
+        "tested": "2026-08-29T08:23:05.896Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "resources"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.4.0": {
+      "server@stable": {
+        "tested": "2026-08-30T07:36:38.976Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "resources"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.5.1": {
+      "server@stable": {
+        "tested": "2026-09-06T06:34:45.822Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "resources"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 0,
+  "contributors": 1,
+  "downloads_per_week": 465,
+  "github_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "982efb7f9cfcb39e6b57046c2321490d38d8fb58",
+    "commit_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/commit/982efb7f9cfcb39e6b57046c2321490d38d8fb58",
+    "workflow_run_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629",
+    "tested_at": "2026-09-05T23:41:04Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629/job/101395022112"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629/job/101395022113"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629/job/101395022114"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629/job/101395022118"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629/job/101395022121"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629/job/101395022134"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629/job/101395022136"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629/job/101395022173"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/meri-imperiumi/signalk-corridor-tile-downloader/actions/runs/33999233629/job/101395022696"
+      }
+    ]
+  }
+}

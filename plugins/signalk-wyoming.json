@@ -1,0 +1,125 @@
+{
+  "name": "signalk-wyoming",
+  "versions": {
+    "0.2.0": {
+      "server@stable": {
+        "tested": "2026-07-26T05:18:03.151Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "onPropertyValues",
+          "emitPropertyValue"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "0.2.1": {
+      "server@stable": {
+        "tested": "2026-09-05T06:30:18.122Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "onPropertyValues",
+          "emitPropertyValue"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": true,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 2,
+  "contributors": 2,
+  "github_url": "https://github.com/hoeken/signalk-wyoming",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "619e5dcaf3885b511824f4287ac641f2deb5424d",
+    "commit_url": "https://github.com/hoeken/signalk-wyoming/commit/619e5dcaf3885b511824f4287ac641f2deb5424d",
+    "workflow_run_url": "https://github.com/hoeken/signalk-wyoming/actions/runs/30224366971",
+    "tested_at": "2026-07-26T23:03:32Z",
+    "workflow_ref": "refs/heads/v0.2.1",
+    "jobs": [
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-wyoming/actions/runs/30224366971/job/89852069844"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-wyoming/actions/runs/30224366971/job/89852069863"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-wyoming/actions/runs/30224366971/job/89852069872"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/hoeken/signalk-wyoming/actions/runs/30224366971/job/89852069881"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/hoeken/signalk-wyoming/actions/runs/30224366971/job/89852070233"
+      }
+    ]
+  }
+}

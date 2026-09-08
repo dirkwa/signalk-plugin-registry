@@ -1,0 +1,46 @@
+{
+  "name": "signalk-to-arcgis",
+  "versions": {
+    "0.1.1": {
+      "server@stable": {
+        "tested": "2026-08-30T07:38:17.247Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": false,
+        "load_error": "Cannot find module 'debug'\nRequire stack:\n- /tmp/sk-registry-PEvbuY/node_modules/signalk-to-arcgis/index.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-providers.js\n- /home/runner/work/signalk-plugin-registry/signalk-plugin-registry/dist/test-harness/detect-sandboxed.js",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 45,
+        "badges": [
+          "compatible",
+          "tested",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 6,
+  "contributors": 3,
+  "github_url": "https://github.com/joabakk/signalk-to-arcgis",
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@halos-org/skip-freeboard-panel",
+  "versions": {
+    "1.0.0": {
+      "server@stable": {
+        "tested": "2026-08-30T07:41:40.623Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [
+          "resources"
+        ],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 80,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "has-providers",
+          "tested",
+          "npm-audit-ok",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 0,
+  "contributors": 1,
+  "github_url": "https://github.com/halos-org/skip-freeboard-panel",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "f7bc703628819d57f6449215184e7dfd90ef3bfb",
+    "workflow_run_url": "https://github.com/halos-org/skip-freeboard-panel/actions/runs/30697060468"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "signalk-raspberry-pi-4ch-ina219",
+  "versions": {
+    "0.0.9": {
+      "server@stable": {
+        "tested": "2026-09-04T07:27:00.697Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": false,
+        "install_error": "spawnSync /bin/sh ETIMEDOUT",
+        "loads": false,
+        "load_error": "spawnSync /bin/sh ETIMEDOUT",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 0,
+        "badges": [
+          "broken",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 2,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/jdcaprace/signalk-raspberry-pi-4ch-ina219",
+  "plugin_ci": {
+    "status": "no-run",
+    "head_sha": "47a060927745e9da4d6b298b1659be37da68273c",
+    "commit_url": "https://github.com/jdcaprace/signalk-raspberry-pi-4ch-ina219/commit/47a060927745e9da4d6b298b1659be37da68273c"
+  }
+}

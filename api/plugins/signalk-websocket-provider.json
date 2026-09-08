@@ -1,0 +1,43 @@
+{
+  "name": "signalk-websocket-provider",
+  "versions": {
+    "0.1.0": {
+      "server@stable": {
+        "tested": "2026-09-03T06:37:03.456Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": false,
+        "load_error": "_this.connect is not a function",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "url"
+        ],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 3,
+        "audit_moderate": 0,
+        "composite": 10,
+        "badges": [
+          "compatible",
+          "audit-high",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "plugin_ci": {
+    "status": "no-githead"
+  }
+}

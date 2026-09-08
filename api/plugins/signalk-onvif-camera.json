@@ -1,0 +1,273 @@
+{
+  "name": "signalk-onvif-camera",
+  "versions": {
+    "1.1.1": {
+      "server@stable": {
+        "tested": "2026-03-31T16:46:12.570Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.24.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "app.server.on is not a function",
+        "activates": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get",
+          "server"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.1.2": {
+      "server@stable": {
+        "tested": "2026-08-04T04:52:54.463Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get",
+          "server"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 90,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.3.0": {
+      "server@stable": {
+        "tested": "2026-08-05T20:32:01.337Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get",
+          "server"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.3.1": {
+      "server@stable": {
+        "tested": "2026-08-05T20:46:37.641Z",
+        "triggered_by": "manual",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get",
+          "server"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": false,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 95,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    },
+    "1.3.2": {
+      "server@stable": {
+        "tested": "2026-08-27T12:08:16.289Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [
+          "get",
+          "server"
+        ],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": true,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 100,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "has-screenshots"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 6,
+  "open_issues": 8,
+  "contributors": 2,
+  "downloads_per_week": 84,
+  "github_url": "https://github.com/KEGustafsson/signalk-onvif-camera",
+  "plugin_ci": {
+    "status": "ok",
+    "head_sha": "656852243d03512cb0c01f827e9eb10af92aa6b1",
+    "commit_url": "https://github.com/KEGustafsson/signalk-onvif-camera/commit/656852243d03512cb0c01f827e9eb10af92aa6b1",
+    "workflow_run_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994",
+    "tested_at": "2026-08-05T20:56:57Z",
+    "workflow_ref": "refs/heads/main",
+    "jobs": [
+      {
+        "platform": "integration",
+        "node": 24,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516125"
+      },
+      {
+        "platform": "integration",
+        "node": 22,
+        "conclusion": "success",
+        "server_version": "latest",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516161"
+      },
+      {
+        "platform": "macos",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516262"
+      },
+      {
+        "platform": "windows",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516278"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516311"
+      },
+      {
+        "platform": "windows",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516327"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516355"
+      },
+      {
+        "platform": "linux-x64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516360"
+      },
+      {
+        "platform": "macos",
+        "node": 24,
+        "conclusion": "success",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516375"
+      },
+      {
+        "platform": "linux-arm64",
+        "node": 22,
+        "conclusion": "success",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516562"
+      },
+      {
+        "platform": "armv7-cerbo",
+        "node": 20,
+        "conclusion": "skipped",
+        "job_url": "https://github.com/KEGustafsson/signalk-onvif-camera/actions/runs/31046299994/job/92442516801"
+      }
+    ]
+  }
+}

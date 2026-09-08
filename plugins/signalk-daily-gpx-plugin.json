@@ -1,0 +1,121 @@
+{
+  "name": "signalk-daily-gpx-plugin",
+  "versions": {
+    "0.3.2": {
+      "server@stable": {
+        "tested": "2026-07-10T05:51:18.341Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activation_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/build/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/build/Debug/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/build/Release/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/out/Debug/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/Debug/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/out/Release/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/Release/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/build/default/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/compiled/24.18.0/linux/x64/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/lib/binding/node-v137-linux-x64/better_sqlite3.node",
+        "activates": false,
+        "activates_without_config": false,
+        "activation_without_config_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/build/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/build/Debug/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/build/Release/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/out/Debug/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/Debug/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/out/Release/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/Release/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/build/default/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/compiled/24.18.0/linux/x64/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node\n → /tmp/sk-registry-fqkEZU/node_modules/better-sqlite3/lib/binding/node-v137-linux-x64/better_sqlite3.node",
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 40,
+        "badges": [
+          "compatible",
+          "loads",
+          "tests-failing",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    },
+    "0.4.0": {
+      "server@stable": {
+        "tested": "2026-07-12T05:12:40.413Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": false,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 55,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tests-failing",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "failing"
+      }
+    },
+    "0.4.1": {
+      "server@stable": {
+        "tested": "2026-09-08T06:40:21.155Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": true,
+        "own_tests_pass": true,
+        "tests_runnable": true,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 85,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "tested",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "passing"
+      }
+    }
+  },
+  "stars": 1,
+  "open_issues": 6,
+  "contributors": 4,
+  "github_url": "https://github.com/jaffadog/signalk-daily-gpx-plugin",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "a3dd1c0b35de8416e22e9c0636317c75a8ef7767",
+    "workflow_run_url": "https://github.com/jaffadog/signalk-daily-gpx-plugin/actions/runs/29881406077"
+  }
+}

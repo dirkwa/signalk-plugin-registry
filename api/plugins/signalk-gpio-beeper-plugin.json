@@ -1,0 +1,222 @@
+{
+  "name": "signalk-gpio-beeper-plugin",
+  "versions": {
+    "1.1.1": {
+      "server@stable": {
+        "tested": "2026-07-09T05:58:47.764Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": false,
+        "load_error": "Could not locate the bindings file. Tried:\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/build/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/build/Debug/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/build/Release/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/out/Debug/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/Debug/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/out/Release/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/Release/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/build/default/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/compiled/24.18.0/linux/x64/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/addon-build/release/install-root/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/addon-build/debug/install-root/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/addon-build/default/install-root/epoll.node\n → /tmp/sk-registry-hlfZUB/node_modules/epoll/lib/binding/node-v137-linux-x64/epoll.node",
+        "activates": false,
+        "activates_without_config": false,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": false,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 25,
+        "badges": [
+          "compatible",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.1.6": {
+      "server@stable": {
+        "tested": "2026-07-18T04:35:57.470Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.1.9": {
+      "server@stable": {
+        "tested": "2026-07-25T04:52:37.206Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.2.0": {
+      "server@stable": {
+        "tested": "2026-07-26T05:17:57.453Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.2.1": {
+      "server@stable": {
+        "tested": "2026-07-27T05:35:26.794Z",
+        "triggered_by": "plugin_version_change",
+        "node_version": "24",
+        "server_version": "2.30.0",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    },
+    "1.2.2": {
+      "server@stable": {
+        "tested": "2026-09-07T06:45:00.701Z",
+        "triggered_by": "stale",
+        "node_version": "24",
+        "server_version": "2.31.1",
+        "installs": true,
+        "loads": true,
+        "activates": true,
+        "activates_without_config": true,
+        "detected_providers": [],
+        "unstubbed_accesses": [],
+        "has_schema": true,
+        "has_own_tests": false,
+        "own_tests_pass": false,
+        "tests_runnable": false,
+        "has_install_scripts": false,
+        "has_changelog": true,
+        "has_screenshots": false,
+        "held_back_core_deps": [],
+        "audit_critical": 0,
+        "audit_high": 0,
+        "audit_moderate": 0,
+        "composite": 60,
+        "badges": [
+          "compatible",
+          "loads",
+          "activates",
+          "npm-audit-ok",
+          "has-changelog",
+          "no-plugin-ci"
+        ],
+        "test_status": "none"
+      }
+    }
+  },
+  "stars": 0,
+  "open_issues": 1,
+  "contributors": 1,
+  "github_url": "https://github.com/jaffadog/signalk-gpio-beeper-plugin",
+  "plugin_ci": {
+    "status": "no-plugin-ci",
+    "head_sha": "79ea595bd43b7db7920178a5ed4d6ccddfb21a90",
+    "workflow_run_url": "https://github.com/jaffadog/signalk-gpio-beeper-plugin/actions/runs/31764592559"
+  }
+}
