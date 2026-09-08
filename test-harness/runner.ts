@@ -13,6 +13,7 @@ import {
   fetchLatestVersions,
   findHeldBackCoreDeps,
 } from "./core-deps";
+import { LegacyDep, checkLegacyDeps } from "./legacy-deps";
 import * as path from "path";
 import * as fs from "fs";
 import { execSync, execFileSync } from "child_process";
@@ -82,6 +83,7 @@ interface RunResult {
   hasChangelog: boolean;
   hasScreenshots: boolean;
   heldBackCoreDeps: HeldBackCoreDep[];
+  legacyDeps: LegacyDep[];
   composite: number;
   badges: string[];
   testStatus: string;
@@ -822,6 +824,7 @@ export async function runPluginTest(
       hasChangelog: false,
       hasScreenshots: false,
       heldBackCoreDeps: [],
+      legacyDeps: [],
     });
 
     fs.rmSync(workDir, { recursive: true, force: true });
@@ -854,6 +857,7 @@ export async function runPluginTest(
       hasChangelog: false,
       hasScreenshots: false,
       heldBackCoreDeps: [],
+      legacyDeps: [],
       ...score,
     };
   }
@@ -888,6 +892,9 @@ export async function runPluginTest(
   console.error(`[runner] Checking core dependency ranges...`);
   const heldBack = await checkHeldBackCoreDeps(pluginDir);
 
+  console.error(`[runner] Checking legacy runtime deps (baconjs, React)...`);
+  const legacy = checkLegacyDeps(pluginDir);
+
   const testResults: TestResults = {
     installs: true,
     loads: detection.loads,
@@ -904,6 +911,7 @@ export async function runPluginTest(
     hasChangelog: changelog,
     hasScreenshots: shots,
     heldBackCoreDeps: heldBack,
+    legacyDeps: legacy,
   };
 
   const { composite, badges, testStatus } = computeScore(testResults);
@@ -923,6 +931,7 @@ export async function runPluginTest(
     hasChangelog: changelog,
     hasScreenshots: shots,
     heldBackCoreDeps: heldBack,
+    legacyDeps: legacy,
     composite,
     badges,
     testStatus,

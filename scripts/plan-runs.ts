@@ -69,7 +69,8 @@ function shouldTest(
   const REQUIRED_FIELDS = [
     'has_changelog',
     'has_screenshots',
-    'held_back_core_deps'
+    'held_back_core_deps',
+    'legacy_deps'
   ]
   for (const field of REQUIRED_FIELDS) {
     if (slot[field] === undefined) {

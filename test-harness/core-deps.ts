@@ -23,7 +23,7 @@ export interface HeldBackCoreDep {
 // registry ranges — they can't be evaluated against a published latest.
 const NON_REGISTRY_SPEC = /^(git\+|git:|github:|file:|link:|workspace:|https?:)/;
 
-function isRegistryRange(range: string): boolean {
+export function isRegistryRange(range: string): boolean {
   return !NON_REGISTRY_SPEC.test(range) && !range.includes("/");
 }
 

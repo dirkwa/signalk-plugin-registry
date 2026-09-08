@@ -1,4 +1,5 @@
 import { HeldBackCoreDep } from "./core-deps";
+import { LegacyDep } from "./legacy-deps";
 
 export interface TestResults {
   installs: boolean;
@@ -16,6 +17,7 @@ export interface TestResults {
   hasChangelog: boolean;
   hasScreenshots: boolean;
   heldBackCoreDeps: HeldBackCoreDep[];
+  legacyDeps: LegacyDep[];
 }
 
 export type Badge =
@@ -32,6 +34,8 @@ export type Badge =
   | "has-changelog"
   | "has-screenshots"
   | "holds-back-core-deps"
+  | "legacy-baconjs"
+  | "legacy-react"
   | "broken";
 
 export type TestStatus = "passing" | "none" | "not-runnable" | "failing";
@@ -133,6 +137,15 @@ export function computeScore(r: TestResults): {
     badges.push("holds-back-core-deps");
   }
 
+  // Legacy runtime deps: -15 per library, for baconjs <3 in dependencies/
+  // peerDependencies and for an embedded webapp built against React <19.
+  // Both only work today through server compatibility shims that are slated
+  // for removal (see legacy-deps.ts).
+  for (const pkg of new Set(r.legacyDeps.map((dep) => dep.pkg))) {
+    score -= 15;
+    badges.push(pkg === "baconjs" ? "legacy-baconjs" : "legacy-react");
+  }
+
   return {
     composite: Math.max(0, Math.min(100, score)),
     badges,
@@ -162,6 +175,7 @@ if (require.main === module) {
     hasChangelog: get("--has-changelog") === "true",
     hasScreenshots: get("--has-screenshots") === "true",
     heldBackCoreDeps: JSON.parse(get("--held-back-core-deps") || "[]"),
+    legacyDeps: JSON.parse(get("--legacy-deps") || "[]"),
   };
 
   const { composite, badges } = computeScore(results);

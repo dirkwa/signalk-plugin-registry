@@ -694,6 +694,7 @@ interface SlotResult {
   has_changelog?: boolean
   has_screenshots?: boolean
   held_back_core_deps?: Array<{ pkg: string; declared: string; latest: string }>
+  legacy_deps?: Array<{ pkg: string; found: string; required: string }>
   audit_critical?: number
   audit_high?: number
   audit_moderate?: number
@@ -928,12 +929,18 @@ async function main() {
     'has-changelog': '#17a2b8',
     'has-screenshots': '#17a2b8',
     'holds-back-core-deps': '#fd7e14',
+    'legacy-baconjs': '#fd7e14',
+    'legacy-react': '#fd7e14',
     'broken': '#dc3545'
   }
 
   const badgeTitles: Record<string, string> = {
     'holds-back-core-deps':
-      'A declared dependency range pins a core Signal K package below its latest same-major release (-80)'
+      'A declared dependency range pins a core Signal K package below its latest same-major release (-80)',
+    'legacy-baconjs':
+      'A dependencies/peerDependencies range for baconjs cannot resolve to 3.x; the server provides baconjs 3 and only bridges older copies through a compatibility shim slated for removal (-15)',
+    'legacy-react':
+      'Embedded webapp built against React <19; the admin UI is React 19 and only bridges older remotes through a compatibility shim slated for removal (-15)'
   }
 
   function esc(s: string): string {
@@ -1117,6 +1124,8 @@ function generateGuide(apiDir: string) {
       <tr><td>Changelog</td><td>&minus;5 if missing</td><td>Ship a <code>CHANGELOG.md</code> or publish a <a href="https://github.com/SignalK/signalk-server/pull/2615" target="_blank">GitHub Release</a> matching the version tag</td></tr>
       <tr><td>Screenshots</td><td>&minus;5 if missing</td><td>Declare <code>signalk.screenshots</code> (array of package-relative paths) in <code>package.json</code></td></tr>
       <tr><td>Core dep freshness</td><td>&minus;80 if held back</td><td>Declare ranges (e.g. <code>^2.9.0</code>, not <code>~2.9.0</code> or <code>2.9.0</code>) that allow the latest same-major release of core Signal K packages such as <code>@signalk/server-api</code></td></tr>
+      <tr><td>Legacy baconjs</td><td>&minus;15</td><td>Any <code>baconjs</code> range in <code>dependencies</code> / <code>peerDependencies</code> must allow 3.x (e.g. <code>^3.0.0</code>, not <code>^0.7.88</code> or <code>^1.0.1</code>) &mdash; the server provides baconjs 3 (<a href="https://github.com/SignalK/signalk-server/pull/2487" target="_blank">signalk-server#2487</a>); drop the dependency or move to <code>^3.0.0</code></td></tr>
+      <tr><td>Legacy React</td><td>&minus;15</td><td>Build embedded webapps (<code>signalk-embeddable-webapp</code>, <code>signalk-plugin-configurator</code>, <code>signalk-node-server-addon</code>) against React 19 &mdash; the admin UI only bridges React 16 remotes through a temporary shim (<a href="https://github.com/SignalK/signalk-server/issues/2451" target="_blank">signalk-server#2451</a>)</td></tr>
     </tbody>
   </table>
 

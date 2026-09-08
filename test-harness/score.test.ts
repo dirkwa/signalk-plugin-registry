@@ -20,6 +20,7 @@ function fullMarks(): TestResults {
     hasChangelog: true,
     hasScreenshots: true,
     heldBackCoreDeps: [],
+    legacyDeps: [],
   };
 }
 
@@ -62,4 +63,60 @@ test("composite clamps at 0 for low-scoring held-back plugins", () => {
     { pkg: "@signalk/server-api", declared: "2.9.0", latest: "2.30.0" },
   ];
   assert.equal(computeScore(results).composite, 0);
+});
+
+test("no legacy deps leaves score and badges unchanged", () => {
+  const { composite, badges } = computeScore(fullMarks());
+  assert.equal(composite, 100);
+  assert.ok(!badges.includes("legacy-baconjs"));
+  assert.ok(!badges.includes("legacy-react"));
+});
+
+test("legacy baconjs costs 15 and adds its badge", () => {
+  const results = fullMarks();
+  results.legacyDeps = [{ pkg: "baconjs", found: "^0.7.88", required: ">=3" }];
+  const { composite, badges } = computeScore(results);
+  assert.equal(composite, 85);
+  assert.ok(badges.includes("legacy-baconjs"));
+  assert.ok(!badges.includes("legacy-react"));
+});
+
+test("legacy React costs 15 and adds its badge", () => {
+  const results = fullMarks();
+  results.legacyDeps = [{ pkg: "react", found: "16", required: ">=19" }];
+  const { composite, badges } = computeScore(results);
+  assert.equal(composite, 85);
+  assert.ok(badges.includes("legacy-react"));
+});
+
+test("legacy baconjs and React stack to 30", () => {
+  const results = fullMarks();
+  results.legacyDeps = [
+    { pkg: "baconjs", found: "^0.7.88", required: ">=3" },
+    { pkg: "react", found: "16", required: ">=19" },
+  ];
+  const { composite, badges } = computeScore(results);
+  assert.equal(composite, 70);
+  assert.ok(badges.includes("legacy-baconjs"));
+  assert.ok(badges.includes("legacy-react"));
+});
+
+test("legacy penalty is per library, not per entry", () => {
+  const results = fullMarks();
+  results.legacyDeps = [
+    { pkg: "baconjs", found: "^0.7.88", required: ">=3" },
+    { pkg: "baconjs", found: "^1.0.1", required: ">=3" },
+  ];
+  const { composite, badges } = computeScore(results);
+  assert.equal(composite, 85);
+  assert.equal(badges.filter((b) => b === "legacy-baconjs").length, 1);
+});
+
+test("legacy deps do not apply to a broken install", () => {
+  const results = fullMarks();
+  results.installs = false;
+  results.legacyDeps = [{ pkg: "react", found: "16", required: ">=19" }];
+  const { composite, badges } = computeScore(results);
+  assert.equal(composite, 0);
+  assert.deepEqual(badges, ["broken"]);
 });

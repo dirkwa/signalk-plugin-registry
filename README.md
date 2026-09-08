@@ -27,6 +27,8 @@ Each plugin is scored out of **100 points**:
 | Changelog | CHANGELOG file or GitHub Release for the version | −5 if missing |
 | Screenshots | `signalk.screenshots` array in `package.json` | −5 if missing |
 | Core dep freshness | Declared ranges allow the latest same-major release of core Signal K packages | −80 if held back |
+| Legacy baconjs | Any `baconjs` range in `dependencies` / `peerDependencies` can resolve to 3.x | −15 if it cannot |
+| Legacy React | Embedded webapp bundles register React ≥19 | −15 if <19 |
 
 Security scoring breakdown: 20 points for a clean audit, 15 if only moderate vulnerabilities, 10 if high (no critical), 0 if any critical vulnerabilities.
 
@@ -39,6 +41,8 @@ Test scoring runs the plugin's suite from its published tarball, then falls back
 A plugin published from a subdirectory of its repository is scored there rather than at the repository root, provided it declares npm's standard [`repository.directory`](https://docs.npmjs.com/cli/configuring-npm/package-json#repository) field. Test discovery, the build and the test run all happen in that subdirectory, so a sibling package's tests are never mistaken for the plugin's. Dependencies install at the repository root — which is what npm workspaces expect — and the subdirectory is installed separately when it isn't a workspace. Note that such plugins currently cannot run the reusable `plugin-ci.yml` workflow (it has no working-directory input), so they still take the `no-plugin-ci` penalty; that fix belongs upstream.
 
 Core dep freshness checks the plugin's declared `dependencies` and `peerDependencies` (never `devDependencies` — those don't reach user installs) against the latest npm release of each core Signal K package: `@signalk/server-api`, `@canboat/canboatjs`, `@canboat/ts-pgns`, `@signalk/n2k-signalk`, `@signalk/nmea0183-signalk`, `@signalk/streams`. A range that targets the same major as the latest release but cannot resolve to it (e.g. `~2.9.0` or an exact `2.9.0` when latest is `2.30.0`) holds the package back in every user's `~/.signalk` install and costs −80. Ranges on an older major are not flagged (the plugin may legitimately not support the new major yet), and neither are git/file/URL specs, dist-tags, or invalid ranges. If the npm registry lookup fails, the check is skipped — a registry flake never costs points.
+
+Legacy runtime deps cover two libraries the server provides at a fixed major and only bridges for older plugin builds through temporary compatibility shims. **baconjs**: the server moved to 3.x in 2.24.0 and redirects every `require('baconjs')` to its own copy ([signalk-server#2487](https://github.com/SignalK/signalk-server/pull/2487)); a `dependencies` / `peerDependencies` range that cannot resolve to any 3.x release (e.g. `^0.7.88`, `^1.0.1`) costs −15. **React**: the admin UI is React 19 and renders Module Federation remotes built against React 16 through an isolated bridge ([signalk-server#2451](https://github.com/SignalK/signalk-server/issues/2451)); for plugins with an embedded-webapp keyword (`signalk-embeddable-webapp`, `signalk-plugin-configurator`, `signalk-node-server-addon`) the remote entry the server injects into the admin UI (`public/remoteEntry.js`, or `remoteEntry.js` at the package root without a `public/`) and the chunks reachable from it are scanned for the shared React version they register, and a major below 19 costs −15. Files nothing references — stale builds, unrelated entries — are not consulted, and remotes that consume the host's React without shipping their own are not flagged. Both checks are pure file inspection — no plugin code runs — and an unreadable package or bundle is indeterminate, never a penalty.
 
 Provider detection (resources, weather, history, autopilot, radar) is tracked as an informational badge but does not affect the score — most plugins are not expected to register providers.
 
@@ -59,6 +63,8 @@ Provider detection (resources, weather, history, autopilot, radar) is tracked as
 | `has-changelog` | CHANGELOG file or matching GitHub Release is available |
 | `has-screenshots` | Declares at least one `signalk.screenshots` entry |
 | `holds-back-core-deps` | A declared range pins a core Signal K package below its latest same-major release (−80 penalty) |
+| `legacy-baconjs` | A `dependencies` / `peerDependencies` range for `baconjs` cannot resolve to 3.x (−15 penalty) |
+| `legacy-react` | Embedded webapp bundle registers React <19 (−15 penalty) |
 | `broken` | Failed to install |
 
 ## API
